@@ -62,6 +62,23 @@ try:
         await ctx.channel.purge(limit=int(amount))
         await ctx.channel.send(':: Сообщения успешно удалены')
 
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _kick_ (ctx, member: discord.Member, *, reason = None):
+        emb = discord.Embed (title = 'Ban :lock:', colour = discord.Color.dark_red())
+
+        await ctx.channel.purge(limit = 1)
+
+        await member.kick(reason = reason)
+
+        emb.set_author (name = member.name, icon_url = member.avatar_url)
+        emb.add_field (name = 'Kick user', value = 'Kicked user : {}'.format(member.mention))
+        emb.set_footer (text = 'Был опасхален администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
+
+        await ctx.send (embed = emb)
+
+        print(f'Bot kicked { member }')
+
     print('\nMainThread Running')
     print('ThreadPoolExecutor-0_0 Running')
     print('Thread-6 Running\n')
@@ -78,4 +95,3 @@ finally:
 #D✔Бот for discord channel
 #NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg'
 #https://discord.com/developers/applications/721846899984039969/information 
-#https://discord.com/oauth2/authorize?client_id=721846899984039969&scope=bot&permissions=8
