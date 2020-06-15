@@ -35,7 +35,6 @@ try:
     async def _pp_(ctx):
         author = ctx.message.author
         await ctx.send(f'{author.mention} Вернулся.'), print(f'$Bot send message: {author.mention} Вернулся.')
-        print(author)
 
     @bot.command()
     async def fox(ctx):
@@ -58,14 +57,19 @@ try:
         try: await ctx.send(embed = embed), print('$Bot send embed dog (by', author.mention, ')' )
         except: await ctx.send('CommandNotFound', {author.mention})
 
+    @bot.command()
+    async def _clear_(ctx, amount=None):
+        await ctx.channel.purge(limit=int(amount))
+        await ctx.channel.send(':: Сообщения успешно удалены')
+
     print('\nMainThread Running')
     print('ThreadPoolExecutor-0_0 Running')
     print('Thread-6 Running\n')
-    print('Work Status: Work now.\n\nSteps:\n')
+    print('Work Status: 1\n\nSteps:\n')
 
     bot.run(settings['TOKEN'])
 
-except: pass
+except: print('\nWork status: 0')
 
 finally:
     print('\nWell done ;)')
@@ -73,4 +77,4 @@ finally:
 
 #D✔Бот for discord channel
 #NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg'
-#https://discord.com/developers/applications/721846899984039969/information
+#https://discord.com/developers/applications/721846899984039969/information 
