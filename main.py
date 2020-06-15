@@ -19,12 +19,12 @@ try:
     @bot.command()
     async def qq(ctx):
         author = ctx.message.author
-        await ctx.send(f'Hello, {author.mention}!'), print(f'$Bot send message: Hello, {author.mention}')
+        await ctx.send(f'Категорически приветствую, {author.mention}!'), print(f'$Bot send message: Hello, {author.mention}')
 
     @bot.command()
     async def bb(ctx):
         author = ctx.message.author
-        await ctx.send(f'See you later, {author.mention} :)'), print(f'$Bot send message: Bye, {author.mention}')
+        await ctx.send(f'До связи, {author.mention} :)'), print(f'$Bot send message: Bye, {author.mention}')
 
     @bot.command()
     async def pp(ctx):
@@ -54,7 +54,8 @@ try:
 
         embed = discord.Embed(color = 0xff9900, title = 'Random Dog')
         embed.set_image(url = json_data['link'])
-        try: await ctx.send(embed = embed), print('$Bot send embed dog (by', author.mention, ')' )
+        member = discord.Member
+        try: await ctx.send(embed = embed), print(f'$Bot send embed dog (by', {member, author.mention}, ')' )
         except: await ctx.send('CommandNotFound', {author.mention})
 
     @bot.command()
@@ -65,7 +66,7 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _kick_ (ctx, member: discord.Member, *, reason = None):
-        emb = discord.Embed (title = 'Ban :lock:', colour = discord.Color.dark_red())
+        emb = discord.Embed (title = 'Kick :camel:', colour = discord.Color.dark_red())
 
         await ctx.channel.purge(limit = 1)
 
@@ -78,6 +79,31 @@ try:
         await ctx.send (embed = emb)
 
         print(f'Bot kicked { member }')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _ban_ (ctx, member: discord.Member, *, reason = f'Нарушение правил сервера. $Banlist.append(you)'):
+        emb = discord.Embed (title = 'Ban :lock:', colour = discord.Color.dark_red())
+
+        await ctx.channel.purge(limit = 1)
+
+        await member.ban(reason = reason)
+
+        emb.set_author (name = member.name, icon_url = member.avatar_url)
+        emb.add_field (name = 'Ban user', value = 'Ban user : {}'.format(member.mention))
+        emb.set_footer (text = 'Был смешан с асфальтом администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
+
+        await ctx.send (embed = emb)
+
+        print(f'Bot banned { member }')
+
+    @bot.command()
+    async def _banlist_(ctx):
+        try:
+            await ctx.guild.bans()
+            print(1)
+        except:
+            print(0)
 
     print('\nMainThread Running')
     print('ThreadPoolExecutor-0_0 Running')
