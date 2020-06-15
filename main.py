@@ -7,6 +7,11 @@ from config import settings
 bot = commands.Bot(command_prefix = settings['PREFIX'])
 
 try:
+
+    @bot.event
+    async def on_ready():
+        print(f'Logged in as {bot.user.name}')
+
     @bot.command() 
     async def _hola_(ctx, arg):
         await ctx.send(arg), print(f'$Bot send message: {arg}')
@@ -29,7 +34,8 @@ try:
     @bot.command()
     async def _pp_(ctx):
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Вернулся.'), print(f'$Bot send message: {author.mention} Вернулся.') 
+        await ctx.send(f'{author.mention} Вернулся.'), print(f'$Bot send message: {author.mention} Вернулся.')
+        print(author)
 
     @bot.command()
     async def fox(ctx):
@@ -59,7 +65,7 @@ try:
 
     bot.run(settings['TOKEN'])
 
-except discord.ext.commands.errors.CommandNotFound: print(0)
+except: pass
 
 finally:
     print('\nWell done ;)')
