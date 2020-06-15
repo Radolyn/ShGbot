@@ -78,3 +78,4 @@ finally:
 #D✔Бот for discord channel
 #NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg'
 #https://discord.com/developers/applications/721846899984039969/information 
+#https://discord.com/oauth2/authorize?client_id=721846899984039969&scope=bot&permissions=8
