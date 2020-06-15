@@ -1,8 +1,8 @@
 # Ds
 
 
-Work`s steps:
-$cd bot_folder
-$python deps.py
+Work`s steps:\n
+$cd bot_folder\n
+$python deps.py\n
 $python main.py
 
