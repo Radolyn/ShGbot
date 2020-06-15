@@ -97,14 +97,6 @@ try:
 
         print(f'Bot banned { member }')
 
-    @bot.command()
-    async def _banlist_(ctx):
-        try:
-            await ctx.guild.bans()
-            print(1)
-        except:
-            print(0)
-
     print('\nMainThread Running')
     print('ThreadPoolExecutor-0_0 Running')
     print('Thread-6 Running\n')
