@@ -27,6 +27,11 @@ try:
         await ctx.send(f'{author.mention} Отошел.'), print(f'$Bot send message: {author.mention} Отошел.')
 
     @bot.command()
+    async def _pp_(ctx):
+        author = ctx.message.author
+        await ctx.send(f'{author.mention} Вернулся.'), print(f'$Bot send message: {author.mention} Вернулся.') 
+
+    @bot.command()
     async def fox(ctx):
         response = requests.get('https://some-random-api.ml/img/fox')
         json_data = json.loads(response.text)
