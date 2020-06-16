@@ -3,6 +3,10 @@ import json
 import requests
 from discord.ext import commands
 from config import settings
+from discord import utils
+from discord.utils import get
+from discord.ext.commands import Bot
+from discord.voice_client import VoiceClient
 
 bot = commands.Bot(command_prefix = settings['PREFIX'])
 
@@ -28,11 +32,13 @@ try:
 
     @bot.command()
     async def pp(ctx):
+        await ctx.channel.purge(limit = 1)
         author = ctx.message.author
         await ctx.send(f'{author.mention} Отошел.'), print(f'$Bot send message: {author.nick} ({author.name}) Отошел.')
 
     @bot.command()
     async def _pp_(ctx):
+        await ctx.channel.purge(limit = 1)
         author = ctx.message.author
         await ctx.send(f'{author.mention} Вернулся.'), print(f'$Bot send message: {author.nick} ({author.name}) Вернулся.')
 
@@ -112,6 +118,31 @@ try:
         emb.set_footer (text = 'Был помещён в мут администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
         await ctx.send (embed = emb)#not work!!!
 
+    @bot.command()
+    async def _join_(ctx):
+        global voice
+        channel = ctx.message.author.voice.channel
+        voice = get(bot.voice_clients, guild = ctx.guild)
+        
+        if voice and voice.is_connected():
+            await voice.move_to(channel)
+        else:
+            voice = await channel.connect()
+            await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
+
+    @bot.command()
+    async def _leave_(ctx):
+        global voice
+        channel = ctx.message.author.voice.channel
+        voice = get(bot.voice_clients, guild = ctx.guild)
+        
+        if voice and voice.is_connected():
+            await voice.disconnect()
+            await ctx.send('Успешно откатился :camel:')
+        else:
+            await voice.disconnect()
+            await ctx.send('Успешно откатился :camel:')
+
 #section of errors
 
     @_cleaner_.error
@@ -140,6 +171,8 @@ try:
         emb.add_field(name ='{}```pp```'.format(settings['PREFIX']), value = 'Клиент отошел')
         emb.add_field(name ='{}```_pp_```'.format(settings['PREFIX']), value = 'Клиент вернулся')
         emb.add_field(name ='{}```fox || dog```'.format(settings['PREFIX']), value = 'Генерация img')
+        emb.add_field(name ='{}```_join_```'.format(settings['PREFIX']), value = 'Подключение бота к текущему каналу')
+        emb.add_field(name ='{}```_leave_```'.format(settings['PREFIX']), value = 'Отключение бота от канала')
         await ctx.send ( embed = emb )
 
     print('\nMainThread Running')
