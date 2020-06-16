@@ -4,3 +4,9 @@ settings = {
     'ID': 721846899984039969,
     'PREFIX': '$'
 }
+
+banlist = {}
+
+link = {
+    '1': 'https://www.youtube.com/watch?v=zTLV6CmdK_I'
+}
