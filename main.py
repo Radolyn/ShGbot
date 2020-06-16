@@ -7,34 +7,34 @@ from config import settings
 bot = commands.Bot(command_prefix = settings['PREFIX'])
 
 try:
-
     @bot.event
     async def on_ready():
         print(f'Logged in as {bot.user.name}')
 
     @bot.command() 
     async def _hola_(ctx, arg):
+        await ctx.channel.purge(limit = 1)
         await ctx.send(arg), print(f'$Bot send message: {arg}')
 
     @bot.command()
     async def qq(ctx):
         author = ctx.message.author
-        await ctx.send(f'Категорически приветствую, {author.mention}!'), print(f'$Bot send message: Hello, {author.mention}')
+        await ctx.send(f'Категорически приветствую, {author.mention}!'), print(f'$Bot send message: Hello, {author.nick} ({author.name})')
 
     @bot.command()
     async def bb(ctx):
         author = ctx.message.author
-        await ctx.send(f'До связи, {author.mention} :)'), print(f'$Bot send message: Bye, {author.mention}')
+        await ctx.send(f'До связи, {author.mention} :)'), print(f'$Bot send message: Bye, {author.nick} ({author.name})')
 
     @bot.command()
     async def pp(ctx):
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Отошел.'), print(f'$Bot send message: {author.mention} Отошел.')
+        await ctx.send(f'{author.mention} Отошел.'), print(f'$Bot send message: {author.nick} ({author.name}) Отошел.')
 
     @bot.command()
     async def _pp_(ctx):
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Вернулся.'), print(f'$Bot send message: {author.mention} Вернулся.')
+        await ctx.send(f'{author.mention} Вернулся.'), print(f'$Bot send message: {author.nick} ({author.name}) Вернулся.')
 
     @bot.command()
     async def fox(ctx):
@@ -44,7 +44,7 @@ try:
 
         embed = discord.Embed(color = 0xff9900, title = 'Random Fox')
         embed.set_image(url = json_data['link'])
-        await ctx.send(embed = embed), print('$Bot send embed fox (by ', author.mention, ')' )
+        await ctx.send(embed = embed), print(f'$Bot send embed fox (by',author.nick, ')' )
 
     @bot.command()
     async def dog(ctx):
@@ -55,18 +55,20 @@ try:
         embed = discord.Embed(color = 0xff9900, title = 'Random Dog')
         embed.set_image(url = json_data['link'])
         member = discord.Member
-        try: await ctx.send(embed = embed), print(f'$Bot send embed dog (by', {member, author.mention}, ')' )
+        try: await ctx.send(embed = embed), print(f'$Bot send embed dog (by',author.nick, ')' )
         except: await ctx.send('CommandNotFound', {author.mention})
 
     @bot.command()
-    async def _clear_(ctx, amount=None):
+    @commands.has_permissions(administrator = True)
+    async def _cleaner_(ctx, amount=None):
+        author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        await ctx.channel.send(':: Сообщения успешно удалены')
+        await ctx.channel.send(':: Сообщения успешно удалены'), print(f'{author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _kick_ (ctx, member: discord.Member, *, reason = None):
-        emb = discord.Embed (title = 'Kick :camel:', colour = discord.Color.dark_red())
+        emb = discord.Embed (title = 'Kick :skull:', colour = discord.Color.dark_red())
 
         await ctx.channel.purge(limit = 1)
 
@@ -96,6 +98,49 @@ try:
         await ctx.send (embed = emb)
 
         print(f'Bot banned { member }')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    #not all compiled (has problems);
+    async def _mute_ (ctx, member: discord.Member):
+        await ctx.channel.purge(limit = 1)
+        emb = discord.Embed (title = 'Mute :mute:', colour = discord.Color.gold())
+        mute_role = discord.utils.get(ctx.message.guild.roles, name = 'MUTED')
+        await member.add_roles (mute_role)
+        emb.set_author (name = member.name, icon_url = member.avatar_url)
+        emb.add_field (name = 'MUTE', value = 'Muted user : {}'.format(member.mention))
+        emb.set_footer (text = 'Был помещён в мут администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
+        await ctx.send (embed = emb)#not work!!!
+
+#section of errors
+
+    @_cleaner_.error
+    async def cleaner_error(ctx,error):
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{ctx.author.name}, вы не обладаете такими правами!')
+
+    @_kick_.error
+    async def kick_error(ctx,error):
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{ctx.author.name}, вы не обладаете такими правами!')
+
+    @bot.command(pass_context = True)
+    async def _help_(ctx):
+        emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
+        emb.add_field(name ='Описание сервера', value = 'Описание приняло ислам')
+        emb.add_field(name ='{}```_cleaner_ int``` :broom: '.format(settings['PREFIX']), value = 'Очистка чата (adm)')
+        emb.add_field(name ='{}```_ban_ ID``` :lock:'.format(settings['PREFIX']), value = 'Бан клиента с сервера(adm)')
+        emb.add_field(name ='{}```_kick_ ID``` :skull: '.format(settings['PREFIX']), value = 'Кик клиента с сервера(adm)')
+        emb.add_field(name ='{}```qq```'.format(settings['PREFIX']), value = 'Приветствие')
+        emb.add_field(name ='{}```bb```'.format(settings['PREFIX']), value = 'Прощание')
+        emb.add_field(name ='{}```pp```'.format(settings['PREFIX']), value = 'Клиент отошел')
+        emb.add_field(name ='{}```_pp_```'.format(settings['PREFIX']), value = 'Клиент вернулся')
+        emb.add_field(name ='{}```fox || dog```'.format(settings['PREFIX']), value = 'Генерация img')
+        await ctx.send ( embed = emb )
 
     print('\nMainThread Running')
     print('ThreadPoolExecutor-0_0 Running')
