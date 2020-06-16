@@ -9,4 +9,6 @@ run_python_tool('pip install --upgrade pip')
 
 run_python_tool('pip install requests discord --user')
 
+run_python_tool('pip install -U discord.py[voice]')
+
 print('Bot ready to work.')
