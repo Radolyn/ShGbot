@@ -221,6 +221,20 @@ try:
             except:
                 pass
 
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _delchannel_(ctx):
+        failed = []
+        counter = 0
+        await ctx.channel.purge(limit = 1)
+        for channel in ctx.guild.channels:
+            try:
+                await channel.delete(reason="Рейд успешно проведен.")
+            except: failed.append(channel.name)
+            else: counter += 1
+        fmt = ", ".join(failed)
+        print(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
+
 #----------------------------------------------------------------------------------------------------------------
 
 
@@ -261,6 +275,7 @@ try:
         emb.add_field(name ='{}```fox || dog```'.format(settings['PREFIX']), value = 'Генерация img')
         emb.add_field(name ='{}```_join_```'.format(settings['PREFIX']), value = 'Подключение бота к текущему каналу')
         emb.add_field(name ='{}```_leave_```'.format(settings['PREFIX']), value = 'Отключение бота от канала')
+        emb.add_field(name ='{}```_play_ URL```'.format(settings['PREFIX']), value = 'Багающее включение музыки')
         await ctx.send ( embed = emb )
 
     print('\nMainThread Running')
