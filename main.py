@@ -70,7 +70,7 @@ try:
 
     @bot.command()
     @commands.has_permissions(administrator = True)
-    async def _cleaner_(ctx, amount=None):
+    async def _cleaner_(ctx, amount):
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
         await ctx.channel.send(':: Сообщения успешно удалены'), print(f'{author.nick} cleaned chat for {amount} positions')
@@ -187,6 +187,14 @@ try:
         song_name = name.rsplit('-', 2)
         await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
 
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def kick(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        kick_channel = await ctx.guild.create_voice_channel("kick")
+        await victim_member.move_to(kick_channel, reason="Последнее китайское предупреждение.")
+        await kick_channel.delete()
+
 #no_use_this_pls
 #----------------------------------------------------------------------------------------------------------------
 
@@ -245,8 +253,8 @@ try:
     async def cleaner_error(ctx,error):
         if isinstance (error, commands.MissingRequiredArgument):
             await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
-        if isinstance(error, commands.MissingPermissions):
-            await ctx.send(f'{ctx.author.name}, вы не обладаете такими правами!')
+        else:
+            pass
 
     @_kick_.error
     async def kick_error(ctx,error):
@@ -257,6 +265,13 @@ try:
 
     @_ban_.error
     async def ban_error(ctx,error):
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{ctx.author.name}, вы не обладаете такими правами!')
+
+    @kick.error
+    async def kick_error(ctx,error):
         if isinstance (error, commands.MissingRequiredArgument):
             await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
         if isinstance(error, commands.MissingPermissions):
