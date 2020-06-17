@@ -22,29 +22,29 @@ try:
     @bot.command() 
     async def _hola_(ctx, arg):
         await ctx.channel.purge(limit = 1)
-        await ctx.send(arg), print(f'$Bot send message: {arg}')
+        await ctx.send(arg), print(f'[user] $Bot send message: {arg}')
 
     @bot.command()
     async def qq(ctx):
         author = ctx.message.author
-        await ctx.send(f'Категорически приветствую, {author.mention}!'), print(f'$Bot send message: Hello, {author.nick} ({author.name})')
+        await ctx.send(f'Категорически приветствую, {author.mention}!'), print(f'[user] $Bot send message: Hello, {author.nick} ({author.name})')
 
     @bot.command()
     async def bb(ctx):
         author = ctx.message.author
-        await ctx.send(f'До связи, {author.mention} :)'), print(f'$Bot send message: Bye, {author.nick} ({author.name})')
+        await ctx.send(f'До связи, {author.mention} :)'), print(f'[user] $Bot send message: Bye, {author.nick} ({author.name})')
 
     @bot.command()
     async def pp(ctx):
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Отошел.'), print(f'$Bot send message: {author.nick} ({author.name}) Отошел.')
+        await ctx.send(f'{author.mention} Отошел.'), print(f'[user] $Bot send message: {author.nick} ({author.name}) Отошел.')
 
     @bot.command()
     async def _pp_(ctx):
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Вернулся.'), print(f'$Bot send message: {author.nick} ({author.name}) Вернулся.')
+        await ctx.send(f'{author.mention} Вернулся.'), print(f'[user] $Bot send message: {author.nick} ({author.name}) Вернулся.')
 
     @bot.command()
     async def fox(ctx):
@@ -54,7 +54,7 @@ try:
 
         embed = discord.Embed(color = 0xff9900, title = 'Random Fox')
         embed.set_image(url = json_data['link'])
-        await ctx.send(embed = embed), print(f'$Bot send embed fox (by',author.nick, ')' )
+        await ctx.send(embed = embed), print(f'[user] $Bot send embed fox (by',author.nick, ')' )
 
     @bot.command()
     async def dog(ctx):
@@ -65,7 +65,7 @@ try:
         embed = discord.Embed(color = 0xff9900, title = 'Random Dog')
         embed.set_image(url = json_data['link'])
         member = discord.Member
-        try: await ctx.send(embed = embed), print(f'$Bot send embed dog (by',author.nick, ')' )
+        try: await ctx.send(embed = embed), print(f'[user] $Bot send embed dog (by',author.nick, ')' )
         except: await ctx.send('CommandNotFound', {author.mention})
 
     @bot.command()
@@ -73,7 +73,7 @@ try:
     async def _cleaner_(ctx, amount):
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        await ctx.channel.send(':: Сообщения успешно удалены'), print(f'{author.nick} cleaned chat for {amount} positions')
+        await ctx.channel.send(':: Сообщения успешно удалены'), print(f'[user] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -81,7 +81,7 @@ try:
         emb = discord.Embed (title = 'Kick :warning:', colour = discord.Color.dark_red())
 
         await ctx.channel.purge(limit = 1)
-
+                       
         await member.kick(reason = reason)
 
         emb.set_author (name = member.name, icon_url = member.avatar_url)
@@ -90,7 +90,7 @@ try:
 
         await ctx.send (embed = emb)
 
-        print(f'Bot kicked { member }')
+        print(f'[admin] Bot kicked { member }')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -107,20 +107,14 @@ try:
 
         await ctx.send (embed = emb)
 
-        print(f'Bot banned { member }')
+        print(f'[admin] Bot banned { member }')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
-    #not all compiled (has problems);
-    async def _mute_ (ctx, member: discord.Member):
-        await ctx.channel.purge(limit = 1)
-        emb = discord.Embed (title = 'Mute :mute:', colour = discord.Color.gold())
-        mute_role = discord.utils.get(ctx.message.guild.roles, name = 'MUTED')
-        await member.add_roles (mute_role)
-        emb.set_author (name = member.name, icon_url = member.avatar_url)
-        emb.add_field (name = 'MUTE', value = 'Muted user : {}'.format(member.mention))
-        emb.set_footer (text = 'Был помещён в мут администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
-        await ctx.send (embed = emb)#not work!!!
+    async def _cleanadm_(ctx, amount):
+        author = ctx.message.author
+        await ctx.channel.purge(limit=int(amount))
+        await print(f'[admin] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     async def _join_(ctx):
@@ -190,10 +184,11 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def kick(ctx, victim):
+        author = ctx.message.author
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         kick_channel = await ctx.guild.create_voice_channel("kick")
         await victim_member.move_to(kick_channel, reason="Последнее китайское предупреждение.")
-        await kick_channel.delete()
+        await kick_channel.delete(), print(f'[admin] {ctx.author.name} отключил от чата {victim_member}')
 
 #no_use_this_pls
 #----------------------------------------------------------------------------------------------------------------
@@ -297,14 +292,14 @@ try:
     print('\nMainThread Running')
     print('ThreadPoolExecutor-0_0 Running')
     print('Thread-6 Running\n')
-    print('Work Status: 1\n\nSteps:\n')
+    print('Work Status: 1\n\nAuditor magazine of bot:\n')
 
     bot.run(settings['TOKEN'])
 
 except: print('\nWork status: 0')
 
 finally:
-    print('\nWell done ;)')
+    print('\nWell done :)\n')
     
 
 #D✔Бот for discord channel
