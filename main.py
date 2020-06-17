@@ -1,23 +1,22 @@
-import discord
-import json
-import os
-import requests
-import asyncio
-import youtube_dl
-from discord.ext import commands
-from config import settings, link
-from discord import utils
-from discord.utils import get
-from discord.ext.commands import Bot
-from discord.voice_client import VoiceClient
+try:
+    import discord
+    import json
+    import os
+    import requests
+    import asyncio
+    import youtube_dl
+    from discord.ext import commands
+    from config import settings, link
+    from discord import utils
+    from discord.utils import get
+    from discord.ext.commands import Bot
+    from discord.voice_client import VoiceClient
+except ImportError: 
+    print('Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 
 bot = commands.Bot(command_prefix = settings['PREFIX'])
 
 try:
-    @bot.event
-    async def on_ready():
-        print(f'Logged in as {bot.user.name}')
-
     @bot.command() 
     async def _hola_(ctx, arg):
         await ctx.channel.purge(limit = 1)
@@ -113,7 +112,7 @@ try:
     async def _cleanadm_(ctx, amount):
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        await print(f'[admin] {author.nick} cleaned chat for {amount} positions')
+        print(f'[admin] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     async def _join_(ctx):
@@ -183,11 +182,19 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def kick(ctx, victim):
+        await ctx.channel.purge(limit = 1)
         author = ctx.message.author
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         kick_channel = await ctx.guild.create_voice_channel("kick")
         await victim_member.move_to(kick_channel, reason="Последнее китайское предупреждение.")
         await kick_channel.delete(), print(f'[admin] {ctx.author.name} отключил от чата {victim_member}')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _list_(ctx):
+        for i in ctx.guild.members:
+            print('[admin] $Bot send list of members in the server')
+            await ctx.send(i.name)
 
 #no_use_this_pls
 #----------------------------------------------------------------------------------------------------------------
@@ -287,6 +294,20 @@ try:
         emb.add_field(name ='{}```_leave_```'.format(settings['PREFIX']), value = 'Отключение бота от канала')
         emb.add_field(name ='{}```_play_ URL```'.format(settings['PREFIX']), value = 'Багающее включение музыки по url')
         await ctx.send ( embed = emb )
+
+#only_big_adm
+#=================================================
+
+    async def greatSender():
+        channel = bot.get_channel(id=int(input('channel_ID: ')))
+        await channel.send(input('message: '))
+
+    @bot.event
+    async def on_ready():
+        print(f'Logged in as {bot.user.name}')
+        #await greatSender() Сообщения от лица бота
+
+#=================================================
 
     print('\nMainThread Running')
     print('ThreadPoolExecutor-0_0 Running')
