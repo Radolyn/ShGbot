@@ -132,13 +132,13 @@ try:
 
     @bot.command()
     @commands.has_permissions(administrator = True)
-    async def _all_mute_(ctx, victim):
+    async def _am_(ctx, victim):
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True, deafen = True)
 
     @bot.command()
     @commands.has_permissions(administrator = True)
-    async def _un_all_mute_(ctx, victim):
+    async def _aum_(ctx, victim):
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = False, deafen = False)
 
@@ -163,8 +163,40 @@ try:
         for i in ctx.guild.voice_channels:
             channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
             await victim_member.move_to(channel)
-            time.sleep(0.55)
+            time.sleep(0.75)
             print(f'[exc] ${ victim_member } transferred in { i.name }')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _lock_(ctx, victim):
+        await ctx.channel.purge(limit = 1)
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        author = ctx.message.author
+        if str(author.id) == '691575600707534908':
+            for i in range(30):
+                await victim_member.edit(mute = True, deafen = True)
+                time.sleep(0.75)
+                print(f'[{author.id}] lock {victim_member}')
+                await victim_member.edit(nick = '_PIDARAS_')
+        else:
+            print(0)
+            print(author.id)
+            await victim_member.edit(nick = '_PIDARAS_')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _unlock_(ctx, victim):
+        await ctx.channel.purge(limit = 1)
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        author = ctx.message.author
+        if str(author.id) == '691575600707534908':
+            await victim_member.edit(mute = False, deafen = False)
+            print(f'[{author.id}] unlock {victim_member}')
+            await victim_member.edit(nick = f'{victim_member.name}')
+        else:
+            print(0)
+            print(author.id)
+            await victim_member.edit(nick = f'{victim_member.name}')
 
     @bot.command()#da___
     @commands.has_permissions(administrator = True)
@@ -180,6 +212,7 @@ try:
                 time.sleep(int(t)*0.01)
                 print(f'[exc] ${ victim_member } transferred in { i.name }')
         await victim_member.edit(mute = False, deafen = False)
+        ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -194,6 +227,7 @@ try:
                     print(f'[exc adm] ${ victim_member } transferred in { i.name }')
                     print(n)
                     n -= 1
+            ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
 
     @bot.command()
@@ -263,8 +297,16 @@ try:
     async def _list_(ctx):
         print('[admin] $Bot send list of members of the server')
         list_memb = list()
+        emb = discord.Embed (title = f'Список участников сервера {ctx.guild.name} :clipboard: ')
+        emb.description = str(len(ctx.guild.members)) + ' ' + 'участника(-ов):'
         for i in ctx.guild.members:
-            await ctx.send(i.name)
+            emb.add_field(name = i.name, value = i.roles[len(i.roles) - 1])
+        await ctx.send ( embed = emb )
+
+    @bot.command()
+    async def _list_ch_(ctx):
+        for i in ctx.guild.voice_channels:
+            print(i.name)
 
     #no_use_this_pls
     #----------------------------------------------------------------------------------------------------------------
@@ -318,7 +360,7 @@ try:
     #----------------------------------------------------------------------------------------------------------------
 
 
-    #section of errors
+    #section of errors (validation)
 
     @_cleaner_.error
     async def cleaner_error(ctx,error):
@@ -326,7 +368,7 @@ try:
         if isinstance (error, commands.MissingRequiredArgument):
             await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
         else:
             pass
 
@@ -338,7 +380,7 @@ try:
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
 
     @_ban_.error
     async def ban_error(ctx,error):
@@ -348,7 +390,7 @@ try:
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
 
     @kick.error
     async def kick_error(ctx,error):
@@ -358,7 +400,7 @@ try:
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
 
     @_exc_.error
     async def exc_error(ctx,error):
@@ -368,7 +410,157 @@ try:
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_lock_.error
+    async def lock_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_unlock_.error
+    async def exc_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_exc_.error
+    async def exc_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_exc_adm_.error
+    async def exc1_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_exc_adm_gogi_.error
+    async def exc2_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_play_.error
+    async def play_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_join_.error
+    async def join_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_leave_.error
+    async def leave_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_cleanadm_.error
+    async def cleanadm_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_mute_.error
+    async def mute_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_dea_.error
+    async def dea_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_am_.error
+    async def am_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_aum_.error
+    async def aum_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @fox.error
+    async def fox_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @dog.error
+    async def dog_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
 
     @bot.command(pass_context = True)
     async def   _help_(ctx):
@@ -390,7 +582,7 @@ try:
         print(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
         await ctx.send ( embed = emb )
 
-    #only_big_adm
+    #only_big_adm (шучу)
     #=================================================
 
     async def greatSender():
@@ -400,7 +592,7 @@ try:
     @bot.event
     async def on_ready():
         print(f'Logged in as {bot.user.name}')
-        #await greatSender() Сообщения от лица бота
+        #await greatSender() #Сообщения от лица бота
 
     #=================================================
 
