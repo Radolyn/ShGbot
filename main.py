@@ -2,9 +2,12 @@ try:
     import discord
     import json
     import os
+    import time
+    import random
     import requests
     import asyncio
     import youtube_dl
+    import discord.ext.commands
     from discord.ext import commands
     from config import settings, link
     from discord import utils
@@ -14,7 +17,7 @@ try:
 except ImportError: 
     print('Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 
-bot = commands.Bot(command_prefix = settings['PREFIX'])
+bot = Bot(settings['PREFIX'])
 
 try:
     @bot.command() 
@@ -79,7 +82,7 @@ try:
         emb = discord.Embed (title = 'Kick :warning:', colour = discord.Color.dark_red())
 
         await ctx.channel.purge(limit = 1)
-                       
+                        
         await member.kick(reason = reason)
 
         emb.set_author (name = member.name, icon_url = member.avatar_url)
@@ -126,6 +129,28 @@ try:
         else:
             voice = await channel.connect()
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _exc_(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
+        for i in ctx.guild.voice_channels:
+            channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
+            await victim_member.move_to(channel)
+            time.sleep(0.55)
+            print(f'[exc] ${ victim_member } transferred in { i.name }')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _test_(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        for i in ctx.guild.voice_channels:
+            channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
+            await victim_member.move_to(channel)
+            time.sleep(0.55)
+
+
 
     @bot.command()
     async def _leave_(ctx):
@@ -192,12 +217,12 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _list_(ctx):
+        print('[admin] $Bot send list of members of the server')
         for i in ctx.guild.members:
-            print('[admin] $Bot send list of members in the server')
             await ctx.send(i.name)
 
-#no_use_this_pls
-#----------------------------------------------------------------------------------------------------------------
+    #no_use_this_pls
+    #----------------------------------------------------------------------------------------------------------------
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -245,41 +270,63 @@ try:
         fmt = ", ".join(failed)
         print(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
 
-#----------------------------------------------------------------------------------------------------------------
+    #----------------------------------------------------------------------------------------------------------------
 
 
-#section of errors
+    #section of errors
 
     @_cleaner_.error
     async def cleaner_error(ctx,error):
+        author = ctx.message.author
         if isinstance (error, commands.MissingRequiredArgument):
-            await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
         else:
             pass
 
     @_kick_.error
     async def kick_error(ctx,error):
+        author = ctx.message.author
         if isinstance (error, commands.MissingRequiredArgument):
-            await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
         if isinstance(error, commands.MissingPermissions):
-            await ctx.send(f'{ctx.author.name}, вы не обладаете такими правами!')
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
 
     @_ban_.error
     async def ban_error(ctx,error):
+        author = ctx.message.author
         if isinstance (error, commands.MissingRequiredArgument):
-            await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
         if isinstance(error, commands.MissingPermissions):
-            await ctx.send(f'{ctx.author.name}, вы не обладаете такими правами!')
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
 
     @kick.error
     async def kick_error(ctx,error):
+        author = ctx.message.author
         if isinstance (error, commands.MissingRequiredArgument):
-            await ctx.send(f'{ctx.author.name}, обязательно укажите аргумент!')
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
         if isinstance(error, commands.MissingPermissions):
-            await ctx.send(f'{ctx.author.name}, вы не обладаете такими правами!')
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
+
+    @_exc_.error
+    async def exc_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, пожалуйста, попробуйте снова!')
 
     @bot.command(pass_context = True)
-    async def _help_(ctx):
+    async def   _help_(ctx):
         emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
         emb.add_field(name ='Описание сервера', value = 'Ничего строгого')
         emb.add_field(name ='{}```_cleaner_ int``` :broom: '.format(settings['PREFIX']), value = 'Очистка чата (adm)')
@@ -293,10 +340,13 @@ try:
         emb.add_field(name ='{}```_join_```'.format(settings['PREFIX']), value = 'Подключение бота к текущему каналу')
         emb.add_field(name ='{}```_leave_```'.format(settings['PREFIX']), value = 'Отключение бота от канала')
         emb.add_field(name ='{}```_play_ URL```'.format(settings['PREFIX']), value = 'Багающее включение музыки по url')
+        emb.add_field(name ='{}```_exc_ NAME```'.format(settings['PREFIX']), value = 'Полноценная экскурсия по серверу(adm)')
+        emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = 'Список учатсников сервера(adm)')
+        print(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
         await ctx.send ( embed = emb )
 
-#only_big_adm
-#=================================================
+    #only_big_adm
+    #=================================================
 
     async def greatSender():
         channel = bot.get_channel(id=int(input('channel_ID: ')))
@@ -307,7 +357,7 @@ try:
         print(f'Logged in as {bot.user.name}')
         #await greatSender() Сообщения от лица бота
 
-#=================================================
+    #=================================================
 
     print('\nMainThread Running')
     print('ThreadPoolExecutor-0_0 Running')
