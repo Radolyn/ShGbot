@@ -132,6 +132,31 @@ try:
 
     @bot.command()
     @commands.has_permissions(administrator = True)
+    async def _all_mute_(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        await victim_member.edit(mute = True, deafen = True)
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _un_all_mute_(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        await victim_member.edit(mute = False, deafen = False)
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _mute_(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        await victim_member.edit(mute = True)
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _dea_(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        await victim_member.edit(deafen = True)
+
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
     async def _exc_(ctx, victim):
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
@@ -141,15 +166,34 @@ try:
             time.sleep(0.55)
             print(f'[exc] ${ victim_member } transferred in { i.name }')
 
+    @bot.command()#da___
+    @commands.has_permissions(administrator = True)
+    async def _exc_adm_(ctx, victim, n: int, t: int):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
+        for k in range(int(n)):
+            await victim_member.edit(mute = True, deafen = True)
+            print(f'[exc_adm] {k} Заход пошел')
+            for i in ctx.guild.voice_channels:
+                channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
+                await victim_member.move_to(channel)
+                time.sleep(int(t)*0.01)
+                print(f'[exc] ${ victim_member } transferred in { i.name }')
+        await victim_member.edit(mute = False, deafen = False)
+
     @bot.command()
     @commands.has_permissions(administrator = True)
-    async def _test_(ctx, victim):
-        victim_member = discord.utils.get(ctx.guild.members, name=victim)
-        for i in ctx.guild.voice_channels:
-            channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
-            await victim_member.move_to(channel)
-            time.sleep(0.55)
-
+    async def _exc_adm_gogi_(ctx, name1: str, n: int):
+            victim_member = discord.utils.get(ctx.guild.members, name=name1)
+            await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
+            while n > 0:
+                for i in ctx.guild.voice_channels:
+                    channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
+                    await victim_member.move_to(channel)
+                    time.sleep(0.45)
+                    print(f'[exc adm] ${ victim_member } transferred in { i.name }')
+                    print(n)
+                    n -= 1
 
 
     @bot.command()
@@ -218,6 +262,7 @@ try:
     @commands.has_permissions(administrator = True)
     async def _list_(ctx):
         print('[admin] $Bot send list of members of the server')
+        list_memb = list()
         for i in ctx.guild.members:
             await ctx.send(i.name)
 
