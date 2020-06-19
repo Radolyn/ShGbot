@@ -289,14 +289,11 @@ try:
         await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
 
     @bot.command()
-    @commands.has_permissions(administrator = True)
     async def kick(ctx, victim):
-        await ctx.channel.purge(limit = 1)
-        author = ctx.message.author
-        victim_member = discord.utils.get(ctx.guild.members, name=victim)
-        kick_channel = await ctx.guild.create_voice_channel("kick")
-        await victim_member.move_to(kick_channel, reason="Последнее китайское предупреждение.")
-        await kick_channel.delete(), print(f'[admin] {ctx.author.name} отключил от чата {victim_member}')
+        victim_member = get(ctx.guild.members, name = victim)
+        channelU = discord.utils.find(lambda x: x.name == 'PIDARASI VI SUKI', ctx.guild.voice_channels)
+        await victim_member.move_to(channelU)
+        print(f'[admin] {ctx.author.name} отключил от чата {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
