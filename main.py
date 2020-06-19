@@ -212,7 +212,7 @@ try:
                 time.sleep(int(t)*0.01)
                 print(f'[exc] ${ victim_member } transferred in { i.name }')
         await victim_member.edit(mute = False, deafen = False)
-        ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
+        await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -223,11 +223,11 @@ try:
                 for i in ctx.guild.voice_channels:
                     channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
                     await victim_member.move_to(channel)
-                    time.sleep(0.45)
+                    time.sleep(0.75)
                     print(f'[exc adm] ${ victim_member } transferred in { i.name }')
                     print(n)
                     n -= 1
-            ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
+            await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
 
     @bot.command()
@@ -308,6 +308,18 @@ try:
         for i in ctx.guild.voice_channels:
             print(i.name)
 
+    @bot.command()
+    async def _ls_(ctx):
+        array , array1 = list(), list()
+        for guild in bot.guilds:
+            array.append(guild.name)
+            array1.append(guild.id)
+        print(*array, sep = '\\\\')
+        emb = discord.Embed(title = "Список серверов, на которых катируется бот:")
+        for i in range(len(array)):
+            emb.add_field(name = array1[i], value = array[i])
+        await ctx.send( embed = emb )
+
     #no_use_this_pls
     #----------------------------------------------------------------------------------------------------------------
 
@@ -345,7 +357,7 @@ try:
 
     @bot.command()
     @commands.has_permissions(administrator = True)
-    async def _delchannel_(ctx):
+    async def _dch_(ctx):
         failed = []
         counter = 0
         await ctx.channel.purge(limit = 1)
@@ -579,6 +591,16 @@ try:
         emb.add_field(name ='{}```_play_ URL```'.format(settings['PREFIX']), value = 'Багающее включение музыки по url')
         emb.add_field(name ='{}```_exc_ NAME```'.format(settings['PREFIX']), value = 'Полноценная экскурсия по серверу(adm)')
         emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = 'Список учатсников сервера(adm)')
+        emb.add_field(name ='{}```_exc_adm_ NAME EXC(int) speed(int)```'.format(settings['PREFIX']), value = '_exc_ + изменение скорости и кол-ва заходов(adm)')
+        emb.add_field(name ='{}```_exc_adm_gogi_ NAME CH(int)```'.format(settings['PREFIX']), value = 'Дополненная экскурсия - версия @gogi')
+        emb.add_field(name ='{}```_mute_ NAME```'.format(settings['PREFIX']), value = 'Мут участника (adm)')
+        emb.add_field(name ='{}```_dea_ NAME```'.format(settings['PREFIX']), value = 'Оглушение участника (adm)')
+        emb.add_field(name ='{}```_am_ NAME```'.format(settings['PREFIX']), value = 'Полный мут участника (adm)')
+        emb.add_field(name ='{}```_aum_ NAME```'.format(settings['PREFIX']), value = 'Полный размут участника (adm)')
+        emb.add_field(name ='{}```_lock_ NAME```'.format(settings['PREFIX']), value = 'Унижение участника (adm, 30 сек)')
+        emb.add_field(name ='{}```_unlock_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm)')
+        emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = f'Списко участников сервера { ctx.guild.name } ')
+        
         print(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
         await ctx.send ( embed = emb )
 
