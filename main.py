@@ -133,24 +133,28 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _am_(ctx, victim):
+        await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True, deafen = True)
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _aum_(ctx, victim):
+        await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = False, deafen = False)
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _mute_(ctx, victim):
+        await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True)
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _dea_(ctx, victim):
+        await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(deafen = True)
 
@@ -175,13 +179,15 @@ try:
         if str(author.id) == '691575600707534908':
             for i in range(30):
                 await victim_member.edit(mute = True, deafen = True)
-                time.sleep(0.75)
                 print(f'[{author.id}] lock {victim_member}')
-                await victim_member.edit(nick = '_PIDARAS_')
+                try:
+                    await victim_member.edit(nick = '_PIDARAS_')
+                except:
+                    pass
+                time.sleep(0.75)
         else:
             print(0)
             print(author.id)
-            await victim_member.edit(nick = '_PIDARAS_')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -210,7 +216,7 @@ try:
                 channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
                 await victim_member.move_to(channel)
                 time.sleep(int(t)*0.01)
-                print(f'[exc] ${ victim_member } transferred in { i.name }')
+                print(f'[exc] { victim_member } transferred to { i.name }')
         await victim_member.edit(mute = False, deafen = False)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
@@ -319,6 +325,55 @@ try:
         for i in range(len(array)):
             emb.add_field(name = array1[i], value = array[i])
         await ctx.send( embed = emb )
+
+    @bot.command()
+    async def _tr_(ctx, victim, channel):
+        victim_member = get(ctx.guild.members, name = victim)
+        channelU = discord.utils.find(lambda x: x.name == channel, ctx.guild.voice_channels)
+        try:
+            await victim_member.move_to(channelU)
+            print(f'[tr] { victim_member } was transfered to { channelU }')
+        except:
+            pass
+            print(f'[tr] Transfer { victim_member } failed')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _lat_(ctx, victim):
+        await ctx.channel.purge(limit = 1)
+        global n
+        n = True
+        author = ctx.message.author
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        while n == True:
+            await victim_member.edit(mute = True, deafen = True)
+            time.sleep(0.75)
+            print(f'[{author.id}] lock {victim_member}')
+            try:
+                await victim_member.edit(nick = '_PIDARAS_')
+            except: 
+                pass
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _ulat_(ctx, victim):
+        await ctx.channel.purge(limit = 1)
+        global n 
+        n = False
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        await victim_member.edit(mute = False, deafen = False)
+        print(f'[{author.id }] unlock  { victim_member }')
+        try:
+            await victim_member.edit(nick = victim)
+        except:
+            pass
+
+    @bot.command()
+    async def _send_(ctx, victim):
+        author = ctx.message.author
+        if str(author.id) == '691575600707534908':
+            victim_member = get(ctx.guild.members, name = victim)
+            await ctx.send(victim_member)
 
     #no_use_this_pls
     #----------------------------------------------------------------------------------------------------------------
@@ -574,6 +629,36 @@ try:
         if isinstance(error, commands.errors.CommandInvokeError):
             await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
 
+    @_tr_.error
+    async def tr_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова (скорее всего вы пытаетесь перенести неподключенного бота) :dart:')
+
+    @_lat_.error
+    async def lat_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_ulat_.error
+    async def ulat_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
     @bot.command(pass_context = True)
     async def   _help_(ctx):
         emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
@@ -588,7 +673,7 @@ try:
         emb.add_field(name ='{}```fox || dog```'.format(settings['PREFIX']), value = 'Генерация img')
         emb.add_field(name ='{}```_join_```'.format(settings['PREFIX']), value = 'Подключение бота к текущему каналу')
         emb.add_field(name ='{}```_leave_```'.format(settings['PREFIX']), value = 'Отключение бота от канала')
-        emb.add_field(name ='{}```_play_ URL```'.format(settings['PREFIX']), value = 'Багающее включение музыки по url')
+        #emb.add_field(name ='{}```_play_ URL```'.format(settings['PREFIX']), value = 'Багающее включение музыки по url')
         emb.add_field(name ='{}```_exc_ NAME```'.format(settings['PREFIX']), value = 'Полноценная экскурсия по серверу(adm)')
         emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = 'Список учатсников сервера(adm)')
         emb.add_field(name ='{}```_exc_adm_ NAME EXC(int) speed(int)```'.format(settings['PREFIX']), value = '_exc_ + изменение скорости и кол-ва заходов(adm)')
@@ -599,7 +684,9 @@ try:
         emb.add_field(name ='{}```_aum_ NAME```'.format(settings['PREFIX']), value = 'Полный размут участника (adm)')
         emb.add_field(name ='{}```_lock_ NAME```'.format(settings['PREFIX']), value = 'Унижение участника (adm, 30 сек)')
         emb.add_field(name ='{}```_unlock_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm)')
-        emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = f'Списко участников сервера { ctx.guild.name } ')
+        emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = f'Список участников сервера { ctx.guild.name } ')
+        emb.add_field(name ='{}```_lat_ NAME```'.format(settings['PREFIX']), value = 'Бесконечное унижение (adm, lock all time)')
+        emb.add_field(name ='{}```_ulat_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm, un lock all time)')
         
         print(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
         await ctx.send ( embed = emb )
@@ -618,7 +705,7 @@ try:
 
     #=================================================
 
-    print('\nMainThread Running')
+    print('\nMainThread Running')       
     print('ThreadPoolExecutor-0_0 Running')
     print('Thread-6 Running\n')
     print('Work Status: 1\n\nAuditor magazine of bot:\n')
