@@ -216,7 +216,7 @@ try:
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
         for k in range(int(n)):
             await victim_member.edit(mute = True, deafen = True)
-            print(f'[exc_adm] {k} Заход пошел')
+            print(f'[exc_adm] {k + 1    } Заход пошел')
             for i in ctx.guild.voice_channels:
                 channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
                 await victim_member.move_to(channel)
@@ -288,7 +288,7 @@ try:
 
         voice.play(discord.FFmpegPCMAudio('song.mp3'), after = lambda e: print(f'[log] {name}, музыка закончила свое проигрывание'))
         voice.source = discord.PCMVolumeTransformer(voice.source)
-        voice.source.volume = 0.14
+        voice.source.volume = 1
 
         song_name = name.rsplit('-', 2)
         await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
@@ -377,6 +377,92 @@ try:
             victim_member = get(ctx.guild.members, name = victim)
             await ctx.send(victim_member)
 
+    #warn section
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _warn_(ctx, victim, reason):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        author = ctx.message.author
+        w = warns.cursor()
+        w.execute('SELECT name FROM warns')
+        b = w.fetchall()
+        b = str(b)
+        d1 = b.find(victim)
+        e = str(author).find('$')
+        author = str(author)[0:e]       
+        if d1 < 0:
+            a = ('INSERT INTO warns VALUES(' + "'" + str(victim) + "', " + "'" + str(reason) + "', " + "'" + str(author) + "', " + "'" + '1' + "')")
+            w.execute(a)
+            await ctx.send(f'Участник {victim_member.mention} полчулил варн')
+        else:
+            a = ('SELECT quantity FROM warns WHERE name = ' + '"'  + str(victim) + '"')
+            w.execute(a)
+            b = w.fetchall()
+            b = str(b)
+            d = int(b[2])
+            a1 = ('UPDATE warns SET reason = ' + '"' + str(reason) + '"' + ' where name = ' + '"' + str(victim) + '"')
+            a2 = ('UPDATE warns SET "issued by" = ' + '"' + str(author) + '"' + ' where name = ' + '"' + str(victim) + '"')
+            a3 = ('UPDATE warns SET quantity = ' + '"' + str(int(d) + 1) + '"' + ' where name = ' + '"' + str(victim) + '"')
+            w.execute(a1)
+            w.execute(a2)
+            w.execute(a3)
+            await ctx.send(f'Участник {victim_member.mention} полчулил варн')
+            if int(d) + 1 >= mw:
+                await victim_member.kick(reason = 'кик по причине:' + str(mw) + '/' + str(mw) + 'варнов')
+                w.execute('DELETE FROM warns where name =' + "'" + str(victim) + "'")
+                await ctx.send(f'был кикнут администратором{author.mention} за максимальное количество варнов')
+        warns.commit()
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _unwarn_(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        author = ctx.message.author
+        w = warns.cursor()
+        w.execute('SELECT name FROM warns')
+        b = w.fetchall()
+        b = str(b)
+        d1 = b.find(victim)
+        e = str(author).find('#')
+        author = str(author)[0:e]
+        if d1 < 0:
+            await ctx.send(f'У {victim_member.mention} нету варнов')
+        else:
+            a = ('SELECT quantity FROM warns WHERE name = ' + '"'  + str(victim) + '"')
+            w.execute(a)
+            b = w.fetchall()
+            b = str(b)
+            d = int(b[2])
+            a1 = ('UPDATE warns SET quantity = ' + '"' + str(int(d) - 1) + '"' + ' where name = ' + '"' + str(victim) + '"')
+            w.execute(a1)
+            if d - 1 == 0:
+                w.execute('DELETE FROM warns where name =' + "'" + str(victim) + "'")
+            await ctx.send(f'Варн с участника {victim_member.mention} был успешо снят')
+        warns.commit()
+
+    @bot.command()
+    @commands.has_permissions()
+    async def warn_list(ctx, victim):
+        global mw
+        mw = 3
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        w = warns.cursor()
+        w.execute('SELECT name FROM warns')
+        b = w.fetchall()
+        b = str(b)
+        d1 = b.find(victim)
+        if d1 > 0:
+            a = ('SELECT name, quantity FROM warns')
+            w.execute(a)
+            d = w.fetchall()
+            d = str(d)
+            b = d.find(victim)
+            e = len(victim) + b + 3
+            await ctx.send(f'У {victim_member.mention}' + str(d[e]) +' из ' + str(mw))
+        else:
+            await ctx.send(f'У {victim_member.mention} нету варнов')
+
     #no_use_this_pls
     #----------------------------------------------------------------------------------------------------------------
 
@@ -425,88 +511,6 @@ try:
             else: counter += 1
         fmt = ", ".join(failed)
         print(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
-
-    @bot.command()
-    @commands.has_permissions(administrator = True)
-    async def sql_warn(ctx, victim, reason):
-        victim_member = discord.utils.get(ctx.guild.members, name=victim)
-        author = ctx.message.author
-        w = warns.cursor()
-        w.execute('SELECT name FROM warns')
-        b = w.fetchall()
-        b = str(b)
-        d1 = b.find(victim)
-        e = str(author).find('#')
-        author = str(author)[0:e]       
-        if d1 < 0:
-            a = ('INSERT INTO warns VALUES(' + "'" + str(victim) + "', " + "'" + str(reason) + "', " + "'" + str(author) + "', " + "'" + '1' + "')")
-            w.execute(a)
-            await ctx.send(f'Участник {victim_member.mention} полчулил варн')
-        else:
-            a = ('SELECT quantity FROM warns WHERE name = ' + '"'  + str(victim) + '"')
-            w.execute(a)
-            b = w.fetchall()
-            b = str(b)
-            d = int(b[2])
-            a1 = ('UPDATE warns SET reason = ' + '"' + str(reason) + '"' + ' where name = ' + '"' + str(victim) + '"')
-            a2 = ('UPDATE warns SET "issued by" = ' + '"' + str(author) + '"' + ' where name = ' + '"' + str(victim) + '"')
-            a3 = ('UPDATE warns SET quantity = ' + '"' + str(int(d) + 1) + '"' + ' where name = ' + '"' + str(victim) + '"')
-            w.execute(a1)
-            w.execute(a2)
-            w.execute(a3)
-            await ctx.send(f'Участник {victim_member.mention} полчулил варн')
-            if int(d) + 1 >= mw:
-                await victim_member.kick(reason = 'кик по причине:' + str(mw) + '/' + str(mw) + 'варнов')
-                w.execute('DELETE FROM warns where name =' + "'" + str(victim) + "'")
-                await ctx.send(f'был кикнут администратором{author.mention} за максимальное количество варнов')
-        warns.commit()
-
-    @bot.command()
-    @commands.has_permissions(administrator = True)
-    async def sql_unwarn(ctx, victim):
-        victim_member = discord.utils.get(ctx.guild.members, name=victim)
-        author = ctx.message.author
-        w = warns.cursor()
-        w.execute('SELECT name FROM warns')
-        b = w.fetchall()
-        b = str(b)
-        d1 = b.find(victim)
-        e = str(author).find('#')
-        author = str(author)[0:e]
-        if d1 < 0:
-            await ctx.send(f'У {victim_member.mention} нету варнов')
-        else:
-            a = ('SELECT quantity FROM warns WHERE name = ' + '"'  + str(victim) + '"')
-            w.execute(a)
-            b = w.fetchall()
-            b = str(b)
-            d = int(b[2])
-            a1 = ('UPDATE warns SET quantity = ' + '"' + str(int(d) - 1) + '"' + ' where name = ' + '"' + str(victim) + '"')
-            w.execute(a1)
-            if d - 1 == 0:
-                w.execute('DELETE FROM warns where name =' + "'" + str(victim) + "'")
-            await ctx.send(f'Варн с участника {victim_member.mention} был успешо снят')
-        warns.commit()
-
-    @bot.command()
-    @commands.has_permissions()
-    async def sql_view_warns(ctx, victim):
-        victim_member = discord.utils.get(ctx.guild.members, name=victim)
-        w = warns.cursor()
-        w.execute('SELECT name FROM warns')
-        b = w.fetchall()
-        b = str(b)
-        d1 = b.find(victim)
-        if d1 > 0:
-            a = ('SELECT name, quantity FROM warns')
-            w.execute(a)
-            d = w.fetchall()
-            d = str(d)
-            b = d.find(victim)
-            e = len(victim) + b + 3
-            await ctx.send(f'У {victim_member.mention}' + str(d[e]) +' из ' + str(mw))
-        else:
-            await ctx.send(f'У {victim_member.mention} нету варнов')
 
     #----------------------------------------------------------------------------------------------------------------
 
@@ -743,6 +747,76 @@ try:
         if isinstance(error, commands.errors.CommandInvokeError):
             await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
 
+    @_warn_.error
+    async def warn_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, наша база данных решила прилечь :dart:')
+
+    @_unwarn_.error
+    async def unwarn_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, наша база данных решила прилечь :dart:')
+
+    @warn_list.error
+    async def warn_list_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, наша база данных решила прилечь :dart:')
+    
+    @_kickall_.error
+    async def kickall_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит перестать насиловать сервер :dart:')
+
+    @_banall_.error
+    async def banall_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит перестать насиловать сервер :dart:')
+
+    @_dch_.error
+    async def dch_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит перестать насиловать сервер :dart:')
+
+    @_dl_.error
+    async def dl_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит перестать насиловать сервер :dart:')
+
     @bot.command(pass_context = True)
     async def   _help_(ctx):
         emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
@@ -761,7 +835,7 @@ try:
         emb.add_field(name ='{}```_exc_ NAME```'.format(settings['PREFIX']), value = 'Полноценная экскурсия по серверу(adm)')
         emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = 'Список учатсников сервера(adm)')
         emb.add_field(name ='{}```_exc_adm_ NAME EXC(int) speed(int)```'.format(settings['PREFIX']), value = '_exc_ + изменение скорости и кол-ва заходов(adm)')
-        emb.add_field(name ='{}```_exc_adm_gogi_ NAME CH(int)```'.format(settings['PREFIX']), value = 'Дополненная экскурсия - версия @gogi')
+        #   emb.add_field(name ='{}```_exc_adm_gogi_ NAME CH(int)```'.format(settings['PREFIX']), value = 'Дополненная экскурсия - версия @gogi')
         emb.add_field(name ='{}```_mute_ NAME```'.format(settings['PREFIX']), value = 'Мут участника (adm)')
         emb.add_field(name ='{}```_dea_ NAME```'.format(settings['PREFIX']), value = 'Оглушение участника (adm)')
         emb.add_field(name ='{}```_am_ NAME```'.format(settings['PREFIX']), value = 'Полный мут участника (adm)')
@@ -771,7 +845,8 @@ try:
         emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = f'Список участников сервера { ctx.guild.name } ')
         emb.add_field(name ='{}```_lat_ NAME```'.format(settings['PREFIX']), value = 'Бесконечное унижение (adm, lock all time)')
         emb.add_field(name ='{}```_ulat_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm, un lock all time)')
-        
+        emb.add_field(name ='{}```_warn_ NAME REASON```'.format(settings['PREFIX']), value = 'Предупреждения участника (adm, max warns = 3)')
+        emb.add_field(name ='{}```_unwarn_ NAME```'.format(settings['PREFIX']), value = 'Отмена предупреждения (adm)')
         print(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
         await ctx.send ( embed = emb )
 
