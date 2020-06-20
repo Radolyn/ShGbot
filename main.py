@@ -28,29 +28,29 @@ try:
     @bot.command() 
     async def _hola_(ctx, arg):
         await ctx.channel.purge(limit = 1)
-        await ctx.send(arg), print(f'[user] $Bot send message: {arg}')
+        await ctx.send(arg), print(f'[{ctx.guild.name}] $Bot send message: {arg}')
 
     @bot.command()
     async def qq(ctx):
         author = ctx.message.author
-        await ctx.send(f'Категорически приветствую, {author.mention}!'), print(f'[user] $Bot send message: Hello, {author.nick} ({author.name})')
+        await ctx.send(f'Категорически приветствую, {author.mention}!'), print(f'[{ctx.guild.name}] $Bot send message: Hello, {author.nick} ({author.name})')
 
     @bot.command()
     async def bb(ctx):
         author = ctx.message.author
-        await ctx.send(f'До связи, {author.mention} :)'), print(f'[user] $Bot send message: Bye, {author.nick} ({author.name})')
+        await ctx.send(f'До связи, {author.mention} :)'), print(f'[{ctx.guild.name}] $Bot send message: Bye, {author.nick} ({author.name})')
 
     @bot.command()
     async def pp(ctx):
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Отошел.'), print(f'[user] $Bot send message: {author.nick} ({author.name}) Отошел.')
+        await ctx.send(f'{author.mention} Отошел.'), print(f'[us{ctx.guild.name}er] $Bot send message: {author.nick} ({author.name}) Отошел.')
 
     @bot.command()
     async def _pp_(ctx):
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Вернулся.'), print(f'[user] $Bot send message: {author.nick} ({author.name}) Вернулся.')
+        await ctx.send(f'{author.mention} Вернулся.'), print(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Вернулся.')
 
     @bot.command()
     async def fox(ctx):
@@ -60,7 +60,7 @@ try:
 
         embed = discord.Embed(color = 0xff9900, title = 'Random Fox')
         embed.set_image(url = json_data['link'])
-        await ctx.send(embed = embed), print(f'[user] $Bot send embed fox (by',author.nick, ')' )
+        await ctx.send(embed = embed), print(f'[{ctx.guild.name}] $Bot send embed fox (by',author.nick, ')' )
 
     @bot.command()
     async def dog(ctx):
@@ -71,7 +71,7 @@ try:
         embed = discord.Embed(color = 0xff9900, title = 'Random Dog')
         embed.set_image(url = json_data['link'])
         member = discord.Member
-        try: await ctx.send(embed = embed), print(f'[user] $Bot send embed dog (by',author.nick, ')' )
+        try: await ctx.send(embed = embed), print(f'[{ctx.guild.name}] $Bot send embed dog (by',author.nick, ')' )
         except: await ctx.send('CommandNotFound', {author.mention})
 
     @bot.command()
@@ -79,7 +79,7 @@ try:
     async def _cleaner_(ctx, amount):
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        await ctx.channel.send(':: Сообщения успешно удалены'), print(f'[user] {author.nick} cleaned chat for {amount} positions')
+        await ctx.channel.send(':: Сообщения успешно удалены'), print(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -96,7 +96,7 @@ try:
 
         await ctx.send (embed = emb)
 
-        print(f'[admin] Bot kicked { member }')
+        print(f'[{ctx.guild.name}] Bot kicked { member }')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -113,14 +113,14 @@ try:
 
         await ctx.send (embed = emb)
 
-        print(f'[admin] Bot banned { member }')
+        print(f'[{ctx.guild.name}] Bot banned { member }')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _cleanadm_(ctx, amount):
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        print(f'[admin] {author.nick} cleaned chat for {amount} positions')
+        print(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     async def _join_(ctx):
@@ -131,9 +131,11 @@ try:
         if voice and voice.is_connected():
             await voice.move_to(channel)
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
+            print(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
         else:
             voice = await channel.connect()
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
+            print(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -141,6 +143,7 @@ try:
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True, deafen = True)
+        print(f'[{ctx.guild}] {ctx.message.author} all muted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -148,6 +151,7 @@ try:
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = False, deafen = False)
+        print(f'[{ctx.guild}] {ctx.message.author} all unmuted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -155,6 +159,7 @@ try:
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True)
+        print(f'[{ctx.guild}] {ctx.message.author} muted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -162,6 +167,7 @@ try:
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(deafen = True)
+        print(f'[{ctx.guild}] {ctx.message.author} deafen {victim_member}')
 
 
     @bot.command()
@@ -860,6 +866,7 @@ try:
     @bot.event
     async def on_ready():
         print(f'Logged in as {bot.user.name}')
+        await bot.change_presence(game=discord.Game(name= 'ПИДАРАСЫ', type=3))
         #await greatSender() #Сообщения от лица бота
 
     #=================================================
