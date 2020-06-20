@@ -1,4 +1,5 @@
 try:
+    import sqlite3
     import discord
     import json
     import os
@@ -18,6 +19,10 @@ except ImportError:
     print('Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 
 bot = Bot(settings['PREFIX'])
+
+warns = sqlite3.connect("warns.db")
+bans = sqlite3.connect("bans.db")
+permbans = sqlite3.connect("permbans.db")
 
 try:
     @bot.command() 
@@ -420,6 +425,88 @@ try:
             else: counter += 1
         fmt = ", ".join(failed)
         print(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def sql_warn(ctx, victim, reason):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        author = ctx.message.author
+        w = warns.cursor()
+        w.execute('SELECT name FROM warns')
+        b = w.fetchall()
+        b = str(b)
+        d1 = b.find(victim)
+        e = str(author).find('#')
+        author = str(author)[0:e]       
+        if d1 < 0:
+            a = ('INSERT INTO warns VALUES(' + "'" + str(victim) + "', " + "'" + str(reason) + "', " + "'" + str(author) + "', " + "'" + '1' + "')")
+            w.execute(a)
+            await ctx.send(f'Участник {victim_member.mention} полчулил варн')
+        else:
+            a = ('SELECT quantity FROM warns WHERE name = ' + '"'  + str(victim) + '"')
+            w.execute(a)
+            b = w.fetchall()
+            b = str(b)
+            d = int(b[2])
+            a1 = ('UPDATE warns SET reason = ' + '"' + str(reason) + '"' + ' where name = ' + '"' + str(victim) + '"')
+            a2 = ('UPDATE warns SET "issued by" = ' + '"' + str(author) + '"' + ' where name = ' + '"' + str(victim) + '"')
+            a3 = ('UPDATE warns SET quantity = ' + '"' + str(int(d) + 1) + '"' + ' where name = ' + '"' + str(victim) + '"')
+            w.execute(a1)
+            w.execute(a2)
+            w.execute(a3)
+            await ctx.send(f'Участник {victim_member.mention} полчулил варн')
+            if int(d) + 1 >= mw:
+                await victim_member.kick(reason = 'кик по причине:' + str(mw) + '/' + str(mw) + 'варнов')
+                w.execute('DELETE FROM warns where name =' + "'" + str(victim) + "'")
+                await ctx.send(f'был кикнут администратором{author.mention} за максимальное количество варнов')
+        warns.commit()
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def sql_unwarn(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        author = ctx.message.author
+        w = warns.cursor()
+        w.execute('SELECT name FROM warns')
+        b = w.fetchall()
+        b = str(b)
+        d1 = b.find(victim)
+        e = str(author).find('#')
+        author = str(author)[0:e]
+        if d1 < 0:
+            await ctx.send(f'У {victim_member.mention} нету варнов')
+        else:
+            a = ('SELECT quantity FROM warns WHERE name = ' + '"'  + str(victim) + '"')
+            w.execute(a)
+            b = w.fetchall()
+            b = str(b)
+            d = int(b[2])
+            a1 = ('UPDATE warns SET quantity = ' + '"' + str(int(d) - 1) + '"' + ' where name = ' + '"' + str(victim) + '"')
+            w.execute(a1)
+            if d - 1 == 0:
+                w.execute('DELETE FROM warns where name =' + "'" + str(victim) + "'")
+            await ctx.send(f'Варн с участника {victim_member.mention} был успешо снят')
+        warns.commit()
+
+    @bot.command()
+    @commands.has_permissions()
+    async def sql_view_warns(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim)
+        w = warns.cursor()
+        w.execute('SELECT name FROM warns')
+        b = w.fetchall()
+        b = str(b)
+        d1 = b.find(victim)
+        if d1 > 0:
+            a = ('SELECT name, quantity FROM warns')
+            w.execute(a)
+            d = w.fetchall()
+            d = str(d)
+            b = d.find(victim)
+            e = len(victim) + b + 3
+            await ctx.send(f'У {victim_member.mention}' + str(d[e]) +' из ' + str(mw))
+        else:
+            await ctx.send(f'У {victim_member.mention} нету варнов')
 
     #----------------------------------------------------------------------------------------------------------------
 
