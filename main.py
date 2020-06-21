@@ -125,15 +125,17 @@ try:
     @bot.command()
     async def _join_(ctx):
         global voice
+        await ctx.channel.purge(limit = 1)
         channel = ctx.message.author.voice.channel
         voice = get(bot.voice_clients, guild = ctx.guild)
         
         if voice and voice.is_connected():
+            await ctx.channel.purge(limit = 1)
             await voice.move_to(channel)
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
             print(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
         else:
-            await voice.move_to(channel)
+            voice = await channel.connect()
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
             print(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
 
@@ -215,7 +217,26 @@ try:
             print(author.id)
             await victim_member.edit(nick = f'{victim_member.name}')
 
-    @bot.command()#da___
+    @bot.command()
+    async def _gs_(ctx):
+        array = list()
+        emb = discord.Embed(title = 'PIDARASI')
+        for i in ctx.guild.voice_channels:
+            for k in i.members:
+                array.append(f'```[{i}] {k.name}```\n')
+
+        g = ''
+        for i in range(len(array)):
+            try:
+                g += array[i]
+            except IndexError:
+                print(f'[{ctx.guild.name}] Точка остановы')
+
+        print(f'[{ctx.guild.name}] Bot send list of members in voice channels ({ctx.message.author.mention})')
+            
+        await ctx.send(g)
+
+    @bot.command()
     @commands.has_permissions(administrator = True)
     async def _exc_adm_(ctx, victim, n: int, t: int):
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
@@ -625,16 +646,6 @@ try:
         if isinstance(error, commands.errors.CommandInvokeError):
             await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
 
-    @_exc_adm_.error
-    async def exc1_error(ctx,error):
-        author = ctx.message.author
-        if isinstance (error, commands.MissingRequiredArgument):
-            #await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
-        if isinstance(error, commands.MissingPermissions):
-            #await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
-        if isinstance(error, commands.errors.CommandInvokeError):
-            #await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
-
     @_exc_adm_gogi_.error
     async def exc2_error(ctx,error):
         author = ctx.message.author
@@ -647,16 +658,6 @@ try:
 
     @_play_.error
     async def play_error(ctx,error):
-        author = ctx.message.author
-        if isinstance (error, commands.MissingRequiredArgument):
-            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
-        if isinstance(error, commands.MissingPermissions):
-            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
-        if isinstance(error, commands.errors.CommandInvokeError):
-            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
-
-    @_join_.error
-    async def join_error(ctx,error):
         author = ctx.message.author
         if isinstance (error, commands.MissingRequiredArgument):
             await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
@@ -844,6 +845,14 @@ try:
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
             await ctx.send(f'{author.mention}, что-то не так , возможно, стоит перестать насиловать сервер :dart:')
+
+    @_exc_adm_.error
+    async def exc1_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
 
     @bot.command(pass_context = True)
     async def   _help_(ctx):
