@@ -2,6 +2,7 @@ try:
     import sqlite3
     import discord
     import json
+    import subprocess
     import os
     import time
     import random
@@ -9,32 +10,60 @@ try:
     import asyncio
     import youtube_dl
     import discord.ext.commands
-    import keyboard, datetime, codecs, os, colorama
     from discord.ext import commands
-    from config import settings, link
+    from config import settings
     from discord import utils
-    from colorama import Fore
     from discord.utils import get
     from discord.ext.commands import Bot
     from discord.voice_client import VoiceClient
+    import clr
+    import threading
 except ImportError: 
     print('Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 
 bot = Bot(settings['PREFIX'])
 
-#bot.remove_command('help')
+bot.remove_command('help')
 
 warns = sqlite3.connect("warns.db")
 bans = sqlite3.connect("bans.db")
 permbans = sqlite3.connect("permbans.db")
 
-@bot.command()
-async def invite(ctx, channel:str):
-    await ctx.send(discord.__version__)
-    channel = get(ctx.guild.channels, name = channel)
-    await discord.AuditLogDiff.channel.invite_create
+clr.AddReference('MusicDownloader')
+
+from MusicDownloader import Downloader
 
 try:
+
+    @bot.command()
+    async def _rename_(ctx, channel: discord.VoiceChannel, *, new_name):
+        await channel.edit(name=new_name)
+
+    @bot.event
+    async def on_command_error(ctx, error):
+        em = bot.get_emoji(724944121109676092)
+        if isinstance(error, commands.CommandNotFound ):
+            await ctx.send(f'**{ctx.message.author.mention}, данная команда не обнаружена**{str(em)}')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _jojo_(ctx, victim: discord.Member, reason = "Доигрался, вот тебе ролевые игры"):
+        emb = discord.Embed (title = 'Kick :lock:', colour = discord.Color.dark_red())
+        author = ctx.message.author
+        i = 10
+        for i in range(10, 0, -1):
+            await ctx.send(str(i))
+            time.sleep(1)
+
+        emb.set_author (name = victim, icon_url = victim.avatar_url)
+        emb.add_field (name = 'Kick user', value = 'Kick user : {}'.format(victim.mention))
+        emb.set_footer (text = 'Был отпердолен скалкой администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
+
+        await ctx.send (embed = emb)
+
+        print(f'[{ctx.guild.name}] Kick banned { victim }')
+
+        await victim.kick(reason = reason)
 
     @bot.command() 
     async def _hola_(ctx, arg):
@@ -303,42 +332,15 @@ try:
 
     @bot.command()
     async def _play_(ctx, url: str):
-        song_there = os.path.isfile('song.mp3')
-        try:
-            if song_there: 
-                os.remove('song.mp3')
-                print('[log] Старый файл удален')
-        except PermissionError:
-            print('[log] Не удалось удалить файл')
-        await ctx.send('Пожалуйста, ожидайте')
+        folder = Downloader.Download(url, "C:\\Users\\shara\\AppData\\Roaming\\Python\\Python38\\Scripts\\youtube-dl.exe")
+        for song in os.listdir('Downloads\\' + str(folder)):
+            ffmpeg = 'ffmpeg ' + Downloader.GetFfmpegArgs('Downloads\\' + song)
+        
+            await voice.play(discord.FFmpegPCMAudio(song), after = lambda e: print(f'[log] {song}, музыка закончила свое проигрывание'))
+            voice.source = discord.PCMVolumeTransformer(voice.source)
+            voice.source.volume = 1
 
-        voice = get(bot.voice_clients, guild = ctx.guild)
-
-        ydl_opts = {
-            'format': 'bestaudio/best',
-            'postprocessors' : [{
-                'key': 'FFmpegExtractAudio',
-                'preferredcodec': 'mp3',
-                'preferredquality': '192'   
-            }]
-        }
-
-        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-            print('[log] Загружаю музыку...')
-            ydl.download([url])
-
-        for file in os.listdir('./'):
-            if file.endswith('.mp3'):
-                name = file
-                print(f'[log] Переименовываю файл: {file}')
-                os.rename(file, 'song.mp3')
-
-        voice.play(discord.FFmpegPCMAudio('song.mp3'), after = lambda e: print(f'[log] {name}, музыка закончила свое проигрывание'))
-        voice.source = discord.PCMVolumeTransformer(voice.source)
-        voice.source.volume = 1
-
-        song_name = name.rsplit('-', 2)
-        await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
+            await ctx.send(f'Сейчас проигрывается музыка: {song}') # можно колю забанить пж умалlдаададададададададададададддаададад pidaras
 
     @bot.command()
     async def kick(ctx, victim):
@@ -873,6 +875,66 @@ try:
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
 
+    @_rename_.error
+    async def rename_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_ls_.error
+    async def ls_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_gs_.error
+    async def gs_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_test_.error
+    async def test_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_send_.error
+    async def send_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
+    @_list_ch_.error
+    async def lch_error(ctx,error):
+        author = ctx.message.author
+        if isinstance (error, commands.MissingRequiredArgument):
+            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
+
     @bot.command(pass_context = True)
     async def   _help_(ctx):
         emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
@@ -909,23 +971,26 @@ try:
     #only_big_adm (шучу)
     #=================================================
 
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def send_on_machine(ctx):
+        await ctx.send(input('message: '))
+
     async def greatSender():
         channel = bot.get_channel(id=int(input('channel_ID: ')))
         await channel.send(input('message: '))
 
     @bot.event
     async def on_ready():
-        print(f'Logged in as {bot.user.name}')
-        activity = discord.Game(name='ShG')
+        print('\n')
+        for i in threading.enumerate():
+            print(f'{i} Running')
+        print('\nWork Status: 1\n\nAuditor magazine of bot:\n')
+        print(f'\nLogged in as {bot.user.name}')
+        activity = discord.Game(name='$_help_ | ShG')
         await bot.change_presence(status=':rainbowpartner:', activity=activity)
-        #await greatSender() #Сообщения от лица бота
 
     #=================================================
-
-    print('\nMainThread Running')       
-    print('ThreadPoolExecutor-0_0 Running')
-    print('Thread-6 Running\n')
-    print('Work Status: 1\n\nAuditor magazine of bot:\n')
 
     bot.run(settings['TOKEN'])
 
