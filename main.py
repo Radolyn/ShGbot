@@ -1,5 +1,5 @@
 try:
-    import sqlite3 # suka
+    import sqlite3 
     import discord
     import json
     import subprocess
