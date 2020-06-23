@@ -284,22 +284,34 @@ try:
             
         await ctx.send(g)
 
+    nn = True
+
     @bot.command()
     @commands.has_permissions(administrator = True)
-    async def _exc_adm_(ctx, victim, n: int, t: int):
+    async def _exc_adm_(ctx, victim):
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         voice = get(bot.voice_clients, guild = ctx.guild)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
-        for k in range(int(n)):
-            await victim_member.edit(mute = True, deafen = True)
-            print(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
-            for i in ctx.guild.voice_channels:
-                channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
-                await victim_member.move_to(channel)
-                time.sleep(int(t)*0.01)
-                print(f'[exc] { victim_member } transferred to { i.name }')
+        while nn == True:
+            for k in range(10):
+                await victim_member.edit(mute = True, deafen = True)
+                print(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
+                for i in ctx.guild.voice_channels:
+                    channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
+                    await victim_member.move_to(channel)
+                    time.sleep(75*0.01)
+                    print(f'[exc] { victim_member } transferred to { i.name }')
         await victim_member.edit(mute = False, deafen = False)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _stop_exc_(ctx, victim):
+        victim_member = discord.utils.get(ctx.guild.members, name=victim) 
+        nn = False
+        print('Точка остановы')
+        await victim_member.move_to(ctx.guild.afk_channel)
+        await ctx.send(f'{victim_member.mention}, **Принудительная остановка**')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -316,6 +328,44 @@ try:
                     n -= 1
             await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
+    @bot.command()
+        async def _play_old_(ctx, url: str):
+            song_there = os.path.isfile('song.mp3')
+            try:
+                if song_there: 
+                    os.remove('song.mp3')
+                    print('[log] Старый файл удален')
+            except PermissionError:
+                print('[log] Не удалось удалить файл')
+            await ctx.send('Пожалуйста, ожидайте')
+
+            voice = get(bot.voice_clients, guild = ctx.guild)
+
+            ydl_opts = {
+                'format': 'bestaudio/best',
+                'postprocessors' : [{
+                    'key': 'FFmpegExtractAudio',
+                    'preferredcodec': 'mp3',
+                    'preferredquality': '192'   
+                }]
+            }
+
+            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+                print('[log] Загружаю музыку...')
+                ydl.download([url])
+
+            for file in os.listdir('./'):
+                if file.endswith('.mp3'):
+                    name = file
+                    print(f'[log] Переименовываю файл: {file}')
+                    os.rename(file, 'song.mp3')
+
+            voice.play(discord.FFmpegPCMAudio('song.mp3'), after = lambda e: print(f'[log] {name}, музыка закончила свое проигрывание'))
+            voice.source = discord.PCMVolumeTransformer(voice.source)
+            voice.source.volume = 1
+
+            song_name = name.rsplit('-', 2)
+            await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
 
     @bot.command()
     async def _leave_(ctx):
@@ -333,14 +383,18 @@ try:
     @bot.command()
     async def _play_(ctx, url: str):
         folder = Downloader.Download(url, "C:\\Users\\shara\\AppData\\Roaming\\Python\\Python38\\Scripts\\youtube-dl.exe")
-        for song in os.listdir('Downloads\\' + str(folder)):
-            ffmpeg = 'ffmpeg ' + Downloader.GetFfmpegArgs('Downloads\\' + song)
+        path = 'Downloads\\' + str(folder)
+
+        global voice
+
+        for song in os.listdir(path):
+            # ffmpeg = 'ffmpeg ' + Downloader.GetFfmpegArgs('Downloads\\' + song)
         
-            await voice.play(discord.FFmpegPCMAudio(song), after = lambda e: print(f'[log] {song}, музыка закончила свое проигрывание'))
-            voice.source = discord.PCMVolumeTransformer(voice.source)
+            voice.play(discord.FFmpegPCMAudio(path + '\\' + song), after = lambda e: print(f'[log] {song}, музыка закончила свое проигрывание'))
+            voice.  source = discord.PCMVolumeTransformer(voice.source)
             voice.source.volume = 1
 
-            await ctx.send(f'Сейчас проигрывается музыка: {song}') # можно колю забанить пж умалlдаададададададададададададддаададад pidaras
+            await ctx.send(f'Сейчас проигрывается музыка: {song}')
 
     @bot.command()
     async def kick(ctx, victim):
@@ -874,6 +928,8 @@ try:
             await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
+        if isinstance(error, commands.errors.CommandInvokeError):   
+            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит перестать насиловать сервер :dart:')
 
     @_rename_.error
     async def rename_error(ctx,error):
