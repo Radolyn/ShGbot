@@ -413,6 +413,13 @@ try:
             await victim_member.edit(nick = f'{victim_member.name}')
 
     @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def _spam_(ctx, verb, k: int):
+        for i in range(int(k)):
+            await ctx.send(verb)
+            time.sleep(0.75)    
+
+    @bot.command()
     async def _vers_(ctx):
         logger = logik('RUNNING')
         await ctx.send(discord.__version__)
