@@ -1,5 +1,3 @@
-from discord.ext.commands import Bot
-
 settings = {
     'RAID_TOKEN': 'NzIyNTgxNTMwODE5NjkwNTY2.XulO9A.NRbAok4I0UWYUynCKBiBMuOZfLE',   
     'TOKEN': 'NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg',
@@ -17,8 +15,6 @@ settings = {
     'jj_TOKEN': 'NzI1MDk1NjU2NTEwOTgwMTA2.XvJv-Q.u_TpRpSsXEDmFJyScRcqmG3HoQo',
     'jjj_TOKEN': 'NzI1MDk1MzY2NjkyOTYyNDE1.XvJwfg.2cqsnindBaAEjRoyeeNUs5JEIco'
 }
-
-bot = Bot(settings['PREFIX'])
 
 links = [
     'https://www.youtube.com/watch?v=1ER67r8OCW8',
