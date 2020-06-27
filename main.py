@@ -84,7 +84,7 @@ async def pidor(ctx):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _all_list_(ctx):
+async def all_list(ctx):
     logger = logik('RUNNING')
     for i in ctx.guild.channels:
         logger.info(i.name)
@@ -164,7 +164,8 @@ async def putin(ctx):
     await ctx.send(f'{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}')
 
 @bot.command()
-async def _rename_(ctx, channel: discord.VoiceChannel, *, new_name):
+@commands.has_permissions(administrator = True)
+async def rename(ctx, channel: discord.VoiceChannel, *, new_name):
     logger = logik('RUNNING')
     await channel.edit(name=new_name)
 
@@ -255,7 +256,7 @@ async def dog(ctx):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _cleaner_(ctx, amount):
+async def cleaner(ctx, amount):
 
     em = [
         str(bot.get_emoji(725432947150159974)),
@@ -291,7 +292,7 @@ async def _kick_ (ctx, member: discord.Member, *, reason = None):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _ban_ (ctx, member: discord.Member, *, reason = f'Нарушение правил сервера. $Banlist.append(you)'):
+async def ban (ctx, member: discord.Member, *, reason = f'Нарушение правил сервера. $Banlist.append(you)'):
     logger = logik('RUNNING')
 
     emb = discord.Embed (title = 'Ban :lock:', colour = discord.Color.dark_red())
@@ -319,7 +320,7 @@ async def cleanadm(ctx, amount):
     log.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
 
 @bot.command()
-async def _join_(ctx):
+async def join(ctx):
     logger = logik('RUNNING')
     global voice
     await ctx.channel.purge(limit = 1)
@@ -338,7 +339,7 @@ async def _join_(ctx):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _am_(ctx, victim):
+async def am(ctx, victim):
     logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
@@ -347,7 +348,7 @@ async def _am_(ctx, victim):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _aum_(ctx, victim):
+async def aum(ctx, victim):
     logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
@@ -356,7 +357,7 @@ async def _aum_(ctx, victim):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _mute_(ctx, victim):
+async def mute(ctx, victim):
     logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
@@ -365,7 +366,7 @@ async def _mute_(ctx, victim):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _dea_(ctx, victim):
+async def dea(ctx, victim):
     logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
@@ -423,7 +424,7 @@ async def unlock(ctx, victim):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _spam_(ctx, verb, k: int):
+async def spam(ctx, verb, k: int):
     logger = logik('RUNNING')
     for i in range(int(k)):
         logger.info(f'[{ctx.guild.name}] Bot send {verb}')
@@ -431,12 +432,12 @@ async def _spam_(ctx, verb, k: int):
         time.sleep(0.75)    
 
 @bot.command()
-async def _vers_(ctx):
+async def vers(ctx):
     logger = logik('RUNNING')
     await ctx.send(discord.__version__)
 
 @bot.command()
-async def _gs_(ctx):
+async def gs(ctx):
     logger = logik('RUNNING')
     array = list()
     emb = discord.Embed(title = 'PIDARASI')
@@ -503,7 +504,7 @@ async def _exc_adm_gogi_(ctx, name1: str, n: int):
     await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
 @bot.command()
-async def _play_old_(ctx, url: str):
+async def play_old(ctx, url: str):
     logger = logik('RUNNING')
     song_there = os.path.isfile('song.mp3')
     try:
@@ -543,7 +544,7 @@ async def _play_old_(ctx, url: str):
     await ctx.send(f'Сейчас проигрывается музыка: {song_name[0]}')
 
 @bot.command()
-async def _leave_(ctx):
+async def leave(ctx):
     logger = logik('RUNNING')
     global voice
     channel = ctx.message.author.voice.channel
@@ -557,7 +558,7 @@ async def _leave_(ctx):
         await ctx.send('Успешно откатился :camel:')
 
 @bot.command()
-async def _play_(ctx, url: str):
+async def play(ctx, url: str):
     logger = logik('RUNNING')
     folder = Downloader.Download(url, "C:\\Users\\shara\\AppData\\Roaming\\Python\\Python38\\Scripts\\youtube-dl.exe")
     path = 'Downloads\\' + str(folder)
@@ -583,7 +584,7 @@ async def kick(ctx, victim):
 
 @bot.command()
 @commands.has_permissions(administrator = True)
-async def _list_(ctx):
+async def list(ctx):
     logger = logik('RUNNING')
     log.info('[admin] $Bot send list of members of the server')
     list_memb = list()
@@ -594,7 +595,7 @@ async def _list_(ctx):
     await ctx.send ( embed = emb )
 
 @bot.command()
-async def _list_ch_(ctx):
+async def list_ch(ctx):
     logger = logik('RUNNING')
     for i in ctx.guild.voice_channels:
         log.info(i.name)
@@ -602,13 +603,13 @@ async def _list_ch_(ctx):
     log.info(len(ctx.guild.voice_channels))
 
 @bot.command()
-async def _bye_(ctx):
+async def bye(ctx):
     await ctx.channel.purge(limit = 1)
     em = bot.get_emoji(725371922291884032)
     await ctx.send(f'{ctx.message.author.mention} Ушел на покой{str(em)}')
 
 @bot.command()
-async def _ls_(ctx):
+async def ls(ctx):
     logger = logik('RUNNING')
     array , array1 = list(), list()
     for guild in bot.guilds:
@@ -621,7 +622,7 @@ async def _ls_(ctx):
     await ctx.send( embed = emb )
 
 @bot.command()
-async def _tr_(ctx, victim, channel):
+async def tr(ctx, victim, channel):
     logger = logik('RUNNING')
     victim_member = get(ctx.guild.members, name = victim)
     channelU = discord.utils.find(lambda x: x.name == channel, ctx.guild.voice_channels)
@@ -666,7 +667,7 @@ async def ulat(ctx, victim):
         pass
 
 @bot.command()
-async def _send_(ctx, victim):
+async def send(ctx, victim):
     logger = logik('RUNNING')
     author = ctx.message.author
     if str(author.id) == '691575600707534908':
@@ -842,7 +843,7 @@ async def dch(ctx):
 
 #section of errors (validation)
 
-@_cleaner_.error
+@cleaner.error
 async def cleaner_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -864,7 +865,7 @@ async def kick_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_ban_.error
+@ban.error
 async def ban_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -930,7 +931,7 @@ async def exc2_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_play_.error
+@play.error
 async def play_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -941,7 +942,7 @@ async def play_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_leave_.error
+@leave.error
 async def leave_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -963,7 +964,7 @@ async def cleanadm_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_mute_.error
+@mute.error
 async def mute_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -974,7 +975,7 @@ async def mute_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_dea_.error
+@dea.error
 async def dea_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -985,7 +986,7 @@ async def dea_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_am_.error
+@am.error
 async def am_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -996,7 +997,7 @@ async def am_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_aum_.error
+@aum.error
 async def aum_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -1029,7 +1030,7 @@ async def dog_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_tr_.error
+@tr.error
 async def tr_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -1150,7 +1151,7 @@ async def exc1_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):   
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит перестать насиловать сервер {em}')
 
-@_rename_.error
+@rename.error
 async def rename_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -1161,7 +1162,7 @@ async def rename_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_ls_.error
+@ls.error
 async def ls_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -1172,7 +1173,7 @@ async def ls_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_gs_.error
+@gs.error
 async def gs_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -1194,7 +1195,7 @@ async def test_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_send_.error
+@send.error
 async def send_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -1205,7 +1206,7 @@ async def send_error(ctx,error):
     if isinstance(error, commands.errors.CommandInvokeError):
         await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-@_list_ch_.error
+@list_ch.error
 async def lch_error(ctx,error):
     em = str(bot.get_emoji(725437920390938725))
     author = ctx.message.author
@@ -1281,6 +1282,9 @@ async def _help_(ctx, cat):
         emb.add_field(value = '```$_help_ Name_of_command```', name = '```Example: $_help_ banall```')
         emb.set_image(url = 'https://i.gifer.com/R4nB.gif')
         await ctx.send(embed = emb)
+    elif cat == 'Information':
+        emb = discord.Embed(title = 'Information commands: ')
+        emb.description = '• all_list\n•'
     else:
         await ctx.send(f'Unknown category{str(bot.get_emoji(724024159893585982))}')
 
