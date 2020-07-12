@@ -23,6 +23,8 @@ try:
 except ImportError: 
     print('[WARNING] Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 
+
+
 bot = Bot(settings['PREFIX'])
 
 #bot.remove_command('help')
@@ -35,7 +37,7 @@ permbans = sqlite3.connect("permbans.db")
 
 #from MusicDownloader import Downloader
 
-log = logging.getLogger("RUNNING")
+log = logging.getLogger("RUNNING")#пидарасы вы суки
 log.setLevel(logging.INFO)
 
 fh = logging.StreamHandler()
