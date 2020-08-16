@@ -1610,9 +1610,9 @@ try:
     async def on_ready():
         try:
             for i in threading.enumerate():
-                LogManager.info(f'{i} Running')
+                LogManager.debug(f'{i} Running')
         except:
-            LogManager.error("May be traceback(???)")
+            LogManager.error(f"Error in logging {bot.user.name}")
 
         LogManager.info('Work Status: 1')
         LogManager.info('Auditor magazine of bot:')    
