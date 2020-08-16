@@ -1,6 +1,5 @@
 try:
     import sqlite3
-    from config import *
     import discord
     import json 
     import subprocess
@@ -16,10 +15,11 @@ try:
     from discord.utils import get
     from discord.ext.commands import Bot
     from discord.voice_client import VoiceClient
-    import clr
     import threading
     import logging
     import sys
+    from config import *
+    from LogPython import LogManager
 except ImportError: 
     print('[WARNING] Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 
@@ -33,44 +33,359 @@ warns = sqlite3.connect("warns.db")
 bans = sqlite3.connect("bans.db")
 permbans = sqlite3.connect("permbans.db")
 
-#clr.AddReference('MusicDownloader')
+resp = requests.get("https://api.covid19api.com/summary")
 
-#from MusicDownloader import Downloader
-
-log = logging.getLogger("RUNNING")#пидарасы вы суки
-log.setLevel(logging.INFO)
-
-fh = logging.StreamHandler()
- 
-fh.setLevel(logging.INFO)
-
-formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
-fh.setFormatter(formatter)
-
-log.addHandler(fh)
-
-loggers = []
-
-loggers.append(log)
+json_data = json.loads(resp.text)
 
 try:
 
     @bot.command()
+    async def NewConfirmedOnDay_COVID(ctx):
+        await ctx.send("Connect API...")
+
+        emb = discord.Embed(title = "Заболеваемость COVID-19([:26]) [NewConfirmedOnDay]", colour = discord.Color.dark_red())
+                                        
+        conf = []
+
+        for k in range(len(json_data["Countries"])):
+            ap = json_data["Countries"][k]["NewConfirmed"]
+            conf.append(ap)
+        
+        conf.sort(key = lambda x: - x)
+
+        conf_res = conf[0:25]
+
+        LogManager.info(conf_res)
+
+        res = []
+
+        await ctx.send("Search compiling...")
+
+        try:
+
+            for k in range(len(json_data["Countries"])):
+                for i in conf_res:
+
+                    try:
+                        LogManager.info(json_data["Countries"][k]["NewConfirmed"])
+                        LogManager.info(i)
+                    except:
+                        LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
+
+                        raise Exception()
+
+                    try:
+                        if i == json_data["Countries"][k]["NewConfirmed"]:
+                            res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewConfirmed"]}')
+
+                            LogManager.warning("Found succesfully completed")
+                        else:
+                            LogManager.warning("Found crashed")
+                    except:
+                        LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
+
+                        raise Exception()
+                        
+
+            print("---------------------------------------------------[1]")    
+        except IndexError:
+            LogManager.error("Operation exit(0)")
+        except:
+
+            LogManager.error("---------------------------------------------------[0]")  
+            
+            raise Exception()
+
+        str1 = ""
+
+        for l in range(len(res)):
+            LogManager.info(f"[NewConfirmedOnDay_COVID-19] {res[l]}")
+            str1 += res[l] + "\n"
+
+        emb.description = str1
+
+        await ctx.send(embed = emb)
+
+    @bot.command()
+    async def NewDeathsOnDay_COVID(ctx):
+        await ctx.send("Connect API...")
+
+        emb = discord.Embed(title = "Смерти COVID-19([:26]) [NewDeathsOnDay]", colour = discord.Color.dark_red())
+
+        conf = []
+
+        for k in range(len(json_data["Countries"])):
+            ap = json_data["Countries"][k]["NewDeaths"]
+            conf.append(ap)
+        
+        conf.sort(key = lambda x: - x)
+
+        conf_res = conf[0:25]
+
+        res = []
+
+        await ctx.send("Search compiling...")
+
+        try:
+
+            for k in range(len(json_data["Countries"])):
+                for i in conf_res:
+
+                    try:
+                        LogManager.debug(json_data["Countries"][k]["NewDeaths"])
+                        LogManager.debug(i)
+                    except:
+                        LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
+
+                        raise Exception()
+
+                    try:
+                        if i == json_data["Countries"][k]["NewDeaths"]:
+                            res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewDeaths"]}')
+
+                            LogManager.warning("Found succesfully completed")
+                        else:
+                            LogManager.warning("Found crashed")
+                    except:
+                        LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
+
+                        raise Exception()
+                        
+
+            print("---------------------------------------------------[1]")    
+        except IndexError:
+            LogManager.error("Operation exit(0)")
+        except:
+
+            LogManager.error("---------------------------------------------------[0]")  
+            
+            raise Exception()
+
+        str1 = ""
+
+        for l in range(len(res)):
+            LogManager.info(f"[NewDeathsOnDay_COVID-19] {res[l]}")
+            str1 += res[l] + "\n"
+
+        emb.description = str1
+
+        await ctx.send(embed = emb)
+
+    @bot.command()   
+    async def TotalConfirmed_COVID(ctx):
+        await ctx.send("Connect API...")
+
+        emb = discord.Embed(title = "Глобальная заболеваемость COVID-19([:26]) [TotalConfirmed]", colour = discord.Color.dark_red())
+
+        conf = []
+
+        for k in range(len(json_data["Countries"])):
+            ap = json_data["Countries"][k]["TotalConfirmed"]
+            conf.append(ap)
+        
+        conf.sort(key = lambda x: - x)
+
+        conf_res = conf[0:25]
+
+        res = []
+
+        await ctx.send("Search compiling...")
+
+        try:
+
+            for k in range(len(json_data["Countries"])):
+                for i in conf_res:
+
+                    try:
+                        LogManager.debug(json_data["Countries"][k]["TotalConfirmed"])
+                        LogManager.debug(i)
+                    except:
+                        LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
+
+                        raise Exception()
+
+                    try:
+                        if i == json_data["Countries"][k]["TotalConfirmed"]:
+                            res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["TotalConfirmed"]}')
+
+                            LogManager.warning("Found succesfully completed")
+                        else:
+                            LogManager.warning("Found crashed")
+                    except:
+                        LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
+
+                        raise Exception()
+                        
+
+            print("---------------------------------------------------[1]")    
+        except IndexError:
+            LogManager.error("Operation exit(0)")
+        except:
+
+            LogManager.error("---------------------------------------------------[0]")  
+            
+            raise Exception()
+
+        str1 = ""
+
+        for l in range(len(res)):
+            LogManager.info(f"[TotalConfirmed_COVID-19] {res[l]}")
+            str1 += res[l] + "\n"
+
+        emb.description = str1
+
+        await ctx.send(embed = emb)
+
+    @bot.command()
+    async def TotalDeaths_COVID(ctx):
+        await ctx.send("Connect API...")
+
+        emb = discord.Embed(title = "Глобальная смертоносность COVID-19([:26]) [TotalDeaths]", colour = discord.Color.dark_red())
+
+        conf = []
+
+        for k in range(len(json_data["Countries"])):
+            ap = json_data["Countries"][k]["TotalDeaths"]
+            conf.append(ap)
+        
+        conf.sort(key = lambda x: - x)
+
+        conf_res = conf[0:25]
+
+        res = []
+
+        await ctx.send("Search compiling...")
+
+        try:
+
+            for k in range(len(json_data["Countries"])):
+                for i in conf_res:
+
+                    try:
+                        LogManager.debug(json_data["Countries"][k]["TotalDeaths"])
+                        LogManager.debug(i)
+                    except:
+                        LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
+
+                        raise Exception()
+
+                    try:
+                        if i == json_data["Countries"][k]["TotalDeaths"]:
+                            res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["TotalDeaths"]}')
+
+                            LogManager.warning("Found succesfully completed")
+                        else:
+                            LogManager.warning("Found crashed")
+                    except:
+                        LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
+
+                        raise Exception()
+                        
+
+            print("---------------------------------------------------[1]")    
+        except IndexError:
+            LogManager.error("Operation exit(0)")
+        except:
+
+            LogManager.error("---------------------------------------------------[0]")  
+            
+            raise Exception()
+
+        str1 = ""
+
+        for l in range(len(res)):
+            LogManager.info(f"[TotalDeaths_COVID-19] {res[l]}")
+            str1 += res[l] + "\n"    
+
+        emb.description = str1
+
+        await ctx.send(embed = emb)
+
+    @bot.command()
+    async def coronka(ctx):
+        resp =  requests.get("https://api.covid19api.com/summary")
+
+        await ctx.send("Connect API...")
+
+        json_data = json.loads(resp.text)
+
+        emb = discord.Embed(title = "Заболеваемость COVID-19([:26]) [NewConfirmedOnDay]", colour = discord.Color.dark_red())
+                                        
+        conf = []
+
+        for k in range(len(json_data["Countries"])):
+            ap = json_data["Countries"][k]["NewConfirmed"]
+            conf.append(ap)
+        
+        conf.sort(key = lambda x: - x)
+
+        conf_res = conf[0:25]
+
+        res = []
+
+        try:
+
+            await ctx.send("Search compiling...")
+
+            for k in range(len(json_data["Countries"])):
+                for i in conf_res:
+
+                    try:
+                        LogManager.debug(json_data["Countries"][k]["NewConfirmed"])
+                        LogManager.debug(i)
+                    except:
+                        LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
+
+                        raise Exception()
+
+                    try:
+                        if i == json_data["Countries"][k]["NewConfirmed"]:
+                            res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewConfirmed"]}')
+
+                            LogManager.warning("Found succesfully completed")
+                        else:
+                            LogManager.warning("Found crashed")
+                    except:
+                        LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
+
+                        raise Exception()
+                        
+
+            print("---------------------------------------------------[1]")    
+        except IndexError:
+            LogManager.error("Operation exit(0)")
+        except:
+
+            LogManager.error("---------------------------------------------------[0]")  
+            
+            raise Exception()
+
+        str1 = ""
+
+        for l in range(len(res)):
+            LogManager.info(f"[RES_COVID-19] {res[l]}")
+            str1 += res[l] + "\n"
+
+        emb.description = str1
+
+        await ctx.send(embed = emb)
+
+    @bot.command()
     async def te(ctx):
-        array, array1 = list(), list()
+        
         for guild in bot.guilds:
             await ctx.send(guild.name)
             await ctx.send(guild.id)
 
     @bot.command()
     async def ls(ctx):
-        #logger = logik('RUNNING')
-        array , array1 = list(), list()     
+        
+        array , array1 = [], []     
         for guild in bot.guilds:
             array.append(guild.name)
             array1.append(guild.id)
-        log.info(f'[{ctx.guild.name}] Bot send list of servers')
-        emb = discord.Embed(title = "Список серверов, на которых катируется бот:")
+        LogManager.info(f'[{ctx.guild.name}] Bot send list of servers')
+        emb = discord.Embed(title = f"Список серверов, на которых катируется бот: {str(int(len(array)))}")
         for i in range(len(array)):
             emb.add_field(name = array1[i], value = array[i])
         await ctx.send( embed = emb )
@@ -80,15 +395,15 @@ try:
     async def pidor(ctx):
         #logger = logik('RAID_RUNNING')
         for i in range(1000000):
-            await ctx.guild.create_voice_channel(name = 'Сдохли и сдохли, че бубнить то')
-            log.info(f'[{ctx.guild.name}] created by {ctx.message.author.name}')
+            await ctx.guild.create_voice_channel(name = f'З.а.е.б.а.л.и.{i}')
+            LogManager.info(f'[{ctx.guild.name}] created by {ctx.message.author.name}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def all_list(ctx):
-        #logger = logik('RUNNING')
+        
         for i in ctx.guild.channels:
-            log.info(i.name)
+            LogManager.info(i.name)
         logger.info(len(ctx.guild.channels))
         await ctx.send(len(ctx.guild.channels))
 
@@ -101,10 +416,10 @@ try:
             for i in guild.voice_channels:  
                 if i.name == 'Сдохли и сдохли, че бубнить то':
                     try:
-                        log.info(f'[{ctx.guild.name}] {i.name} deleted')
+                        LogManager.info(f'[{ctx.guild.name}] {i.name} deleted')
                         await i.delete(reason = 'удаляет, удаляет')
                     except:
-                        log.info(f'[{ctx.guild.name}] конец мема')
+                        LogManager.info(f'[{ctx.guild.name}] конец мема')
             
 
     @bot.command()
@@ -114,12 +429,15 @@ try:
         while True:
             guild = bot.get_guild(ctx.guild.id)
             for i in guild.voice_channels:  
-                if i.name != '__main__' and i.name != '_main_' and i.name != '__init__' and i.name != '__AFK__':
-                    try:
-                        log.info(f'[{ctx.guild.name}] {i.name} deleted')
-                        await i.delete(reason = 'удаляет, удаляет')
-                    except:
-                        log.info(f'[{ctx.guild.name}] конец мема')
+                try:
+                    if i.name != '__main__' and i.name != '_main_' and i.name != '__init__' and i.name != '__AFK__' :
+                        try:
+                            LogManager.info(f'[{ctx.guild.name}] {i.name} deleted')
+                            await i.delete(reason = 'удаляет, удаляет')
+                        except:
+                            LogManager.info(f'[{ctx.guild.name}] конец мема')
+                except:
+                    LogManager.error("Miss operation")
 
     @bot.command()
     async def random_gif(ctx):
@@ -127,8 +445,8 @@ try:
         emb = discord.Embed(title = f'Random gif{str(bot.get_emoji(725061079914250300))}')
         emb.set_image(url = ho)
         await ctx.send(embed = emb)
-        #logger = logik('RUNNING')
-        log.info(f'[{ctx.guild.name}] Bot send {ho}')
+        
+        LogManager.info(f'[{ctx.guild.name}] Bot send {ho}')
 
     @bot.command()
     async def random_em(ctx):
@@ -152,22 +470,22 @@ try:
 
         await ctx.send(ho)
 
-        #logger = logik('RUNNING')
+        
 
-        log.info(f'[{ctx.guild.name}] [_random_em_] Bot send emoji to {ctx.message.author.name}')
+        LogManager.info(f'[{ctx.guild.name}] [_random_em_] Bot send emoji to {ctx.message.author.name}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def putin(ctx):
-        #logger = logik('RUNNING')
-        log.info(f'[{ctx.guild.name}] Bot send :putin: ({ctx.message.author.name})')
+        
+        LogManager.info(f'[{ctx.guild.name}] Bot send :putin: ({ctx.message.author.name})')
         await ctx.channel.purge(limit = 1)
         await ctx.send(f'{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def rename(ctx, channel: discord.VoiceChannel, *, new_name):
-        #logger = logik('RUNNING')
+
         await channel.edit(name=new_name)
 
     @bot.event
@@ -179,9 +497,9 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _jojo_(ctx, victim: discord.Member, reason = "Доигрался, вот тебе ролевые игры"):
-        #logger = logik('RUNNING')
+        
         emb = discord.Embed (title = 'Kick :lock:', colour = discord.Color.dark_red())
-        author = ctx.message.author
+
         i = 10
         for i in range(10, 0, -1):
             await ctx.send(str(i))
@@ -199,52 +517,52 @@ try:
 
     @bot.command() 
     async def hola(ctx, arg):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
-        await ctx.send(arg), log.info(f'[{ctx.guild.name}] $Bot send message: {arg}')
+        await ctx.send(arg), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {arg}')
 
     @bot.command()
     async def qq(ctx):
         """Hello, server"""
-        #logger = logik('RUNNING')
+        
         author = ctx.message.author
-        await ctx.send(f'Категорически приветствую, {author.mention}!'), log.info(f'[{ctx.guild.name}] $Bot send message: Hello, {author.nick} ({author.name})')
+        await ctx.send(f'Категорически приветствую, {author.mention}!'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: Hello, {author.nick} ({author.name})')
 
     @bot.command()
     async def bb(ctx):
         """Bye, all"""
-        #logger = logik('RUNNING')
+        
         author = ctx.message.author
-        await ctx.send(f'До связи, {author.mention} :)'), log.info(f'[{ctx.guild.name}] $Bot send message: Bye, {author.nick} ({author.name})')
+        await ctx.send(f'До связи, {author.mention} :)'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: Bye, {author.nick} ({author.name})')
 
     @bot.command()
     async def pp(ctx):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Отошел.'), log.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Отошел.')
+        await ctx.send(f'{author.mention} Отошел.'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Отошел.')
 
     @bot.command()
     async def _pp_(ctx):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Вернулся.'), log.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Вернулся.')
+        await ctx.send(f'{author.mention} Вернулся.'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Вернулся.')
 
     @bot.command()
     async def fox(ctx):
-        #logger = logik('RUNNING')
+        
         response = requests.get('https://some-random-api.ml/img/fox')
         json_data = json.loads(response.text)
         author = ctx.message.author
 
         embed = discord.Embed(color = 0xff9900, title = 'Random Fox')
         embed.set_image(url = json_data['link'])
-        await ctx.send(embed = embed), log.info(f'[{ctx.guild.name}] $Bot send embed fox (by',author.nick, ')' )
+        await ctx.send(embed = embed), LogManager.info(f'[{ctx.guild.name}] $Bot send embed fox (by',author.nick, ')' )
 
     @bot.command()
     async def dog(ctx):
-        #logger = logik('RUNNING')
+        
         response = requests.get('https://some-random-api.ml/img/dog')
         json_data = json.loads(response.text)
         author = ctx.message.author
@@ -252,7 +570,7 @@ try:
         embed = discord.Embed(color = 0xff9900, title = 'Random Dog')
         embed.set_image(url = json_data['link'])
         member = discord.Member
-        try: await ctx.send(embed = embed), log.info(f'[{ctx.guild.name}] $Bot send embed dog (by',author.nick, ')' )
+        try: await ctx.send(embed = embed), LogManager.info(f'[{ctx.guild.name}] $Bot send embed dog (by',author.nick, ')' )
         except: await ctx.send('CommandNotFound', {author.mention})
 
     @bot.command()
@@ -266,16 +584,16 @@ try:
 
         k = random.choice(em)
 
-        #logger = logik('RUNNING')
+        
         em = str(bot.get_emoji(725432947150159974))
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        await ctx.channel.send(':: Сообщения успешно удалены' + k), log.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
+        await ctx.channel.send(':: Сообщения успешно удалены' + k), LogManager.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _kick_ (ctx, member: discord.Member, *, reason = None):
-        #logger = logik('RUNNING')
+        
 
         emb = discord.Embed (title = 'Kick :warning:', colour = discord.Color.dark_red())
 
@@ -289,12 +607,12 @@ try:
 
         await ctx.send (embed = emb)
 
-        log.info(f'[{ctx.guild.name}] Bot kicked { member }')
+        LogManager.info(f'[{ctx.guild.name}] Bot kicked { member }')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def ban (ctx, member: discord.Member, *, reason = f'Нарушение правил сервера. $Banlist.append(you)'):
-        #logger = logik('RUNNING')
+        
 
         emb = discord.Embed (title = 'Ban :lock:', colour = discord.Color.dark_red())
 
@@ -308,21 +626,21 @@ try:
 
         await ctx.send (embed = emb)
 
-        log.info(f'[{ctx.guild.name}] Bot banned { member }')
+        LogManager.info(f'[{ctx.guild.name}] Bot banned { member }')
 
 
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def cleanadm(ctx, amount):
-        #logger = logik('RUNNING')
+        
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        log.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
+        LogManager.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
 
     @bot.command()
     async def join(ctx):
-        #logger = logik('RUNNING')
+        
         global voice
         await ctx.channel.purge(limit = 1)
         channel = ctx.message.author.voice.channel
@@ -332,115 +650,115 @@ try:
             await ctx.channel.purge(limit = 1)
             await voice.move_to(channel)
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
-            log.info(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
+            LogManager.info(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
         else:
             voice = await channel.connect()
             await ctx.send('Успешно прикатился :man_in_manual_wheelchair:')
-            log.info(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
+            LogManager.info(f'[{ctx.guild}] Bot connected to {ctx.message.author.name}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def am(ctx, victim):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True, deafen = True)
-        log.info(f'[{ctx.guild}] {ctx.message.author} all muted {victim_member}')
+        LogManager.info(f'[{ctx.guild}] {ctx.message.author} all muted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def aum(ctx, victim):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = False, deafen = False)
-        log.info(f'[{ctx.guild}] {ctx.message.author} all unmuted {victim_member}')
+        LogManager.info(f'[{ctx.guild}] {ctx.message.author} all unmuted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def mute(ctx, victim):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = True)
-        log.info(f'[{ctx.guild}] {ctx.message.author} muted {victim_member}')
+        LogManager.info(f'[{ctx.guild}] {ctx.message.author} muted {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def dea(ctx, victim):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(deafen = True)
-        log.info(f'[{ctx.guild}] {ctx.message.author} deafen {victim_member}')
+        LogManager.info(f'[{ctx.guild}] {ctx.message.author} deafen {victim_member}')
 
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def exc(ctx, victim):
-        #logger = logik('RUNNING')
+        
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
         for i in ctx.guild.voice_channels:
             channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
             await victim_member.move_to(channel)
             time.sleep(0.75)
-            log.info(f'[exc] ${ victim_member } transferred in { i.name }')
+            LogManager.info(f'[exc] ${ victim_member } transferred in { i.name }')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def lock(ctx, victim):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         author = ctx.message.author
         if str(author.id) == '691575600707534908':
             for i in range(30):
                 await victim_member.edit(mute = True, deafen = True)
-                log.info(f'[{author.id}] lock {victim_member}')
+                LogManager.info(f'[{author.id}] lock {victim_member}')
                 try:
                     await victim_member.edit(nick = '_PIDARAS_')
                 except:
                     pass
                 time.sleep(0.75)
         else:
-            log.info(0)
-            log.info(author.id)
+            LogManager.info(0)
+            LogManager.info(author.id)
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def unlock(ctx, victim):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         author = ctx.message.author
         if str(author.id) == '691575600707534908':
             await victim_member.edit(mute = False, deafen = False)
-            log.info(f'[{author.id}] unlock {victim_member}')
+            LogManager.info(f'[{author.id}] unlock {victim_member}')
             await victim_member.edit(nick = f'{victim_member.name}')
         else:
-            log.info(0)
-            log.info(author.id)
+            LogManager.info(0)
+            LogManager.info(author.id)
             await victim_member.edit(nick = f'{victim_member.name}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def spam(ctx, verb, k: int):
-        #logger = logik('RUNNING')
+        
         for i in range(int(k)):
-            log.info(f'[{ctx.guild.name}] Bot send {verb}')
+            LogManager.info(f'[{ctx.guild.name}] Bot send {verb}')
             await ctx.send(verb)
             time.sleep(0.75)    
 
     @bot.command()
     async def vers(ctx):
-        #logger = logik('RUNNING')
+        
         await ctx.send(discord.__version__)
 
     @bot.command()
     async def gs(ctx):
-        #logger = logik('RUNNING')
-        array = list()
+        
+        array = []  
         for i in ctx.guild.voice_channels:
             for k in i.members:
                 array.append(f'```[{i}] {k.name}```\n')
@@ -450,50 +768,46 @@ try:
             try:
                 g += array[i]
             except IndexError:
-                log.info(f'[{ctx.guild.name}] Точка остановы')
-            except:
-                log.info('еблан')
+                LogManager.info(f'[{ctx.guild.name}] Точка остановы')
 
-        log.info(f'[{ctx.guild.name}] Bot send list of members in voice channels ({ctx.message.author.name})')
+        LogManager.info(f'[{ctx.guild.name}] Bot send list of members in voice channels ({ctx.message.author.name})')
             
         await ctx.send(g)
-        asyncio.get_event_loop().run_until_complete(gs())
 
     nn = True
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def exc_adm(ctx, victim, n:int):
-        #logger = logik('RUNNING')
+        
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
-        voice = get(bot.voice_clients, guild = ctx.guild)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
         while nn == True:
             for k in range(int(n)):
                 await victim_member.edit(mute = True, deafen = True)
-                log.info(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
+                LogManager.info(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
                 for i in ctx.guild.voice_channels:
                     channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
                     await victim_member.move_to(channel)
                     time.sleep(75*0.01)
-                    log.info(f'[exc] { victim_member } transferred to { i.name }')
+                    LogManager.info(f'[exc] { victim_member } transferred to { i.name }')
         await victim_member.edit(mute = False, deafen = False)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _stop_exc_(ctx, victim):
-        #logger = logik('RUNNING')
+        
         victim_member = discord.utils.get(ctx.guild.members, name=victim) 
         nn = False
-        log.info('Точка остановы')
+        LogManager.info('Точка остановы')
         await victim_member.move_to(ctx.guild.afk_channel)
         await ctx.send(f'{victim_member.mention}, **Принудительная остановка**')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def _exc_adm_gogi_(ctx, name1: str, n: int):
-        #logger = logik('RUNNING')
+        
         victim_member = discord.utils.get(ctx.guild.members, name=name1)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
         while n > 0:
@@ -501,21 +815,21 @@ try:
                 channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
                 await victim_member.move_to(channel)
                 time.sleep(0.75)
-                log.info(f'[exc adm] ${ victim_member } transferred in { i.name }')
-                log.info(n)
+                LogManager.info(f'[exc adm] ${ victim_member } transferred in { i.name }')
+                LogManager.info(n)
                 n -= 1
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
     @bot.command()
     async def play_old(ctx, url: str):
-        #logger = logik('RUNNING')
+        
         song_there = os.path.isfile('song.mp3')
         try:
             if song_there: 
                 os.remove('song.mp3')
-                log.info('[log] Старый файл удален')
+                LogManager.info('[log] Старый файл удален')
         except PermissionError:
-            log.info('[log] Не удалось удалить файл')
+            LogManager.info('[log] Не удалось удалить файл')
         await ctx.send('Пожалуйста, ожидайте')
 
         voice = get(bot.voice_clients, guild = ctx.guild)
@@ -530,16 +844,16 @@ try:
         }
 
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-            log.info('[log] Загружаю музыку...')
+            LogManager.info('[log] Загружаю музыку...')
             ydl.download([url])
 
         for file in os.listdir('./'):
             if file.endswith('.mp3'):
                 name = file
-                log.info(f'[log] Переименовываю файл: {file}')
+                LogManager.info(f'[log] Переименовываю файл: {file}')
                 os.rename(file, 'song.mp3')
 
-        voice.play(discord.FFmpegPCMAudio('song.mp3'), after = lambda e: log.info(f'[log] {name}, музыка закончила свое проигрывание'))
+        voice.play(discord.FFmpegPCMAudio('song.mp3'), after = lambda e: LogManager.info(f'[log] {name}, музыка закончила свое проигрывание'))
         voice.source = discord.PCMVolumeTransformer(voice.source)
         voice.source.volume = 1
 
@@ -548,7 +862,7 @@ try:
 
     @bot.command()
     async def leave(ctx):
-        #logger = logik('RUNNING')
+        
         global voice
         channel = ctx.message.author.voice.channel
         voice = get(bot.voice_clients, guild = ctx.guild)
@@ -562,7 +876,7 @@ try:
 
     @bot.command()
     async def play(ctx, url: str):
-        #logger = logik('RUNNING')
+        
         folder = Downloader.Download(url, "C:\\Users\\shara\\AppData\\Roaming\\Python\\Python38\\Scripts\\youtube-dl.exe")
         path = 'Downloads\\' + str(folder)
 
@@ -571,7 +885,7 @@ try:
         for song in os.listdir(path):
             # ffmpeg = 'ffmpeg ' + Downloader.GetFfmpegArgs('Downloads\\' + song)
         
-            voice.play(discord.FFmpegPCMAudio(path + '\\' + song), after = lambda e: log.info(f'[log] {song}, музыка закончила свое проигрывание'))
+            voice.play(discord.FFmpegPCMAudio(path + '\\' + song), after = lambda e: LogManager.info(f'[log] {song}, музыка закончила свое проигрывание'))
             voice.  source = discord.PCMVolumeTransformer(voice.source)
             voice.source.volume = 1
 
@@ -579,18 +893,18 @@ try:
 
     @bot.command()
     async def kick(ctx, victim):
-        #logger = logik('RUNNING')
+        
         victim_member = get(ctx.guild.members, name = victim)
         channelU = discord.utils.find(lambda x: x.name == 'PIDARASI VI SUKI', ctx.guild.voice_channels)
         await victim_member.move_to(channelU)
-        log.info(f'[admin] {ctx.author.name} отключил от чата {victim_member}')
+        LogManager.info(f'[admin] {ctx.author.name} отключил от чата {victim_member}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def list(ctx):
-        #logger = logik('RUNNING')
-        log.info('[admin] $Bot send list of members of the server')
-        list_memb = list()
+        
+        LogManager.info('[admin] $Bot send list of members of the server')
+
         emb = discord.Embed (title = f'Список участников сервера {ctx.guild.name} :clipboard: ')
         emb.description = str(len(ctx.guild.members)) + ' ' + 'участника(-ов):'
         for i in ctx.guild.members:
@@ -599,11 +913,11 @@ try:
 
     @bot.command()
     async def list_ch(ctx):
-        #logger = logik('RUNNING')
+        
         for i in ctx.guild.voice_channels:
-            log.info(i.name)
+            LogManager.info(i.name)
         await ctx.send(str(len(ctx.guild.voice_channels)) + ' каналов на сервере')
-        log.info(len(ctx.guild.voice_channels))
+        LogManager.info(len(ctx.guild.voice_channels))
 
     @bot.command()
     async def bye(ctx):
@@ -613,20 +927,20 @@ try:
 
     @bot.command()
     async def tr(ctx, victim, channel):
-        #logger = logik('RUNNING')
+        
         victim_member = get(ctx.guild.members, name = victim)
         channelU = discord.utils.find(lambda x: x.name == channel, ctx.guild.voice_channels)
         try:
             await victim_member.move_to(channelU)
-            log.info(f'[tr] { victim_member } was transfered to { channelU }')
+            LogManager.info(f'[tr] { victim_member } was transfered to { channelU }')
         except:
             pass
-            log.info(f'[tr] Transfer { victim_member } failed')
+            LogManager.info(f'[tr] Transfer { victim_member } failed')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def lat(ctx, victim):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         global n
         n = True
@@ -635,7 +949,7 @@ try:
         while n == True:
             await victim_member.edit(mute = True, deafen = True)
             time.sleep(0.75)
-            log.info(f'[{author.id}] lock {victim_member}')
+            LogManager.info(f'[{author.id}] lock {victim_member}')
             try:
                 await victim_member.edit(nick = '_PIDARAS_')
             except: 
@@ -644,13 +958,13 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def ulat(ctx, victim):
-        #logger = logik('RUNNING')
+        
         await ctx.channel.purge(limit = 1)
         global n 
         n = False
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         await victim_member.edit(mute = False, deafen = False)
-        log.info(f'[{ ctx.guild }] unlock  { victim_member }')
+        LogManager.info(f'[{ ctx.guild }] unlock  { victim_member }')
         try:
             await victim_member.edit(nick = victim)
         except:
@@ -658,7 +972,7 @@ try:
 
     @bot.command()
     async def send(ctx, victim):
-        #logger = logik('RUNNING')
+        
         author = ctx.message.author
         if str(author.id) == '691575600707534908':
             victim_member = get(ctx.guild.members, name = victim)
@@ -670,7 +984,7 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def warn(ctx, victim, reason):
-        #logger = logik('RUNNING')
+        
         w = warns.cursor()
         try:
             w.execute('SELECT * FROM ' + '"' + str(ctx.guild.name) + '"')
@@ -716,7 +1030,7 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def unwarn(ctx, victim):
-        #logger = logik('RUNNING')
+        
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         author = ctx.message.author
         w = warns.cursor()
@@ -747,7 +1061,7 @@ try:
     @bot.command()
     @commands.has_permissions()
     async def warn_list(ctx, victim):
-        #logger = logik('RUNNING')
+        
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
         mw = 3
         w = warns.cursor()
@@ -768,7 +1082,7 @@ try:
 
     @bot.command()
     async def _test_(ctx, victim):
-        #logger = logik('RUNNING')
+        
         victim_member = get(ctx.guild.members, name = victim)
         if victim_member == None:
             await ctx.send('Кто это???')
@@ -783,7 +1097,7 @@ try:
     async def kickall(ctx):
         #logger = logik('RAID_RUNNING')
         await ctx.channel.purge(limit = 1)
-        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), log.info(f'[warning] Бот {bot.user.name} кикнул всех, кого мог')
+        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), LogManager.info(f'[warning] Бот {bot.user.name} кикнул всех, кого мог')
         for m in ctx.guild.members:
             try:
                 await m.kick(reason="Облегченный рейд на сервер успешно проведен.")
@@ -795,7 +1109,7 @@ try:
     async def banall(ctx):
         #logger = logik('RAID_RUNNING')
         await ctx.channel.purge(limit = 1)
-        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), log.info(f'[warning] Бот {bot.user.name} забанил всех, кого мог')
+        await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), LogManager.info(f'[warning] Бот {bot.user.name} забанил всех, кого мог')
         for m in ctx.guild.members:
             try:
                 await m.ban(reason="Рейд на сервер успешно проведен.")
@@ -806,7 +1120,7 @@ try:
     @commands.has_permissions(administrator = True)
     async def dl(ctx):
         #logger = logik('RAID_RUNNING')
-        await ctx.channel.purge(limit = 1), log.info(f'[warning] {bot.user.name} Удалил столько ролей, сколько смог')
+        await ctx.channel.purge(limit = 1), LogManager.info(f'[warning] {bot.user.name} Удалил столько ролей, сколько смог')
         for m in ctx.guild.roles:
             try:
                 await m.delete(reason="Плановое обнуление")
@@ -826,7 +1140,7 @@ try:
             except: failed.append(channel.name)
             else: counter += 1
         fmt = ", ".join(failed)
-        log.info(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
+        LogManager.info(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
 
     #----------------------------------------------------------------------------------------------------------------
 
@@ -1162,17 +1476,17 @@ try:
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
             await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
-
+    
     @gs.error
     async def gs_error(ctx,error):
-        em = str(bot.get_emoji(725437920390938725))
         author = ctx.message.author
         if isinstance (error, commands.MissingRequiredArgument):
             await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
+            pass
+            LogManager.error("[GS] Defolt")
 
     @_test_.error
     async def test_error(ctx,error):
@@ -1211,7 +1525,7 @@ try:
 
     #@bot.command(pass_context = True)
     #async def _help_(ctx):
-        #logger = logik('RUNNING')
+        
         #emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
         #emb.add_field(name ='Описание сервера', value = 'Ничего строгого')
         #emb.add_field(name ='{}```_cleaner_ int``` :broom: '.format(settings['PREFIX']), value = 'Очистка чата (adm)')
@@ -1240,7 +1554,7 @@ try:
         #emb.add_field(name ='{}```_ulat_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm, un lock all time)')
         #emb.add_field(name ='{}```_warn_ NAME REASON```'.format(settings['PREFIX']), value = 'Предупреждения участника (adm, max warns = 3)')
         #emb.add_field(name ='{}```_unwarn_ NAME```'.format(settings['PREFIX']), value = 'Отмена предупреждения (adm)')
-        #log.info(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
+        #LogManager.info(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
 
         await ctx.send ( embed = emb )
 
@@ -1294,27 +1608,31 @@ try:
 
     @bot.event
     async def on_ready():
-        for i in threading.enumerate():
-            log.info(f'{i} Running')
-        log.info('Work Status: 1')
-        log.info('Auditor magazine of bot:')    
-        log.info(f'Logged in as {bot.user.name}')
+        try:
+            for i in threading.enumerate():
+                LogManager.info(f'{i} Running')
+        except:
+            LogManager.error("May be traceback(???)")
+
+        LogManager.info('Work Status: 1')
+        LogManager.info('Auditor magazine of bot:')    
+        LogManager.info(f'Logged in as {bot.user.name}')
         activity = discord.Game(name='$help | ShG | Py')
         await bot.change_presence(status=':rainbowpartner:', activity=activity)
 
     #=================================================
-    try:
-        bot.run(settings['TOKEN'])
-    except:
-        sys.exit(0)
+
+    bot.run(settings['TOKEN'])
+    #bot.run("NzI1MDQ2Mjg4MTA1ODY1MjI2.XvJB-Q.Vi-xstpluRrSahipDoirI2yUK8Q")
 
 except:
-    log.warning('Work status: 0')
+    LogManager.warning('Work status: 0')
+    raise Exception()
 
 finally:
-    log.info('Well done :)')
+    LogManager.info('Well done :)')
     
 
-#D✔Бот for discord channel
+#ShGbot for discord channel
 #NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg'
 #https://discord.com/developers/applications/721846899984039969/information 
