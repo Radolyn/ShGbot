@@ -21,7 +21,7 @@ try:
 except ImportError: 
     print('[WARNING] Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
 finally:
-    LogManager.pre_warn(" Libraries downloaded successfully {logging started}:\n")                                                                                        
+    LogManager.pre_warn(" Libraries downloaded successfully >> logging started:\n")                                                                                        
 
 
 
@@ -432,21 +432,29 @@ try:
     async def hola(ctx, arg):
         
         await ctx.channel.purge(limit = 1)
-        await ctx.send(arg), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {arg}')
+        await ctx.send(arg), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {arg} >> called by {ctx.message.author.name}')
 
     @bot.command()
     async def qq(ctx):
         """Hello, server"""
         
         author = ctx.message.author
-        await ctx.send(f'Категорически приветствую, {author.mention}!'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: Hello, {author.nick} ({author.name})')
+
+        if author.nick != None:
+            await ctx.send(f'Категорически приветствую, {author.mention}!'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: Hello, {author.nick} ({author.name})')
+        else:
+            await ctx.send(f'Категорически приветствую, {author.mention}!'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: Hello, {author.name}')
 
     @bot.command()
     async def bb(ctx):
         """Bye, all"""
         
         author = ctx.message.author
-        await ctx.send(f'До связи, {author.mention} :)'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: Bye, {author.nick} ({author.name})')
+
+        if author.nick != None:
+            await ctx.send(f'До связи, {author.mention} :)'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: Bye, {author.nick} ({author.name})')
+        else:
+            await ctx.send(f'До связи, {author.mention} :)'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: Bye, {author.name}')
 
     @bot.command()
     async def pp(ctx):
@@ -454,15 +462,25 @@ try:
         
         await ctx.channel.purge(limit = 1)
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Отошел.'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Отошел.')
+
+        if author.nick != None:
+            await ctx.send(f'{author.mention} Отошел.'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Отошел.')
+        else:
+            await ctx.send(f'{author.mention} Отошел.'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {author.name} Отошел.')
 
     @bot.command()
     async def _pp_(ctx):
         """Returned"""
         
         await ctx.channel.purge(limit = 1)
+
         author = ctx.message.author
-        await ctx.send(f'{author.mention} Вернулся.'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {author.nick} ({author.name}) Вернулся.')
+        user = author.nick
+
+        if author.nick != None:
+            await ctx.send(f'{author.mention} Вернулся.'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {author.name} ({author.nick}) Вернулся.')
+        else:
+            await ctx.send(f'{author.mention} Вернулся.'), LogManager.info(f'[{ctx.guild.name}] $Bot send message: {author.name} Вернулся.')              
 
     @bot.command()
     async def fox(ctx):
@@ -557,7 +575,7 @@ try:
         
         author = ctx.message.author
         await ctx.channel.purge(limit=int(amount))
-        LogManager.info(f'[{ctx.guild.name}] {author.nick} cleaned chat for {amount} positions')
+        LogManager.info(f'[{ctx.guild.name}] {author.name} cleaned chat for {amount} positions')
 
     @bot.command()
     async def join(ctx):
