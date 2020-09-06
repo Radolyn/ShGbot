@@ -20,28 +20,37 @@ formatter = logzero.LogFormatter(fmt=log_format)
 logzero.setup_default_logger(formatter=formatter)
 
 class LogManager:
+    class info:
+        def __init__(self, context):
+            self.context = context
 
-    @staticmethod
-    def info(ctx):
-        LOG.info(ctx)
-        logger.info(ctx)
+            logger.info(self.context)
+            LOG.info(self.context)
 
-    @staticmethod
-    def warning(ctx):
-        LOG.warning(ctx)
-        logger.warning(ctx)
+    class warning:
+        def __init__(self, context):
+            self.context = context
 
-    @staticmethod
-    def error(ctx):
-        LOG.error(ctx)
-        logger.error(ctx)
+            logger.warning(self.context)
+            LOG.warning(self.context)
 
-    @staticmethod
-    def debug(ctx):
-        LOG.debug(ctx)
-        logger.debug(ctx)
+    class error:
+        def __init__(self, context):
+            self.context = context
 
+            logger.error(self.context)
+            LOG.error(self.context)
 
+    class debug:
+        def __init__(self, context):
+            self.context = context
 
+            logger.debug(self.context)
+            LOG.debug(self.context)
+    
+    class debug_cmd:
+        def __init__(self, context):
+            self.context = context
 
+            logger.debug(self.context)
 
