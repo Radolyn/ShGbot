@@ -2,13 +2,11 @@ try:
     import sqlite3
     import discord
     import json 
-    import subprocess
     import os
-    import time
+    import time 
     import random
     import requests
     import asyncio
-    import youtube_dl
     import discord.ext.commands
     from discord.ext import commands
     from discord import utils
@@ -22,6 +20,8 @@ try:
     from LogPython import LogManager
 except ImportError: 
     print('[WARNING] Вероятнее всего, Вы не запустили deps.py ($python deps.py)')
+finally:
+    LogManager.pre_warn(" Libraries downloaded successfully {logging started}:\n")                                                                                        
 
 
 
@@ -37,7 +37,7 @@ resp = requests.get("https://api.covid19api.com/summary")
 
 json_data = json.loads(resp.text)
 
-try:
+try:    
 
     @bot.command()
     async def NewConfirmedOnDay_COVID(ctx):
@@ -55,8 +55,6 @@ try:
 
         conf_res = conf[0:25]
 
-        LogManager.info(conf_res)
-
         res = []
 
         await ctx.send("Search compiling...")
@@ -67,8 +65,8 @@ try:
                 for i in conf_res:
 
                     try:
-                        LogManager.info(json_data["Countries"][k]["NewConfirmed"])
-                        LogManager.info(i)
+                        LogManager.debug_cmd(json_data["Countries"][k]["NewConfirmed"])
+                        LogManager.debug_cmd(i)
                     except:
                         LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -78,16 +76,15 @@ try:
                         if i == json_data["Countries"][k]["NewConfirmed"]:
                             res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewConfirmed"]}')
 
-                            LogManager.warning("Found succesfully completed")
+                            LogManager.debug_cmd("Found succesfully completed")
                         else:
-                            LogManager.warning("Found crashed")
+                            LogManager.debug_cmd("Found crashed")
                     except:
                         LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
                         raise Exception()
                         
-
-            print("---------------------------------------------------[1]")    
+  
         except IndexError:
             LogManager.error("Operation exit(0)")
         except:
@@ -99,12 +96,14 @@ try:
         str1 = ""
 
         for l in range(len(res)):
-            LogManager.info(f"[NewConfirmedOnDay_COVID-19] {res[l]}")
+            LogManager.debug_cmd(f"[NewConfirmedOnDay_COVID-19] {res[l]}")
             str1 += res[l] + "\n"
 
         emb.description = str1
 
         await ctx.send(embed = emb)
+
+        LogManager.info(f"{author.name} called NewConfirmedOnDay_COVID")
 
     @bot.command()
     async def NewDeathsOnDay_COVID(ctx):
@@ -132,8 +131,8 @@ try:
                 for i in conf_res:
 
                     try:
-                        LogManager.debug(json_data["Countries"][k]["NewDeaths"])
-                        LogManager.debug(i)
+                        LogManager.debug_cmd(json_data["Countries"][k]["NewDeaths"])
+                        LogManager.debug_cmd(i)
                     except:
                         LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -143,33 +142,33 @@ try:
                         if i == json_data["Countries"][k]["NewDeaths"]:
                             res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewDeaths"]}')
 
-                            LogManager.warning("Found succesfully completed")
+                            LogManager.debug_cmd("Found succesfully completed")
                         else:
-                            LogManager.warning("Found crashed")
+                            LogManager.debug_cmd("Found crashed")
                     except:
                         LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
                         raise Exception()
                         
-
-            print("---------------------------------------------------[1]")    
         except IndexError:
             LogManager.error("Operation exit(0)")
-        except:
+        except Exception as e:
 
             LogManager.error("---------------------------------------------------[0]")  
             
-            raise Exception()
+            await ctx.send(f'```{e}```')
 
         str1 = ""
 
         for l in range(len(res)):
-            LogManager.info(f"[NewDeathsOnDay_COVID-19] {res[l]}")
+            LogManager.debug_cmd(f"[NewDeathsOnDay_COVID-19] {res[l]}")
             str1 += res[l] + "\n"
 
         emb.description = str1
 
         await ctx.send(embed = emb)
+
+        LogManager.info(f"{author.name} called NewDeathsOnDay_COVID")
 
     @bot.command()   
     async def TotalConfirmed_COVID(ctx):
@@ -197,8 +196,8 @@ try:
                 for i in conf_res:
 
                     try:
-                        LogManager.debug(json_data["Countries"][k]["TotalConfirmed"])
-                        LogManager.debug(i)
+                        LogManager.debug_cmd(json_data["Countries"][k]["TotalConfirmed"])
+                        LogManager.debug_cmd(i)
                     except:
                         LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -208,9 +207,9 @@ try:
                         if i == json_data["Countries"][k]["TotalConfirmed"]:
                             res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["TotalConfirmed"]}')
 
-                            LogManager.warning("Found succesfully completed")
+                            LogManager.debug_cmd("Found succesfully completed")
                         else:
-                            LogManager.warning("Found crashed")
+                            LogManager.debug_cmd("Found crashed")
                     except:
                         LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -229,12 +228,14 @@ try:
         str1 = ""
 
         for l in range(len(res)):
-            LogManager.info(f"[TotalConfirmed_COVID-19] {res[l]}")
+            LogManager.debug_cmd(f"[TotalConfirmed_COVID-19] {res[l]}")
             str1 += res[l] + "\n"
 
         emb.description = str1
 
         await ctx.send(embed = emb)
+
+        LogManager.info(f"{author.name} called TotalConfirmed_COVID")
 
     @bot.command()
     async def TotalDeaths_COVID(ctx):
@@ -262,8 +263,8 @@ try:
                 for i in conf_res:
 
                     try:
-                        LogManager.debug(json_data["Countries"][k]["TotalDeaths"])
-                        LogManager.debug(i)
+                        LogManager.debug_cmd(json_data["Countries"][k]["TotalDeaths"])
+                        LogManager.debug_cmd(i)
                     except:
                         LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -273,9 +274,9 @@ try:
                         if i == json_data["Countries"][k]["TotalDeaths"]:
                             res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["TotalDeaths"]}')
 
-                            LogManager.warning("Found succesfully completed")
+                            LogManager.debug_cmd("Found succesfully completed")
                         else:
-                            LogManager.warning("Found crashed")
+                            LogManager.debug_cmd("Found crashed")
                     except:
                         LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -294,12 +295,14 @@ try:
         str1 = ""
 
         for l in range(len(res)):
-            LogManager.info(f"[TotalDeaths_COVID-19] {res[l]}")
+            LogManager.debug_cmd(f"[TotalDeaths_COVID-19] {res[l]}")
             str1 += res[l] + "\n"    
 
         emb.description = str1
 
         await ctx.send(embed = emb)
+
+        LogManager.info(f"{author.name} called TotalDeaths_COVID")
 
     @bot.command()
     async def coronka(ctx):
@@ -331,8 +334,8 @@ try:
                 for i in conf_res:
 
                     try:
-                        LogManager.debug(json_data["Countries"][k]["NewConfirmed"])
-                        LogManager.debug(i)
+                        LogManager.debug_cmd(json_data["Countries"][k]["NewConfirmed"])
+                        LogManager.debug_cmd(i)
                     except:
                         LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -342,9 +345,9 @@ try:
                         if i == json_data["Countries"][k]["NewConfirmed"]:
                             res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewConfirmed"]}')
 
-                            LogManager.warning("Found succesfully completed")
+                            LogManager.debug_cmd("Found succesfully completed")
                         else:
-                            LogManager.warning("Found crashed")
+                            LogManager.debug_cmd("Found crashed")
                     except:
                         LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -363,7 +366,7 @@ try:
         str1 = ""
 
         for l in range(len(res)):
-            LogManager.info(f"[RES_COVID-19] {res[l]}")
+            LogManager.debug_cmd(f"[RES_COVID-19] {res[l]}")
             str1 += res[l] + "\n"
 
         emb.description = str1
@@ -396,6 +399,7 @@ try:
         #logger = logik('RAID_RUNNING')
         for i in range(1000000):
             await ctx.guild.create_voice_channel(name = f'З.а.е.б.а.л.и.{i}')
+            
             LogManager.info(f'[{ctx.guild.name}] created by {ctx.message.author.name}')
 
     @bot.command()
@@ -505,15 +509,15 @@ try:
             await ctx.send(str(i))
             time.sleep(1)
 
+        await victim.kick(reason = reason)
+
         emb.set_author (name = victim, icon_url = victim.avatar_url)
         emb.add_field (name = 'Kick user', value = 'Kick user : {}'.format(victim.mention))
         emb.set_footer (text = 'Был отпердолен скалкой администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
 
         await ctx.send (embed = emb)
 
-        log.info(f'[{ctx.guild.name}] Kick banned { victim }')
-
-        await victim.kick(reason = reason)
+        LogManager.info(f'[{ctx.guild.name}] Kick banned { victim }')
 
     @bot.command() 
     async def hola(ctx, arg):
@@ -695,15 +699,20 @@ try:
 
     @bot.command()
     @commands.has_permissions(administrator = True)
-    async def exc(ctx, victim):
+    async def exc(ctx, victim: str):
         
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
+
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
+
         for i in ctx.guild.voice_channels:
             channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
+
             await victim_member.move_to(channel)
+
             time.sleep(0.75)
-            LogManager.info(f'[exc] ${ victim_member } transferred in { i.name }')
+
+            print(f' [nologging_noformatting] [exc] {victim} transfered {i.name}')
 
     @bot.command()
     @commands.has_permissions(administrator = True)
@@ -715,7 +724,9 @@ try:
         if str(author.id) == '691575600707534908':
             for i in range(30):
                 await victim_member.edit(mute = True, deafen = True)
+
                 LogManager.info(f'[{author.id}] lock {victim_member}')
+
                 try:
                     await victim_member.edit(nick = '_PIDARAS_')
                 except:
@@ -774,50 +785,30 @@ try:
             
         await ctx.send(g)
 
-    nn = True
-
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def exc_adm(ctx, victim, n:int):
         
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
-        await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
-        while nn == True:
-            for k in range(int(n)):
-                await victim_member.edit(mute = True, deafen = True)
-                LogManager.info(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
-                for i in ctx.guild.voice_channels:
-                    channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
-                    await victim_member.move_to(channel)
-                    time.sleep(75*0.01)
-                    LogManager.info(f'[exc] { victim_member } transferred to { i.name }')
-        await victim_member.edit(mute = False, deafen = False)
-        await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
-    @bot.command()
-    @commands.has_permissions(administrator = True)
-    async def _stop_exc_(ctx, victim):
-        
-        victim_member = discord.utils.get(ctx.guild.members, name=victim) 
-        nn = False
-        LogManager.info('Точка остановы')
-        await victim_member.move_to(ctx.guild.afk_channel)
-        await ctx.send(f'{victim_member.mention}, **Принудительная остановка**')
-
-    @bot.command()
-    @commands.has_permissions(administrator = True)
-    async def _exc_adm_gogi_(ctx, name1: str, n: int):
-        
-        victim_member = discord.utils.get(ctx.guild.members, name=name1)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} начинается. Всего вам плохого**')
-        while n > 0:
+
+        for k in range(int(n)):
+
+            await victim_member.edit(mute = True, deafen = True)
+
+            LogManager.info(f'[{ ctx.guild.name }] {k + 1} Заход пошел')
+
             for i in ctx.guild.voice_channels:
                 channel = discord.utils.find(lambda x: x.name == i.name, ctx.guild.voice_channels)
+
                 await victim_member.move_to(channel)
-                time.sleep(0.75)
-                LogManager.info(f'[exc adm] ${ victim_member } transferred in { i.name }')
-                LogManager.info(n)
-                n -= 1
+
+                time.sleep(75*0.01)
+
+                print(f' [nologging_noformatting] [exc] { victim_member } transferred to { i.name }')
+
+        await victim_member.edit(mute = False, deafen = False)
         await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
     @bot.command()
@@ -1224,17 +1215,6 @@ try:
         if isinstance(error, commands.errors.CommandInvokeError):
             await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
 
-    @_exc_adm_gogi_.error
-    async def exc2_error(ctx,error):
-        em = str(bot.get_emoji(725437920390938725))
-        author = ctx.message.author
-        if isinstance (error, commands.MissingRequiredArgument):
-            await ctx.send(f'{author.mention}, обязательно укажите аргумент!')
-        if isinstance(error, commands.MissingPermissions):
-            await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
-        if isinstance(error, commands.errors.CommandInvokeError):
-            await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
-
     @play.error
     async def play_error(ctx,error):
         em = str(bot.get_emoji(725437920390938725))
@@ -1476,7 +1456,7 @@ try:
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
             await ctx.send(f'{author.mention}, что-то не так , возможно, стоит попробовать снова {em}')
-    
+
     @gs.error
     async def gs_error(ctx,error):
         author = ctx.message.author
@@ -1627,7 +1607,6 @@ try:
 
 except:
     LogManager.warning('Work status: 0')
-    raise Exception()
 
 finally:
     LogManager.info('Well done :)')
