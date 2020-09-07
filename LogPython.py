@@ -13,19 +13,23 @@ logging.basicConfig(level = logging.INFO,
                     filename = "LogPython_info.log",
                     filemode = 'a')
 
-LOG = logging.getLogger('ShGLogger v 1.0')
+LOG = logging.getLogger('ShGLogger v 1.1')
 
-log_format = '%(color)s [%(asctime)s - %(threadName)s] [%(filename)s %(process)s] [%(levelname)-7s] %(message)s'
+log_format = '%(color)s [%(asctime)s - %(threadName)s] [%(filename)s %(process)s] [%(levelname)-7s] %(message)s'                        
 formatter = logzero.LogFormatter(fmt=log_format)
 logzero.setup_default_logger(formatter=formatter)
 
 class LogManager:
+
     class info:
         def __init__(self, context):
             self.context = context
 
             logger.info(self.context)
             LOG.info(self.context)
+        
+        def __str__(self, context):
+            return self.context
 
     class warning:
         def __init__(self, context):
@@ -34,12 +38,18 @@ class LogManager:
             logger.warning(self.context)
             LOG.warning(self.context)
 
+        def __str__(self, context):
+            return self.context
+
     class error:
         def __init__(self, context):
             self.context = context
 
             logger.error(self.context)
             LOG.error(self.context)
+        
+        def __str__(self, context):
+            return self.context
 
     class debug:
         def __init__(self, context):
@@ -47,10 +57,20 @@ class LogManager:
 
             logger.debug(self.context)
             LOG.debug(self.context)
-    
+
+        def __str__(self, context):
+            return self.context
+
     class debug_cmd:
         def __init__(self, context):
             self.context = context
 
-            logger.debug(self.context)
+            LOG.debug(self.context)
+
+        def __str__(self, context):
+            return self.context
+
+    class pre_warn:
+        def __init__(self, context):
+            print("\033[33m {}" .format(context))
 
