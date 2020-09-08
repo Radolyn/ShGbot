@@ -4,6 +4,9 @@ from logzero import setup_logger
 import logzero
 import ctypes
 
+import re
+from re import RegexFlag
+
 kernel32 = ctypes.windll.kernel32
 kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7) 
 
@@ -74,3 +77,24 @@ class LogManager:
         def __init__(self, context):
             print("\033[33m {}" .format(context))
 
+    class get_errors:
+
+        def __init__(self):
+
+            reg = r"\{ERROR\} \: ([^+]+?)\{ShGLogger v 1\.0\}"
+
+            file = open('LogPython_info.log', 'r')
+
+            text = file.read()
+
+            matches = re.findall(reg, text, RegexFlag.MULTILINE)
+
+            completed = []    
+   
+            for item in matches:
+                completed.append(item.replace('{ShGLogger v 1.0}', ''))  
+
+            self.completed = completed
+
+        def __str__(self):
+            return str(self.completed[len(self.completed) - 1])                                                 
