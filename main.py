@@ -13,8 +13,6 @@ try:
     from discord.ext.commands import Bot
     from discord.voice_client import VoiceClient
     import threading
-    import logging
-    import sys
     from config import *
     from LogPython import LogManager
 except ImportError as e: 
@@ -33,8 +31,51 @@ resp = requests.get("https://api.covid19api.com/summary")
 
 json_data = json.loads(resp.text)
 
-try:    
+try:                                                                                            
 
+    class Aloshya:
+        @bot.command()        
+        async def SoundOpen(ctx):
+            await ctx.channel.purge(limit = 1)
+            for i in ctx.guild.voice_channels:
+                for k in i.members:
+                    LogManager.info(f'{k} all unmuted')
+                    await k.edit(mute = False, deafen = False)
+                    
+        @bot.command()
+        @commands.has_any_role()       
+        async def SoundClose(ctx):
+            await ctx.channel.purge(limit=1)
+            for i in ctx.guild.voice_channels:
+                for k in i.members:
+                    LogManager.info(f'{k} all muted')
+                    await k.edit(mute = True, deafen = True)
+
+        @bot.command()       
+        async def SoundProtect(ctx, victim:str):
+            await ctx.channel.purge(limit = 1)
+            for i in ctx.guild.voice_channels:
+                for k in i.members:
+                    if k.name != str(victim) and k.name != ctx.message.author.name:
+                        await k.edit(mute = True, deafen = True)                    
+
+        @bot.command()
+        async def loh(ctx, victim):
+            await ctx.channel.purge(limit = 1)
+            victim_member = discord.utils.get(ctx.guild.members, name=victim)
+            voice = get(bot.voice_clients, guild = ctx.guild)
+
+            while True:
+                channel = victim_member.voice.channel
+                if voice and voice.is_connected():
+                    await voice.move_to(channel)
+                    LogManager.info(f"{bot} connect")
+                    await voice.disconnect()                                                        
+                    LogManager.info(f"{bot} disconnect")
+                    time.sleep(0.75)
+                else:
+                    voice = await channel.connect()
+            
     @bot.command()
     async def flatten(ctx):
         await ctx.send(f"Last command error:```py\n{LogManager.get_errors()}```")
@@ -742,9 +783,9 @@ try:
         await ctx.send(g)
 
     @bot.command()
-    @commands.has_permissions(administrator = True)
+    @commands.has_permissions(administrator = True)                             
     async def exc_adm(ctx, victim, n:int):
-        """Travel of guild victim:str onces:int"""
+        """Travel of guild victim:str onces:int"""                             
         
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
 
@@ -766,7 +807,7 @@ try:
                 print(f' [nologging_noformatting] [exc] { victim_member } transferred to { i.name }')
 
         await victim_member.edit(mute = False, deafen = False)
-        await ctx.send(f'{victim_member.mention} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
+        await ctx.send(f'{victim_member} **Экскурсия по {ctx.guild.name} окончена. Надеюсь, Вы впечатлены**')
 
     @bot.command()
     async def kick(ctx, victim):
@@ -973,6 +1014,10 @@ try:
     @COVID.NewDeathsOnDay_COVID.error
     @COVID.TotalConfirmed_COVID.error
     @COVID.TotalDeaths_COVID.error
+    @Aloshya.SoundProtect.error
+    @Aloshya.SoundOpen.error
+    @Aloshya.SoundClose.error
+    @Aloshya.loh.error
     @_jojo_.error
     @_kick_.error
     @_pp_.error
