@@ -27,9 +27,13 @@ class LogManager:
     class info:
         def __init__(self, context):
             self.context = context
-
+        
             logger.info(self.context)
-            LOG.info(self.context)
+            
+            try:
+                LOG.info(self.context)
+            except:
+                print('--- Logging warning --- >> UnicodeEncodeError')
         
         def __str__(self, context):
             return self.context
@@ -39,7 +43,11 @@ class LogManager:
             self.context = context
 
             logger.warning(self.context)
-            LOG.warning(self.context)
+
+            try:
+                LOG.info(self.context)
+            except:
+                print('--- Logging warning --- >> UnicodeEncodeError')
 
         def __str__(self, context):
             return self.context
@@ -49,7 +57,11 @@ class LogManager:
             self.context = context
 
             logger.error(self.context)
-            LOG.error(self.context)
+
+            try:
+                LOG.info(self.context)
+            except:
+                print('--- Logging warning --- >> UnicodeEncodeError')
         
         def __str__(self, context):
             return self.context
@@ -59,7 +71,11 @@ class LogManager:
             self.context = context
 
             logger.debug(self.context)
-            LOG.debug(self.context)
+
+            try:
+                LOG.debug(self.context)
+            except:
+                print('--- Logging warning --- >> UnicodeEncodeError')
 
         def __str__(self, context):
             return self.context
@@ -68,7 +84,10 @@ class LogManager:
         def __init__(self, context):
             self.context = context
 
-            LOG.debug(self.context)
+            try:
+                LOG.debug(self.context)
+            except:
+                print('--- Logging warning --- >> UnicodeEncodeError')
 
         def __str__(self, context):
             return self.context
