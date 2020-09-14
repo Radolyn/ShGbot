@@ -1,12 +1,12 @@
 import logging
-from logging import error
-from logzero import logger
-from logzero import setup_logger
-import logzero
+from logging import INFO, error
+from sys import prefix
 import ctypes
 
 import re
 from re import RegexFlag
+import datetime
+import os
 
 kernel32 = ctypes.windll.kernel32
 kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7) 
@@ -19,67 +19,63 @@ logging.basicConfig(level = logging.INFO,
 
 LOG = logging.getLogger('ShGLogger v 1.0')
 
-log_format = '%(color)s [%(asctime)s - %(threadName)s] [%(filename)s %(process)s] [%(levelname)-7s] %(message)s'                        
-formatter = logzero.LogFormatter(fmt=log_format)
-logzero.setup_default_logger(formatter=formatter)
-
 class LogManager:
 
-    class info:
+    @staticmethod
+    def prefix(level):
+        return f"[{datetime.datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}] [{__name__} {os.getpid()}] [{level}]"
+
+    class info:                         
         def __init__(self, context):
             self.context = context
-        
-            logger.info(self.context)
+
+            level = "INFO   "
+
+            print(f"\033[32m {LogManager.prefix(level)} {self.context}\033[0m")
             
             try:
                 LOG.info(self.context)
             except UnicodeEncodeError:         
-                logger.info('--- Logging warning --- >> UnicodeEncodeError')
-        
-        def __str__(self, context):
-            return self.context
+                print('--- Logging warning --- >> UnicodeEncodeError')
 
     class warning:
         def __init__(self, context):
             self.context = context
 
-            logger.warning(self.context)
+            level = 'WARNING'
+
+            print(f"\033[33m {LogManager.prefix(level)} {self.context}\033[0m")
 
             try:
                 LOG.info(self.context)
             except UnicodeEncodeError:
-                logger.warning('--- Logging warning --- >> UnicodeEncodeError')
-
-        def __str__(self, context):
-            return self.context
+                print('--- Logging warning --- >> UnicodeEncodeError')
 
     class error:
         def __init__(self, context):
             self.context = context
 
-            logger.error(self.context)
+            level = 'ERROR  '
+
+            print(f"\033[31m {LogManager.prefix(level)} {self.context}\033[0m")
 
             try:
                 LOG.error(self.context)
             except UnicodeEncodeError:
-                logger.error('--- Logging warning --- >> UnicodeEncodeError')
-        
-        def __str__(self, context):
-            return self.context
+                print('--- Logging warning --- >> UnicodeEncodeError')
 
     class debug:
         def __init__(self, context):
             self.context = context
 
-            logger.debug(self.context)
+            level = 'DEBUG  '
+
+            print(f"\033[36m {LogManager.prefix(level)} {self.context}\033[0m")
 
             try:
                 LOG.debug(self.context)
             except UnicodeEncodeError:
-                logger.debug('--- Logging warning --- >> UnicodeEncodeError')
-
-        def __str__(self, context):
-            return self.context
+                print('--- Logging warning --- >> UnicodeEncodeError')
 
     class debug_cmd:
         def __init__(self, context):
@@ -89,9 +85,6 @@ class LogManager:
                 LOG.debug(self.context)
             except UnicodeEncodeError:
                 print('--- Logging warning --- >> UnicodeEncodeError')
-
-        def __str__(self, context):
-            return self.context
 
     class error_cmd:
         def __init__(self, context):
@@ -104,7 +97,9 @@ class LogManager:
 
     class pre_warn:
         def __init__(self, context):
-            print("\033[33m {}" .format(context))
+            self.context = context
+            
+            print("\033[33m {}" .format(self.context))
 
     class get_errors:
 
