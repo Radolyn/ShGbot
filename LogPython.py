@@ -1,4 +1,5 @@
 import logging
+from logging import error
 from logzero import logger
 from logzero import setup_logger
 import logzero
@@ -16,7 +17,7 @@ logging.basicConfig(level = logging.INFO,
                     filename = "LogPython_info.log",
                     filemode = 'a')
 
-LOG = logging.getLogger('ShGLogger v 1.1')
+LOG = logging.getLogger('ShGLogger v 1.0')
 
 log_format = '%(color)s [%(asctime)s - %(threadName)s] [%(filename)s %(process)s] [%(levelname)-7s] %(message)s'                        
 formatter = logzero.LogFormatter(fmt=log_format)
@@ -32,7 +33,7 @@ class LogManager:
             
             try:
                 LOG.info(self.context)
-            except:
+            except UnicodeEncodeError:         
                 logger.info('--- Logging warning --- >> UnicodeEncodeError')
         
         def __str__(self, context):
@@ -46,7 +47,7 @@ class LogManager:
 
             try:
                 LOG.info(self.context)
-            except:
+            except UnicodeEncodeError:
                 logger.warning('--- Logging warning --- >> UnicodeEncodeError')
 
         def __str__(self, context):
@@ -59,8 +60,8 @@ class LogManager:
             logger.error(self.context)
 
             try:
-                LOG.info(self.context)
-            except:
+                LOG.error(self.context)
+            except UnicodeEncodeError:
                 logger.error('--- Logging warning --- >> UnicodeEncodeError')
         
         def __str__(self, context):
@@ -74,7 +75,7 @@ class LogManager:
 
             try:
                 LOG.debug(self.context)
-            except:
+            except UnicodeEncodeError:
                 logger.debug('--- Logging warning --- >> UnicodeEncodeError')
 
         def __str__(self, context):
@@ -86,11 +87,20 @@ class LogManager:
 
             try:
                 LOG.debug(self.context)
-            except:
+            except UnicodeEncodeError:
                 print('--- Logging warning --- >> UnicodeEncodeError')
 
         def __str__(self, context):
             return self.context
+
+    class error_cmd:
+        def __init__(self, context):
+            self.context = context
+
+            try:
+                LOG.error(self.context)
+            except UnicodeEncodeError:
+                print('--- Logging warning --- >> UnicodeEncodeError')
 
     class pre_warn:
         def __init__(self, context):
