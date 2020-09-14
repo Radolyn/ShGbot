@@ -485,7 +485,7 @@ try:
 
     @bot.event
     async def on_command_error(ctx, error):
-        em = bot.get_emoji(724944121109676092)
+        em = bot.get_emoji(724944121109676092)                              
         if isinstance(error, commands.CommandNotFound ):
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
             await ctx.send(f'**{ctx.message.author.mention}, данная команда не обнаружена**{str(em)}')
@@ -1147,7 +1147,7 @@ try:
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            LogManager.error(error)
+            LogManager.error_cmd(error)
             await ctx.send(f"```{error}```")
 
 
