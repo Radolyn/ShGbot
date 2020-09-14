@@ -1,6 +1,3 @@
-from unicodedata import name
-
-
 try:
     import discord
     import json 
