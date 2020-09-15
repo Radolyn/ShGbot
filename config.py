@@ -1,6 +1,6 @@
 settings = {
     'RAID_TOKEN': 'NzIyNTgxNTMwODE5NjkwNTY2.XulO9A.NRbAok4I0UWYUynCKBiBMuOZfLE',   
-    'TOKEN':  'NzIxODQ2ODk5OTg0MDM5OTY5.XwC8ow.LbEL-x6eMggp1BkvUe4CFvubFCo',                    #'NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg',
+    'TOKEN':  'NzIxODQ2ODk5OTg0MDM5OTY5.XuaeUA.K_x1Xw1aVDmuujh462qhk1DbCEo',                    #'NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg',
     'A_TOKEN': 'NzIyMDg4MzE1MTU5MDUyNDA4.XuqTxA.n8zhUw3GUAZlqIrO7fvaOowy1d4',
     'j_TOKEN': 'NzI1MDQzOTQzNTk0NjU1OTE0.XvJAEQ.kKaSHBeJCqQhA2KgdptQ9MCpWOw',
     'BOT': 'ShGbot',
