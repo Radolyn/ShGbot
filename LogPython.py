@@ -1,6 +1,5 @@
 import logging
 from logging import INFO, error
-from sys import prefix
 import ctypes
 
 import re
