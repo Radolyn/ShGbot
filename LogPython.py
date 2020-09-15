@@ -21,8 +21,12 @@ LOG = logging.getLogger('ShGLogger v 1.0')
 class LogManager:
 
     @staticmethod
-    def prefix(level):
-        return f"[{datetime.datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}] [{__name__} {os.getpid()}] [{level}]"
+    def prefix(type:str, level:str):
+        if type == 'logger_cmd':
+            return f"[{datetime.datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}] [{__name__} {os.getpid()}] [{level}]"
+        else:
+            pass
+            """Undefined prefix method"""
 
     class info:                         
         def __init__(self, context):
@@ -30,7 +34,7 @@ class LogManager:
 
             level = "INFO   "
 
-            print(f"\033[32m {LogManager.prefix(level)} {self.context}\033[0m")
+            print(f"\033[32m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
             
             try:
                 LOG.info(self.context)
@@ -43,7 +47,7 @@ class LogManager:
 
             level = 'WARNING'
 
-            print(f"\033[33m {LogManager.prefix(level)} {self.context}\033[0m")
+            print(f"\033[33m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
 
             try:
                 LOG.info(self.context)
@@ -56,7 +60,7 @@ class LogManager:
 
             level = 'ERROR  '
 
-            print(f"\033[31m {LogManager.prefix(level)} {self.context}\033[0m")
+            print(f"\033[31m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
 
             try:
                 LOG.error(self.context)
@@ -69,7 +73,7 @@ class LogManager:
 
             level = 'DEBUG  '
 
-            print(f"\033[36m {LogManager.prefix(level)} {self.context}\033[0m")
+            print(f"\033[36m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
 
             try:
                 LOG.debug(self.context)
