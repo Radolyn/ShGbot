@@ -8,19 +8,6 @@ try:
     import requests
     import asyncio
     import discord.ext.commands
-    from discord.ext import commandsfrom os import access
-
-
-try:
-    import discord
-    import json 
-    import sys
-    import os
-    import time 
-    import random
-    import requests
-    import asyncio
-    import discord.ext.commands
     from discord.ext import commands
     from discord import utils
     from discord.utils import get
