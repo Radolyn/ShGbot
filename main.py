@@ -20,6 +20,7 @@ except ImportError as e:
     print('[WARNING] Вероятнее всего, Вы не запустили deps.py ($python deps.py)', e)
     exit()
 finally:
+    LogManager = LogManager()
     LogManager.pre_warn(" Libraries downloaded successfully >> logging started >> audit log:\n")                                                                                        
 
 

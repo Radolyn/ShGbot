@@ -28,81 +28,74 @@ class LogManager:
             pass
             """Undefined prefix method"""
 
-    class info:                         
-        def __init__(self, context):
-            self.context = context
+    def info(self, context):                        
+        self.context = context
 
-            level = "INFO   "
+        level = "INFO   "
 
-            print(f"\033[32m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
+        print(f"\033[32m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
+        
+        try:
+            LOG.info(self.context)
+        except UnicodeEncodeError:         
+            print('--- Logging warning --- >> UnicodeEncodeError')
+
+    def warning(self, context):
+        self.context = context
+
+        level = 'WARNING'
+
+        print(f"\033[33m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
+
+        try:
+            LOG.info(self.context)
+        except UnicodeEncodeError:
+            print('--- Logging warning --- >> UnicodeEncodeError')
+
+    def error(self, context):
+        self.context = context
+
+        level = 'ERROR  '
+
+        print(f"\033[31m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
+
+        try:
+            LOG.error(self.context)
+        except UnicodeEncodeError:
+            print('--- Logging warning --- >> UnicodeEncodeError')
+
+    def debug(self, context):
+        self.context = context
+
+        level = 'DEBUG  '
+
+        print(f"\033[36m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
+
+        try:
+            LOG.debug(self.context)
+        except UnicodeEncodeError:
+            print('--- Logging warning --- >> UnicodeEncodeError')
+
+    def debug_cmd(self, context):
+        self.context = context
+
+        try:
+            LOG.debug(self.context)
+        except UnicodeEncodeError:
+            print('--- Logging warning --- >> UnicodeEncodeError')
+
+    def error_cmd(self, context):
+        self.context = context
+
+        try:
+            LOG.error(self.context)
+        except UnicodeEncodeError:
+            print('--- Logging warning --- >> UnicodeEncodeError')
+
+    def pre_warn(self, context):
+        context = context
             
-            try:
-                LOG.info(self.context)
-            except UnicodeEncodeError:         
-                print('--- Logging warning --- >> UnicodeEncodeError')
-
-    class warning:
-        def __init__(self, context):
-            self.context = context
-
-            level = 'WARNING'
-
-            print(f"\033[33m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
-
-            try:
-                LOG.info(self.context)
-            except UnicodeEncodeError:
-                print('--- Logging warning --- >> UnicodeEncodeError')
-
-    class error:
-        def __init__(self, context):
-            self.context = context
-
-            level = 'ERROR  '
-
-            print(f"\033[31m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
-
-            try:
-                LOG.error(self.context)
-            except UnicodeEncodeError:
-                print('--- Logging warning --- >> UnicodeEncodeError')
-
-    class debug:
-        def __init__(self, context):
-            self.context = context
-
-            level = 'DEBUG  '
-
-            print(f"\033[36m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m")
-
-            try:
-                LOG.debug(self.context)
-            except UnicodeEncodeError:
-                print('--- Logging warning --- >> UnicodeEncodeError')
-
-    class debug_cmd:
-        def __init__(self, context):
-            self.context = context
-
-            try:
-                LOG.debug(self.context)
-            except UnicodeEncodeError:
-                print('--- Logging warning --- >> UnicodeEncodeError')
-
-    class error_cmd:
-        def __init__(self, context):
-            self.context = context
-
-            try:
-                LOG.error(self.context)
-            except UnicodeEncodeError:
-                print('--- Logging warning --- >> UnicodeEncodeError')
-
-    class pre_warn:
-        def __init__(self, context):
-            self.context = context
-            
-            print("\033[33m {}" .format(self.context))
+        print("\033[33m {}" .format(context))
 
     class get_errors:
 
@@ -118,7 +111,7 @@ class LogManager:
 
             completed = []    
    
-            for item in matches:
+            for item in matches:                            
                 completed.append(item.replace('{ShGLogger v 1.0}', ''))  
 
             self.completed = completed
