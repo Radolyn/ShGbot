@@ -1,0 +1,939 @@
+{ShGLogger v 1.0} 09/23/2020 07:57:31 PM 1032   client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 09/23/2020 07:57:31 PM 1032   gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 09/23/2020 07:57:31 PM 1032   gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-gph3",{"micros":79111,"calls":["discord-sessions-prd-2-23",{"micros":72106,"calls":["start_session",{"micros":33072,"calls":["api-prd-main-fmsj",{"micros":30437,"calls":["get_user",{"micros":2532},"add_authorized_ip",{"micros":1635},"get_guilds",{"micros":5029},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":11,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: cb48a6bc923769d2cb2ccda88229ffa2).
+{ShGLogger v 1.0} 09/23/2020 07:57:33 PM 1032   LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 09/23/2020 07:57:33 PM 1032   LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 09/23/2020 07:57:33 PM 1032   LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 09/23/2020 07:57:53 PM 1032   client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 09/23/2020 07:57:53 PM 1032   client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 09/23/2020 07:57:53 PM 1032   client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 09/23/2020 07:57:53 PM 1032   client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 09/23/2020 07:57:53 PM 1032   client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 09/23/2020 07:57:53 PM 1032   LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 09/25/2020 07:58:39 PM 2024   client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 09/25/2020 07:58:39 PM 2024   gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 09/25/2020 07:58:40 PM 2024   gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-6c0l",{"micros":118170,"calls":["discord-sessions-prd-2-19",{"micros":116817,"calls":["start_session",{"micros":92617,"calls":["api-prd-main-bc2k",{"micros":87176,"calls":["get_user",{"micros":5206},"add_authorized_ip",{"micros":8291},"get_guilds",{"micros":7417},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":17,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 75f4fb78b186aab1bdde9c8beb4861cc).
+{ShGLogger v 1.0} 09/25/2020 07:58:42 PM 2024   LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 09/25/2020 07:58:42 PM 2024   LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 09/25/2020 07:58:42 PM 2024   LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 09/25/2020 07:59:55 PM 2024   client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 09/25/2020 07:59:55 PM 2024   client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 09/25/2020 07:59:55 PM 2024   client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 09/25/2020 07:59:55 PM 2024   client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 09/25/2020 07:59:55 PM 2024   client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 09/25/2020 07:59:55 PM 2024   LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 09/27/2020 03:15:47 PM 12336  client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 09/27/2020 03:15:47 PM 12336  gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 09/27/2020 03:15:47 PM 12336  gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-2j63",{"micros":54377,"calls":["discord-sessions-prd-2-9",{"micros":52108,"calls":["start_session",{"micros":31762,"calls":["api-prd-main-4n2f",{"micros":29125,"calls":["get_user",{"micros":1993},"add_authorized_ip",{"micros":1229},"get_guilds",{"micros":4542},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":6,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 68c6ce1effb0b0c4208572767ffec114).
+{ShGLogger v 1.0} 09/27/2020 03:15:49 PM 12336  LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 09/27/2020 03:15:49 PM 12336  LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 09/27/2020 03:15:49 PM 12336  LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 09/27/2020 03:16:01 PM 12336  LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called flatten
+{ShGLogger v 1.0} 09/27/2020 03:16:01 PM 12336  LogPython.py {ERROR} : Command raised an exception: IndexError: list index out of range
+{ShGLogger v 1.0} 09/27/2020 03:16:10 PM 12336  LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called cleaner
+{ShGLogger v 1.0} 09/27/2020 03:16:10 PM 12336  LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg cleaned chat for 50 positions
+{ShGLogger v 1.0} 09/27/2020 04:27:20 PM 12336  client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 09/27/2020 04:27:20 PM 12336  client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 09/27/2020 04:27:20 PM 12336  client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 09/27/2020 04:27:20 PM 12336  client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 09/27/2020 04:27:20 PM 12336  client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 09/27/2020 04:27:20 PM 12336  LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 09/28/2020 05:10:19 PM 9692   client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 09/28/2020 05:10:20 PM 9692   gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 09/28/2020 05:10:20 PM 9692   gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-97qw",{"micros":92524,"calls":["discord-sessions-prd-2-48",{"micros":88677,"calls":["start_session",{"micros":52923,"calls":["api-prd-main-c0rc",{"micros":48603,"calls":["get_user",{"micros":8006},"add_authorized_ip",{"micros":2034},"get_guilds",{"micros":4840},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":31,"calls":[]},"presence_connect",{"micros":9176,"calls":[]}]}]}] (Session ID: 69ab07cec6b64247bd632b23e0152200).
+{ShGLogger v 1.0} 09/28/2020 05:10:22 PM 9692   LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 09/28/2020 05:10:22 PM 9692   LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 09/28/2020 05:10:22 PM 9692   LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 09/28/2020 05:10:26 PM 9692   client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 09/28/2020 05:10:26 PM 9692   client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 09/28/2020 05:10:26 PM 9692   client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 09/28/2020 05:10:26 PM 9692   client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 09/28/2020 05:10:26 PM 9692   client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 09/28/2020 05:10:26 PM 9692   LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 09/28/2020 05:10:48 PM 13772  client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 09/28/2020 05:10:48 PM 13772  gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 09/28/2020 05:10:49 PM 13772  gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-v1tb",{"micros":87868,"calls":["discord-sessions-prd-1-15",{"micros":83719,"calls":["start_session",{"micros":41065,"calls":["api-prd-main-wlsw",{"micros":37001,"calls":["get_user",{"micros":2050},"add_authorized_ip",{"micros":2098},"get_guilds",{"micros":7759},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":6,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: ed174baaa3fdcf61fe02989033a09615).
+{ShGLogger v 1.0} 09/28/2020 05:10:51 PM 13772  LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 09/28/2020 05:10:51 PM 13772  LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 09/28/2020 05:10:51 PM 13772  LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 09/28/2020 05:12:24 PM 13772  client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 09/28/2020 05:12:24 PM 13772  client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 09/28/2020 05:12:24 PM 13772  client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 09/28/2020 05:12:24 PM 13772  client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 09/28/2020 05:12:24 PM 13772  client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 09/28/2020 05:12:24 PM 13772  LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 09/29/2020 10:02:53 PM 9680   client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 09/29/2020 10:02:54 PM 9680   gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 09/29/2020 10:02:54 PM 9680   gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-k901",{"micros":107418,"calls":["discord-sessions-prd-2-7",{"micros":105143,"calls":["start_session",{"micros":85809,"calls":["api-prd-main-hq23",{"micros":81578,"calls":["get_user",{"micros":2610},"add_authorized_ip",{"micros":14675},"get_guilds",{"micros":19674},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":171,"calls":[]},"presence_connect",{"micros":3,"calls":[]}]}]}] (Session ID: 2d4f3b0c4e0d0df7c7d406bb8b5aad8e).
+{ShGLogger v 1.0} 09/29/2020 10:02:56 PM 9680   LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 09/29/2020 10:02:56 PM 9680   LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 09/29/2020 10:02:56 PM 9680   LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 09/29/2020 10:03:01 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called join
+{ShGLogger v 1.0} 09/29/2020 10:03:01 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:03:01 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:03:02 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:03:02 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:03:02 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:03:02 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] Bot connected to SharapaGorg
+{ShGLogger v 1.0} 09/29/2020 10:03:13 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called on_command_error
+{ShGLogger v 1.0} 09/29/2020 10:08:03 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called loh
+{ShGLogger v 1.0} 09/29/2020 10:08:03 PM 9680   LogPython.py {ERROR} : Command raised an exception: ClientException: Already connected to a voice channel.
+{ShGLogger v 1.0} 09/29/2020 10:08:10 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called leave
+{ShGLogger v 1.0} 09/29/2020 10:08:10 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:10 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:10 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:18 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called loh
+{ShGLogger v 1.0} 09/29/2020 10:08:18 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:18 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:19 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:19 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:19 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:19 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:19 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:19 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:19 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:19 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:20 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:21 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:21 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:21 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:22 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:23 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:23 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:23 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:23 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:23 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:23 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:23 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:23 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:24 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:25 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:25 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:25 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:26 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:26 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:26 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:26 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:26 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:26 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:26 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:27 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:28 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:29 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:29 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:30 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:30 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:30 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:30 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:30 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:30 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:30 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:30 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:31 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:32 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:33 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:33 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:34 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:34 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:34 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:34 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:34 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:34 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:34 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:34 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:35 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called cleanadm
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:36 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:37 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg cleaned chat for 4 positions
+{ShGLogger v 1.0} 09/29/2020 10:08:37 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:37 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:38 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:38 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:38 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:38 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:38 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:38 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:38 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:38 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:39 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:40 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:41 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:41 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:41 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:42 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:43 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:43 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:43 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:43 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:43 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:43 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:43 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:43 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:44 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:45 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:45 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:45 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:46 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:47 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:47 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:47 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:47 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:47 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:47 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:47 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:47 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:48 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:49 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:49 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:49 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:50 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:50 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:50 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:50 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:50 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:50 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:50 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:51 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:52 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:53 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:53 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:53 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:54 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:54 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:54 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:54 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:54 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:54 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:54 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:55 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:56 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:57 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:57 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:58 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:58 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:58 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:58 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:58 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:58 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:58 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:58 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:08:59 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:00 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:01 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:01 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:01 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:02 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:03 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:03 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:03 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:03 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:03 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:03 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:03 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:03 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:04 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:05 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:05 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:05 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:06 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:06 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:06 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:06 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:06 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:06 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:06 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:07 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:08 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:09 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:09 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:10 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:10 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:10 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:10 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:10 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:10 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:10 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:10 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:11 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:12 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:13 PM 9680   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called on_command_error
+{ShGLogger v 1.0} 09/29/2020 10:09:13 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:13 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:14 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:14 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:14 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:14 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:14 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:14 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:14 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:14 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:15 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:16 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:17 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:17 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:18 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:18 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:18 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:18 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:18 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:18 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:18 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:18 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:19 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:20 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:20 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:20 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:21 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:21 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:21 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:21 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:21 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:21 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:21 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:22 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:23 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:24 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:24 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:25 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:25 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:25 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:25 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:25 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:25 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:25 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:25 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:26 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:27 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:28 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:28 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:29 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:29 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:29 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:29 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:29 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:29 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:29 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:29 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:30 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:31 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:31 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:32 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:32 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:32 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:32 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:32 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:32 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:32 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:32 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:33 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:34 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:35 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:35 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:36 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:36 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:36 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:36 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:36 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:36 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:36 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:36 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:37 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:38 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:38 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:38 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:39 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:40 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:40 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:40 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:40 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:40 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:40 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:40 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:40 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:41 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:42 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:42 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:43 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:43 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:43 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:43 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:43 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:43 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:43 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:43 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:44 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:45 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:45 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:45 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:46 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:47 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:47 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:47 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:47 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:47 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:47 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:47 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:47 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:48 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:49 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:49 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:49 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:49 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:49 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:49 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:49 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:50 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:50 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:50 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:50 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:50 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:51 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:51 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:51 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:51 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:51 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:51 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:51 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:51 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:52 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:53 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:53 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:53 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:54 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:54 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:54 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:54 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:54 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:54 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:54 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:55 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:56 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:57 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:57 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:57 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:09:58 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:09:59 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:09:59 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:09:59 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:09:59 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:09:59 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:09:59 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:59 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:09:59 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:10:00 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:10:01 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:10:01 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:10:01 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:10:02 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:10:03 PM 9680   voice_client.py {INFO} : Voice handshake complete. Endpoint found russia658.discord.media (IP: None)
+{ShGLogger v 1.0} 09/29/2020 10:10:03 PM 9680   gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 09/29/2020 10:10:03 PM 9680   gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 09/29/2020 10:10:03 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> connect
+{ShGLogger v 1.0} 09/29/2020 10:10:03 PM 9680   voice_client.py {INFO} : Disconnecting from voice normally, close code 1000.
+{ShGLogger v 1.0} 09/29/2020 10:10:03 PM 9680   voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:10:03 PM 9680   voice_client.py {INFO} : The voice client has been removed for Channel ID 754667708947234817 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 09/29/2020 10:10:03 PM 9680   LogPython.py {INFO} : <discord.ext.commands.bot.Bot object at 0x000001F13C2D8E50> disconnect
+{ShGLogger v 1.0} 09/29/2020 10:10:04 PM 9680   voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 09/29/2020 10:10:04 PM 9680   voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 09/29/2020 10:10:04 PM 9680   gateway.py {INFO} : Websocket closed with 4008, attempting a reconnect.
+{ShGLogger v 1.0} 09/29/2020 10:10:04 PM 9680   client.py {INFO} : Got a request to RESUME the websocket.
+{ShGLogger v 1.0} 09/29/2020 10:10:04 PM 9680   gateway.py {INFO} : Shard ID None has sent the RESUME payload.
+{ShGLogger v 1.0} 09/29/2020 10:10:05 PM 9680   gateway.py {INFO} : Shard ID None has successfully RESUMED session 2d4f3b0c4e0d0df7c7d406bb8b5aad8e under trace ["gateway-prd-main-l5rc",{"micros":12707,"calls":["discord-sessions-prd-2-7",{"micros":56}]}].
+{ShGLogger v 1.0} 09/29/2020 10:10:20 PM 9680   client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 09/29/2020 10:10:20 PM 9680   client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 09/29/2020 10:10:20 PM 9680   client.py {INFO} : Cleaning up after 3 tasks.
+{ShGLogger v 1.0} 09/29/2020 10:10:20 PM 9680   client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 09/29/2020 10:10:20 PM 9680   client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 09/29/2020 10:10:20 PM 9680   LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 09/29/2020 10:10:24 PM 3992   client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 09/29/2020 10:10:24 PM 3992   gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 09/29/2020 10:10:24 PM 3992   gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-hr68",{"micros":81824,"calls":["discord-sessions-prd-2-54",{"micros":76605,"calls":["start_session",{"micros":41633,"calls":["api-prd-main-hq23",{"micros":37863,"calls":["get_user",{"micros":2504},"add_authorized_ip",{"micros":2872},"get_guilds",{"micros":5036},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":41,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 7a74a7c86920c41cd89fabb41ce07af8).
+{ShGLogger v 1.0} 09/29/2020 10:10:26 PM 3992   LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 09/29/2020 10:10:26 PM 3992   LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 09/29/2020 10:10:26 PM 3992   LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 09/29/2020 10:11:03 PM 3992   client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 09/29/2020 10:11:03 PM 3992   client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 09/29/2020 10:11:03 PM 3992   client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 09/29/2020 10:11:03 PM 3992   client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 09/29/2020 10:11:03 PM 3992   client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 09/29/2020 10:11:03 PM 3992   LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 09/29/2020 10:31:15 PM 3712   client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 09/29/2020 10:31:15 PM 3712   gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 09/29/2020 10:31:15 PM 3712   gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-60jb",{"micros":66167,"calls":["discord-sessions-prd-2-47",{"micros":65184,"calls":["start_session",{"micros":39033,"calls":["api-prd-main-tzr8",{"micros":35413,"calls":["get_user",{"micros":2115},"add_authorized_ip",{"micros":1728},"get_guilds",{"micros":3725},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":7,"calls":[]},"presence_connect",{"micros":6938,"calls":[]}]}]}] (Session ID: de8ae2bd00a240bb8c4f7218145c01d8).
+{ShGLogger v 1.0} 09/29/2020 10:31:18 PM 3712   LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 09/29/2020 10:31:18 PM 3712   LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 09/29/2020 10:31:18 PM 3712   LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 09/29/2020 10:31:42 PM 3712   LogPython.py {INFO} : AlexeyZavar#2198 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:42 PM 3712   LogPython.py {INFO} : MaxPlays#7919 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:43 PM 3712   LogPython.py {INFO} : Johny#9449 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:43 PM 3712   LogPython.py {INFO} : гошан#5489 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:44 PM 3712   LogPython.py {INFO} : SharapaGorg#0049 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:44 PM 3712   LogPython.py {INFO} : Kyaru#9574 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:44 PM 3712   LogPython.py {INFO} : Не кричу#7351 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:44 PM 3712   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called SoundOpen
+{ShGLogger v 1.0} 09/29/2020 10:31:46 PM 3712   LogPython.py {INFO} : AlexeyZavar#2198 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:47 PM 3712   LogPython.py {INFO} : MaxPlays#7919 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:47 PM 3712   LogPython.py {INFO} : Johny#9449 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:47 PM 3712   LogPython.py {INFO} : гошан#5489 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:53 PM 3712   LogPython.py {INFO} : SharapaGorg#0049 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:53 PM 3712   LogPython.py {INFO} : Kyaru#9574 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:53 PM 3712   LogPython.py {INFO} : Не кричу#7351 all unmuted
+{ShGLogger v 1.0} 09/29/2020 10:31:54 PM 3712   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called SoundOpen
+{ShGLogger v 1.0} 09/29/2020 10:32:35 PM 3712   LogPython.py {INFO} : AlexeyZavar#2198 all muted
+{ShGLogger v 1.0} 09/29/2020 10:32:35 PM 3712   LogPython.py {INFO} : MaxPlays#7919 all muted
+{ShGLogger v 1.0} 09/29/2020 10:32:35 PM 3712   LogPython.py {INFO} : Johny#9449 all muted
+{ShGLogger v 1.0} 09/29/2020 10:32:36 PM 3712   LogPython.py {INFO} : гошан#5489 all muted
+{ShGLogger v 1.0} 09/29/2020 10:32:36 PM 3712   LogPython.py {INFO} : SharapaGorg#0049 all muted
+{ShGLogger v 1.0} 09/29/2020 10:32:36 PM 3712   LogPython.py {INFO} : Не кричу#7351 all muted
+{ShGLogger v 1.0} 09/29/2020 10:32:36 PM 3712   LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called SoundClose
+{ShGLogger v 1.0} 09/29/2020 10:32:40 PM 3712   client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 09/29/2020 10:32:40 PM 3712   client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 09/29/2020 10:32:40 PM 3712   client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 09/29/2020 10:32:40 PM 3712   client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 09/29/2020 10:32:40 PM 3712   client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 09/29/2020 10:32:40 PM 3712   LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 10/01/2020 07:45:07 PM 10660  client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 10/01/2020 07:45:07 PM 10660  gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 10/01/2020 07:45:08 PM 10660  gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-c9l3",{"micros":236982,"calls":["discord-sessions-prd-1-24",{"micros":234104,"calls":["start_session",{"micros":214546,"calls":["api-prd-main-ftpl",{"micros":102888,"calls":["get_user",{"micros":9698},"add_authorized_ip",{"micros":7711},"get_guilds",{"micros":7064},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":7,"calls":[]},"presence_connect",{"micros":3500,"calls":[]}]}]}] (Session ID: 18aea1f21440d1785b538872e2b0d998).
+{ShGLogger v 1.0} 10/01/2020 07:45:10 PM 10660  LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 10/01/2020 07:45:10 PM 10660  LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 10/01/2020 07:45:10 PM 10660  LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  LogPython.py {INFO} : Well done :)
