@@ -937,3 +937,43 @@
 {ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  client.py {INFO} : All tasks finished cancelling.
 {ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  client.py {INFO} : Closing the event loop.
 {ShGLogger v 1.0} 10/01/2020 07:45:38 PM 10660  LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 10/03/2020 10:38:25 PM 9048   client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 10/03/2020 10:38:25 PM 9048   gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 10/03/2020 10:38:25 PM 9048   gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-0cct",{"micros":68351,"calls":["discord-sessions-prd-2-39",{"micros":66305,"calls":["start_session",{"micros":38587,"calls":["api-prd-main-g30j",{"micros":35876,"calls":["get_user",{"micros":3933},"add_authorized_ip",{"micros":1486},"get_guilds",{"micros":4091},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":28,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 3cbad037d065740c82b987a00bc9438a).
+{ShGLogger v 1.0} 10/03/2020 10:38:27 PM 9048   LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 10/03/2020 10:38:27 PM 9048   LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 10/03/2020 10:38:27 PM 9048   LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 10/03/2020 11:46:26 PM 9048   client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 10/03/2020 11:46:26 PM 9048   client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 10/03/2020 11:46:26 PM 9048   client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 10/03/2020 11:46:26 PM 9048   client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 10/03/2020 11:46:26 PM 9048   client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 10/03/2020 11:46:26 PM 9048   LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 10/04/2020 06:11:41 PM 14372  client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 10/04/2020 06:11:43 PM 14372  gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 10/04/2020 06:11:43 PM 14372  gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-5v45",{"micros":127645,"calls":["discord-sessions-prd-2-44",{"micros":126084,"calls":["start_session",{"micros":81593,"calls":["api-prd-main-pwtc",{"micros":79177,"calls":["get_user",{"micros":3574},"add_authorized_ip",{"micros":6773},"get_guilds",{"micros":13757},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":4,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: dbc4a6e48c14df80381312338acbea0b).
+{ShGLogger v 1.0} 10/04/2020 06:11:45 PM 14372  LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 10/04/2020 06:11:45 PM 14372  LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 10/04/2020 06:11:45 PM 14372  LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 10/04/2020 06:11:55 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:11:57 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:11:58 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:11:59 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:12:00 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:12:06 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:12:07 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:12:08 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:12:10 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:12:11 PM 14372  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/04/2020 06:16:33 PM 14372  client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 10/04/2020 06:16:33 PM 14372  client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 10/04/2020 06:16:33 PM 14372  client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 10/04/2020 06:16:33 PM 14372  client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 10/04/2020 06:16:33 PM 14372  client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 10/04/2020 06:16:33 PM 14372  LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 10/04/2020 06:16:38 PM 19848  client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 10/04/2020 06:16:40 PM 19848  gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 10/04/2020 06:16:40 PM 19848  gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-c9l3",{"micros":62997,"calls":["discord-sessions-prd-1-58",{"micros":60716,"calls":["start_session",{"micros":40784,"calls":["api-prd-main-t4h9",{"micros":37897,"calls":["get_user",{"micros":2660},"add_authorized_ip",{"micros":1790},"get_guilds",{"micros":4886},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":5,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 9e452a5fad3bbf345f34584d885db303).
+{ShGLogger v 1.0} 10/04/2020 06:16:42 PM 19848  LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 10/04/2020 06:16:42 PM 19848  LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 10/04/2020 06:16:42 PM 19848  LogPython.py {INFO} : Logged in as ShGbot

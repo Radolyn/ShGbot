@@ -1213,7 +1213,7 @@ try:
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            LogManager.error_cmd(error)
+            LogManager.error_log(error)
             await ctx.send(f"```{error}```")
 
 
