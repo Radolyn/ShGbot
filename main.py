@@ -149,7 +149,7 @@ try:
 
     class COVID:
         @bot.command()
-        async def NewConfirmedOnDay_COVID(ctx):
+        async def NewConfirmed(ctx):
     
             author = ctx.message.author
 
@@ -218,7 +218,7 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
         @bot.command()
-        async def NewDeathsOnDay_COVID(ctx):
+        async def NewDeaths(ctx):
             await ctx.send("Connect API...")
 
             emb = discord.Embed(title = "Смерти COVID-19([:26]) [NewDeathsOnDay]", colour = discord.Color.dark_red())
@@ -283,7 +283,7 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
         @bot.command()   
-        async def TotalConfirmed_COVID(ctx):
+        async def TotalConfirmed(ctx):
             await ctx.send("Connect API...")
 
             emb = discord.Embed(title = "Глобальная заболеваемость COVID-19([:26]) [TotalConfirmed]", colour = discord.Color.dark_red())
@@ -348,7 +348,7 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
         @bot.command()
-        async def TotalDeaths_COVID(ctx):
+        async def TotalDeaths(ctx):
             await ctx.send("Connect API...")
 
             emb = discord.Embed(title = "Глобальная смертоносность COVID-19([:26]) [TotalDeaths]", colour = discord.Color.dark_red())
@@ -1149,10 +1149,10 @@ try:
             emb.set_image(url = 'https://i.gifer.com/fyrY.gif')
             await ctx.send (embed = emb)
 
-    @COVID.NewConfirmedOnDay_COVID.error
-    @COVID.NewDeathsOnDay_COVID.error
-    @COVID.TotalConfirmed_COVID.error
-    @COVID.TotalDeaths_COVID.error
+    @COVID.NewConfirmed.error
+    @COVID.NewDeaths.error
+    @COVID.TotalConfirmed.error
+    @COVID.TotalDeaths.error
     @Aloshya.SoundProtect.error
     @Aloshya.SoundOpen.error
     @Aloshya.SoundClose.error

@@ -977,3 +977,634 @@
 {ShGLogger v 1.0} 10/04/2020 06:16:42 PM 19848  LogPython.py {INFO} : Work Status: 1
 {ShGLogger v 1.0} 10/04/2020 06:16:42 PM 19848  LogPython.py {INFO} : Auditor magazine of bot:
 {ShGLogger v 1.0} 10/04/2020 06:16:42 PM 19848  LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 10/04/2020 07:36:32 PM 19848  client.py {INFO} : Got a request to RESUME the websocket.
+{ShGLogger v 1.0} 10/04/2020 07:36:33 PM 19848  gateway.py {INFO} : Shard ID None has sent the RESUME payload.
+{ShGLogger v 1.0} 10/04/2020 07:36:33 PM 19848  gateway.py {INFO} : Shard ID None has successfully RESUMED session 9e452a5fad3bbf345f34584d885db303 under trace ["gateway-prd-main-d5fj",{"micros":3395,"calls":["discord-sessions-prd-1-58",{"micros":38}]}].
+{ShGLogger v 1.0} 10/04/2020 08:37:17 PM 19848  client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 10/04/2020 08:37:17 PM 19848  client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 10/04/2020 08:37:17 PM 19848  client.py {INFO} : Cleaning up after 1 tasks.
+{ShGLogger v 1.0} 10/04/2020 08:37:17 PM 19848  client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 10/04/2020 08:37:17 PM 19848  client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 10/04/2020 08:37:17 PM 19848  LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 10/04/2020 11:41:41 PM 19428  client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 10/04/2020 11:41:42 PM 19428  gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 10/04/2020 11:41:42 PM 19428  gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-k901",{"micros":105706,"calls":["discord-sessions-prd-1-29",{"micros":94710,"calls":["start_session",{"micros":44563,"calls":["api-prd-main-36xn",{"micros":42051,"calls":["get_user",{"micros":2549},"add_authorized_ip",{"micros":1482},"get_guilds",{"micros":8901},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":9,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 371dc5348880414350c9ae6db74fc924).
+{ShGLogger v 1.0} 10/04/2020 11:41:44 PM 19428  LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 10/04/2020 11:41:44 PM 19428  LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 10/04/2020 11:41:44 PM 19428  LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 10/04/2020 11:41:59 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called join
+{ShGLogger v 1.0} 10/04/2020 11:41:59 PM 19428  voice_client.py {INFO} : Connecting to voice...
+{ShGLogger v 1.0} 10/04/2020 11:41:59 PM 19428  voice_client.py {INFO} : Starting voice handshake...
+{ShGLogger v 1.0} 10/04/2020 11:42:00 PM 19428  voice_client.py {INFO} : Voice handshake complete. Endpoint found russia7917.discord.media (IP: None)
+{ShGLogger v 1.0} 10/04/2020 11:42:00 PM 19428  gateway.py {INFO} : selected the voice protocol for use (xsalsa20_poly1305_lite)
+{ShGLogger v 1.0} 10/04/2020 11:42:00 PM 19428  gateway.py {INFO} : received secret key for voice connection
+{ShGLogger v 1.0} 10/04/2020 11:42:00 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot connected to SharapaGorg
+{ShGLogger v 1.0} 10/04/2020 11:43:52 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] SharapaGorg called spam
+{ShGLogger v 1.0} 10/04/2020 11:43:52 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:43:53 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:43:54 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:43:55 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:43:56 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:43:57 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:43:58 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:43:59 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:00 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:01 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:02 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:03 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:04 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:05 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:06 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:07 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:08 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:09 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:11 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:12 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:13 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:14 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:15 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:16 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:17 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:18 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:19 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:20 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:21 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:22 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:23 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:24 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:25 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:27 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:28 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:29 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:30 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:31 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:32 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:33 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:34 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:35 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:36 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:37 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:38 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:39 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:40 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:41 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:42 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:43 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:44 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:45 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:46 PM 19428  LogPython.py {INFO} : [Radolyn Inc.] Bot send D:\inf\Dedsec_frontend\radolynsite>git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0
+Unpacking objects: 100% (8/8), 1.21 KiB | 3.00 KiB/s, done.
+From https://github.com/radolyn/radolynsite
+   4288416..043d84a  master     -> origin/master
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  client.py {INFO} : Cleaning up after 3 tasks.
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  base_events.py {ERROR} : _ClientEventTask exception was never retrieved
+future: <ClientEventTask state=finished event=on_message coro=<bound method BotBase.on_message of <discord.ext.commands.bot.Bot object at 0x0000016E44478E50>> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Users\ShG\AppData\Roaming\Python\Python38\site-packages\discord\client.py", line 668, in run
+    loop.run_forever()
+  File "C:\Users\ShG\AppData\Local\Programs\Python\Python38\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\ShG\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+  File "C:\Users\ShG\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+  File "C:\Users\ShG\AppData\Local\Programs\Python\Python38\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ShG\AppData\Roaming\Python\Python38\site-packages\discord\client.py", line 312, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\ShG\AppData\Roaming\Python\Python38\site-packages\discord\ext\commands\bot.py", line 943, in on_message
+    await self.process_commands(message)
+  File "C:\Users\ShG\AppData\Roaming\Python\Python38\site-packages\discord\ext\commands\bot.py", line 940, in process_commands
+    await self.invoke(ctx)
+  File "C:\Users\ShG\AppData\Roaming\Python\Python38\site-packages\discord\ext\commands\bot.py", line 903, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ShG\AppData\Roaming\Python\Python38\site-packages\discord\ext\commands\core.py", line 855, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\ShG\AppData\Roaming\Python\Python38\site-packages\discord\ext\commands\core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "main.py", line 852, in spam
+    time.sleep(0.75)
+KeyboardInterrupt
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  voice_client.py {INFO} : The voice handshake is being terminated for Channel ID 754667461395349554 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  voice_client.py {INFO} : The voice client has been removed for Channel ID 754667461395349554 (Guild ID 484025467134017568)
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 10/04/2020 11:44:47 PM 19428  LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 10/07/2020 10:55:13 PM 14136  client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 10/07/2020 10:55:14 PM 14136  gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 10/07/2020 10:55:14 PM 14136  gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-c9tc",{"micros":58249,"calls":["discord-sessions-prd-1-54",{"micros":48085,"calls":["start_session",{"micros":31858,"calls":["api-prd-main-4mvv",{"micros":28918,"calls":["get_user",{"micros":2122},"add_authorized_ip",{"micros":1692},"get_guilds",{"micros":5881},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":5,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 86d32ecbd7afc5e3e60424d9e4ff49da).
+{ShGLogger v 1.0} 10/07/2020 10:55:16 PM 14136  LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 10/07/2020 10:55:16 PM 14136  LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 10/07/2020 10:55:16 PM 14136  LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 10/07/2020 10:55:34 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:35 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:36 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:38 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:39 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:44 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:45 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:46 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:48 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:49 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:54 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:55 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:57 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:58 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:55:59 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:04 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:06 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:07 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:08 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:09 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:15 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:16 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:17 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:18 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:19 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:25 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:26 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:27 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:29 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:30 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:35 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:36 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:38 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:39 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:40 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:45 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:47 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:48 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:50 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:51 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:56 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:57 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:58 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:56:59 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:00 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:06 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:07 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:08 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:09 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:11 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:16 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:17 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:19 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:20 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:21 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:26 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:28 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:29 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:30 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:31 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:37 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:38 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:39 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:40 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:41 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:47 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:48 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:49 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:50 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:52 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:57 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:58 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:57:59 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:01 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:02 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:07 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:09 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:10 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:11 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:12 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:17 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:19 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:20 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:21 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:22 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:28 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:29 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:30 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:32 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:33 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:38 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:39 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:40 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:42 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:43 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:48 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:49 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:51 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:52 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:53 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:58:58 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:00 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:01 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:02 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:04 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:09 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:10 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:11 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:12 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:14 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:19 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:20 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:21 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:22 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:24 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:29 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:31 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:32 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:33 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:34 PM 14136  LogPython.py {INFO} : [691575600707534908] lock Тамерлаша#8971
+{ShGLogger v 1.0} 10/07/2020 10:59:37 PM 14136  client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 10/07/2020 10:59:37 PM 14136  client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 10/07/2020 10:59:37 PM 14136  client.py {INFO} : Cleaning up after 2 tasks.
+{ShGLogger v 1.0} 10/07/2020 10:59:37 PM 14136  client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 10/07/2020 10:59:37 PM 14136  client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 10/07/2020 10:59:37 PM 14136  LogPython.py {INFO} : Well done :)
+{ShGLogger v 1.0} 10/07/2020 11:33:55 PM 8200   client.py {INFO} : logging in using static token
+{ShGLogger v 1.0} 10/07/2020 11:33:55 PM 8200   gateway.py {INFO} : Shard ID None has sent the IDENTIFY payload.
+{ShGLogger v 1.0} 10/07/2020 11:33:56 PM 8200   gateway.py {INFO} : Shard ID None has connected to Gateway: ["gateway-prd-main-j76d",{"micros":110838,"calls":["discord-sessions-prd-2-53",{"micros":101918,"calls":["start_session",{"micros":63005,"calls":["api-prd-main-nb3d",{"micros":55454,"calls":["get_user",{"micros":4253},"add_authorized_ip",{"micros":4094},"get_guilds",{"micros":5978},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":119,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 96c0cb983a05bcc04311f0d3a468fe3f).
+{ShGLogger v 1.0} 10/07/2020 11:33:58 PM 8200   LogPython.py {INFO} : Work Status: 1
+{ShGLogger v 1.0} 10/07/2020 11:33:58 PM 8200   LogPython.py {INFO} : Auditor magazine of bot:
+{ShGLogger v 1.0} 10/07/2020 11:33:58 PM 8200   LogPython.py {INFO} : Logged in as ShGbot
+{ShGLogger v 1.0} 10/07/2020 11:34:15 PM 8200   LogPython.py {INFO} : [ShG] SharapaGorg called on_command_error
+{ShGLogger v 1.0} 10/07/2020 11:34:33 PM 8200   LogPython.py {INFO} : [ShG] SharapaGorg called NewConfirmedOnDay_COVID
+{ShGLogger v 1.0} 10/07/2020 11:59:43 PM 8200   gateway.py {INFO} : Websocket closed with 1006, attempting a reconnect.
+{ShGLogger v 1.0} 10/07/2020 11:59:43 PM 8200   client.py {INFO} : Got a request to RESUME the websocket.
+{ShGLogger v 1.0} 10/07/2020 11:59:58 PM 8200   client.py {INFO} : Received signal to terminate bot and event loop.
+{ShGLogger v 1.0} 10/07/2020 11:59:58 PM 8200   client.py {INFO} : Cleaning up tasks.
+{ShGLogger v 1.0} 10/07/2020 11:59:58 PM 8200   client.py {INFO} : Cleaning up after 2 tasks.
+{ShGLogger v 1.0} 10/07/2020 11:59:58 PM 8200   client.py {INFO} : All tasks finished cancelling.
+{ShGLogger v 1.0} 10/07/2020 11:59:58 PM 8200   client.py {INFO} : Closing the event loop.
+{ShGLogger v 1.0} 10/07/2020 11:59:58 PM 8200   LogPython.py {INFO} : Well done :)
