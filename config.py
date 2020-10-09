@@ -1,8 +1,8 @@
 settings = {
-    'RAID_TOKEN': 'NzIyNTgxNTMwODE5NjkwNTY2.XulO9A.NRbAok4I0UWYUynCKBiBMuOZfLE',   
-    'TOKEN':  'NzIxODQ2ODk5OTg0MDM5OTY5.XuaeUA.K_x1Xw1aVDmuujh462qhk1DbCEo',                    #'NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg',
-    'A_TOKEN': 'NzIyMDg4MzE1MTU5MDUyNDA4.XuqTxA.n8zhUw3GUAZlqIrO7fvaOowy1d4',
-    'j_TOKEN': 'NzI1MDQzOTQzNTk0NjU1OTE0.XvJAEQ.kKaSHBeJCqQhA2KgdptQ9MCpWOw',
+    'RAID_TOKEN': '....',   
+    'TOKEN':  '.',                   
+    'A_TOKEN': '..',
+    'j_TOKEN': '...',
     'BOT': 'ShGbot',
     'ID': 721846899984039969,
     'F_ID': 539090922449928223, 
@@ -13,9 +13,9 @@ settings = {
     'jj_PREFIX': '?',
     'jjj_PREFIX': '%',
     'Max_PREFIX': 'v!',
-    'Max_TOKEN': 'NzI1MDQ2Mjg4MTA1ODY1MjI2.XvJCGA.9kS_9vUlhE0Tob-5PT4dwBai4NE',
-    'jj_TOKEN': 'NzI1MDk1NjU2NTEwOTgwMTA2.XvJv-Q.u_TpRpSsXEDmFJyScRcqmG3HoQo',
-    'jjj_TOKEN': 'NzI1MDk1MzY2NjkyOTYyNDE1.XvJwfg.2cqsnindBaAEjRoyeeNUs5JEIco'
+    'Max_TOKEN': '..',
+    'jj_TOKEN': '...',
+    'jjj_TOKEN': '.'
 }
 
 links = [
