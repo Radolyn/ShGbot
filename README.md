@@ -1,4 +1,4 @@
-# ds_bot
+# ShGbot
 
 
 Work`s steps:
