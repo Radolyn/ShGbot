@@ -85,7 +85,7 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
                     
         @bot.command()    
-        async def SoundClose(ctx):
+        async def SdClose(ctx):
             await ctx.channel.purge(limit=1)
             for i in ctx.guild.voice_channels:
                 for k in i.members:
@@ -95,7 +95,7 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
         @bot.command()       
-        async def SoundProtect(ctx, victim:str):
+        async def SdProtect(ctx, victim:str):
             await ctx.channel.purge(limit = 1)
             for i in ctx.guild.voice_channels:
                 for k in i.members:
@@ -448,11 +448,8 @@ try:
         """List of guild channels"""
         
         LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
-
-        for i in ctx.guild.channels:
-            LogManager.info(i.name)
         
-        await ctx.send(len(ctx.guild.channels))
+        await ctx.send(f'{len(ctx.guild.channels)} channels in guild')
 
     @bot.command()
     async def random_gif(ctx):
@@ -705,7 +702,7 @@ try:
     @bot.command()
     @commands.has_permissions(administrator = True)
     async def cleanadm(ctx, amount):
-        """Cleaning chat before other mes"""
+        """Cleaning chat without other mes"""
         
         LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
         author = ctx.message.author
@@ -977,29 +974,22 @@ try:
             
             mem = await ctx.guild.fetch_member(victim_member.id)
 
-            if mem != None:
 
-                while n == True:
+            while n == True: 
 
-                    voice = None
-
-                    for i in ctx.guild.voice_channels:
-                        for k in i.members:
-                            if k.name == victim:                                                                                                                                                          
-                                voice = 1   
-                                break                                                    
-
-                    if voice != None:
-                        await mem.edit(mute = True, deafen = True)
-                        time.sleep(0.75)
-                        LogManager.info(f'[{author.id}] lock {victim_member}')                  
-                        try:                                                                                                    
-                            await mem.edit(nick = '_PIDARAS_')
-                        except:                                                                     
-                            pass
-                    else:
-                        LogManager.warning("Victim crashed")
-                        time.sleep(0.75)
+                LogManager.info(mem)                                                 
+            
+                if mem == (victim_member.name + '@' + victim_member.descriminator):
+                    await mem.edit(mute = True, deafen = True)
+                    time.sleep(0.75)
+                    LogManager.info(f'[{author.id}] lock {victim_member}')                  
+                    try:                                                                                                    
+                        await mem.edit(nick = '_PIDARAS_')
+                    except:                                                                     
+                        pass
+                else:
+                    LogManager.warning("Victim crashed")
+                    time.sleep(0.75)
         else:
             await ctx.send("Not enough permissions")
 
@@ -1153,9 +1143,9 @@ try:
     @COVID.NewDeaths.error
     @COVID.TotalConfirmed.error
     @COVID.TotalDeaths.error
-    @Aloshya.SoundProtect.error
+    @Aloshya.SdProtect.error
     @Aloshya.SoundOpen.error
-    @Aloshya.SoundClose.error
+    @Aloshya.SdClose.error
     @Aloshya.loh.error
     @GlobalGuild.AllNick.error
     @_jojo_.error
@@ -1254,6 +1244,30 @@ try:
 
     @bot.event
     async def on_ready():
+
+        print('          _____                    _____                    _____                    _____                    _____                    _____     _____  ')
+        print('         /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \   /\    \ ')
+        print('        /::\____\                /::\    \                /::\    \                /::\    \                /::\    \                /::\____\ /::\____\'')
+        print('       /:::/    /                \:::\    \              /::::\    \              /::::\    \              /::::\    \              /:::/    //:::/    /')
+        print('      /:::/    /                  \:::\    \            /::::::\    \            /::::::\    \            /::::::\    \            /:::/    //:::/    / ')
+        print('     /:::/    /                    \:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/    //:::/    /  ')
+        print('    /:::/____/                      \:::\    \        /:::/  \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/    //:::/    /   ')
+        print('   /::::\    \                      /::::\    \      /:::/    \:::\    \      /::::\   \:::\    \      /::::\   \:::\    \      /:::/    //:::/    /    ')
+        print('  /::::::\    \   _____    ____    /::::::\    \    /:::/    / \:::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    /:::/    //:::/    /     ')
+        print(' /:::/\:::\    \ /\    \  /\   \  /:::/\:::\    \  /:::/    /   \:::\ ___\  /:::/\:::\   \:::\ ___\  /:::/\:::\   \:::\    \  /:::/    //:::/    /      ')
+        print('/:::/  \:::\    /::\____\/::\   \/:::/  \:::\____\/:::/____/     \:::|    |/:::/__\:::\   \:::|    |/:::/__\:::\   \:::\____\/:::/____//:::/____/       ')
+        print('\::/    \:::\  /:::/    /\:::\  /:::/    \::/    /\:::\    \     /:::|____|\:::\   \:::\  /:::|____|\:::\   \:::\   \::/    /\:::\    \\:::\    \       ')
+        print(' \/____/ \:::\/:::/    /  \:::\/:::/    / \/____/  \:::\    \   /:::/    /  \:::\   \:::\/:::/    /  \:::\   \:::\   \/____/  \:::\    \\:::\    \      ')
+        print('          \::::::/    /    \::::::/    /            \:::\    \ /:::/    /    \:::\   \::::::/    /    \:::\   \:::\    \       \:::\    \\:::\    \     ')
+        print('           \::::/    /      \::::/____/              \:::\    /:::/    /      \:::\   \::::/    /      \:::\   \:::\____\       \:::\    \\:::\    \    ')
+        print('           /:::/    /        \:::\    \               \:::\  /:::/    /        \:::\  /:::/    /        \:::\   \::/    /        \:::\    \\:::\    \   ')
+        print('          /:::/    /          \:::\    \               \:::\/:::/    /          \:::\/:::/    /          \:::\   \/____/          \:::\    \\:::\    \  ')
+        print('         /:::/    /            \:::\    \               \::::::/    /            \::::::/    /            \:::\    \               \:::\    \\:::\    \ ')
+        print('        /:::/    /              \:::\____\               \::::/    /              \::::/    /              \:::\____\               \:::\____\\:::\____\'')
+        print('        \::/    /                \::/    /                \::/____/                \::/____/                \::/    /                \::/    / \::/    /')
+        print('         \/____/                  \/____/                  ~~                       ~~                       \/____/                  \/____/   \/____/ ')
+        print('                                                                                                                                                        ')
+
         try:
             for i in threading.enumerate():
                 LogManager.debug(f'{i} Running')
@@ -1263,13 +1277,12 @@ try:
         LogManager.info('Work Status: 1')
         LogManager.info('Auditor magazine of bot:')    
         LogManager.info(f'Logged in as {bot.user.name}')
-        activity = discord.Game(name='$help | ShG | Py')
-        await bot.change_presence(status=':rainbowpartner:', activity=activity)
+        activity = discord.Game(name='$help | ShG | Py')       
 
+        await bot.change_presence(status=':rainbowpartner:', activity=activity)
     #=================================================
 
     bot.run(settings['TOKEN'])
-    #bot.run("NzI1MDQ2Mjg4MTA1ODY1MjI2.XvJB-Q.Vi-xstpluRrSahipDoirI2yUK8Q")
 
 except Exception as e:
     LogManager.warning('Work status: 0')
@@ -1281,5 +1294,4 @@ finally:
     
 
 #ShGbot for discord channel
-#NzIxODQ2ODk5OTg0MDM5OTY5.Xuaeyg.08dfDqsAcWxBDv6wAfXxkXe_fCg'
 #https://discord.com/developers/applications/721846899984039969/information 
