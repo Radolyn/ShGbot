@@ -21,7 +21,7 @@ except ImportError as e:
     exit()
 finally:
     LogManager = LogManager()
-    LogManager.pre_warn(" Libraries downloaded successfully >> logging started >> audit log:\n")                                                                                        
+    LogManager.pre_warn(" Libraries downloaded successfully >> logging started >> audit log:")                                                                                        
 
 
 
@@ -177,8 +177,7 @@ try:
                     for i in conf_res:
 
                         try:
-                            LogManager.debug_cmd(json_data["Countries"][k]["NewConfirmed"])
-                            LogManager.debug_cmd(i)
+                            LogManager.debug(i)
                         except:
                             LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -188,9 +187,9 @@ try:
                             if i == json_data["Countries"][k]["NewConfirmed"]:
                                 res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewConfirmed"]}')
 
-                                LogManager.debug_cmd("Found succesfully completed")
+                                LogManager.debug("Found succesfully completed")
                             else:
-                                LogManager.debug_cmd("Found crashed")
+                                LogManager.debug("Found crashed")
                         except:
                             LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -243,8 +242,8 @@ try:
                     for i in conf_res:
 
                         try:
-                            LogManager.debug_cmd(json_data["Countries"][k]["NewDeaths"])
-                            LogManager.debug_cmd(i)
+                            LogManager.debug(json_data["Countries"][k]["NewDeaths"])
+                            LogManager.debug(i)
                         except:
                             LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -254,9 +253,9 @@ try:
                             if i == json_data["Countries"][k]["NewDeaths"]:
                                 res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewDeaths"]}')
 
-                                LogManager.debug_cmd("Found succesfully completed")
+                                LogManager.debug("Found succesfully completed")
                             else:
-                                LogManager.debug_cmd("Found crashed")
+                                LogManager.debug("Found crashed")
                         except:
                             LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -308,8 +307,8 @@ try:
                     for i in conf_res:
 
                         try:
-                            LogManager.debug_cmd(json_data["Countries"][k]["TotalConfirmed"])
-                            LogManager.debug_cmd(i)
+                            LogManager.debug(json_data["Countries"][k]["TotalConfirmed"])
+                            LogManager.debug(i)
                         except:
                             LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -319,9 +318,9 @@ try:
                             if i == json_data["Countries"][k]["TotalConfirmed"]:
                                 res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["TotalConfirmed"]}')
 
-                                LogManager.debug_cmd("Found succesfully completed")
+                                LogManager.debug("Found succesfully completed")
                             else:
-                                LogManager.debug_cmd("Found crashed")
+                                LogManager.debug("Found crashed")
                         except:
                             LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -373,8 +372,8 @@ try:
                     for i in conf_res:
 
                         try:
-                            LogManager.debug_cmd(json_data["Countries"][k]["TotalDeaths"])
-                            LogManager.debug_cmd(i)
+                            LogManager.debug(json_data["Countries"][k]["TotalDeaths"])
+                            LogManager.debug(i)
                         except:
                             LogManager.error("[CORONKA] Crash in informating JsonNewConfirmed)")
 
@@ -384,9 +383,9 @@ try:
                             if i == json_data["Countries"][k]["TotalDeaths"]:
                                 res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["TotalDeaths"]}')
 
-                                LogManager.debug_cmd("Found succesfully completed")
+                                LogManager.debug("Found succesfully completed")
                             else:
-                                LogManager.debug_cmd("Found crashed")
+                                LogManager.debug("Found crashed")
                         except:
                             LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -1284,7 +1283,7 @@ try:
         
         if input(" \033[36m ----------------- [1/0] ----------------- : ") == '1':
 
-            LogManager.debug_cmd("<<<^^^ Toxic bg connected ^^^>>>")
+            LogManager.debug("<<<^^^ Toxic bg connected ^^^>>>")
 
             while True:
                 os.system("color FC")
@@ -1296,7 +1295,7 @@ try:
                 os.system("color 8C")
 
         else:
-            LogManager.debug_cmd("<<<^^^ Standart bg connected ^^^>>>")
+            LogManager.debug("<<<^^^ Standart bg connected ^^^>>>")
 
     #=================================================
 
