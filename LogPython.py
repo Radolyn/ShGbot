@@ -1,6 +1,7 @@
 import ctypes
 from ctypes import ArgumentError
 import enum
+from sys import stdout
 
 import re
 from re import RegexFlag
@@ -99,6 +100,11 @@ class LogManager:
     def error(*args, **kwargs):
 
         LogManager.log(ERROR_COLOR, LEVEL.ERROR, 'ERROR', *args, **kwargs)
+
+
+    @staticmethod
+    def pre_warn(*args, **kwargs):
+        print(f"\033[33m {args[0]} \033[0m")
 
     class get_errors:
 
