@@ -1,118 +1,104 @@
-import logging
-from logging import INFO, error
 import ctypes
+from ctypes import ArgumentError
+import enum
 
 import re
 from re import RegexFlag
 import datetime
 import os
-from sys import stdout
-    
+import threading
+
 kernel32 = ctypes.windll.kernel32
-kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7) 
+kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 
-logging.basicConfig(level = logging.INFO,
-                    format = '{ShGLogger v 1.0} %(asctime)s %(process)-6s %(filename)s {%(levelname)s} : %(message)s',
-                    datefmt='%m/%d/%Y %I:%M:%S %p',
-                    filename = "LogPython_info.log",
-                    filemode = 'a')
+FILE = open('LogPython_info.log', 'a')
+pid = str(os.getpid()).ljust(5)
 
-LOG = logging.getLogger('ShGLogger v 1.0')
+RESET_COLOR = '\033[0m'
+
+DEBUG_COLOR = '\033[36m'
+INFO_COLOR = '\033[32m'
+WARNING_COLOR = '\033[33m'
+ERROR_COLOR = '\033[31m'
+
+LOCK = threading.Lock()
+
+
+class LEVEL(enum.IntEnum):
+    DEBUG = 0
+    INFO = 1
+    WARNING = 2
+    ERROR = 3
+
+
+__console_level__ = LEVEL.INFO
+__file_level__ = LEVEL.DEBUG
+
 
 class LogManager:
+    @staticmethod
+    def prefix(level: str):
+        level = level.ljust(7)
+        return f"[{datetime.datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}] [{__name__} {pid}] [{level}]"
 
     @staticmethod
-    def prefix(type:str, level:str):
-        if type == 'logger_cmd':
-            return f"[{datetime.datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}] [{__name__} {os.getpid()}] [{level}]"
+    def set_console_level(level: LEVEL):
+        if type(level) is LEVEL:
+            global __console_level__
+            __console_level__ = level
         else:
-            pass
-            """Undefined prefix method"""
+            raise ArgumentError()
 
-    def info(self, context):                        
-        self.context = context
+    @staticmethod
+    def set_file_level(level: LEVEL):
+        if type(level) is LEVEL:
+            global __file_level__
+            __file_level__ = level
+        else:
+            raise ArgumentError()
 
-        level = "INFO   "
+    @staticmethod
+    def log(color: str, level: LEVEL, level_str: str, *args, **kwargs):
 
-        stdout.writelines(f"\033[32m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m \n")
-        
-        try:
-            LOG.info(self.context)
-        except UnicodeEncodeError:         
-            stdout.writelines('--- Logging warning --- >> UnicodeEncodeError \n')
+        if level.value >= __console_level__:
+            LOCK.acquire()
 
-    def warning(self, context):
-        self.context = context
+            try:
+                print(' ' + color + LogManager.prefix(level_str) + ' ', end='')
+                print(*args, **kwargs)
+                print(RESET_COLOR, end='')
+            except:
+                pass
 
-        level = 'WARNING'
+            LOCK.release()
 
-        stdout.writelines(f"\033[33m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m \n")
+        if level.value >= __file_level__:
+            try:
+                print(LogManager.prefix(level_str) + ' ', end='', file=FILE)
+                print(*args, **kwargs, file=FILE)
+            except:
+                print('!!! FAILED TO LOG DATA !!!', file=FILE)
 
-        try:
-            LOG.info(self.context)
-        except UnicodeEncodeError:
-            stdout.writelines('--- Logging warning --- >> UnicodeEncodeError \n')
+    @staticmethod
+    def debug(*args, **kwargs):
 
-    def error(self, context):
-        self.context = context
+        LogManager.log(DEBUG_COLOR, LEVEL.DEBUG, 'DEBUG', *args, **kwargs)
 
-        level = 'ERROR  '
+    @staticmethod
+    def info(*args, **kwargs):
 
-        stdout.writelines(f"\033[31m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m \n")
+        LogManager.log(INFO_COLOR, LEVEL.INFO, 'INFO', *args, **kwargs)
 
-        try:
-            LOG.error(self.context)
-        except UnicodeEncodeError:
-            stdout.writelines('--- Logging warning --- >> UnicodeEncodeError \n')
+    @staticmethod
+    def warning(*args, **kwargs):
 
-    def debug(self, context):
-        self.context = context
+        LogManager.log(WARNING_COLOR, LEVEL.WARNING,
+                       'WARNING', *args, **kwargs)
 
-        level = 'DEBUG  '
+    @staticmethod
+    def error(*args, **kwargs):
 
-        stdout.writelines(f"\033[36m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m \n")
-
-        try:
-            LOG.debug(self.context)
-        except UnicodeEncodeError:
-            stdout.writelines('--- Logging warning --- >> UnicodeEncodeError \n')
-
-    def debug_cmd(self, context):
-        self.context = context
-
-        level = 'DEBUG  '
-
-        try:
-            LOG.debug(self.context)
-        except UnicodeEncodeError:
-            stdout.writelines('--- Logging warning --- >> UnicodeEncodeError \n')
-
-    def debug_log(self, context):
-        self.context = context
-
-        try:
-            LOG.debug(self.context)
-        except UnicodeEncodeError:
-            stdout.writelines('--- Logging warning --- >> UnicodeEncodeError \n')
-
-    def error_log(self, context):
-        self.context = context
-
-        try:
-            LOG.error(self.context)
-        except UnicodeEncodeError:
-            stdout.writelines('--- Logging warning --- >> UnicodeEncodeError \n')
-
-    def info_cmd(self, context):
-        level = "INFO   "
-        self.context = context
-
-        stdout.writelines(f"\033[32m {LogManager.prefix('logger_cmd', level)} {self.context}\033[0m \n")
-
-    def pre_warn(self, context):
-        context = context
-            
-        stdout.writelines("\033[33m {}" .format(context))
+        LogManager.log(ERROR_COLOR, LEVEL.ERROR, 'ERROR', *args, **kwargs)
 
     class get_errors:
 
@@ -121,17 +107,16 @@ class LogManager:
             reg = r"\{ERROR\} \: ([^+]+?)\{ShGLogger v 1\.0\}"
 
             file = open('LogPython_info.log', 'r')
-
             text = file.read()
 
             matches = re.findall(reg, text, RegexFlag.MULTILINE)
 
-            completed = []    
-   
-            for item in matches:                            
-                completed.append(item.replace('{ShGLogger v 1.0}', ''))  
+            completed = []
+
+            for item in matches:
+                completed.append(item.replace('{ShGLogger v 1.0}', ''))
 
             self.completed = completed
 
         def __str__(self):
-            return str(self.completed[len(self.completed) - 1])                                                 
+            return str(self.completed[len(self.completed) - 1])
