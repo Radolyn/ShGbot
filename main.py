@@ -541,7 +541,7 @@ try:
             await ctx.send(str(i))
             time.sleep(1)
 
-        await victim.kick(reason = reason)
+        await victim.ban(reason = reason)
 
         emb.set_author (name = victim, icon_url = victim.avatar_url)
         emb.add_field (name = 'Kick user', value = 'Kick user : {}'.format(victim.mention))
@@ -974,12 +974,9 @@ try:
             
             mem = await ctx.guild.fetch_member(victim_member.id)
 
-
             while n == True: 
-
-                LogManager.info(mem)                                                 
             
-                if mem == (victim_member.name + '@' + victim_member.descriminator):
+                if mem != None:                 
                     await mem.edit(mute = True, deafen = True)
                     time.sleep(0.75)
                     LogManager.info(f'[{author.id}] lock {victim_member}')                  
@@ -988,7 +985,6 @@ try:
                     except:                                                                     
                         pass
                 else:
-                    LogManager.warning("Victim crashed")
                     time.sleep(0.75)
         else:
             await ctx.send("Not enough permissions")
@@ -1242,10 +1238,15 @@ try:
 
         #await ctx.send ( embed = emb )
 
+    import ctypes
+
+    kernel32 = ctypes.windll.kernel32
+    kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7) 
+
     @bot.event
     async def on_ready():
 
-        print('          _____                    _____                    _____                    _____                    _____                    _____     _____  ')
+        print('\033[36m' + '          _____                    _____                    _____                    _____                    _____                    _____     _____  ')
         print('         /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \   /\    \ ')
         print('        /::\____\                /::\    \                /::\    \                /::\    \                /::\    \                /::\____\ /::\____\'')
         print('       /:::/    /                \:::\    \              /::::\    \              /::::\    \              /::::\    \              /:::/    //:::/    /')
@@ -1280,6 +1281,23 @@ try:
         activity = discord.Game(name='$help | ShG | Py')       
 
         await bot.change_presence(status=':rainbowpartner:', activity=activity)
+        
+        if input(" \033[36m ----------------- [1/0] ----------------- : ") == '1':
+
+            LogManager.debug_cmd("<<<^^^ Toxic bg connected ^^^>>>")
+
+            while True:
+                os.system("color FC")
+                os.system("color EC")
+                os.system("color AC")
+                os.system("color CF")
+                os.system("color 9C")
+                os.system("color DC")
+                os.system("color 8C")
+
+        else:
+            LogManager.debug_cmd("<<<^^^ Standart bg connected ^^^>>>")
+
     #=================================================
 
     bot.run(settings['TOKEN'])
