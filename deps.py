@@ -11,4 +11,4 @@ run_python_tool('pip install logging threading requests discord pysqlite --user'
 run_python_tool('pip install -U discord.py[voice]')
 
 print('Bot ready to work.')  
-    
+       

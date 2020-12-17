@@ -1312,7 +1312,7 @@ try:
         #         os.system("color 8C")
 
         # else:
-        #     LogManager.debug("<<<^^^ Standart bg connected ^^^>>>")
+        #     LogManager.debug("<<<^^^    Standart bg connected ^^^>>>")
   
     #=================================================
 
