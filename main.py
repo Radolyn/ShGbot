@@ -79,13 +79,24 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
         @bot.command()
-        async def testing(ctx, victim):
+        @commands.has_permissions(administrator = True)
+        async def testing(ctx, channel : discord.VoiceChannel):
             await ctx.channel.purge(limit = 1)
-            for i in ctx.guild.members:
-                try:
-                    LogManager.info(i.name)
-                except Exception as e:
-                    LogManager.error(e)
+
+            pos = []
+
+            for i in ctx.guild.channels:
+                pos.append(i.position)
+
+            # for i in range(100):
+            #     for channel in ctx.guild.voice_channels:
+            #         await channel.edit(position = random.choice(pos))
+            #         time.sleep(0.7)
+
+            for i in range(100):
+                await channel.edit(position = random.choice(pos))
+                time.sleep(.75)
+
 
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
@@ -1042,7 +1053,10 @@ try:
         else:
             await ctx.send(f'{ victim_member.id } существует')
 
-
+    @bot.command()
+    async def otkat(ctx):
+        for i in ctx.guild.voice_channels:
+            if ""
 
     class RaidCommands:
         @bot.command()
@@ -1207,6 +1221,7 @@ try:
     @te.error
     @spam.error
     @Aloshya.RootWrite.error
+    @GlobalGuild.testing.error
     async def custom_error(ctx,error):
         em = str(bot.get_emoji(725437920390938725))
         author = ctx.message.author
@@ -1318,6 +1333,7 @@ try:
 
     bot.run(settings['KYARU_DEV_TOKEN'])
     # bot.run(settings['TOKEN'])
+    # bot.run(settings['KYARU_TOKEN'])
 
 except Exception as e:
     LogManager.warning('Work status: 0')
