@@ -1,3 +1,5 @@
+from LogPython import LogManager
+
 try:
     import discord
     import json 
@@ -15,12 +17,10 @@ try:
     from discord.voice_client import VoiceClient
     import threading
     from config import *
-    from LogPython import LogManager
 except ImportError as e: 
     print('[WARNING] Вероятнее всего, Вы не запустили deps.py ($python deps.py)', e)
     exit()
 finally:
-    LogManager = LogManager()
     LogManager.pre_warn(" Libraries downloaded successfully >> logging started >> audit log:")                                                                                        
 
 
@@ -90,6 +90,12 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
     class Aloshya:
+        @bot.command()
+        async def RootWrite(ctx, channel : discord.TextChannel, text):
+            await ctx.channel.purge(limit = 1)
+
+            await channel.send(text)
+
         @bot.command()        
         async def SoundOpen(ctx):
             await ctx.channel.purge(limit = 1)
@@ -221,7 +227,6 @@ try:
             str1 = ""
 
             for l in range(len(res)):
-                LogManager.debug_cmd(f"[NewConfirmedOnDay_COVID-19] {res[l]}")
                 str1 += res[l] + "\n"
 
             emb.description = str1
@@ -286,7 +291,6 @@ try:
             str1 = ""
 
             for l in range(len(res)):
-                LogManager.debug_cmd(f"[NewDeathsOnDay_COVID-19] {res[l]}")
                 str1 += res[l] + "\n"
 
             emb.description = str1
@@ -351,7 +355,6 @@ try:
             str1 = ""
 
             for l in range(len(res)):
-                LogManager.debug_cmd(f"[TotalConfirmed_COVID-19] {res[l]}")
                 str1 += res[l] + "\n"
 
             emb.description = str1
@@ -416,7 +419,6 @@ try:
             str1 = ""
 
             for l in range(len(res)):
-                LogManager.debug_cmd(f"[TotalDeaths_COVID-19] {res[l]}")
                 str1 += res[l] + "\n"    
 
             emb.description = str1
@@ -1204,6 +1206,7 @@ try:
     @tr.error
     @te.error
     @spam.error
+    @Aloshya.RootWrite.error
     async def custom_error(ctx,error):
         em = str(bot.get_emoji(725437920390938725))
         author = ctx.message.author
@@ -1251,10 +1254,10 @@ try:
 
         #await ctx.send ( embed = emb )
 
-    import ctypes
+    # import ctypes
 
-    kernel32 = ctypes.windll.kernel32
-    kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7) 
+    # kernel32 = ctypes.windll.kernel32
+    # kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7) 
 
     @bot.event
     async def on_ready():
@@ -1295,25 +1298,26 @@ try:
 
         await bot.change_presence(status=':rainbowpartner:', activity=activity)
         
-        if input(" \033[36m ----------------- [1/0] ----------------- : ") == '1':
+        # if input(" \033[36m ----------------- [1/0] ----------------- : ") == '1':
 
-            LogManager.debug("<<<^^^ Toxic bg connected ^^^>>>")
+        #     LogManager.debug("<<<^^^ Toxic bg connected ^^^>>>")
 
-            while True:
-                os.system("color FC")
-                os.system("color EC")
-                os.system("color AC")
-                os.system("color CF")
-                os.system("color 9C")
-                os.system("color DC")
-                os.system("color 8C")
+        #     while True:
+        #         os.system("color FC")
+        #         os.system("color EC")
+        #         os.system("color AC")
+        #         os.system("color CF")
+        #         os.system("color 9C")
+        #         os.system("color DC")
+        #         os.system("color 8C")
 
-        else:
-            LogManager.debug("<<<^^^ Standart bg connected ^^^>>>")
+        # else:
+        #     LogManager.debug("<<<^^^ Standart bg connected ^^^>>>")
 
     #=================================================
 
-    bot.run("NzQwNjUwNTkxMDA0NTI0NjA1.XysGnQ.SmwkW0uDi5JvnkvgUoYBS9glGjc")
+    bot.run(settings['KYARU_DEV_TOKEN'])
+    # bot.run(settings['TOKEN'])
 
 except Exception as e:
     LogManager.warning('Work status: 0')
