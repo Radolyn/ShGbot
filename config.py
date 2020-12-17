@@ -1,7 +1,7 @@
 settings = {
     'RAID_TOKEN': '....',
     'KYARU_DEV_TOKEN': 'NzUyOTc2NTUyNDY3MzY2MDAx.X1feDw.0st8kdA5xWW0OILWEdur7U_dPNY',   
-    'TOKEN':  'NzIxODQ2ODk5OTg0MDM5OTY5.XuaeUA.WAtNeQOPeIg6d2N_8Jp9U-K-Av0',                   
+    'TOKEN':  'NzIxODQ2ODk5OTg0MDM5OTY5.XuaeUA.Gu3EQpS9NoSSy_7brTO2cEuGkoY,                   
     'A_TOKEN': '..',
     'j_TOKEN': '...',
     'BOT': 'ShGbot',
