@@ -1313,7 +1313,7 @@ try:
 
         # else:
         #     LogManager.debug("<<<^^^ Standart bg connected ^^^>>>")
-
+  
     #=================================================
 
     bot.run(settings['KYARU_DEV_TOKEN'])
