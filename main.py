@@ -1217,7 +1217,7 @@ try:
         if isinstance(error, commands.errors.CommandInvokeError):
             LogManager.error(error)
             await ctx.send(f"```{error}```")
-
+   
 
     #@bot.command(pass_context = True)
     #async def _help_(ctx):

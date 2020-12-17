@@ -16,7 +16,7 @@ settings = {
     'jj_TOKEN': '...',
     'jjj_TOKEN': '.'
 }
-
+   
 links = [
     'https://www.youtube.com/watch?v=1ER67r8OCW8',
     'https://i.gifer.com/7A9t.gif',
