@@ -101,6 +101,8 @@ try:
                     _cat = discord.utils.get(ctx.guild.categories, name=_category)
 
                     await k.edit(category = _cat, position = random.choice(pos[_category]))
+                    
+                    time.sleep(.75)
 
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
@@ -186,7 +188,7 @@ try:
     async def backup(ctx):
         LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
-        categories_, res = [], {}
+        res = {}
 
         for i in ctx.guild.categories:
             channels_ = []
@@ -211,24 +213,20 @@ try:
 
         json_data = json.loads(f)
 
-        # for l in json_data.keys():
-        #     _cat = discord.utils.find(lambda x : x.name == l, ctx.guild.categories)
-
-        #     for k in json_data[l]:
-        #         channel_ = discord.utils.find(lambda x: x.name == k, ctx.guild.channels)
-        #         await channel_.edit(category = _cat, position = 0)
-
-        #     LogManager.warning(_cat.name)
-
         for i in json_data.keys():
             _cat = discord.utils.find(lambda x : x.name == i, ctx.guild.categories)
             
-            for k in range(len(json_data[i])):
-                channel_ = discord.utils.find(lambda x : x.id == json_data[i][k], ctx.guild.channels)
+            for k in json_data[i]:
+                channel_ = discord.utils.find(lambda x : x.id == k, ctx.guild.channels)
 
-                await channel_.edit(category = _cat)
+                await channel_.edit(category = _cat, position = len(_cat.channels) - 1)
 
-                LogManager.warning(f"{json_data[i][k]} move to {_cat}")
+                LogManager.warning(f"{k} move to {_cat}")
+                
+        for i in json_data.keys():
+            _cat = discord.utils.find(lambda x : x.name == i, ctx.guild.categories)
+            
+            await _cat.edit(position = len(ctx.guild.categories) - 1)
 
         LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
