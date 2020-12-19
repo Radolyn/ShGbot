@@ -80,7 +80,7 @@ try:
 
         @bot.command()
         @commands.has_permissions(administrator = True)
-        async def testing(ctx):
+        async def ChannelFlex(ctx):
             await ctx.channel.purge(limit = 1)
 
             pos, cats = {}, []
@@ -95,24 +95,12 @@ try:
 
                 pos[i.name] = _channels
 
-            # for i in range(100):
-            #     for channel in ctx.guild.voice_channels:
-            #         await channel.edit(position = random.choice(pos))
-            #         time.sleep(0.7)
-
-            # for i in range(100):
-            #     await channel.edit(position = random.choice(pos))
-            #     time.sleep(.75)
             for i in range(100):
                 for k in ctx.guild.channels:
                     _category = random.choice(cats)
                     _cat = discord.utils.get(ctx.guild.categories, name=_category)
 
                     await k.edit(category = _cat, position = random.choice(pos[_category]))
-
-            # for i in range(15):
-            #     thr = threading.Thread(target = starter, daemon = True)
-            #     thr.start()    
 
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
@@ -1291,7 +1279,7 @@ try:
     @spam.error
     @to_backup.error
     @Aloshya.RootWrite.error
-    @GlobalGuild.testing.error
+    @GlobalGuild.ChannelFlex.error
     async def custom_error(ctx,error):
         em = str(bot.get_emoji(725437920390938725))
         author = ctx.message.author
