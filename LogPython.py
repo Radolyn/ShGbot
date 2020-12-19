@@ -1,7 +1,7 @@
 import ctypes
 from ctypes import ArgumentError
 import enum
-from sys import stdout
+import sys
 
 import re
 from re import RegexFlag
@@ -9,8 +9,9 @@ import datetime
 import os
 import threading
 
-kernel32 = ctypes.windll.kernel32
-kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
+if sys.platform == "win32":
+    kernel32 = ctypes.windll.kernel32
+    kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 
 FILE = open('LogPython_info.log', 'a')
 pid = str(os.getpid()).ljust(5)

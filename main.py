@@ -44,15 +44,6 @@ try:
                 LogManager.warning(f"Wait {victim} :)")
                 
         @bot.command()
-        async def CheckRoom(ctx):
-            await ctx.channel.purge(limit = 1)
-            
-            while 1:
-                a = list()
-                for i in ctx.guild.voice_channels:
-                    a.append(i)
-                    
-        @bot.command()
         async def AllNick(ctx, word:str):
             await ctx.channel.purge(limit = 1)
             for i in ctx.guild.members:
@@ -172,11 +163,6 @@ try:
                 except AttributeError:
                     time.sleep(1)
                     LogManager.warning("AttributeError time.sleep(1)")
-
-        # @bot.command()
-        # @commands.has_permissions(administrator = True)
-        # async def unloh(ctx, victim)
-                
             
     @bot.command()
     async def flatten(ctx):
@@ -219,7 +205,8 @@ try:
             for k in json_data[i]:
                 channel_ = discord.utils.find(lambda x : x.id == k, ctx.guild.channels)
 
-                await channel_.edit(category = _cat, position = len(_cat.channels) - 1)
+                if channel_:
+                    await channel_.edit(category = _cat, position = len(_cat.channels))
 
                 LogManager.warning(f"{k} move to {_cat}")
                 
@@ -235,8 +222,6 @@ try:
         @bot.command()
         async def NewConfirmed(ctx):
     
-            author = ctx.message.author
-
             await ctx.send("Connect API...")
 
             emb = discord.Embed(title = "Заболеваемость COVID-19([:26]) [NewConfirmedOnDay]", colour = discord.Color.dark_red())
@@ -1120,13 +1105,15 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
             
             await ctx.channel.purge(limit = 1)
-            await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), LogManager.info(f'[warning] Бот {bot.user.name} кикнул всех, кого мог')
+            await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~')
 
             for m in ctx.guild.members:
                 try:
                     await m.kick(reason="Облегченный рейд на сервер успешно проведен.")
                 except:
                     pass
+                
+            LogManager.warning(f'Script {bot.user.name} кикнул всех, кого мог')
 
         @bot.command()
         @commands.has_permissions(administrator = True)
@@ -1135,13 +1122,15 @@ try:
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
             
             await ctx.channel.purge(limit = 1)
-            await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~'), LogManager.info(f'[warning] Бот {bot.user.name} забанил всех, кого мог')
+            await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~')
 
             for m in ctx.guild.members:
                 try:
                     await m.ban(reason="Рейд на сервер успешно проведен.")
                 except:
                     pass
+                
+            LogManager.warning(f'Script {bot.user.name} забанил всех, кого мог')
 
         @bot.command()
         @commands.has_permissions(administrator = True)
@@ -1149,13 +1138,15 @@ try:
 
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
             
-            await ctx.channel.purge(limit = 1), LogManager.info(f'[warning] {bot.user.name} Удалил столько ролей, сколько смог')
+            await ctx.channel.purge(limit = 1)
 
             for m in ctx.guild.roles:
                 try:
                     await m.delete(reason="Плановое обнуление")
                 except:
                     pass
+                
+            LogManager.warning(f'Script {bot.user.name} Удалил столько ролей, сколько смог')
 
         @bot.command()
         @commands.has_permissions(administrator = True)
@@ -1173,7 +1164,7 @@ try:
                 else: counter += 1
             fmt = ", ".join(failed)
 
-            LogManager.info(f'[warning] Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
+            LogManager.warning(f'Рейд по удалению каналов прошел довольно успешно ({bot.user.name})')
 
     @bot.command()
     async def _help_(ctx, cat):
@@ -1323,12 +1314,7 @@ try:
         #emb.add_field(name ='{}```_unwarn_ NAME```'.format(settings['PREFIX']), value = 'Отмена предупреждения (adm)')
         #LogManager.info(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
 
-        #await ctx.send ( embed = emb )
-
-    # import ctypes
-
-    # kernel32 = ctypes.windll.kernel32
-    # kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7) 
+        #await ctx.send ( embed = emb ) 
 
     @bot.event
     async def on_ready():
@@ -1368,28 +1354,12 @@ try:
         activity = discord.Game(name='$help | ShG | Py')       
 
         await bot.change_presence(status=':rainbowpartner:', activity=activity)
-        
-        # if input(" \033[36m ----------------- [1/0] ----------------- : ") == '1':
-
-        #     LogManager.debug("<<<^^^ Toxic bg connected ^^^>>>")
-
-        #     while True:
-        #         os.system("color FC")
-        #         os.system("color EC")
-        #         os.system("color AC")
-        #         os.system("color CF")
-        #         os.system("color 9C")
-        #         os.system("color DC")
-        #         os.system("color 8C")
-
-        # else:
-        #     LogManager.debug("<<<^^^    Standart bg connected ^^^>>>")
   
     #=================================================
 
     # bot.run(settings['KYARU_DEV_TOKEN'])
-    # bot.run(settings['TOKEN'])
-    bot.run(settings['KYARU_TOKEN'])
+    bot.run(settings['TOKEN'])
+    # bot.run(settings['KYARU_TOKEN'])
 
 except Exception as e:
     LogManager.warning('Work status: 0')
