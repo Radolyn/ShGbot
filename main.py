@@ -522,7 +522,7 @@ try:
         emb.set_image(url = ho)
         await ctx.send(embed = emb)
         
-        LogManager.info(f'[{ctx.guild.name}] Bot send {ho}')
+        LogManager.info(f'[{ctx.guild.name}] Bot send {ho}')   
 
     @bot.command()
     async def random_em(ctx):
