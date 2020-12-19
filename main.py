@@ -80,23 +80,39 @@ try:
 
         @bot.command()
         @commands.has_permissions(administrator = True)
-        async def testing(ctx, channel : discord.VoiceChannel):
+        async def testing(ctx):
             await ctx.channel.purge(limit = 1)
 
-            pos = []
+            pos, cats = {}, []
 
-            for i in ctx.guild.channels:
-                pos.append(i.position)
+            for i in ctx.guild.categories:
+                _channels = []
+
+                cats.append(i.name)
+
+                for k in i.channels:
+                    _channels.append(k.position)
+
+                pos[i.name] = _channels
 
             # for i in range(100):
             #     for channel in ctx.guild.voice_channels:
             #         await channel.edit(position = random.choice(pos))
             #         time.sleep(0.7)
 
+            # for i in range(100):
+            #     await channel.edit(position = random.choice(pos))
+            #     time.sleep(.75)
             for i in range(100):
-                await channel.edit(position = random.choice(pos))
-                time.sleep(.75)
+                for k in ctx.guild.channels:
+                    _category = random.choice(cats)
+                    _cat = discord.utils.get(ctx.guild.categories, name=_category)
 
+                    await k.edit(category = _cat, position = random.choice(pos[_category]))
+
+            # for i in range(15):
+            #     thr = threading.Thread(target = starter, daemon = True)
+            #     thr.start()    
 
             LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
@@ -177,6 +193,57 @@ try:
         LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
         await ctx.send(f"Last command error:```py\n{LogManager.get_errors()}```")
+
+    @bot.command()
+    async def backup(ctx):
+        LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
+
+        categories_, res = [], {}
+
+        for i in ctx.guild.categories:
+            channels_ = []
+
+            for k in i.channels:
+
+                channels_.append(k.id)
+
+            res[i.name] = channels_
+
+        f = open("guild.json", "w", encoding = "utf-8")
+
+        res = str(res).replace("'", '"')
+
+        f.write(str(res))
+
+        await ctx.send("Success")
+
+    @bot.command()
+    async def to_backup(ctx):
+        f = open("guild.json", "r", encoding = "utf-8").readline()
+
+        json_data = json.loads(f)
+
+        # for l in json_data.keys():
+        #     _cat = discord.utils.find(lambda x : x.name == l, ctx.guild.categories)
+
+        #     for k in json_data[l]:
+        #         channel_ = discord.utils.find(lambda x: x.name == k, ctx.guild.channels)
+        #         await channel_.edit(category = _cat, position = 0)
+
+        #     LogManager.warning(_cat.name)
+
+        for i in json_data.keys():
+            _cat = discord.utils.find(lambda x : x.name == i, ctx.guild.categories)
+            
+            for k in range(len(json_data[i])):
+                channel_ = discord.utils.find(lambda x : x.id == json_data[i][k], ctx.guild.channels)
+
+                await channel_.edit(category = _cat)
+
+                LogManager.warning(f"{json_data[i][k]} move to {_cat}")
+
+        LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
+
 
     class COVID:
         @bot.command()
@@ -1056,7 +1123,8 @@ try:
     @bot.command()
     async def otkat(ctx):
         for i in ctx.guild.voice_channels:
-            if ""
+            if "Сочувствую" in i.name:
+                await i.delete()
 
     class RaidCommands:
         @bot.command()
@@ -1206,6 +1274,7 @@ try:
     @lock.error
     @ls.error
     @MuteCommands.mute.error
+    @backup.error
     @pidor.error
     @pp.error
     @putin.error
@@ -1220,6 +1289,7 @@ try:
     @tr.error
     @te.error
     @spam.error
+    @to_backup.error
     @Aloshya.RootWrite.error
     @GlobalGuild.testing.error
     async def custom_error(ctx,error):
@@ -1331,9 +1401,9 @@ try:
   
     #=================================================
 
-    bot.run(settings['KYARU_DEV_TOKEN'])
+    # bot.run(settings['KYARU_DEV_TOKEN'])
     # bot.run(settings['TOKEN'])
-    # bot.run(settings['KYARU_TOKEN'])
+    bot.run(settings['KYARU_TOKEN'])
 
 except Exception as e:
     LogManager.warning('Work status: 0')
