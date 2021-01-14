@@ -210,10 +210,14 @@ try:
 
                 LogManager.warning(f"{k} move to {_cat}")
                 
-        for i in json_data.keys():
+                time.sleep(.8)
+                
+        for i in reversed(json_data.keys()):
             _cat = discord.utils.find(lambda x : x.name == i, ctx.guild.categories)
             
-            await _cat.edit(position = len(ctx.guild.categories) - 1)
+            await _cat.edit(position = 0)
+            
+            time.sleep(.8)
 
         LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
@@ -593,7 +597,7 @@ try:
             await ctx.send(f'**{ctx.message.author.mention}, данная команда не обнаружена**{str(em)}')
 
     @bot.command()
-    @commands.has_permissions(administrator = True)
+    # @commands.has_permissions(administrator = True)
     async def _jojo_(ctx, victim: discord.Member, reason = "Доигрался, вот тебе ролевые игры"):
         """Custom kick victim:str of guild (may be not working now)"""
         
@@ -764,7 +768,7 @@ try:
 
 
     @bot.command()
-    @commands.has_permissions(administrator = True)
+    # @commands.has_permissions(administrator = True)
     async def cleanadm(ctx, amount):
         """Cleaning chat without other mes"""
         
@@ -1028,7 +1032,7 @@ try:
     @commands.has_permissions(administrator = True)
     async def lat(ctx, victim:str):
         """All time lock victim:str"""                                  
-        if ctx.message.author.name == "SharapaGorg":
+        if ctx.message.author.id == 691575600707534908:
             await ctx.channel.purge(limit = 1)
             global n
             n = True
@@ -1074,10 +1078,8 @@ try:
 
         LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
         
-        author = ctx.message.author
-        if str(author.id) == '691575600707534908':
-            victim_member = get(ctx.guild.members, name = victim)
-            await ctx.send(victim_member)
+        victim_member = get(ctx.guild.members, name = victim)
+        await victim_member.send("сдохни, просто сдохни")
 
     @bot.command()
     async def _test_(ctx, victim):
@@ -1094,7 +1096,7 @@ try:
     @bot.command()
     async def otkat(ctx):
         for i in ctx.guild.voice_channels:
-            if "Сочувствую" in i.name:
+            if "OK " in i.name:
                 await i.delete()
 
     class RaidCommands:
@@ -1357,8 +1359,8 @@ try:
   
     #=================================================
 
-    # bot.run(settings['KYARU_DEV_TOKEN'])
-    bot.run(settings['TOKEN'])
+    bot.run(settings['KYARU_DEV_TOKEN'])
+    # bot.run(settings['TOKEN'])
     # bot.run(settings['KYARU_TOKEN'])
 
 except Exception as e:
