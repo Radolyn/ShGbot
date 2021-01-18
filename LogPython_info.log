@@ -24166,3 +24166,2357 @@
 [01/14/2021 11:37:22 PM] [LogPython 14776] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called cleanadm
 [01/14/2021 11:37:22 PM] [LogPython 14776] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа cleaned chat for 10 positions
 [01/14/2021 11:38:33 PM] [LogPython 14776] [INFO   ] Well done :)
+[01/14/2021 11:39:42 PM] [LogPython 5708 ] [WARNING] Work status: 0
+[01/14/2021 11:39:42 PM] [LogPython 5708 ] [ERROR  ] Improper token has been passed.
+[01/14/2021 11:39:42 PM] [LogPython 5708 ] [INFO   ] Well done :)
+[01/16/2021 02:38:24 PM] [LogPython 12728] [WARNING] Work status: 0
+[01/16/2021 02:38:24 PM] [LogPython 12728] [ERROR  ] Improper token has been passed.
+[01/16/2021 02:38:24 PM] [LogPython 12728] [INFO   ] Well done :)
+[01/16/2021 02:39:35 PM] [LogPython 12996] [WARNING] Work status: 0
+[01/16/2021 02:39:35 PM] [LogPython 12996] [ERROR  ] Improper token has been passed.
+[01/16/2021 02:39:35 PM] [LogPython 12996] [INFO   ] Well done :)
+[01/16/2021 02:40:14 PM] [LogPython 6184 ] [WARNING] Work status: 0
+[01/16/2021 02:40:14 PM] [LogPython 6184 ] [ERROR  ] Improper token has been passed.
+[01/16/2021 02:40:14 PM] [LogPython 6184 ] [INFO   ] Well done :)
+[01/16/2021 02:40:51 PM] [LogPython 6956 ] [DEBUG  ] <_MainThread(MainThread, started 11608)> Running
+[01/16/2021 02:40:51 PM] [LogPython 6956 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 8488)> Running
+[01/16/2021 02:40:51 PM] [LogPython 6956 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14008)> Running
+[01/16/2021 02:40:51 PM] [LogPython 6956 ] [INFO   ] Work Status: 1
+[01/16/2021 02:40:51 PM] [LogPython 6956 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 02:40:51 PM] [LogPython 6956 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 02:41:16 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc
+[01/16/2021 02:41:16 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+[01/16/2021 02:41:23 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:41:33 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 02:41:40 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called ls
+[01/16/2021 02:41:41 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called gs
+[01/16/2021 02:41:41 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+[01/16/2021 02:42:06 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'id'
+[01/16/2021 02:42:33 PM] [LogPython 6956 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called ls
+[01/16/2021 02:42:35 PM] [LogPython 6956 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called gs
+[01/16/2021 02:42:35 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+[01/16/2021 02:43:24 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called mute
+[01/16/2021 02:43:24 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'edit'
+[01/16/2021 02:43:26 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called mute
+[01/16/2021 02:43:26 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'edit'
+[01/16/2021 02:44:00 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 02:44:27 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc
+[01/16/2021 02:44:27 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+[01/16/2021 02:44:45 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc
+[01/16/2021 02:45:15 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/16/2021 02:45:28 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called exc
+[01/16/2021 02:45:35 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 02:45:35 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+[01/16/2021 02:45:47 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called mute
+[01/16/2021 02:45:47 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'edit'
+[01/16/2021 02:45:49 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 02:46:10 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc
+[01/16/2021 02:46:10 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+[01/16/2021 02:46:14 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 02:46:27 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc
+[01/16/2021 02:47:08 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc
+[01/16/2021 02:47:46 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 02:47:46 PM] [LogPython 6956 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+[01/16/2021 02:47:46 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called exc
+[01/16/2021 02:49:06 PM] [LogPython 6956 ] [INFO   ] Kyaru [DEV]
+[01/16/2021 02:49:07 PM] [LogPython 6956 ] [INFO   ] Черножопый мафиозник
+[01/16/2021 02:49:08 PM] [LogPython 6956 ] [INFO   ] -OnePo1nt
+[01/16/2021 02:49:08 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called AllNick
+[01/16/2021 02:49:17 PM] [LogPython 6956 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:50:09 PM] [LogPython 6956 ] [INFO   ] Well done :)
+[01/16/2021 02:48:14 PM] [LogPython 7564 ] [DEBUG  ] <_MainThread(MainThread, started 10648)> Running
+[01/16/2021 02:48:14 PM] [LogPython 7564 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 11356)> Running
+[01/16/2021 02:48:14 PM] [LogPython 7564 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12908)> Running
+[01/16/2021 02:48:14 PM] [LogPython 7564 ] [INFO   ] Work Status: 1
+[01/16/2021 02:48:14 PM] [LogPython 7564 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 02:48:14 PM] [LogPython 7564 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 02:49:05 PM] [LogPython 7564 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 02:49:17 PM] [LogPython 7564 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:50:22 PM] [LogPython 7564 ] [INFO   ] Well done :)
+[01/16/2021 02:50:24 PM] [LogPython 13832] [DEBUG  ] <_MainThread(MainThread, started 14752)> Running
+[01/16/2021 02:50:24 PM] [LogPython 13832] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 6296)> Running
+[01/16/2021 02:50:24 PM] [LogPython 13832] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 6932)> Running
+[01/16/2021 02:50:24 PM] [LogPython 13832] [INFO   ] Work Status: 1
+[01/16/2021 02:50:24 PM] [LogPython 13832] [INFO   ] Auditor magazine of bot:
+[01/16/2021 02:50:24 PM] [LogPython 13832] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 02:50:28 PM] [LogPython 13832] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 02:50:52 PM] [LogPython 13832] [INFO   ] Well done :)
+[01/16/2021 02:50:49 PM] [LogPython 7104 ] [DEBUG  ] <_MainThread(MainThread, started 13768)> Running
+[01/16/2021 02:50:49 PM] [LogPython 7104 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 1884)> Running
+[01/16/2021 02:50:49 PM] [LogPython 7104 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 13728)> Running
+[01/16/2021 02:50:49 PM] [LogPython 7104 ] [INFO   ] Work Status: 1
+[01/16/2021 02:50:49 PM] [LogPython 7104 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 02:50:49 PM] [LogPython 7104 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 02:50:56 PM] [LogPython 7104 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 02:51:13 PM] [LogPython 7104 ] [INFO   ] Well done :)
+[01/16/2021 02:51:16 PM] [LogPython 12660] [INFO   ] Well done :)
+[01/16/2021 02:53:17 PM] [LogPython 9812 ] [DEBUG  ] <_MainThread(MainThread, started 3252)> Running
+[01/16/2021 02:53:17 PM] [LogPython 9812 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 9256)> Running
+[01/16/2021 02:53:17 PM] [LogPython 9812 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 5896)> Running
+[01/16/2021 02:53:17 PM] [LogPython 9812 ] [INFO   ] Work Status: 1
+[01/16/2021 02:53:17 PM] [LogPython 9812 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 02:53:17 PM] [LogPython 9812 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 02:53:19 PM] [LogPython 9812 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:53:23 PM] [LogPython 9812 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 02:54:11 PM] [LogPython 9812 ] [INFO   ] Well done :)
+[01/16/2021 02:55:44 PM] [LogPython 8780 ] [INFO   ] Well done :)
+[01/16/2021 02:54:27 PM] [LogPython 13048] [DEBUG  ] <_MainThread(MainThread, started 4324)> Running
+[01/16/2021 02:54:27 PM] [LogPython 13048] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 608)> Running
+[01/16/2021 02:54:27 PM] [LogPython 13048] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 5708)> Running
+[01/16/2021 02:54:27 PM] [LogPython 13048] [INFO   ] Work Status: 1
+[01/16/2021 02:54:27 PM] [LogPython 13048] [INFO   ] Auditor magazine of bot:
+[01/16/2021 02:54:27 PM] [LogPython 13048] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 02:54:33 PM] [LogPython 13048] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:54:39 PM] [LogPython 13048] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:00 PM] [LogPython 13048] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:04 PM] [LogPython 13048] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:08 PM] [LogPython 13048] [INFO   ] Well done :)
+[01/16/2021 02:58:56 PM] [LogPython 6196 ] [DEBUG  ] <_MainThread(MainThread, started 12796)> Running
+[01/16/2021 02:58:56 PM] [LogPython 6196 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10544)> Running
+[01/16/2021 02:58:56 PM] [LogPython 6196 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 10488)> Running
+[01/16/2021 02:58:56 PM] [LogPython 6196 ] [INFO   ] Work Status: 1
+[01/16/2021 02:58:56 PM] [LogPython 6196 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 02:58:56 PM] [LogPython 6196 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 02:59:00 PM] [LogPython 6196 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:04 PM] [LogPython 6196 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:09 PM] [LogPython 6196 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:27 PM] [LogPython 6196 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:36 PM] [LogPython 6196 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:39 PM] [LogPython 6196 ] [INFO   ] Well done :)
+[01/16/2021 03:01:09 PM] [LogPython 8772 ] [DEBUG  ] <_MainThread(MainThread, started 7972)> Running
+[01/16/2021 03:01:09 PM] [LogPython 8772 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 2492)> Running
+[01/16/2021 03:01:09 PM] [LogPython 8772 ] [DEBUG  ] <KeepAliveHandler(Thread-2, started daemon 11268)> Running
+[01/16/2021 03:01:09 PM] [LogPython 8772 ] [INFO   ] Work Status: 1
+[01/16/2021 03:01:09 PM] [LogPython 8772 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 03:01:09 PM] [LogPython 8772 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 03:01:47 PM] [LogPython 8772 ] [INFO   ] Well done :)
+[01/16/2021 03:00:59 PM] [LogPython 10172] [DEBUG  ] <_MainThread(MainThread, started 1692)> Running
+[01/16/2021 03:00:59 PM] [LogPython 10172] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12496)> Running
+[01/16/2021 03:00:59 PM] [LogPython 10172] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 5388)> Running
+[01/16/2021 03:00:59 PM] [LogPython 10172] [INFO   ] Work Status: 1
+[01/16/2021 03:00:59 PM] [LogPython 10172] [INFO   ] Auditor magazine of bot:
+[01/16/2021 03:00:59 PM] [LogPython 10172] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 03:01:07 PM] [LogPython 10172] [INFO   ] [ГореПрограммист и ещё люди] $Bot send message: все нормально >> called by Ходжазаде Мусхлидин Мустафа
+[01/16/2021 03:01:48 PM] [LogPython 10172] [INFO   ] Well done :)
+[01/16/2021 02:59:34 PM] [LogPython 13184] [DEBUG  ] <_MainThread(MainThread, started 5812)> Running
+[01/16/2021 02:59:34 PM] [LogPython 13184] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 4548)> Running
+[01/16/2021 02:59:34 PM] [LogPython 13184] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12840)> Running
+[01/16/2021 02:59:34 PM] [LogPython 13184] [INFO   ] Work Status: 1
+[01/16/2021 02:59:34 PM] [LogPython 13184] [INFO   ] Auditor magazine of bot:
+[01/16/2021 02:59:34 PM] [LogPython 13184] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 02:59:36 PM] [LogPython 13184] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:45 PM] [LogPython 13184] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/16/2021 02:59:48 PM] [LogPython 13184] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called vers
+[01/16/2021 02:59:56 PM] [LogPython 13184] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:00:22 PM] [LogPython 13184] [INFO   ] Черножопый мафиозник
+[01/16/2021 03:00:23 PM] [LogPython 13184] [INFO   ] toniq
+[01/16/2021 03:00:24 PM] [LogPython 13184] [INFO   ] -OnePo1nt
+[01/16/2021 03:00:25 PM] [LogPython 13184] [INFO   ] Serg1
+[01/16/2021 03:00:26 PM] [LogPython 13184] [INFO   ] Sharik
+[01/16/2021 03:00:26 PM] [LogPython 13184] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called backup
+[01/16/2021 03:00:27 PM] [LogPython 13184] [INFO   ] Ulqiorra
+[01/16/2021 03:00:28 PM] [LogPython 13184] [INFO   ] Mimimix
+[01/16/2021 03:00:28 PM] [LogPython 13184] [ERROR  ] 403 Forbidden (error code: 50013): Missing Permissions
+[01/16/2021 03:00:29 PM] [LogPython 13184] [INFO   ] Тёма
+[01/16/2021 03:00:30 PM] [LogPython 13184] [INFO   ] dancerdrug
+[01/16/2021 03:00:32 PM] [LogPython 13184] [INFO   ] B1ZZ0
+[01/16/2021 03:00:33 PM] [LogPython 13184] [INFO   ] Amidamaru
+[01/16/2021 03:00:34 PM] [LogPython 13184] [INFO   ] SystemBroker
+[01/16/2021 03:00:35 PM] [LogPython 13184] [INFO   ] ГАШИШ 0.3
+[01/16/2021 03:00:36 PM] [LogPython 13184] [INFO   ] Rythm
+[01/16/2021 03:00:37 PM] [LogPython 13184] [INFO   ] Чёрная мамба
+[01/16/2021 03:00:39 PM] [LogPython 13184] [INFO   ] hrist_off
+[01/16/2021 03:00:40 PM] [LogPython 13184] [INFO   ] Ihor
+[01/16/2021 03:00:42 PM] [LogPython 13184] [INFO   ] Tuman
+[01/16/2021 03:00:43 PM] [LogPython 13184] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/16/2021 03:00:45 PM] [LogPython 13184] [INFO   ] Водем
+[01/16/2021 03:00:46 PM] [LogPython 13184] [INFO   ] Shadow7
+[01/16/2021 03:00:47 PM] [LogPython 13184] [INFO   ] ДЕД  ИНСАЙД
+[01/16/2021 03:00:48 PM] [LogPython 13184] [INFO   ] Rea1Got
+[01/16/2021 03:00:49 PM] [LogPython 13184] [INFO   ] exedna
+[01/16/2021 03:00:50 PM] [LogPython 13184] [INFO   ] Вероника Озерова
+[01/16/2021 03:00:52 PM] [LogPython 13184] [INFO   ] Mimimix
+[01/16/2021 03:00:53 PM] [LogPython 13184] [INFO   ] MyValorant
+[01/16/2021 03:00:55 PM] [LogPython 13184] [INFO   ] shumka
+[01/16/2021 03:00:56 PM] [LogPython 13184] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/16/2021 03:00:57 PM] [LogPython 13184] [INFO   ] Qusako
+[01/16/2021 03:00:59 PM] [LogPython 13184] [INFO   ] Matroskin
+[01/16/2021 03:01:00 PM] [LogPython 13184] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/16/2021 03:01:01 PM] [LogPython 13184] [INFO   ] prolabsofficial
+[01/16/2021 03:01:03 PM] [LogPython 13184] [INFO   ] Kapitar
+[01/16/2021 03:01:04 PM] [LogPython 13184] [INFO   ] Kealista(Влад)
+[01/16/2021 03:01:06 PM] [LogPython 13184] [INFO   ] vaDDoS
+[01/16/2021 03:01:07 PM] [LogPython 13184] [INFO   ] Lisenok_Pilegrim
+[01/16/2021 03:01:08 PM] [LogPython 13184] [INFO   ] Kyaru
+[01/16/2021 03:01:09 PM] [LogPython 13184] [INFO   ] Привет
+[01/16/2021 03:01:09 PM] [LogPython 13184] [INFO   ] [ГореПрограммист и ещё люди] $Bot send message: все нормально >> called by Ходжазаде Мусхлидин Мустафа
+[01/16/2021 03:01:10 PM] [LogPython 13184] [INFO   ] SVOY46
+[01/16/2021 03:01:12 PM] [LogPython 13184] [INFO   ] Kawai
+[01/16/2021 03:01:13 PM] [LogPython 13184] [INFO   ] Andrey123_456
+[01/16/2021 03:01:15 PM] [LogPython 13184] [INFO   ] инкогнито
+[01/16/2021 03:01:16 PM] [LogPython 13184] [INFO   ] Даня Смирнов
+[01/16/2021 03:01:18 PM] [LogPython 13184] [INFO   ] Digest
+[01/16/2021 03:01:19 PM] [LogPython 13184] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/16/2021 03:01:20 PM] [LogPython 13184] [INFO   ] Aqua
+[01/16/2021 03:01:20 PM] [LogPython 13184] [ERROR  ] 403 Forbidden (error code: 50013): Missing Permissions
+[01/16/2021 03:01:21 PM] [LogPython 13184] [INFO   ] Mike6543
+[01/16/2021 03:01:23 PM] [LogPython 13184] [INFO   ] AlexeyZavar
+[01/16/2021 03:01:24 PM] [LogPython 13184] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/16/2021 03:01:26 PM] [LogPython 13184] [INFO   ] Den
+[01/16/2021 03:01:27 PM] [LogPython 13184] [INFO   ] Kyaru [DEV]
+[01/16/2021 03:01:29 PM] [LogPython 13184] [INFO   ] 0ric4th
+[01/16/2021 03:01:30 PM] [LogPython 13184] [INFO   ] Ходжазаде Мусхлидин Мустафа
+[01/16/2021 03:01:30 PM] [LogPython 13184] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called AllNick
+[01/16/2021 03:01:49 PM] [LogPython 13184] [INFO   ] Well done :)
+[01/16/2021 03:04:11 PM] [LogPython 12684] [DEBUG  ] <_MainThread(MainThread, started 15260)> Running
+[01/16/2021 03:04:11 PM] [LogPython 12684] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13900)> Running
+[01/16/2021 03:04:11 PM] [LogPython 12684] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 8900)> Running
+[01/16/2021 03:04:11 PM] [LogPython 12684] [INFO   ] Work Status: 1
+[01/16/2021 03:04:11 PM] [LogPython 12684] [INFO   ] Auditor magazine of bot:
+[01/16/2021 03:04:11 PM] [LogPython 12684] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 03:04:42 PM] [LogPython 12684] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:52 PM] [LogPython 12684] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:05:22 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called gs
+[01/16/2021 03:05:49 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:05:49 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:06:01 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:03 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:06 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:18 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 40032): Target user is not connected to voice.
+[01/16/2021 03:06:20 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:21 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:08:07 PM] [LogPython 12684] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:07 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:08:09 PM] [LogPython 12684] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:24 PM] [LogPython 12684] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:24 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:08:24 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/16/2021 03:08:32 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:32 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:45 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:45 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:46 PM] [LogPython 12684] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:46 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:46 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:46 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:46 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:53 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:04 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127b93f6e163a5f &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:08:54 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127b93f6e163a5f</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+[01/16/2021 03:02:04 PM] [LogPython 8780 ] [DEBUG  ] <_MainThread(MainThread, started 15108)> Running
+[01/16/2021 03:02:04 PM] [LogPython 8780 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 9556)> Running
+[01/16/2021 03:02:04 PM] [LogPython 8780 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 9948)> Running
+[01/16/2021 03:02:04 PM] [LogPython 8780 ] [INFO   ] Work Status: 1
+[01/16/2021 03:02:04 PM] [LogPython 8780 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 03:02:04 PM] [LogPython 8780 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 03:02:51 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:04:31 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:37 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:48 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:53 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:05:22 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called gs
+[01/16/2021 03:05:49 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:05:49 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:06:01 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:03 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:06 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 40032): Target user is not connected to voice.
+[01/16/2021 03:06:20 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:21 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:07:58 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:08:07 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:08:08 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:08:22 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:08:22 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/16/2021 03:08:43 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:15 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127b9839cea7903 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:05 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127b9839cea7903</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+[01/16/2021 03:04:22 PM] [LogPython 8060 ] [DEBUG  ] <_MainThread(MainThread, started 13048)> Running
+[01/16/2021 03:04:22 PM] [LogPython 8060 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 6184)> Running
+[01/16/2021 03:04:22 PM] [LogPython 8060 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 9028)> Running
+[01/16/2021 03:04:22 PM] [LogPython 8060 ] [INFO   ] Work Status: 1
+[01/16/2021 03:04:22 PM] [LogPython 8060 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 03:04:22 PM] [LogPython 8060 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 03:05:22 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called gs
+[01/16/2021 03:05:49 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:05:49 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:06:00 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:03 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:06 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 40032): Target user is not connected to voice.
+[01/16/2021 03:06:20 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:21 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:07:58 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:08:07 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:08:08 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:08:23 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:08:23 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/16/2021 03:08:34 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:34 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:34 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:34 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:55 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:13 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:15 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127b983ba5100b4 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:05 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127b983ba5100b4</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+[01/16/2021 03:04:01 PM] [LogPython 14980] [DEBUG  ] <_MainThread(MainThread, started 2680)> Running
+[01/16/2021 03:04:01 PM] [LogPython 14980] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 5948)> Running
+[01/16/2021 03:04:01 PM] [LogPython 14980] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 13584)> Running
+[01/16/2021 03:04:01 PM] [LogPython 14980] [INFO   ] Work Status: 1
+[01/16/2021 03:04:01 PM] [LogPython 14980] [INFO   ] Auditor magazine of bot:
+[01/16/2021 03:04:01 PM] [LogPython 14980] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 03:04:32 PM] [LogPython 14980] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:42 PM] [LogPython 14980] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:05:22 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called gs
+[01/16/2021 03:05:49 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:05:49 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:06:00 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:03 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:06 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:18 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 40032): Target user is not connected to voice.
+[01/16/2021 03:06:21 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:07:58 PM] [LogPython 14980] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:08:07 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:08:08 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:08:24 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:08:24 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/16/2021 03:08:24 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:24 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:24 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:25 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:34 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:34 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:35 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:35 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:54 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:04 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:20 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127b9a36de2005d &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:11 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127b9a36de2005d</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+[01/16/2021 03:01:58 PM] [LogPython 13452] [DEBUG  ] <_MainThread(MainThread, started 8804)> Running
+[01/16/2021 03:01:58 PM] [LogPython 13452] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12912)> Running
+[01/16/2021 03:01:58 PM] [LogPython 13452] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 6340)> Running
+[01/16/2021 03:01:58 PM] [LogPython 13452] [INFO   ] Work Status: 1
+[01/16/2021 03:01:58 PM] [LogPython 13452] [INFO   ] Auditor magazine of bot:
+[01/16/2021 03:01:58 PM] [LogPython 13452] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 03:02:51 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:02:54 PM] [LogPython 13452] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:03:00 PM] [LogPython 13452] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:37 PM] [LogPython 13452] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:42 PM] [LogPython 13452] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:48 PM] [LogPython 13452] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:05:22 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called gs
+[01/16/2021 03:05:49 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:05:49 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:06:01 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:03 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:06 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 40032): Target user is not connected to voice.
+[01/16/2021 03:06:20 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:21 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:07:59 PM] [LogPython 13452] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:00 PM] [LogPython 13452] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:01 PM] [LogPython 13452] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:05 PM] [LogPython 13452] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:07 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:08:07 PM] [LogPython 13452] [INFO   ] [691575600707534908] lock Черножопый мафиозник#6569
+[01/16/2021 03:08:22 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:08:22 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/16/2021 03:08:22 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:08:43 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:44 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:54 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:02 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:25 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127b9c38a4a0c54 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:16 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127b9c38a4a0c54</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+[01/16/2021 03:02:15 PM] [LogPython 4704 ] [DEBUG  ] <_MainThread(MainThread, started 14728)> Running
+[01/16/2021 03:02:15 PM] [LogPython 4704 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 6168)> Running
+[01/16/2021 03:02:15 PM] [LogPython 4704 ] [DEBUG  ] <KeepAliveHandler(Thread-3, started daemon 7176)> Running
+[01/16/2021 03:02:15 PM] [LogPython 4704 ] [INFO   ] Work Status: 1
+[01/16/2021 03:02:15 PM] [LogPython 4704 ] [INFO   ] Auditor magazine of bot:
+[01/16/2021 03:02:15 PM] [LogPython 4704 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/16/2021 03:02:51 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:02:54 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:03:00 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:03:06 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:31 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:37 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:42 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:04:52 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:05:22 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called gs
+[01/16/2021 03:05:49 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:05:59 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:06:00 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:01 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:02 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:03 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:06 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:18 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:19 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 40032): Target user is not connected to voice.
+[01/16/2021 03:06:20 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:20 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:06:21 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:07:58 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:08:07 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called exc_adm
+[01/16/2021 03:08:08 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] 1 Заход пошел
+[01/16/2021 03:08:22 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/16/2021 03:08:22 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/16/2021 03:08:24 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:24 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:25 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:25 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:25 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:25 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:25 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:25 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:26 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:08:43 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:25 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127b9c379a51494 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:16 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127b9c379a51494</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:09:40 PM] [LogPython 12684] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:09:55 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127ba9c9c103a83 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:45 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127ba9c9c103a83</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:10:15 PM] [LogPython 12684] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127bafe1c4e7b23 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:10:06 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127bafe1c4e7b23</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:09:39 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127ba1a1e7a0c54 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:29 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127ba1a1e7a0c54</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:09:40 PM] [LogPython 13452] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:10:42 PM] [LogPython 13452] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127bba3e9ed7b37 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:10:33 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127bba3e9ed7b37</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:09:24 PM] [LogPython 14980] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127b9beae0d8ed1 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:15 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127b9beae0d8ed1</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:09:40 PM] [LogPython 14980] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:11:51 PM] [LogPython 14980] [INFO   ] Well done :)
+
+[01/16/2021 03:09:26 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:30 PM] [LogPython 8060 ] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127b9dec9d300b4 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:20 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127b9dec9d300b4</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:09:40 PM] [LogPython 8060 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:11:52 PM] [LogPython 8060 ] [INFO   ] Well done :)
+
+[01/16/2021 03:10:46 PM] [LogPython 13452] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/16/2021 03:11:53 PM] [LogPython 13452] [INFO   ] Well done :)
+
+[01/16/2021 03:11:54 PM] [LogPython 12684] [INFO   ] Well done :)
+
+[01/16/2021 03:09:39 PM] [LogPython 4704 ] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127ba182e081494 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:29 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127ba182e081494</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:09:40 PM] [LogPython 4704 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:11:59 PM] [LogPython 4704 ] [INFO   ] Well done :)
+
+[01/16/2021 03:09:16 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:35 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 400 Bad Request (error code: 30013): Maximum number of guild channels reached (500)
+[01/16/2021 03:09:39 PM] [LogPython 8780 ] [ERROR  ] Command raised an exception: HTTPException: 502 Bad Gateway (error code: 0): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>discord.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" type="text/css" media="screen,projection" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="cf-error-type">Error</span>
+              <span class="cf-error-code">502</span>
+            </h1>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 6127ba1c8a357903 &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2021-01-16 12:09:30 UTC</span>
+            <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Browser</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">Moscow</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+  </div>
+  <span class="md:block w-full truncate">discord.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Host</h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">6127ba1c8a357903</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 89.208.104.134</span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[01/16/2021 03:09:40 PM] [LogPython 8780 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called list
+[01/16/2021 03:12:02 PM] [LogPython 8780 ] [INFO   ] Well done :)
+[01/17/2021 07:13:15 PM] [LogPython 11564] [DEBUG  ] <_MainThread(MainThread, started 12104)> Running
+[01/17/2021 07:13:15 PM] [LogPython 11564] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 15232)> Running
+[01/17/2021 07:13:15 PM] [LogPython 11564] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 10828)> Running
+[01/17/2021 07:13:15 PM] [LogPython 11564] [INFO   ] Work Status: 1
+[01/17/2021 07:13:15 PM] [LogPython 11564] [INFO   ] Auditor magazine of bot:
+[01/17/2021 07:13:15 PM] [LogPython 11564] [INFO   ] Logged in as Kyaru [DEV]
+[01/17/2021 07:13:19 PM] [LogPython 11564] [INFO   ] [ГореПрограммист и ещё люди] MixDevil called backup
+[01/17/2021 08:18:46 PM] [LogPython 11564] [INFO   ] Well done :)
+[01/17/2021 08:18:51 PM] [LogPython 14824] [DEBUG  ] <_MainThread(MainThread, started 14592)> Running
+[01/17/2021 08:18:51 PM] [LogPython 14824] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 14844)> Running
+[01/17/2021 08:18:51 PM] [LogPython 14824] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 15136)> Running
+[01/17/2021 08:18:51 PM] [LogPython 14824] [INFO   ] Work Status: 1
+[01/17/2021 08:18:51 PM] [LogPython 14824] [INFO   ] Auditor magazine of bot:
+[01/17/2021 08:18:51 PM] [LogPython 14824] [INFO   ] Logged in as Kyaru [DEV]
+[01/17/2021 08:20:03 PM] [LogPython 14824] [INFO   ] Serg1
+[01/17/2021 08:20:04 PM] [LogPython 14824] [INFO   ] Sharik
+[01/17/2021 08:20:05 PM] [LogPython 14824] [INFO   ] Ulqiorra
+[01/17/2021 08:20:06 PM] [LogPython 14824] [INFO   ] Mimimix
+[01/17/2021 08:20:07 PM] [LogPython 14824] [INFO   ] Тёма
+[01/17/2021 08:20:08 PM] [LogPython 14824] [INFO   ] dancerdrug
+[01/17/2021 08:20:09 PM] [LogPython 14824] [INFO   ] B1ZZ0
+[01/17/2021 08:20:10 PM] [LogPython 14824] [INFO   ] Amidamaru
+[01/17/2021 08:20:11 PM] [LogPython 14824] [INFO   ] SystemBroker
+[01/17/2021 08:20:13 PM] [LogPython 14824] [INFO   ] ГАШИШ 0.3
+[01/17/2021 08:20:14 PM] [LogPython 14824] [INFO   ] Rythm
+[01/17/2021 08:20:15 PM] [LogPython 14824] [INFO   ] Чёрная мамба
+[01/17/2021 08:20:16 PM] [LogPython 14824] [INFO   ] hrist_off
+[01/17/2021 08:20:17 PM] [LogPython 14824] [INFO   ] Ihor
+[01/17/2021 08:20:18 PM] [LogPython 14824] [INFO   ] Tuman
+[01/17/2021 08:20:19 PM] [LogPython 14824] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/17/2021 08:20:20 PM] [LogPython 14824] [INFO   ] Водем
+[01/17/2021 08:20:21 PM] [LogPython 14824] [INFO   ] Shadow7
+[01/17/2021 08:20:22 PM] [LogPython 14824] [INFO   ] ДЕД  ИНСАЙД
+[01/17/2021 08:20:23 PM] [LogPython 14824] [INFO   ] Rea1Got
+[01/17/2021 08:20:24 PM] [LogPython 14824] [INFO   ] exedna
+[01/17/2021 08:20:25 PM] [LogPython 14824] [INFO   ] Вероника Озерова
+[01/17/2021 08:20:26 PM] [LogPython 14824] [INFO   ] Mimimix
+[01/17/2021 08:20:27 PM] [LogPython 14824] [INFO   ] MyValorant
+[01/17/2021 08:20:28 PM] [LogPython 14824] [INFO   ] shumka
+[01/17/2021 08:20:29 PM] [LogPython 14824] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/17/2021 08:20:30 PM] [LogPython 14824] [INFO   ] Qusako
+[01/17/2021 08:20:31 PM] [LogPython 14824] [INFO   ] Matroskin
+[01/17/2021 08:20:32 PM] [LogPython 14824] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/17/2021 08:20:33 PM] [LogPython 14824] [INFO   ] prolabsofficial
+[01/17/2021 08:20:34 PM] [LogPython 14824] [INFO   ] Kapitar
+[01/17/2021 08:20:35 PM] [LogPython 14824] [INFO   ] toniq
+[01/17/2021 08:20:36 PM] [LogPython 14824] [INFO   ] Kealista(Влад)
+[01/17/2021 08:20:37 PM] [LogPython 14824] [INFO   ] vaDDoS
+[01/17/2021 08:20:38 PM] [LogPython 14824] [INFO   ] Lisenok_Pilegrim
+[01/17/2021 08:20:39 PM] [LogPython 14824] [INFO   ] Kyaru
+[01/17/2021 08:20:40 PM] [LogPython 14824] [INFO   ] Привет
+[01/17/2021 08:20:41 PM] [LogPython 14824] [INFO   ] SVOY46
+[01/17/2021 08:20:42 PM] [LogPython 14824] [INFO   ] Kawai
+[01/17/2021 08:20:44 PM] [LogPython 14824] [INFO   ] Andrey123_456
+[01/17/2021 08:20:45 PM] [LogPython 14824] [INFO   ] инкогнито
+[01/17/2021 08:20:46 PM] [LogPython 14824] [INFO   ] Даня Смирнов
+[01/17/2021 08:20:47 PM] [LogPython 14824] [INFO   ] Черножопый мафиозник
+[01/17/2021 08:20:48 PM] [LogPython 14824] [INFO   ] Digest
+[01/17/2021 08:20:49 PM] [LogPython 14824] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/17/2021 08:20:50 PM] [LogPython 14824] [INFO   ] Aqua
+[01/17/2021 08:20:51 PM] [LogPython 14824] [INFO   ] Mike6543
+[01/17/2021 08:20:52 PM] [LogPython 14824] [INFO   ] AlexeyZavar
+[01/17/2021 08:20:54 PM] [LogPython 14824] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/17/2021 08:20:55 PM] [LogPython 14824] [INFO   ] Den
+[01/17/2021 08:20:56 PM] [LogPython 14824] [INFO   ] Kyaru [DEV]
+[01/17/2021 08:20:57 PM] [LogPython 14824] [INFO   ] 0ric4th
+[01/17/2021 08:20:58 PM] [LogPython 14824] [INFO   ] Ходжазаде Мусхлидин Мустафа
+[01/17/2021 08:20:59 PM] [LogPython 14824] [INFO   ] -OnePo1nt
+[01/17/2021 08:20:59 PM] [LogPython 14824] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called SkipAllNick
+[01/17/2021 08:32:54 PM] [LogPython 14824] [INFO   ] [ГореПрограммист и ещё люди] unlock  shumka#1196
+[01/17/2021 08:59:20 PM] [LogPython 14824] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'edit'
+[01/17/2021 08:59:37 PM] [LogPython 14824] [INFO   ] [ГореПрограммист и ещё люди] unlock  shumka#1196
+[01/17/2021 08:59:45 PM] [LogPython 14824] [INFO   ] [ГореПрограммист и ещё люди] unlock  shumka#1196
+[01/17/2021 09:18:17 PM] [LogPython 14824] [INFO   ] Well done :)
+[01/17/2021 09:18:22 PM] [LogPython 1392 ] [DEBUG  ] <_MainThread(MainThread, started 13480)> Running
+[01/17/2021 09:18:22 PM] [LogPython 1392 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12280)> Running
+[01/17/2021 09:18:22 PM] [LogPython 1392 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 936)> Running
+[01/17/2021 09:18:22 PM] [LogPython 1392 ] [INFO   ] Work Status: 1
+[01/17/2021 09:18:22 PM] [LogPython 1392 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 09:18:22 PM] [LogPython 1392 ] [INFO   ] Logged in as Kyaru [DEV]
+[01/17/2021 09:19:30 PM] [LogPython 1392 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 09:19:42 PM] [LogPython 1392 ] [INFO   ] [ГореПрограммист и ещё люди] unlock  shumka#1196
+[01/17/2021 09:25:15 PM] [LogPython 1392 ] [INFO   ] Well done :)
+[01/17/2021 09:25:38 PM] [LogPython 11580] [DEBUG  ] <_MainThread(MainThread, started 4980)> Running
+[01/17/2021 09:25:38 PM] [LogPython 11580] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 11908)> Running
+[01/17/2021 09:25:38 PM] [LogPython 11580] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12416)> Running
+[01/17/2021 09:25:38 PM] [LogPython 11580] [INFO   ] Work Status: 1
+[01/17/2021 09:25:38 PM] [LogPython 11580] [INFO   ] Auditor magazine of bot:
+[01/17/2021 09:25:38 PM] [LogPython 11580] [INFO   ] Logged in as Kyaru [DEV]
+[01/17/2021 09:25:48 PM] [LogPython 11580] [INFO   ] [ShG] Bot send https://i.gifer.com/1FwN.gif
+[01/17/2021 09:37:39 PM] [LogPython 11580] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called send
+[01/17/2021 09:37:47 PM] [LogPython 11580] [INFO   ] Well done :)
+[01/17/2021 09:38:10 PM] [LogPython 13564] [DEBUG  ] <_MainThread(MainThread, started 7468)> Running
+[01/17/2021 09:38:10 PM] [LogPython 13564] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10416)> Running
+[01/17/2021 09:38:10 PM] [LogPython 13564] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 9468)> Running
+[01/17/2021 09:38:10 PM] [LogPython 13564] [INFO   ] Work Status: 1
+[01/17/2021 09:38:10 PM] [LogPython 13564] [INFO   ] Auditor magazine of bot:
+[01/17/2021 09:38:10 PM] [LogPython 13564] [INFO   ] Logged in as Kyaru [DEV]
+[01/17/2021 09:47:03 PM] [LogPython 13564] [INFO   ] Well done :)
+[01/17/2021 09:47:07 PM] [LogPython 10312] [DEBUG  ] <_MainThread(MainThread, started 5360)> Running
+[01/17/2021 09:47:07 PM] [LogPython 10312] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 9536)> Running
+[01/17/2021 09:47:07 PM] [LogPython 10312] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 10144)> Running
+[01/17/2021 09:47:07 PM] [LogPython 10312] [INFO   ] Work Status: 1
+[01/17/2021 09:47:07 PM] [LogPython 10312] [INFO   ] Auditor magazine of bot:
+[01/17/2021 09:47:07 PM] [LogPython 10312] [INFO   ] Logged in as Kyaru [DEV]
+[01/17/2021 09:49:02 PM] [LogPython 10312] [INFO   ] Well done :)
+[01/17/2021 09:49:06 PM] [LogPython 9468 ] [DEBUG  ] <_MainThread(MainThread, started 10416)> Running
+[01/17/2021 09:49:06 PM] [LogPython 9468 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 8228)> Running
+[01/17/2021 09:49:06 PM] [LogPython 9468 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 3468)> Running
+[01/17/2021 09:49:06 PM] [LogPython 9468 ] [INFO   ] Work Status: 1
+[01/17/2021 09:49:06 PM] [LogPython 9468 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 09:49:06 PM] [LogPython 9468 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 09:49:09 PM] [LogPython 9468 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/17/2021 09:49:25 PM] [LogPython 9468 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called to_progressive_backup
+[01/17/2021 09:50:01 PM] [LogPython 9468 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called to_progressive_backup
+[01/17/2021 09:58:28 PM] [LogPython 9468 ] [INFO   ] Well done :)
+[01/17/2021 09:58:33 PM] [LogPython 1584 ] [DEBUG  ] <_MainThread(MainThread, started 2260)> Running
+[01/17/2021 09:58:33 PM] [LogPython 1584 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 8204)> Running
+[01/17/2021 09:58:33 PM] [LogPython 1584 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 960)> Running
+[01/17/2021 09:58:33 PM] [LogPython 1584 ] [INFO   ] Work Status: 1
+[01/17/2021 09:58:33 PM] [LogPython 1584 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 09:58:33 PM] [LogPython 1584 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 09:58:58 PM] [LogPython 1584 ] [INFO   ] [ShG] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 09:59:48 PM] [LogPython 1584 ] [INFO   ] Well done :)
+[01/17/2021 09:59:52 PM] [LogPython 4796 ] [DEBUG  ] <_MainThread(MainThread, started 9768)> Running
+[01/17/2021 09:59:52 PM] [LogPython 4796 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 7868)> Running
+[01/17/2021 09:59:52 PM] [LogPython 4796 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12988)> Running
+[01/17/2021 09:59:52 PM] [LogPython 4796 ] [INFO   ] Work Status: 1
+[01/17/2021 09:59:52 PM] [LogPython 4796 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 09:59:52 PM] [LogPython 4796 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 09:59:54 PM] [LogPython 4796 ] [INFO   ] [ShG] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 10:00:59 PM] [LogPython 4796 ] [INFO   ] Well done :)
+[01/17/2021 10:01:03 PM] [LogPython 11760] [DEBUG  ] <_MainThread(MainThread, started 6592)> Running
+[01/17/2021 10:01:03 PM] [LogPython 11760] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 14396)> Running
+[01/17/2021 10:01:03 PM] [LogPython 11760] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 8312)> Running
+[01/17/2021 10:01:03 PM] [LogPython 11760] [INFO   ] Work Status: 1
+[01/17/2021 10:01:03 PM] [LogPython 11760] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:01:03 PM] [LogPython 11760] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:01:06 PM] [LogPython 11760] [INFO   ] [ShG] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 10:01:38 PM] [LogPython 11760] [INFO   ] Well done :)
+[01/17/2021 10:01:42 PM] [LogPython 4216 ] [DEBUG  ] <_MainThread(MainThread, started 6828)> Running
+[01/17/2021 10:01:42 PM] [LogPython 4216 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12940)> Running
+[01/17/2021 10:01:42 PM] [LogPython 4216 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 2112)> Running
+[01/17/2021 10:01:42 PM] [LogPython 4216 ] [INFO   ] Work Status: 1
+[01/17/2021 10:01:42 PM] [LogPython 4216 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:01:42 PM] [LogPython 4216 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:01:44 PM] [LogPython 4216 ] [INFO   ] [ShG] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 10:02:16 PM] [LogPython 4216 ] [INFO   ] Well done :)
+[01/17/2021 10:02:19 PM] [LogPython 2308 ] [DEBUG  ] <_MainThread(MainThread, started 11604)> Running
+[01/17/2021 10:02:19 PM] [LogPython 2308 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 4968)> Running
+[01/17/2021 10:02:19 PM] [LogPython 2308 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 15016)> Running
+[01/17/2021 10:02:19 PM] [LogPython 2308 ] [INFO   ] Work Status: 1
+[01/17/2021 10:02:19 PM] [LogPython 2308 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:02:19 PM] [LogPython 2308 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:02:21 PM] [LogPython 2308 ] [INFO   ] [ShG] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 10:02:27 PM] [LogPython 2308 ] [INFO   ] Well done :)
+[01/17/2021 10:02:31 PM] [LogPython 12800] [DEBUG  ] <_MainThread(MainThread, started 6076)> Running
+[01/17/2021 10:02:31 PM] [LogPython 12800] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 5940)> Running
+[01/17/2021 10:02:31 PM] [LogPython 12800] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 8948)> Running
+[01/17/2021 10:02:31 PM] [LogPython 12800] [INFO   ] Work Status: 1
+[01/17/2021 10:02:31 PM] [LogPython 12800] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:02:31 PM] [LogPython 12800] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:02:36 PM] [LogPython 12800] [INFO   ] [ShG] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 10:32:46 PM] [LogPython 12800] [INFO   ] Well done :)
+[01/17/2021 10:32:50 PM] [LogPython 14056] [DEBUG  ] <_MainThread(MainThread, started 8180)> Running
+[01/17/2021 10:32:50 PM] [LogPython 14056] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13420)> Running
+[01/17/2021 10:32:50 PM] [LogPython 14056] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 9816)> Running
+[01/17/2021 10:32:50 PM] [LogPython 14056] [INFO   ] Work Status: 1
+[01/17/2021 10:32:50 PM] [LogPython 14056] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:32:50 PM] [LogPython 14056] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:33:51 PM] [LogPython 14056] [INFO   ] Well done :)
+[01/17/2021 10:33:55 PM] [LogPython 8200 ] [DEBUG  ] <_MainThread(MainThread, started 13308)> Running
+[01/17/2021 10:33:55 PM] [LogPython 8200 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 1584)> Running
+[01/17/2021 10:33:55 PM] [LogPython 8200 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14916)> Running
+[01/17/2021 10:33:55 PM] [LogPython 8200 ] [INFO   ] Work Status: 1
+[01/17/2021 10:33:55 PM] [LogPython 8200 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:33:55 PM] [LogPython 8200 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:34:33 PM] [LogPython 8200 ] [INFO   ] Well done :)
+[01/17/2021 10:34:37 PM] [LogPython 11464] [DEBUG  ] <_MainThread(MainThread, started 14380)> Running
+[01/17/2021 10:34:37 PM] [LogPython 11464] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 704)> Running
+[01/17/2021 10:34:37 PM] [LogPython 11464] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14548)> Running
+[01/17/2021 10:34:37 PM] [LogPython 11464] [INFO   ] Work Status: 1
+[01/17/2021 10:34:37 PM] [LogPython 11464] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:34:37 PM] [LogPython 11464] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:34:48 PM] [LogPython 11464] [ERROR  ] Command raised an exception: AttributeError: 'dict' object has no attribute 'value'
+[01/17/2021 10:35:41 PM] [LogPython 11464] [INFO   ] Well done :)
+[01/17/2021 10:35:45 PM] [LogPython 10400] [DEBUG  ] <_MainThread(MainThread, started 7108)> Running
+[01/17/2021 10:35:45 PM] [LogPython 10400] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10996)> Running
+[01/17/2021 10:35:45 PM] [LogPython 10400] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14236)> Running
+[01/17/2021 10:35:45 PM] [LogPython 10400] [INFO   ] Work Status: 1
+[01/17/2021 10:35:45 PM] [LogPython 10400] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:35:45 PM] [LogPython 10400] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:35:48 PM] [LogPython 10400] [ERROR  ] Command raised an exception: TypeError: 'dict_values' object is not subscriptable
+[01/17/2021 10:35:54 PM] [LogPython 10400] [INFO   ] Well done :)
+[01/17/2021 10:35:57 PM] [LogPython 14492] [DEBUG  ] <_MainThread(MainThread, started 12892)> Running
+[01/17/2021 10:35:57 PM] [LogPython 14492] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 11512)> Running
+[01/17/2021 10:35:57 PM] [LogPython 14492] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 10416)> Running
+[01/17/2021 10:35:57 PM] [LogPython 14492] [INFO   ] Work Status: 1
+[01/17/2021 10:35:57 PM] [LogPython 14492] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:35:57 PM] [LogPython 14492] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:35:59 PM] [LogPython 14492] [ERROR  ] !!! FAILED TO LOG DATA !!!
+[01/17/2021 10:36:48 PM] [LogPython 14492] [INFO   ] Well done :)
+[01/17/2021 10:36:51 PM] [LogPython 13368] [DEBUG  ] <_MainThread(MainThread, started 13912)> Running
+[01/17/2021 10:36:51 PM] [LogPython 13368] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 4956)> Running
+[01/17/2021 10:36:51 PM] [LogPython 13368] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14148)> Running
+[01/17/2021 10:36:51 PM] [LogPython 13368] [INFO   ] Work Status: 1
+[01/17/2021 10:36:51 PM] [LogPython 13368] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:36:51 PM] [LogPython 13368] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:36:53 PM] [LogPython 13368] [ERROR  ] !!! FAILED TO LOG DATA !!!
+[01/17/2021 10:37:41 PM] [LogPython 13368] [INFO   ] Well done :)
+[01/17/2021 10:37:45 PM] [LogPython 14656] [DEBUG  ] <_MainThread(MainThread, started 3572)> Running
+[01/17/2021 10:37:45 PM] [LogPython 14656] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10912)> Running
+[01/17/2021 10:37:45 PM] [LogPython 14656] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 7276)> Running
+[01/17/2021 10:37:45 PM] [LogPython 14656] [INFO   ] Work Status: 1
+[01/17/2021 10:37:45 PM] [LogPython 14656] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:37:45 PM] [LogPython 14656] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:37:52 PM] [LogPython 14656] [INFO   ] Well done :)
+[01/17/2021 10:37:54 PM] [LogPython 8792 ] [INFO   ] Well done :)
+[01/17/2021 10:38:22 PM] [LogPython 2940 ] [DEBUG  ] <_MainThread(MainThread, started 11520)> Running
+[01/17/2021 10:38:22 PM] [LogPython 2940 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10992)> Running
+[01/17/2021 10:38:22 PM] [LogPython 2940 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 9340)> Running
+[01/17/2021 10:38:22 PM] [LogPython 2940 ] [INFO   ] Work Status: 1
+[01/17/2021 10:38:22 PM] [LogPython 2940 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:38:22 PM] [LogPython 2940 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:38:26 PM] [LogPython 2940 ] [ERROR  ] !!! FAILED TO LOG DATA !!!
+[01/17/2021 10:39:30 PM] [LogPython 2940 ] [INFO   ] Well done :)
+[01/17/2021 10:39:34 PM] [LogPython 4408 ] [DEBUG  ] <_MainThread(MainThread, started 12352)> Running
+[01/17/2021 10:39:34 PM] [LogPython 4408 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 4576)> Running
+[01/17/2021 10:39:34 PM] [LogPython 4408 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 13684)> Running
+[01/17/2021 10:39:34 PM] [LogPython 4408 ] [INFO   ] Work Status: 1
+[01/17/2021 10:39:34 PM] [LogPython 4408 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:39:34 PM] [LogPython 4408 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:39:41 PM] [LogPython 4408 ] [INFO   ] [aa] Ходжазаде Мусхлидин Мустафа called to_progressive_backup
+[01/17/2021 10:40:09 PM] [LogPython 4408 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 10:41:18 PM] [LogPython 4408 ] [INFO   ] Well done :)
+[01/17/2021 10:41:22 PM] [LogPython 7956 ] [DEBUG  ] <_MainThread(MainThread, started 8388)> Running
+[01/17/2021 10:41:22 PM] [LogPython 7956 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 4980)> Running
+[01/17/2021 10:41:22 PM] [LogPython 7956 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12092)> Running
+[01/17/2021 10:41:22 PM] [LogPython 7956 ] [INFO   ] Work Status: 1
+[01/17/2021 10:41:22 PM] [LogPython 7956 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:41:22 PM] [LogPython 7956 ] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:41:24 PM] [LogPython 7956 ] [INFO   ] Well done :)
+[01/17/2021 10:41:42 PM] [LogPython 15240] [DEBUG  ] <_MainThread(MainThread, started 15328)> Running
+[01/17/2021 10:41:42 PM] [LogPython 15240] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 14380)> Running
+[01/17/2021 10:41:42 PM] [LogPython 15240] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 8932)> Running
+[01/17/2021 10:41:42 PM] [LogPython 15240] [INFO   ] Work Status: 1
+[01/17/2021 10:41:42 PM] [LogPython 15240] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:41:42 PM] [LogPython 15240] [INFO   ] Logged in as Kyaru
+[01/17/2021 10:42:12 PM] [LogPython 15240] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called to_progressive_backup
+[01/17/2021 10:43:41 PM] [LogPython 15240] [INFO   ] Well done :)
+[01/17/2021 10:43:51 PM] [LogPython 12136] [DEBUG  ] <_MainThread(MainThread, started 12372)> Running
+[01/17/2021 10:43:51 PM] [LogPython 12136] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 14584)> Running
+[01/17/2021 10:43:51 PM] [LogPython 12136] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 1148)> Running
+[01/17/2021 10:43:51 PM] [LogPython 12136] [INFO   ] Work Status: 1
+[01/17/2021 10:43:51 PM] [LogPython 12136] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:43:51 PM] [LogPython 12136] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:43:59 PM] [LogPython 12136] [INFO   ] [Разносторонний сервер.] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 10:44:02 PM] [LogPython 12136] [INFO   ] Well done :)
+[01/17/2021 10:44:10 PM] [LogPython 12748] [DEBUG  ] <_MainThread(MainThread, started 14852)> Running
+[01/17/2021 10:44:10 PM] [LogPython 12748] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10840)> Running
+[01/17/2021 10:44:10 PM] [LogPython 12748] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 13528)> Running
+[01/17/2021 10:44:10 PM] [LogPython 12748] [INFO   ] Work Status: 1
+[01/17/2021 10:44:10 PM] [LogPython 12748] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:44:10 PM] [LogPython 12748] [INFO   ] Logged in as Kyaru
+[01/17/2021 10:44:34 PM] [LogPython 12748] [INFO   ] Well done :)
+[01/17/2021 10:44:38 PM] [LogPython 14952] [DEBUG  ] <_MainThread(MainThread, started 13156)> Running
+[01/17/2021 10:44:38 PM] [LogPython 14952] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 14628)> Running
+[01/17/2021 10:44:38 PM] [LogPython 14952] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14764)> Running
+[01/17/2021 10:44:38 PM] [LogPython 14952] [INFO   ] Work Status: 1
+[01/17/2021 10:44:38 PM] [LogPython 14952] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:44:38 PM] [LogPython 14952] [INFO   ] Logged in as ShGbot
+[01/17/2021 10:44:39 PM] [LogPython 14952] [INFO   ] [Разносторонний сервер.] Ходжазаде Мусхлидин Мустафа called progressive_backup
+[01/17/2021 10:44:41 PM] [LogPython 14952] [INFO   ] Well done :)
+[01/17/2021 10:44:49 PM] [LogPython 2544 ] [DEBUG  ] <_MainThread(MainThread, started 8256)> Running
+[01/17/2021 10:44:49 PM] [LogPython 2544 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 11696)> Running
+[01/17/2021 10:44:49 PM] [LogPython 2544 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 1260)> Running
+[01/17/2021 10:44:49 PM] [LogPython 2544 ] [INFO   ] Work Status: 1
+[01/17/2021 10:44:49 PM] [LogPython 2544 ] [INFO   ] Auditor magazine of bot:
+[01/17/2021 10:44:49 PM] [LogPython 2544 ] [INFO   ] Logged in as Kyaru
+[01/17/2021 10:45:11 PM] [LogPython 2544 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called to_progressive_backup
+[01/17/2021 10:47:35 PM] [LogPython 2544 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called on_command_error
+[01/17/2021 10:48:01 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:02 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:02 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:02 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:02 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:02 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:02 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:03 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:03 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:03 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:12 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:12 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:12 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:12 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:12 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:12 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:13 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:13 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:13 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:13 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:22 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:22 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:22 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:22 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:22 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:23 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:23 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:23 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:23 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:23 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:32 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:32 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:32 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:32 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:33 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:33 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:33 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:33 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:33 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:33 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:34 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:42 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:42 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:42 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:43 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:43 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:43 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:43 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:43 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:44 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:44 PM] [LogPython 2544 ] [ERROR  ] 400 Bad Request (error code: 50035): Invalid Form Body
+In nick: Must be 32 or fewer in length.
+[01/17/2021 10:48:48 PM] [LogPython 2544 ] [INFO   ] Well done :)

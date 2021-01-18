@@ -7,8 +7,8 @@ def run_python_tool(command):
 
 run_python_tool('pip install --upgrade pip')
 
-run_python_tool('pip install logging threading requests discord pysqlite --user')
-run_python_tool('pip install -U discord.py[voice]')
+run_python_tool('pip install requests --user')
+run_python_tool("pip install discord.py==1.4.0")
 
 print('Bot ready to work.')  
        
