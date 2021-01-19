@@ -1,4 +1,6 @@
 import functools
+
+from discord import embeds
 from LogPython import LogManager
 
 try:
@@ -26,6 +28,8 @@ bot = Bot(settings['PREFIX'])
 
 #bot.remove_command('help')
 
+bot.help_command
+
 resp = requests.get("https://api.covid19api.com/summary")
 
 json_data = json.loads(resp.text)
@@ -36,14 +40,27 @@ def show_log(guild_, member_, func_):
 def admin_restrict(coro):
     @functools.wraps(coro)
     async def wrapper(ctx, *args, **kwargs):
+        try:
+            show_log(ctx.guild.name, ctx.message.author.name, coro) 
+        except:
+            show_log("DMChannel", ctx.message.author.name, coro) 
+        
         if ctx.message.author.id in admin_list:
             return await coro(ctx, *args, **kwargs)
         else:
             await ctx.send(str(ctx.message.author.mention) + ", Вы не обладаете такими правами")
+            
+    return wrapper
+
+def show_log_(coro):
+    @functools.wraps(coro)
+    async def wrapper(ctx, *args, **kwargs):
         try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
+            show_log(ctx.guild.name, ctx.message.author.name, coro) 
         except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name) 
+            show_log("DMChannel", ctx.message.author.name, coro) 
+        
+        return await coro(ctx, *args, **kwargs)
             
     return wrapper
 
@@ -152,9 +169,7 @@ try:
             await ctx.channel.purge(limit = 1)
 
             while True:
-                
                 try:
-                    
                     mem = await ctx.guild.fetch_member(victim_member.id)
                     channel = mem.voice.channel
                     _voice = await channel.connect()
@@ -268,7 +283,7 @@ try:
 
     class COVID:
         @bot.command()
-        @admin_restrict
+        @show_log_
         async def NewConfirmed(ctx):
 
             await ctx.send("Connect API...")
@@ -327,7 +342,7 @@ try:
             await ctx.send(embed = emb)
 
         @bot.command()
-        @admin_restrict
+        @show_log_
         async def NewDeaths(ctx):
             await ctx.send("Connect API...")
 
@@ -388,7 +403,7 @@ try:
             await ctx.send(embed = emb)
 
         @bot.command()   
-        @admin_restrict
+        @show_log_
         async def TotalConfirmed(ctx):
             await ctx.send("Connect API...")
 
@@ -451,7 +466,7 @@ try:
             await ctx.send(embed = emb)
 
         @bot.command()
-        @admin_restrict
+        @show_log_
         async def TotalDeaths(ctx):
             await ctx.send("Connect API...")
 
@@ -548,11 +563,6 @@ try:
         emb = discord.Embed(title = f'Random gif{str(bot.get_emoji(725061079914250300))}')
         emb.set_image(url = ho)
         await ctx.send(embed = emb)
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name)  
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name) 
 
     @bot.command()
     @admin_restrict
@@ -609,10 +619,6 @@ try:
     async def on_command_error(ctx, error):
         em = bot.get_emoji(724944121109676092)                              
         if isinstance(error, commands.CommandNotFound ):
-            try:
-                show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-            except:
-                show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
                 
             await ctx.send(f'**{ctx.message.author.mention}, данная команда не обнаружена**{str(em)}')
 
@@ -621,25 +627,20 @@ try:
     async def _jojo_(ctx, victim: discord.Member, reason = "Доигрался, вот тебе ролевые игры"):
         """Custom kick victim:str of guild (may be not working now)"""
         
-        if ctx.message.author.id in admin_list:
+        emb = discord.Embed (title = 'Kick :lock:', colour = discord.Color.dark_red())
 
-                
-            emb = discord.Embed (title = 'Kick :lock:', colour = discord.Color.dark_red())
+        i = 10
+        for i in range(10, 0, -1):
+            await ctx.send(str(i))
+            time.sleep(1)
 
-            i = 10
-            for i in range(10, 0, -1):
-                await ctx.send(str(i))
-                time.sleep(1)
+        await victim.ban(reason = reason)
 
-            await victim.ban(reason = reason)
+        emb.set_author (name = victim, icon_url = victim.avatar_url)
+        emb.add_field (name = 'Kick user', value = 'Kick user : {}'.format(victim.mention))
+        emb.set_footer (text = 'Был отпердолен скалкой администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
 
-            emb.set_author (name = victim, icon_url = victim.avatar_url)
-            emb.add_field (name = 'Kick user', value = 'Kick user : {}'.format(victim.mention))
-            emb.set_footer (text = 'Был отпердолен скалкой администратором {}'.format (ctx.author.name), icon_url = ctx.author.avatar_url)
-
-            await ctx.send (embed = emb)
-        else:
-            await ctx.send(str(ctx.message.author.mention) + ", Вы не обладаете такими правами")
+        await ctx.send (embed = emb)
 
     @bot.command()
     @admin_restrict
@@ -655,26 +656,18 @@ try:
         author = ctx.message.author
 
         await ctx.send(f'Категорически приветствую, {author.mention}!')
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
+    
     @bot.command()
+    @show_log_
     async def bb(ctx):
         """Bye, all"""
 
         author = ctx.message.author
 
         await ctx.send(f'До связи, {author.mention} :)')
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
     @bot.command()
+    @show_log_
     async def pp(ctx):
         """If walked away for a while"""
         
@@ -683,13 +676,9 @@ try:
         author = ctx.message.author
 
         await ctx.send(f'{author.mention} Отошел.')
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
     @bot.command()
+    @show_log_
     async def _pp_(ctx):
         """Returned"""
         await ctx.channel.purge(limit = 1)
@@ -699,22 +688,18 @@ try:
         await ctx.send(f'{author.mention} Вернулся.')
 
     @bot.command()
+    @show_log_
     async def fox(ctx):
         """Simple fox"""
         response = requests.get('https://some-random-api.ml/img/fox')
         json_data = json.loads(response.text)
-        author = ctx.message.author
 
         embed = discord.Embed(color = 0xff9900, title = 'Random Fox')
         embed.set_image(url = json_data['link'])
         await ctx.send(embed = embed)
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
     @bot.command()
+    @show_log_
     async def dog(ctx):
         """Simple dog"""
             
@@ -725,12 +710,7 @@ try:
         embed.set_image(url = json_data['link'])
         
         await ctx.send(embed = embed)
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
+    
     @bot.command()
     @admin_restrict
     async def cleaner(ctx, amount):
@@ -748,15 +728,10 @@ try:
 
         await ctx.channel.purge(limit=int(amount))
         await ctx.channel.send(':: Сообщения успешно удалены' + k)
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
     @bot.command()
     @admin_restrict
-    async def _kick_ (ctx, member: discord.Member, *, reason = None):
+    async def _kick_(ctx, member: discord.Member, *, reason = None):
         """Kick for the guild"""
 
         emb = discord.Embed (title = 'Kick :warning:', colour = discord.Color.dark_red())
@@ -771,14 +746,9 @@ try:
 
         await ctx.send (embed = emb)
 
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
     @bot.command()
     @admin_restrict
-    async def ban (ctx, member: discord.Member, *, reason = f'Нарушение правил сервера. $Banlist.append(you)'):
+    async def ban(ctx, member: discord.Member, *, reason = f'Нарушение правил сервера. $Banlist.append(you)'):
         """Ban for guild"""       
 
         emb = discord.Embed (title = 'Ban :lock:', colour = discord.Color.dark_red())
@@ -793,11 +763,6 @@ try:
 
         await ctx.send (embed = emb)
 
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
     @bot.command()
     @admin_restrict
     async def cleanadm(ctx, amount):
@@ -809,6 +774,7 @@ try:
         LogManager.info(f'[{ctx.guild.name}] {author.name} cleaned chat for {amount} positions')
 
     @bot.command()
+    @show_log_
     async def join(ctx):
         """Bot join voice channel"""
         
@@ -837,11 +803,6 @@ try:
             victim_member = discord.utils.get(ctx.guild.members, name=victim)
             await victim_member.edit(mute = True, deafen = True)
 
-            try:
-                show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-            except:
-                show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
         @bot.command()
         @admin_restrict
         async def aum(ctx, victim):
@@ -850,11 +811,6 @@ try:
             await ctx.channel.purge(limit = 1)
             victim_member = discord.utils.get(ctx.guild.members, name=victim)
             await victim_member.edit(mute = False, deafen = False)
-            
-            try:
-                show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-            except:
-                show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
         @bot.command()
         @admin_restrict
@@ -864,11 +820,6 @@ try:
             await ctx.channel.purge(limit = 1)
             victim_member = discord.utils.get(ctx.guild.members, name=victim)
             await victim_member.edit(mute = True)
-            
-            try:
-                show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-            except:
-                show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
         @bot.command()
         @admin_restrict
@@ -878,9 +829,6 @@ try:
             await ctx.channel.purge(limit = 1)
             victim_member = discord.utils.get(ctx.guild.members, name=victim)
             await victim_member.edit(deafen = True)
-                
-                
-
 
     @bot.command()
     @admin_restrict
@@ -898,11 +846,6 @@ try:
             await victim_member.move_to(channel)
 
             time.sleep(0.75)
-            
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
     @bot.command()          
     @admin_restrict
@@ -924,11 +867,6 @@ try:
                 except:
                     pass
                 time.sleep(0.75)
-                
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
     @bot.command()
     @admin_restrict
@@ -952,28 +890,20 @@ try:
     @admin_restrict
     async def spam(ctx, verb, k: int, ll:bool):
         """Spam verb:str onces:int, tts:bool"""
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
         for i in range(int(k)):
             await ctx.send(verb, tts = ll)
             time.sleep(0.75)    
 
     @bot.command()
+    @show_log_
     async def vers(ctx):
         """Version of discord.py"""
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
             
         await ctx.send(discord.__version__)
 
     @bot.command()
+    @show_log_
     async def gs(ctx):
         """Voice clients for guild"""
 
@@ -990,20 +920,11 @@ try:
                 pass
             
         await ctx.send(g)
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
     @bot.command()
     @admin_restrict                          
     async def exc_adm(ctx, victim, n:int):
         """Travel of guild victim:str onces:int"""                             
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
                 
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
 
@@ -1034,19 +955,10 @@ try:
         channelU = discord.utils.find(lambda x: x.name == 'PIDARASI VI SUKI', ctx.guild.voice_channels)
         await victim_member.move_to(channelU)
 
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
     @bot.command()
+    @show_log_
     async def list(ctx):
         """List of guild members"""         
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
         emb = discord.Embed (title = f'Список участников сервера {ctx.guild.name} :clipboard: ')
         emb.description = str(len(ctx.guild.members)) + ' ' + 'участника(-ов):'
@@ -1058,6 +970,7 @@ try:
         await ctx.send ( embed = emb )
 
     @bot.command()
+    @show_log_
     async def list_ch(ctx):
         """List of guild voice channels"""
         
@@ -1065,19 +978,10 @@ try:
             LogManager.info(i.name)
         await ctx.send(str(len(ctx.guild.voice_channels)) + ' каналов на сервере')
 
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
     @bot.command()
+    @show_log_
     async def bye(ctx):
         """User leave the chat for long time"""
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
         await ctx.channel.purge(limit = 1)
         em = bot.get_emoji(725371922291884032)
@@ -1093,11 +997,6 @@ try:
         try:
             await victim_member.move_to(channelU) 
         except:pass
-        
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
     @bot.command()
     @admin_restrict
@@ -1126,11 +1025,6 @@ try:
         else:
             await ctx.send("Not enough permissions")
             
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
     @bot.command()
     @admin_restrict
     async def ulat(ctx, victim):
@@ -1146,19 +1040,9 @@ try:
         except:
             pass
         
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
-
     @bot.command()
     @admin_restrict
     async def send(ctx, victim):
-
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
         
         victim_member = get(ctx.guild.members, name = victim)
         await victim_member.send("сдохни, просто сдохни")
@@ -1167,11 +1051,7 @@ try:
     @admin_restrict
     async def _test_(ctx):
         """Check member for existence"""
-
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
+        pass
                     
             
     @bot.command()
@@ -1185,11 +1065,6 @@ try:
         @bot.command()
         @admin_restrict
         async def kickall(ctx):
-
-            try:
-                show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-            except:
-                show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
             
             await ctx.channel.purge(limit = 1)
             await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~')
@@ -1205,11 +1080,6 @@ try:
         @bot.command()
         @admin_restrict
         async def banall(ctx):
-
-            try:
-                show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-            except:
-                show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
             
             await ctx.channel.purge(limit = 1)
             await ctx.send(f'~~**...Машины уничтожаеют сервер :skull:...**~~')
@@ -1225,11 +1095,6 @@ try:
         @bot.command()
         @admin_restrict
         async def dl(ctx):
-
-            try:
-                show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-            except:
-                show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
             
             await ctx.channel.purge(limit = 1)
 
@@ -1244,11 +1109,6 @@ try:
         @bot.command()
         @admin_restrict
         async def dch(ctx):
-
-            try:
-                show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-            except:
-                show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
             
             failed = []
             counter = 0
@@ -1266,11 +1126,6 @@ try:
     @admin_restrict
     async def _help_(ctx, cat):
         """_help_ Category:str >> command $j"""                     
-
-        try:
-            show_log(ctx.guild.name, ctx.message.author.name, sys._getframe().f_code.co_name) 
-        except:
-            show_log("DMChannel", ctx.message.author.name, sys._getframe().f_code.co_name)
 
         if cat == 'Flex':
             emb = discord.Embed(title = f'|{str(bot.get_emoji(725447898405273753))}| Flex Commands:', colour = discord.Color.dark_red())
@@ -1298,17 +1153,64 @@ try:
 
     class NewCustomHelp:
         @bot.command()
-        @admin_restrict
+        @show_log_
         async def j(ctx):
             """Unfinished custom help command"""
-
-            LogManager.info(f"[{ctx.message.guild.name}] {ctx.message.author.name} called {sys._getframe().f_code.co_name}")
 
             emb = discord.Embed(title = "Categories of commands:", colour = discord.Color.dark_red())
             emb.add_field(value = '```$_help_ Name_of_category```', name = '```Example:$_help_ Report```')
             emb.description = f'•Flex{bot.get_emoji(725037390011433091)}\n•Admin{bot.get_emoji(725437920390938725)}\n•Random{bot.get_emoji(724945422665383946)}\n•Information{bot.get_emoji(725060275849658458)}'
             emb.set_image(url = 'https://i.gifer.com/fyrY.gif')
             await ctx.send (embed = emb)
+            
+    @bot.command()
+    @show_log_
+    async def _help__(ctx):
+        # emb.add_field(name ='Описание сервера', value = 'Ничего строгого')
+        # emb.add_field(name ='{}```_cleaner_ int``` :broom: '.format(settings['PREFIX']), value = 'Очистка чата (adm)')
+        # emb.add_field(name ='{}```_ban_ ID``` :lock:'.format(settings['PREFIX']), value = 'Бан клиента на сервере(adm)')
+        # emb.add_field(name ='{}```_kick_ ID``` :warning: '.format(settings['PREFIX']), value = 'Кик клиента с сервера(adm)')
+        # emb.add_field(name ='{}```qq```'.format(settings['PREFIX']), value = 'Приветствие')
+        # emb.add_field(name ='{}```bb```'.format(settings['PREFIX']), value = 'Прощание')
+        # emb.add_field(name ='{}```pp```'.format(settings['PREFIX']), value = 'Клиент отошел')
+        # emb.add_field(name ='{}```_pp_```'.format(settings['PREFIX']), value = 'Клиент вернулся')
+        # emb.add_field(name ='{}```fox || dog```'.format(settings['PREFIX']), value = 'Генерация img')
+        # emb.add_field(name ='{}```_join_```'.format(settings['PREFIX']), value = 'Подключение бота к текущему каналу')
+        # emb.add_field(name ='{}```_leave_```'.format(settings['PREFIX']), value = 'Отключение бота от канала')
+        # emb.add_field(name ='{}```_play_ URL```'.format(settings['PREFIX']), value = 'Багающее включение музыки по url')
+        # emb.add_field(name ='{}```_exc_ NAME```'.format(settings['PREFIX']), value = 'Полноценная экскурсия по серверу(adm)')
+        # emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = 'Список учатсников сервера(adm)')
+        # emb.add_field(name ='{}```_exc_adm_ NAME EXC(int) speed(int)```'.format(settings['PREFIX']), value = '_exc_ + изменение скорости и кол-ва заходов(adm)')
+        # emb.add_field(name ='{}```_exc_adm_gogi_ NAME CH(int)```'.format(settings['PREFIX']), value = 'Дополненная экскурсия - версия @gogi')
+        # emb.add_field(name ='{}```_mute_ NAME```'.format(settings['PREFIX']), value = 'Мут участника (adm)')
+        # emb.add_field(name ='{}```_dea_ NAME```'.format(settings['PREFIX']), value = 'Оглушение участника (adm)')
+        # emb.add_field(name ='{}```_am_ NAME```'.format(settings['PREFIX']), value = 'Полный мут участника (adm)')
+        # emb.add_field(name ='{}```_aum_ NAME```'.format(settings['PREFIX']), value = 'Полный размут участника (adm)')
+        # emb.add_field(name ='{}```_lock_ NAME```'.format(settings['PREFIX']), value = 'Унижение участника (adm, 30 сек)')
+        # emb.add_field(name ='{}```_unlock_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm)')
+        # emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = f'Список участников сервера { ctx.guild.name } ')
+        # emb.add_field(name ='{}```_lat_ NAME```'.format(settings['PREFIX']), value = 'Бесконечное унижение (adm, lock all time)')
+        # emb.add_field(name ='{}```_ulat_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm, un lock all time)')
+        # emb.add_field(name ='{}```_warn_ NAME REASON```'.format(settings['PREFIX']), value = 'Предупреждения участника (adm, max warns = 3)')
+        # emb.add_field(name ='{}```_unwarn_ NAME```'.format(settings['PREFIX']), value = 'Отмена предупреждения (adm)')
+        
+        emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
+        emb1 = discord.Embed(title = "Продолжение навигации по командам 1 :clipboard:")
+        emb2 = discord.Embed(title = "Продолжение навигации по командам 2 :clipboard:")
+        
+        count = 0
+        for comm in bot.all_commands:
+            if count >= 22 and count < 66:
+                emb1.add_field(name = f"$```{comm}```", value = bot.all_commands[comm])
+            elif count >= 66:
+                 emb2.add_field(name = f"$```{comm}```", value = bot.all_commands[comm])
+                
+            emb.add_field(name = f"$```{comm}```", value = bot.all_commands[comm])
+            count += 1
+
+        await ctx.send ( embed = emb )
+        await ctx.send( embed = emb1 )
+        await ctx.send (embed = emb2 )
 
     @COVID.NewConfirmed.error
     @COVID.NewDeaths.error
@@ -1319,6 +1221,7 @@ try:
     @Aloshya.SdClose.error
     @Aloshya.loh.error
     @GlobalGuild.AllNick.error
+    @_help__.error
     @_jojo_.error
     @_kick_.error
     @_pp_.error
@@ -1379,43 +1282,7 @@ try:
             await ctx.send(f'{author.mention}, вы не обладаете такими правами!')
         if isinstance(error, commands.errors.CommandInvokeError):
             LogManager.error(error)  
-            await ctx.send(f"```{error}```")
-
-
-    #@bot.command(pass_context = True)
-    #async def _help_(ctx):
-        
-        #emb = discord.Embed (title = 'Навигация по командам :clipboard: ')
-        #emb.add_field(name ='Описание сервера', value = 'Ничего строгого')
-        #emb.add_field(name ='{}```_cleaner_ int``` :broom: '.format(settings['PREFIX']), value = 'Очистка чата (adm)')
-        #emb.add_field(name ='{}```_ban_ ID``` :lock:'.format(settings['PREFIX']), value = 'Бан клиента на сервере(adm)')
-        #emb.add_field(name ='{}```_kick_ ID``` :warning: '.format(settings['PREFIX']), value = 'Кик клиента с сервера(adm)')
-        #emb.add_field(name ='{}```qq```'.format(settings['PREFIX']), value = 'Приветствие')
-        #emb.add_field(name ='{}```bb```'.format(settings['PREFIX']), value = 'Прощание')
-        #emb.add_field(name ='{}```pp```'.format(settings['PREFIX']), value = 'Клиент отошел')
-        #emb.add_field(name ='{}```_pp_```'.format(settings['PREFIX']), value = 'Клиент вернулся')
-        #emb.add_field(name ='{}```fox || dog```'.format(settings['PREFIX']), value = 'Генерация img')
-        #emb.add_field(name ='{}```_join_```'.format(settings['PREFIX']), value = 'Подключение бота к текущему каналу')
-        #emb.add_field(name ='{}```_leave_```'.format(settings['PREFIX']), value = 'Отключение бота от канала')
-        #emb.add_field(name ='{}```_play_ URL```'.format(settings['PREFIX']), value = 'Багающее включение музыки по url')
-        #emb.add_field(name ='{}```_exc_ NAME```'.format(settings['PREFIX']), value = 'Полноценная экскурсия по серверу(adm)')
-        #emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = 'Список учатсников сервера(adm)')
-        #emb.add_field(name ='{}```_exc_adm_ NAME EXC(int) speed(int)```'.format(settings['PREFIX']), value = '_exc_ + изменение скорости и кол-ва заходов(adm)')
-        #   emb.add_field(name ='{}```_exc_adm_gogi_ NAME CH(int)```'.format(settings['PREFIX']), value = 'Дополненная экскурсия - версия @gogi')
-        #emb.add_field(name ='{}```_mute_ NAME```'.format(settings['PREFIX']), value = 'Мут участника (adm)')
-        #emb.add_field(name ='{}```_dea_ NAME```'.format(settings['PREFIX']), value = 'Оглушение участника (adm)')
-        #emb.add_field(name ='{}```_am_ NAME```'.format(settings['PREFIX']), value = 'Полный мут участника (adm)')
-        #emb.add_field(name ='{}```_aum_ NAME```'.format(settings['PREFIX']), value = 'Полный размут участника (adm)')
-        #emb.add_field(name ='{}```_lock_ NAME```'.format(settings['PREFIX']), value = 'Унижение участника (adm, 30 сек)')
-        #emb.add_field(name ='{}```_unlock_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm)')
-        #emb.add_field(name ='{}```_list_```'.format(settings['PREFIX']), value = f'Список участников сервера { ctx.guild.name } ')
-        #emb.add_field(name ='{}```_lat_ NAME```'.format(settings['PREFIX']), value = 'Бесконечное унижение (adm, lock all time)')
-        #emb.add_field(name ='{}```_ulat_ NAME```'.format(settings['PREFIX']), value = 'Помилование участника (adm, un lock all time)')
-        #emb.add_field(name ='{}```_warn_ NAME REASON```'.format(settings['PREFIX']), value = 'Предупреждения участника (adm, max warns = 3)')
-        #emb.add_field(name ='{}```_unwarn_ NAME```'.format(settings['PREFIX']), value = 'Отмена предупреждения (adm)')
-        #LogManager.info(f'[help] ${bot.user.name} sent a help list for {ctx.message.author.name} ({ctx.message.author.nick})')
-
-        #await ctx.send ( embed = emb ) 
+            await ctx.send(f"```{error}```") 
 
     @bot.event
     async def on_ready():
@@ -1459,8 +1326,9 @@ try:
     #=================================================
 
     # bot.run(settings['KYARU_DEV_TOKEN'])
-    bot.run(settings['TOKEN'])
+    # bot.run(settings['TOKEN'])
     # bot.run(settings['KYARU_TOKEN'])
+    bot.run("NzUyOTc2NTUyNDY3MzY2MDAx.X1feDw.QFQKlIo5Gd3f4ro7uKFxn8DdbZo")
 
 except Exception as e:
     LogManager.warning('Work status: 0')

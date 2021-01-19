@@ -85,3 +85,350 @@
 [01/19/2021 09:52:14 PM] [LogPython 12296] [INFO   ] Auditor magazine of bot:
 [01/19/2021 09:52:14 PM] [LogPython 12296] [INFO   ] Logged in as ShGbot
 [01/19/2021 09:52:44 PM] [LogPython 12296] [INFO   ] Well done :)
+[01/19/2021 09:53:05 PM] [LogPython 4300 ] [DEBUG  ] <_MainThread(MainThread, started 10008)> Running
+[01/19/2021 09:53:05 PM] [LogPython 4300 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 5576)> Running
+[01/19/2021 09:53:05 PM] [LogPython 4300 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 11780)> Running
+[01/19/2021 09:53:05 PM] [LogPython 4300 ] [INFO   ] Work Status: 1
+[01/19/2021 09:53:05 PM] [LogPython 4300 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 09:53:05 PM] [LogPython 4300 ] [INFO   ] Logged in as ShGbot
+[01/19/2021 09:55:39 PM] [LogPython 4300 ] [INFO   ] Well done :)
+[01/19/2021 09:55:45 PM] [LogPython 14188] [DEBUG  ] <_MainThread(MainThread, started 12484)> Running
+[01/19/2021 09:55:45 PM] [LogPython 14188] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 2604)> Running
+[01/19/2021 09:55:45 PM] [LogPython 14188] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 7712)> Running
+[01/19/2021 09:55:45 PM] [LogPython 14188] [INFO   ] Work Status: 1
+[01/19/2021 09:55:45 PM] [LogPython 14188] [INFO   ] Auditor magazine of bot:
+[01/19/2021 09:55:45 PM] [LogPython 14188] [INFO   ] Logged in as ShGbot
+[01/19/2021 09:56:18 PM] [LogPython 14188] [INFO   ] Well done :)
+[01/19/2021 09:56:22 PM] [LogPython 12652] [DEBUG  ] <_MainThread(MainThread, started 6192)> Running
+[01/19/2021 09:56:22 PM] [LogPython 12652] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13856)> Running
+[01/19/2021 09:56:22 PM] [LogPython 12652] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 10396)> Running
+[01/19/2021 09:56:22 PM] [LogPython 12652] [INFO   ] Work Status: 1
+[01/19/2021 09:56:22 PM] [LogPython 12652] [INFO   ] Auditor magazine of bot:
+[01/19/2021 09:56:22 PM] [LogPython 12652] [INFO   ] Logged in as ShGbot
+[01/19/2021 09:56:25 PM] [LogPython 12652] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called wrapper
+[01/19/2021 09:58:21 PM] [LogPython 12652] [INFO   ] Well done :)
+[01/19/2021 09:58:25 PM] [LogPython 11820] [DEBUG  ] <_MainThread(MainThread, started 7888)> Running
+[01/19/2021 09:58:25 PM] [LogPython 11820] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12004)> Running
+[01/19/2021 09:58:25 PM] [LogPython 11820] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 8188)> Running
+[01/19/2021 09:58:25 PM] [LogPython 11820] [INFO   ] Work Status: 1
+[01/19/2021 09:58:25 PM] [LogPython 11820] [INFO   ] Auditor magazine of bot:
+[01/19/2021 09:58:25 PM] [LogPython 11820] [INFO   ] Logged in as ShGbot
+[01/19/2021 09:58:28 PM] [LogPython 11820] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function bb at 0x0000028A58742820>
+[01/19/2021 10:00:07 PM] [LogPython 11820] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function NewCustomHelp.j at 0x0000028A58754C10>
+[01/19/2021 10:00:07 PM] [LogPython 11820] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called j
+[01/19/2021 10:05:18 PM] [LogPython 11820] [INFO   ] Well done :)
+[01/19/2021 10:05:22 PM] [LogPython 11408] [DEBUG  ] <_MainThread(MainThread, started 6772)> Running
+[01/19/2021 10:05:22 PM] [LogPython 11408] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 5548)> Running
+[01/19/2021 10:05:22 PM] [LogPython 11408] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12116)> Running
+[01/19/2021 10:05:22 PM] [LogPython 11408] [INFO   ] Work Status: 1
+[01/19/2021 10:05:22 PM] [LogPython 11408] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:05:22 PM] [LogPython 11408] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:05:57 PM] [LogPython 11408] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function NewCustomHelp.j at 0x0000029E2FCD2B80>
+[01/19/2021 10:05:57 PM] [LogPython 11408] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called j
+[01/19/2021 10:06:30 PM] [LogPython 11408] [INFO   ] Well done :)
+[01/19/2021 10:08:19 PM] [LogPython 4348 ] [DEBUG  ] <_MainThread(MainThread, started 7280)> Running
+[01/19/2021 10:08:19 PM] [LogPython 4348 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 3256)> Running
+[01/19/2021 10:08:19 PM] [LogPython 4348 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14304)> Running
+[01/19/2021 10:08:19 PM] [LogPython 4348 ] [INFO   ] Work Status: 1
+[01/19/2021 10:08:19 PM] [LogPython 4348 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:08:19 PM] [LogPython 4348 ] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:10:52 PM] [LogPython 4348 ] [INFO   ] Well done :)
+[01/19/2021 10:11:02 PM] [LogPython 11996] [DEBUG  ] <_MainThread(MainThread, started 11404)> Running
+[01/19/2021 10:11:02 PM] [LogPython 11996] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 7448)> Running
+[01/19/2021 10:11:02 PM] [LogPython 11996] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14312)> Running
+[01/19/2021 10:11:02 PM] [LogPython 11996] [INFO   ] Work Status: 1
+[01/19/2021 10:11:02 PM] [LogPython 11996] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:11:02 PM] [LogPython 11996] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:11:07 PM] [LogPython 11996] [INFO   ] [help] $ShGbot sent a help list for Ходжазаде Мусхлидин Мустафа (Ходжазаде Муслихиддин Мустафа123)
+[01/19/2021 10:12:34 PM] [LogPython 11996] [INFO   ] Well done :)
+[01/19/2021 10:12:38 PM] [LogPython 11756] [DEBUG  ] <_MainThread(MainThread, started 5592)> Running
+[01/19/2021 10:12:38 PM] [LogPython 11756] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 3580)> Running
+[01/19/2021 10:12:38 PM] [LogPython 11756] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 13328)> Running
+[01/19/2021 10:12:38 PM] [LogPython 11756] [INFO   ] Work Status: 1
+[01/19/2021 10:12:38 PM] [LogPython 11756] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:12:38 PM] [LogPython 11756] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:12:48 PM] [LogPython 11756] [INFO   ] Well done :)
+[01/19/2021 10:12:52 PM] [LogPython 10900] [DEBUG  ] <_MainThread(MainThread, started 1012)> Running
+[01/19/2021 10:12:52 PM] [LogPython 10900] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 7316)> Running
+[01/19/2021 10:12:52 PM] [LogPython 10900] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 7628)> Running
+[01/19/2021 10:12:52 PM] [LogPython 10900] [INFO   ] Work Status: 1
+[01/19/2021 10:12:52 PM] [LogPython 10900] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:12:52 PM] [LogPython 10900] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:13:03 PM] [LogPython 10900] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x000002C3AACEC550>
+[01/19/2021 10:13:21 PM] [LogPython 10900] [INFO   ] Well done :)
+[01/19/2021 10:13:39 PM] [LogPython 4376 ] [DEBUG  ] <_MainThread(MainThread, started 14016)> Running
+[01/19/2021 10:13:39 PM] [LogPython 4376 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 14192)> Running
+[01/19/2021 10:13:39 PM] [LogPython 4376 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 6084)> Running
+[01/19/2021 10:13:39 PM] [LogPython 4376 ] [INFO   ] Work Status: 1
+[01/19/2021 10:13:39 PM] [LogPython 4376 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:13:39 PM] [LogPython 4376 ] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:13:46 PM] [LogPython 4376 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x000001BBA867C550>
+[01/19/2021 10:14:17 PM] [LogPython 4376 ] [INFO   ] Well done :)
+[01/19/2021 10:14:21 PM] [LogPython 8716 ] [DEBUG  ] <_MainThread(MainThread, started 4300)> Running
+[01/19/2021 10:14:21 PM] [LogPython 8716 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 8712)> Running
+[01/19/2021 10:14:21 PM] [LogPython 8716 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 464)> Running
+[01/19/2021 10:14:21 PM] [LogPython 8716 ] [INFO   ] Work Status: 1
+[01/19/2021 10:14:21 PM] [LogPython 8716 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:14:21 PM] [LogPython 8716 ] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:14:31 PM] [LogPython 8716 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x00000274332EB5E0>
+[01/19/2021 10:14:31 PM] [LogPython 8716 ] [WARNING] {'help': <discord.ext.commands.help._HelpCommandImpl object at 0x0000027432A65E80>, 'SecondBan': <discord.ext.commands.core.Command object at 0x0000027432A802E0>, 'AllNick': <discord.ext.commands.core.Command object at 0x0000027432A800D0>, 'SkipAllNick': <discord.ext.commands.core.Command object at 0x0000027432A80610>, 'ChannelFlex': <discord.ext.commands.core.Command object at 0x0000027432A808E0>, 'RootWrite': <discord.ext.commands.core.Command object at 0x0000027432A80E80>, 'SoundOpen': <discord.ext.commands.core.Command object at 0x0000027432A80BB0>, 'SdClose': <discord.ext.commands.core.Command object at 0x0000027432A80F40>, 'SdProtect': <discord.ext.commands.core.Command object at 0x00000274332CB070>, 'loh': <discord.ext.commands.core.Command object at 0x00000274332CB130>, 'flatten': <discord.ext.commands.core.Command object at 0x00000274332CB250>, 'backup': <discord.ext.commands.core.Command object at 0x00000274332CB340>, 'progressive_backup': <discord.ext.commands.core.Command object at 0x00000274332CB460>, 'to_progressive_backup': <discord.ext.commands.core.Command object at 0x00000274332CB550>, 'to_backup': <discord.ext.commands.core.Command object at 0x00000274332CB640>, 'NewConfirmed': <discord.ext.commands.core.Command object at 0x00000274332CB730>, 'NewDeaths': <discord.ext.commands.core.Command object at 0x00000274332CB820>, 'TotalConfirmed': <discord.ext.commands.core.Command object at 0x00000274332CB910>, 'TotalDeaths': <discord.ext.commands.core.Command object at 0x00000274332CBA00>, 'ls': <discord.ext.commands.core.Command object at 0x00000274332CBAF0>, 'pidor': <discord.ext.commands.core.Command object at 0x00000274332CBC10>, 'all_list': <discord.ext.commands.core.Command object at 0x00000274332CBD00>, 'random_gif': <discord.ext.commands.core.Command object at 0x00000274332CBDC0>, 'random_em': <discord.ext.commands.core.Command object at 0x00000274332CBEE0>, 'leave': <discord.ext.commands.core.Command object at 0x00000274332CBFD0>, 'putin': <discord.ext.commands.core.Command object at 0x00000274332D6100>, 'rename': <discord.ext.commands.core.Command object at 0x00000274332D61C0>, '_jojo_': <discord.ext.commands.core.Command object at 0x00000274332D62E0>, 'hola': <discord.ext.commands.core.Command object at 0x00000274332D63D0>, 'qq': <discord.ext.commands.core.Command object at 0x00000274332D6460>, 'bb': <discord.ext.commands.core.Command object at 0x00000274332D6550>, 'pp': <discord.ext.commands.core.Command object at 0x00000274332D6640>, '_pp_': <discord.ext.commands.core.Command object at 0x00000274332D6730>, 'fox': <discord.ext.commands.core.Command object at 0x00000274332D6820>, 'dog': <discord.ext.commands.core.Command object at 0x00000274332D6910>, 'cleaner': <discord.ext.commands.core.Command object at 0x00000274332D6A00>, '_kick_': <discord.ext.commands.core.Command object at 0x00000274332D6AC0>, 'ban': <discord.ext.commands.core.Command object at 0x00000274332D6BE0>, 'cleanadm': <discord.ext.commands.core.Command object at 0x00000274332D6CD0>, 'join': <discord.ext.commands.core.Command object at 0x00000274332D6D90>, 'am': <discord.ext.commands.core.Command object at 0x00000274332D6EB0>, 'aum': <discord.ext.commands.core.Command object at 0x00000274332D6F70>, 'mute': <discord.ext.commands.core.Command object at 0x00000274332DE0A0>, 'dea': <discord.ext.commands.core.Command object at 0x00000274332DE190>, 'exc': <discord.ext.commands.core.Command object at 0x00000274332DE2B0>, 'lock': <discord.ext.commands.core.Command object at 0x00000274332DE3A0>, 'unlock': <discord.ext.commands.core.Command object at 0x00000274332DE490>, 'spam': <discord.ext.commands.core.Command object at 0x00000274332DE580>, 'vers': <discord.ext.commands.core.Command object at 0x00000274332DE670>, 'gs': <discord.ext.commands.core.Command object at 0x00000274332DE760>, 'exc_adm': <discord.ext.commands.core.Command object at 0x00000274332DE880>, 'kick': <discord.ext.commands.core.Command object at 0x00000274332DE940>, 'list': <discord.ext.commands.core.Command object at 0x00000274332DEA30>, 'list_ch': <discord.ext.commands.core.Command object at 0x00000274332DEB50>, 'bye': <discord.ext.commands.core.Command object at 0x00000274332DEC40>, 'tr': <discord.ext.commands.core.Command object at 0x00000274332DED30>, 'lat': <discord.ext.commands.core.Command object at 0x00000274332DEDF0>, 'ulat': <discord.ext.commands.core.Command object at 0x00000274332DEEE0>, 'send': <discord.ext.commands.core.Command object at 0x00000274332DEFD0>, '_test_': <discord.ext.commands.core.Command object at 0x00000274332E8100>, 'otkat': <discord.ext.commands.core.Command object at 0x00000274332E81F0>, 'kickall': <discord.ext.commands.core.Command object at 0x00000274332E82E0>, 'banall': <discord.ext.commands.core.Command object at 0x00000274332E8400>, 'dl': <discord.ext.commands.core.Command object at 0x00000274332E84F0>, 'dch': <discord.ext.commands.core.Command object at 0x00000274332E85E0>, '_help_': <discord.ext.commands.core.Command object at 0x00000274332E86D0>, 'j': <discord.ext.commands.core.Command object at 0x00000274332E87C0>, '_help__': <discord.ext.commands.core.Command object at 0x00000274332E88E0>}
+[01/19/2021 10:16:46 PM] [LogPython 8716 ] [INFO   ] Well done :)
+[01/19/2021 10:16:51 PM] [LogPython 12980] [DEBUG  ] <_MainThread(MainThread, started 1516)> Running
+[01/19/2021 10:16:51 PM] [LogPython 12980] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10584)> Running
+[01/19/2021 10:16:51 PM] [LogPython 12980] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 6248)> Running
+[01/19/2021 10:16:51 PM] [LogPython 12980] [INFO   ] Work Status: 1
+[01/19/2021 10:16:51 PM] [LogPython 12980] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:16:51 PM] [LogPython 12980] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:16:56 PM] [LogPython 12980] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x000001A56334C160>
+[01/19/2021 10:17:59 PM] [LogPython 12980] [INFO   ] Well done :)
+[01/19/2021 10:18:02 PM] [LogPython 13764] [DEBUG  ] <_MainThread(MainThread, started 11580)> Running
+[01/19/2021 10:18:02 PM] [LogPython 13764] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13376)> Running
+[01/19/2021 10:18:02 PM] [LogPython 13764] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12764)> Running
+[01/19/2021 10:18:02 PM] [LogPython 13764] [INFO   ] Work Status: 1
+[01/19/2021 10:18:02 PM] [LogPython 13764] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:18:02 PM] [LogPython 13764] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:18:04 PM] [LogPython 13764] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x00000211CFF3C160>
+[01/19/2021 10:18:13 PM] [LogPython 13764] [INFO   ] Well done :)
+[01/19/2021 10:18:17 PM] [LogPython 10308] [DEBUG  ] <_MainThread(MainThread, started 13792)> Running
+[01/19/2021 10:18:17 PM] [LogPython 10308] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13996)> Running
+[01/19/2021 10:18:17 PM] [LogPython 10308] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 13096)> Running
+[01/19/2021 10:18:17 PM] [LogPython 10308] [INFO   ] Work Status: 1
+[01/19/2021 10:18:17 PM] [LogPython 10308] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:18:17 PM] [LogPython 10308] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:18:27 PM] [LogPython 10308] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x00000167BBCAC160>
+[01/19/2021 10:21:50 PM] [LogPython 10308] [INFO   ] Well done :)
+[01/19/2021 10:21:54 PM] [LogPython 14084] [DEBUG  ] <_MainThread(MainThread, started 9280)> Running
+[01/19/2021 10:21:54 PM] [LogPython 14084] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 8476)> Running
+[01/19/2021 10:21:54 PM] [LogPython 14084] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 7076)> Running
+[01/19/2021 10:21:54 PM] [LogPython 14084] [INFO   ] Work Status: 1
+[01/19/2021 10:21:54 PM] [LogPython 14084] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:21:54 PM] [LogPython 14084] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:21:55 PM] [LogPython 14084] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x000002046676C1F0>
+[01/19/2021 10:22:21 PM] [LogPython 14084] [INFO   ] Well done :)
+[01/19/2021 10:22:25 PM] [LogPython 7028 ] [DEBUG  ] <_MainThread(MainThread, started 13464)> Running
+[01/19/2021 10:22:25 PM] [LogPython 7028 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10396)> Running
+[01/19/2021 10:22:25 PM] [LogPython 7028 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12896)> Running
+[01/19/2021 10:22:25 PM] [LogPython 7028 ] [INFO   ] Work Status: 1
+[01/19/2021 10:22:25 PM] [LogPython 7028 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:22:25 PM] [LogPython 7028 ] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:22:28 PM] [LogPython 7028 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x00000173E256C1F0>
+[01/19/2021 10:22:28 PM] [LogPython 7028 ] [ERROR  ] Command raised an exception: TypeError: 'dict_keys' object is not subscriptable
+[01/19/2021 10:23:03 PM] [LogPython 7028 ] [INFO   ] Well done :)
+[01/19/2021 10:23:06 PM] [LogPython 4200 ] [DEBUG  ] <_MainThread(MainThread, started 11636)> Running
+[01/19/2021 10:23:06 PM] [LogPython 4200 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 1224)> Running
+[01/19/2021 10:23:06 PM] [LogPython 4200 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 11968)> Running
+[01/19/2021 10:23:06 PM] [LogPython 4200 ] [INFO   ] Work Status: 1
+[01/19/2021 10:23:06 PM] [LogPython 4200 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:23:06 PM] [LogPython 4200 ] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:23:08 PM] [LogPython 4200 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x0000015F0134C160>
+[01/19/2021 10:24:21 PM] [LogPython 4200 ] [INFO   ] Well done :)
+[01/19/2021 10:24:25 PM] [LogPython 10328] [DEBUG  ] <_MainThread(MainThread, started 14288)> Running
+[01/19/2021 10:24:25 PM] [LogPython 10328] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 9236)> Running
+[01/19/2021 10:24:25 PM] [LogPython 10328] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 4216)> Running
+[01/19/2021 10:24:25 PM] [LogPython 10328] [INFO   ] Work Status: 1
+[01/19/2021 10:24:25 PM] [LogPython 10328] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:24:25 PM] [LogPython 10328] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:24:27 PM] [LogPython 10328] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x000001CE69FEC1F0>
+[01/19/2021 10:24:35 PM] [LogPython 10328] [INFO   ] Well done :)
+[01/19/2021 10:24:39 PM] [LogPython 7028 ] [DEBUG  ] <_MainThread(MainThread, started 6716)> Running
+[01/19/2021 10:24:39 PM] [LogPython 7028 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 11036)> Running
+[01/19/2021 10:24:39 PM] [LogPython 7028 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 748)> Running
+[01/19/2021 10:24:39 PM] [LogPython 7028 ] [INFO   ] Work Status: 1
+[01/19/2021 10:24:39 PM] [LogPython 7028 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:24:39 PM] [LogPython 7028 ] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:24:48 PM] [LogPython 7028 ] [INFO   ] Well done :)
+[01/19/2021 10:24:52 PM] [LogPython 2408 ] [DEBUG  ] <_MainThread(MainThread, started 8604)> Running
+[01/19/2021 10:24:52 PM] [LogPython 2408 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 10584)> Running
+[01/19/2021 10:24:52 PM] [LogPython 2408 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 11968)> Running
+[01/19/2021 10:24:52 PM] [LogPython 2408 ] [INFO   ] Work Status: 1
+[01/19/2021 10:24:52 PM] [LogPython 2408 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:24:52 PM] [LogPython 2408 ] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:24:54 PM] [LogPython 2408 ] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x0000018535E1C160>
+[01/19/2021 10:24:55 PM] [LogPython 2408 ] [ERROR  ] Command raised an exception: TypeError: send() got an unexpected keyword argument 'embeds'
+[01/19/2021 10:25:02 PM] [LogPython 2408 ] [INFO   ] Well done :)
+[01/19/2021 10:25:06 PM] [LogPython 13344] [DEBUG  ] <_MainThread(MainThread, started 3124)> Running
+[01/19/2021 10:25:06 PM] [LogPython 13344] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 8796)> Running
+[01/19/2021 10:25:06 PM] [LogPython 13344] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 3064)> Running
+[01/19/2021 10:25:06 PM] [LogPython 13344] [INFO   ] Work Status: 1
+[01/19/2021 10:25:06 PM] [LogPython 13344] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:25:06 PM] [LogPython 13344] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:25:08 PM] [LogPython 13344] [INFO   ] [Radolyn Inc.] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x000001C29015C1F0>
+[01/19/2021 10:27:45 PM] [LogPython 13344] [INFO   ] [Radolyn Inc.] exedna called <function pp at 0x000001C2901419D0>
+[01/19/2021 10:34:28 PM] [LogPython 13344] [INFO   ] Well done :)
+[01/19/2021 10:34:31 PM] [LogPython 11800] [DEBUG  ] <_MainThread(MainThread, started 8556)> Running
+[01/19/2021 10:34:31 PM] [LogPython 11800] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13660)> Running
+[01/19/2021 10:34:31 PM] [LogPython 11800] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 10060)> Running
+[01/19/2021 10:34:31 PM] [LogPython 11800] [INFO   ] Work Status: 1
+[01/19/2021 10:34:31 PM] [LogPython 11800] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:34:31 PM] [LogPython 11800] [INFO   ] Logged in as Kyaru
+[01/19/2021 10:34:43 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function _help__ at 0x000002103D38E1F0>
+[01/19/2021 10:35:12 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x000002103D36A160>
+[01/19/2021 10:35:53 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] AlexeyZavar called <function Aloshya.loh at 0x000002103D36A160>
+[01/19/2021 10:35:55 PM] [LogPython 11800] [ERROR  ] Command raised an exception: ClientException: Already connected to a voice channel.
+[01/19/2021 10:36:57 PM] [LogPython 11800] [ERROR  ] Command raised an exception: TimeoutError: 
+[01/19/2021 10:40:19 PM] [LogPython 11800] [INFO   ] Well done :)
+[01/19/2021 10:40:25 PM] [LogPython 9376 ] [DEBUG  ] <_MainThread(MainThread, started 9200)> Running
+[01/19/2021 10:40:25 PM] [LogPython 9376 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 1740)> Running
+[01/19/2021 10:40:25 PM] [LogPython 9376 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 12608)> Running
+[01/19/2021 10:40:25 PM] [LogPython 9376 ] [INFO   ] Work Status: 1
+[01/19/2021 10:40:25 PM] [LogPython 9376 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:40:25 PM] [LogPython 9376 ] [INFO   ] Logged in as Kyaru
+[01/19/2021 10:40:30 PM] [LogPython 9376 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x0000026065F4A310>
+[01/19/2021 10:40:31 PM] [LogPython 9376 ] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:40:50 PM] [LogPython 9376 ] [INFO   ] Well done :)
+[01/19/2021 10:40:54 PM] [LogPython 12956] [DEBUG  ] <_MainThread(MainThread, started 7468)> Running
+[01/19/2021 10:40:54 PM] [LogPython 12956] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 6480)> Running
+[01/19/2021 10:40:54 PM] [LogPython 12956] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 4244)> Running
+[01/19/2021 10:40:54 PM] [LogPython 12956] [INFO   ] Work Status: 1
+[01/19/2021 10:40:54 PM] [LogPython 12956] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:40:54 PM] [LogPython 12956] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:40:56 PM] [LogPython 12956] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x0000012194ABA310>
+[01/19/2021 10:40:57 PM] [LogPython 12956] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:41:10 PM] [LogPython 12956] [INFO   ] Well done :)
+[01/19/2021 10:41:13 PM] [LogPython 10540] [DEBUG  ] <_MainThread(MainThread, started 3548)> Running
+[01/19/2021 10:41:13 PM] [LogPython 10540] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12428)> Running
+[01/19/2021 10:41:13 PM] [LogPython 10540] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 10420)> Running
+[01/19/2021 10:41:13 PM] [LogPython 10540] [INFO   ] Work Status: 1
+[01/19/2021 10:41:13 PM] [LogPython 10540] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:41:13 PM] [LogPython 10540] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/19/2021 10:41:16 PM] [LogPython 10540] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x0000014980A4A310>
+[01/19/2021 10:41:17 PM] [LogPython 10540] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:41:35 PM] [LogPython 10540] [INFO   ] Well done :)
+[01/19/2021 10:41:42 PM] [LogPython 12192] [DEBUG  ] <_MainThread(MainThread, started 2704)> Running
+[01/19/2021 10:41:42 PM] [LogPython 12192] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13220)> Running
+[01/19/2021 10:41:42 PM] [LogPython 12192] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 13540)> Running
+[01/19/2021 10:41:42 PM] [LogPython 12192] [INFO   ] Work Status: 1
+[01/19/2021 10:41:42 PM] [LogPython 12192] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:41:42 PM] [LogPython 12192] [INFO   ] Logged in as Mitnick
+[01/19/2021 10:41:45 PM] [LogPython 12192] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000002AC5F88A310>
+[01/19/2021 10:41:46 PM] [LogPython 12192] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:42:00 PM] [LogPython 12192] [INFO   ] Well done :)
+[01/19/2021 10:42:04 PM] [LogPython 14060] [DEBUG  ] <_MainThread(MainThread, started 13800)> Running
+[01/19/2021 10:42:04 PM] [LogPython 14060] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 7564)> Running
+[01/19/2021 10:42:04 PM] [LogPython 14060] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 1764)> Running
+[01/19/2021 10:42:04 PM] [LogPython 14060] [INFO   ] Work Status: 1
+[01/19/2021 10:42:04 PM] [LogPython 14060] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:42:04 PM] [LogPython 14060] [INFO   ] Logged in as memememememememememememem
+[01/19/2021 10:42:06 PM] [LogPython 14060] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001EB0D049310>
+[01/19/2021 10:42:07 PM] [LogPython 14060] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:42:28 PM] [LogPython 7700 ] [DEBUG  ] <_MainThread(MainThread, started 11208)> Running
+[01/19/2021 10:42:28 PM] [LogPython 7700 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13660)> Running
+[01/19/2021 10:42:28 PM] [LogPython 7700 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 1740)> Running
+[01/19/2021 10:42:28 PM] [LogPython 7700 ] [INFO   ] Work Status: 1
+[01/19/2021 10:42:28 PM] [LogPython 7700 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:42:28 PM] [LogPython 7700 ] [INFO   ] Logged in as MaxPlays
+[01/19/2021 10:42:28 PM] [LogPython 7700 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001A91B2CA310>
+[01/19/2021 10:42:28 PM] [LogPython 14060] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001EB0D049310>
+[01/19/2021 10:42:29 PM] [LogPython 14060] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:42:30 PM] [LogPython 7700 ] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:42:56 PM] [LogPython 11800] [DEBUG  ] <_MainThread(MainThread, started 6376)> Running
+[01/19/2021 10:42:56 PM] [LogPython 11800] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13584)> Running
+[01/19/2021 10:42:56 PM] [LogPython 11800] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 4776)> Running
+[01/19/2021 10:42:56 PM] [LogPython 11800] [INFO   ] Work Status: 1
+[01/19/2021 10:42:56 PM] [LogPython 11800] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:42:56 PM] [LogPython 11800] [INFO   ] Logged in as Mitnick
+[01/19/2021 10:42:57 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001E830BDA310>
+[01/19/2021 10:42:57 PM] [LogPython 7700 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001A91B2CA310>
+[01/19/2021 10:42:57 PM] [LogPython 14060] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001EB0D049310>
+[01/19/2021 10:42:57 PM] [LogPython 14060] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:42:57 PM] [LogPython 7700 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:42:58 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:43:40 PM] [LogPython 12416] [DEBUG  ] <_MainThread(MainThread, started 12496)> Running
+[01/19/2021 10:43:40 PM] [LogPython 12416] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12556)> Running
+[01/19/2021 10:43:40 PM] [LogPython 12416] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 7440)> Running
+[01/19/2021 10:43:40 PM] [LogPython 12416] [INFO   ] Work Status: 1
+[01/19/2021 10:43:40 PM] [LogPython 12416] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:43:40 PM] [LogPython 12416] [INFO   ] !!! FAILED TO LOG DATA !!!
+[01/19/2021 10:43:50 PM] [LogPython 7700 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001A91B2CA310>
+[01/19/2021 10:43:50 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001E830BDA310>
+[01/19/2021 10:43:50 PM] [LogPython 12416] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x0000020675F4A310>
+[01/19/2021 10:43:50 PM] [LogPython 14060] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:43:50 PM] [LogPython 11800] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:43:50 PM] [LogPython 7700 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:43:51 PM] [LogPython 12416] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:44:25 PM] [LogPython 120  ] [DEBUG  ] <_MainThread(MainThread, started 7688)> Running
+[01/19/2021 10:44:25 PM] [LogPython 120  ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 14204)> Running
+[01/19/2021 10:44:25 PM] [LogPython 120  ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 5628)> Running
+[01/19/2021 10:44:25 PM] [LogPython 120  ] [INFO   ] Work Status: 1
+[01/19/2021 10:44:25 PM] [LogPython 120  ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:44:25 PM] [LogPython 120  ] [INFO   ] Logged in as ShGbot
+[01/19/2021 10:44:41 PM] [LogPython 1504 ] [DEBUG  ] <_MainThread(MainThread, started 13748)> Running
+[01/19/2021 10:44:41 PM] [LogPython 1504 ] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12852)> Running
+[01/19/2021 10:44:41 PM] [LogPython 1504 ] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 9200)> Running
+[01/19/2021 10:44:41 PM] [LogPython 1504 ] [INFO   ] Work Status: 1
+[01/19/2021 10:44:41 PM] [LogPython 1504 ] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:44:41 PM] [LogPython 1504 ] [INFO   ] Logged in as PIDARAS
+[01/19/2021 10:44:58 PM] [LogPython 13228] [DEBUG  ] <_MainThread(MainThread, started 4336)> Running
+[01/19/2021 10:44:58 PM] [LogPython 13228] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 13836)> Running
+[01/19/2021 10:44:58 PM] [LogPython 13228] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 13032)> Running
+[01/19/2021 10:44:58 PM] [LogPython 13228] [INFO   ] Work Status: 1
+[01/19/2021 10:44:58 PM] [LogPython 13228] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:44:58 PM] [LogPython 13228] [INFO   ] Logged in as AlexeyZavar
+[01/19/2021 10:45:15 PM] [LogPython 12980] [DEBUG  ] <_MainThread(MainThread, started 12160)> Running
+[01/19/2021 10:45:15 PM] [LogPython 12980] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 11660)> Running
+[01/19/2021 10:45:15 PM] [LogPython 12980] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 14240)> Running
+[01/19/2021 10:45:15 PM] [LogPython 12980] [INFO   ] Work Status: 1
+[01/19/2021 10:45:15 PM] [LogPython 12980] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:45:15 PM] [LogPython 12980] [INFO   ] Logged in as Kyaru
+[01/19/2021 10:46:03 PM] [LogPython 12716] [DEBUG  ] <_MainThread(MainThread, started 14268)> Running
+[01/19/2021 10:46:03 PM] [LogPython 12716] [DEBUG  ] <Thread(ThreadPoolExecutor-0_0, started daemon 12928)> Running
+[01/19/2021 10:46:03 PM] [LogPython 12716] [DEBUG  ] <KeepAliveHandler(Thread-1, started daemon 10968)> Running
+[01/19/2021 10:46:03 PM] [LogPython 12716] [INFO   ] Work Status: 1
+[01/19/2021 10:46:03 PM] [LogPython 12716] [INFO   ] Auditor magazine of bot:
+[01/19/2021 10:46:03 PM] [LogPython 12716] [INFO   ] Logged in as Kyaru [DEV]
+[01/19/2021 10:46:35 PM] [LogPython 12980] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function leave at 0x000001F7993C11F0>
+[01/19/2021 10:46:35 PM] [LogPython 14060] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function leave at 0x000001EB0D0411F0>
+[01/19/2021 10:46:35 PM] [LogPython 1504 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function leave at 0x000001E0C59011F0>
+[01/19/2021 10:46:35 PM] [LogPython 12980] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'disconnect'
+[01/19/2021 10:46:35 PM] [LogPython 1504 ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'disconnect'
+[01/19/2021 10:46:35 PM] [LogPython 7700 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function leave at 0x000001A91B2C11F0>
+[01/19/2021 10:46:35 PM] [LogPython 13228] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function leave at 0x0000023AF51211F0>
+[01/19/2021 10:46:35 PM] [LogPython 13228] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'disconnect'
+5F411F0>
+[01/19/2021 10:46:35 PM] [LogPython 120  ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function leave at 0x000002747EA611F0>
+[01/19/2021 10:46:35 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function leave at 0x000001E830BD11F0>
+[01/19/2021 10:46:35 PM] [LogPython 12716] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function leave at 0x000002C8859811F0>
+[01/19/2021 10:46:35 PM] [LogPython 12716] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'disconnect'
+[01/19/2021 10:46:35 PM] [LogPython 120  ] [ERROR  ] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'disconnect'
+[01/19/2021 10:46:39 PM] [LogPython 12980] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001F7993CA310>
+[01/19/2021 10:46:39 PM] [LogPython 120  ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000002747EA6A310>
+[01/19/2021 10:46:39 PM] [LogPython 13228] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x0000023AF512A310>
+[01/19/2021 10:46:39 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001E830BDA310>
+[01/19/2021 10:46:39 PM] [LogPython 1504 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001E0C590A310>
+[01/19/2021 10:46:39 PM] [LogPython 12416] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x0000020675F4A310>
+[01/19/2021 10:46:39 PM] [LogPython 14060] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001EB0D049310>
+[01/19/2021 10:46:39 PM] [LogPython 7700 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function join at 0x000001A91B2CA310>
+[01/19/2021 10:46:39 PM] [LogPython 13228] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:46:39 PM] [LogPython 7700 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:46:39 PM] [LogPython 14060] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:46:39 PM] [LogPython 120  ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:46:39 PM] [LogPython 12980] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:46:39 PM] [LogPython 1504 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:46:39 PM] [LogPython 11800] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:46:39 PM] [LogPython 12716] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:46:40 PM] [LogPython 12416] [INFO   ] [ГореПрограммист и ещё люди] Bot connected to Ходжазаде Мусхлидин Мустафа
+[01/19/2021 10:47:59 PM] [LogPython 14060] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x000001EB0D038160>
+[01/19/2021 10:47:59 PM] [LogPython 11800] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x000001E830BC8160>
+[01/19/2021 10:47:59 PM] [LogPython 13228] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x0000023AF5118160>
+[01/19/2021 10:47:59 PM] [LogPython 1504 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x000001E0C58F9160>
+[01/19/2021 10:47:59 PM] [LogPython 12716] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x000002C885978160>
+[01/19/2021 10:47:59 PM] [LogPython 12980] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x000001F7993B8160>
+[01/19/2021 10:47:59 PM] [LogPython 7700 ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x000001A91B2B9160>
+[01/19/2021 10:47:59 PM] [LogPython 120  ] [INFO   ] [ГореПрограммист и ещё люди] Ходжазаде Мусхлидин Мустафа called <function Aloshya.loh at 0x000002747EA58160>
+[01/19/2021 10:48:00 PM] [LogPython 1504 ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:48:00 PM] [LogPython 120  ] [ERROR  ] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[01/19/2021 10:48:55 PM] [LogPython 11800] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:48:55 PM] [LogPython 7700 ] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:48:55 PM] [LogPython 14060] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:48:56 PM] [LogPython 12980] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:48:56 PM] [LogPython 13228] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:48:56 PM] [LogPython 11800] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:48:56 PM] [LogPython 12716] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:48:57 PM] [LogPython 7700 ] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:48:57 PM] [LogPython 14060] [WARNING] AttributeError time.sleep(1)
+[01/19/2021 10:49:37 PM] [LogPython 7700 ] [ERROR  ] Command raised an exception: Forbidden: 403 Forbidden (error code: 50001): Missing Access
+[01/19/2021 10:49:47 PM] [LogPython 12716] [ERROR  ] Command raised an exception: Forbidden: 403 Forbidden (error code: 50001): Missing Access
+[01/19/2021 10:49:51 PM] [LogPython 11800] [ERROR  ] Command raised an exception: Forbidden: 403 Forbidden (error code: 50001): Missing Access
+[01/19/2021 10:50:18 PM] [LogPython 13228] [ERROR  ] Command raised an exception: Forbidden: 403 Forbidden (error code: 50001): Missing Access
+[01/19/2021 10:50:42 PM] [LogPython 12980] [ERROR  ] Command raised an exception: TimeoutError: 
+[01/19/2021 10:51:43 PM] [LogPython 12980] [INFO   ] Well done :)
