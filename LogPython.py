@@ -80,6 +80,8 @@ class LogManager:
                 print(*args, **kwargs, file=FILE)
             except:
                 print('!!! FAILED TO LOG DATA !!!', file=FILE)
+                
+            FILE.flush()
 
     @staticmethod
     def debug(*args, **kwargs):
@@ -111,7 +113,7 @@ class LogManager:
 
         def __init__(self):
 
-            reg = r"\{ERROR\} \: ([^+]+?)\{ShGLogger v 1\.0\}"
+            reg = r'\[ERROR\s*\]\s*(?P<msg>.+)$'
 
             file = open('LogPython_info.log', 'r')
             text = file.read()
@@ -121,7 +123,7 @@ class LogManager:
             completed = []
 
             for item in matches:
-                completed.append(item.replace('{ShGLogger v 1.0}', ''))
+                completed.append(item)
 
             self.completed = completed
 

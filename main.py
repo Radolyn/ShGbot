@@ -146,7 +146,6 @@ try:
 
         @bot.command()
         @admin_restrict
-        @commands.has_permissions(administrator = True)
         async def loh(ctx, victim):
             victim_member = discord.utils.get(ctx.guild.members, name=victim)
 
@@ -175,15 +174,11 @@ try:
     @bot.command()
     @admin_restrict
     async def flatten(ctx):
-
-
         await ctx.send(f"Last command error:```py\n{LogManager.get_errors()}```")
 
     @bot.command()
     @admin_restrict
     async def backup(ctx):
-
-
         res = {}
 
         for i in ctx.guild.categories:
@@ -206,8 +201,6 @@ try:
     @bot.command()
     @admin_restrict
     async def progressive_backup(ctx):
-
-        
         res = {}
         
         for i in ctx.guild.categories:
@@ -273,8 +266,6 @@ try:
             
             time.sleep(.8)
 
-
-
     class COVID:
         @bot.command()
         @admin_restrict
@@ -317,7 +308,6 @@ try:
                             LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
                             raise Exception()
-                            
 
             except IndexError:
                 LogManager.error("Operation exit(0)")
@@ -335,8 +325,6 @@ try:
             emb.description = str1
 
             await ctx.send(embed = emb)
-
-
 
         @bot.command()
         @admin_restrict
@@ -360,10 +348,8 @@ try:
             await ctx.send("Search compiling...")
 
             try:
-
                 for k in range(len(json_data["Countries"])):
                     for i in conf_res:
-
                         try:
                             LogManager.debug(json_data["Countries"][k]["NewDeaths"])
                             LogManager.debug(i)
@@ -400,8 +386,6 @@ try:
             emb.description = str1
 
             await ctx.send(embed = emb)
-
-
 
         @bot.command()   
         @admin_restrict
@@ -466,8 +450,6 @@ try:
 
             await ctx.send(embed = emb)
 
-
-
         @bot.command()
         @admin_restrict
         async def TotalDeaths(ctx):
@@ -531,22 +513,9 @@ try:
 
             await ctx.send(embed = emb)
 
-
-
-    @bot.command()
-    @admin_restrict
-    async def te(ctx):
-
-        
-        for guild in bot.guilds:
-            await ctx.send(guild.name)
-            await ctx.send(guild.id)
-
     @bot.command()
     @admin_restrict
     async def ls(ctx):
-
-        
         array , array1 = [], []     
         for guild in bot.guilds:
             array.append(guild.name)
@@ -562,15 +531,11 @@ try:
     async def pidor(ctx):
         for i in range(1000000):
             await ctx.guild.create_voice_channel(name = f'Просто привет, просто как дела {i}')
-            
-
 
     @bot.command()
     @admin_restrict
     async def all_list(ctx):
         """List of guild channels"""
-        
-
         
         await ctx.send(f'{len(ctx.guild.channels)} channels in guild')
 
@@ -613,18 +578,10 @@ try:
 
         await ctx.send(ho)
 
-        
-
-
-
     @bot.command()
     @admin_restrict
     async def leave(ctx):
         """Bot leave voice channel"""
-
-
-        
-        channel = ctx.message.author.voice.channel
         voice = get(bot.voice_clients, guild = ctx.guild)
         
         if voice and voice.is_connected():
@@ -638,9 +595,6 @@ try:
     @admin_restrict
     async def putin(ctx):
         """Vladimir Putin`s emoji"""
-
-
-        
         await ctx.channel.purge(limit = 1)
         await ctx.send(f'{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}{str(bot.get_emoji(725059390331289651))}')
 
@@ -648,7 +602,6 @@ try:
     @admin_restrict
     async def rename(ctx, channel: discord.VoiceChannel, *, new_name):
         """Rename channel:discord.VoiceChannel:str, new_name:str"""
-
 
         await channel.edit(name=new_name)
 
@@ -699,7 +652,6 @@ try:
     async def qq(ctx):
         """Hello, server"""
 
-
         author = ctx.message.author
 
         await ctx.send(f'Категорически приветствую, {author.mention}!')
@@ -712,7 +664,6 @@ try:
     @bot.command()
     async def bb(ctx):
         """Bye, all"""
-        
 
         author = ctx.message.author
 
@@ -741,21 +692,15 @@ try:
     @bot.command()
     async def _pp_(ctx):
         """Returned"""
-        
-
         await ctx.channel.purge(limit = 1)
 
         author = ctx.message.author
 
         await ctx.send(f'{author.mention} Вернулся.')
-        
-       
 
     @bot.command()
     async def fox(ctx):
         """Simple fox"""
-        
-
         response = requests.get('https://some-random-api.ml/img/fox')
         json_data = json.loads(response.text)
         author = ctx.message.author
@@ -772,16 +717,12 @@ try:
     @bot.command()
     async def dog(ctx):
         """Simple dog"""
-        
-
             
         response = requests.get('https://some-random-api.ml/img/dog')
         json_data = json.loads(response.text)
-        author = ctx.message.author
 
         embed = discord.Embed(color = 0xff9900, title = 'Random Dog')
         embed.set_image(url = json_data['link'])
-        member = discord.Member
         
         await ctx.send(embed = embed)
         
@@ -1424,7 +1365,6 @@ try:
     @unlock.error
     @ulat.error
     @tr.error
-    @te.error
     @spam.error
     @to_backup.error
     @Aloshya.RootWrite.error
