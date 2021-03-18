@@ -377,9 +377,6 @@ try:
                             if i == json_data["Countries"][k]["NewDeaths"]:
                                 res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["NewDeaths"]}')
 
-                                LogManager.debug("Found succesfully completed")
-                            else:
-                                LogManager.debug("Found crashed")
                         except:
                             LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -440,9 +437,6 @@ try:
                             if i == json_data["Countries"][k]["TotalConfirmed"]:
                                 res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["TotalConfirmed"]}')
 
-                                LogManager.debug("Found succesfully completed")
-                            else:
-                                LogManager.debug("Found crashed")
                         except:
                             LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -503,9 +497,6 @@ try:
                             if i == json_data["Countries"][k]["TotalDeaths"]:
                                 res.append(f'{json_data["Countries"][k]["Country"]} : {json_data["Countries"][k]["TotalDeaths"]}')
 
-                                LogManager.debug("Found succesfully completed")
-                            else:
-                                LogManager.debug("Found crashed")
                         except:
                             LogManager.error("[CORONKA] Crash in founding JsonNewConfirmed")
 
@@ -923,7 +914,7 @@ try:
 
     @bot.command()
     @admin_restrict                          
-    async def exc_adm(ctx, victim, n:int):
+    async def exc_adm(ctx, victim, n : int):
         """Travel of guild victim:str onces:int"""                             
                 
         victim_member = discord.utils.get(ctx.guild.members, name=victim)
@@ -961,7 +952,8 @@ try:
         """List of guild members"""         
 
         emb = discord.Embed (title = f'Список участников сервера {ctx.guild.name} :clipboard: ')
-        emb.description = str(len(ctx.guild.members)) + ' ' + 'участника(-ов):'
+        emb.description = str(len(ctx.guild.members)) + ' участника(-ов):'
+        
         for i in ctx.guild.members:
             if i.nick == None:
                 emb.add_field(name = i.name, value = i.roles[len(i.roles) - 1])
@@ -1095,6 +1087,7 @@ try:
         @bot.command()
         @admin_restrict
         async def dl(ctx):
+            """ALL ROLES DELEEION"""
             
             await ctx.channel.purge(limit = 1)
 
@@ -1326,9 +1319,8 @@ try:
     #=================================================
 
     # bot.run(settings['KYARU_DEV_TOKEN'])
-    # bot.run(settings['TOKEN'])
+    bot.run(settings['TOKEN'])
     # bot.run(settings['KYARU_TOKEN'])
-    bot.run("NzUyOTc2NTUyNDY3MzY2MDAx.X1feDw.QFQKlIo5Gd3f4ro7uKFxn8DdbZo")
 
 except Exception as e:
     LogManager.warning('Work status: 0')
