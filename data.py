@@ -46,5 +46,9 @@ admin_list = [
     554276988961947669,
     620886321115824158,
     691575600707534908,
-    305414308320247818 #AlexeyZavar
+    305414308320247818,  # AlexeyZavar
+    852936138775330816
 ]
+
+dota_heroes = ['Abaddon', 'Alchemist', 'Axe', 'Beastmaster', 'Brewmaster', 'Bristleback', 'CentaurWarrunner', 'ChaosKnight', 'Clockwerk', 'Dawnbreaker', 'Doom', 'DragonKnight', 'EarthSpirit', 'Earthshaker', 'ElderTitan', 'Huskar', 'Io', 'Kunkka', 'LegionCommander', 'Lifestealer', 'Lycan', 'Magnus', 'Marci', 'Mars', 'NightStalker', 'Omniknight', 'Phoenix', 'Pudge', 'SandKing', 'Slardar', 'Snapfire', 'SpiritBreaker', 'Sven', 'Tidehunter', 'Timbersaw', 'Tiny', 'TreantProtector', 'Tusk', 'Underlord', 'Undying', 'WraithKing', 'Anti-Mage', 'ArcWarden', 'Bloodseeker', 'BountyHunter', 'Broodmother', 'Clinkz', 'DrowRanger', 'EmberSpirit', 'FacelessVoid', 'Gyrocopter', 'Hoodwink', 'Juggernaut', 'LoneDruid', 'Luna', 'Medusa', 'Meepo', 'Mirana', 'MonkeyKing', 'Morphling', 'NagaSiren',
+               'NyxAssassin', 'Pangolier', 'PhantomAssassin', 'PhantomLancer', 'Razor', 'Riki', 'ShadowFiend', 'Slark', 'Sniper', 'Spectre', 'TemplarAssassin', 'Terrorblade', 'TrollWarlord', 'Ursa', 'VengefulSpirit', 'Venomancer', 'Viper', 'Weaver', 'AncientApparition', 'Bane', 'Batrider', 'Chen', 'CrystalMaiden', 'DarkSeer', 'DarkWillow', 'Dazzle', 'DeathProphet', 'Disruptor', 'Enchantress', 'Enigma', 'Grimstroke', 'Invoker', 'Jakiro', 'KeeperoftheLight', 'Leshrac', 'Lich', 'Lina', 'Lion', 'Nature"sProphet', 'Necrophos', 'OgreMagi', 'Oracle', 'OutworldDestroyer', 'Puck', 'Pugna', 'QueenofPain', 'Rubick', 'ShadowDemon', 'ShadowShaman', 'Silencer', 'SkywrathMage', 'StormSpirit', 'Techies', 'Tinker', 'Visage', 'VoidSpirit', 'Warlock', 'Windranger', 'WinterWyvern', 'WitchDoctor', 'Zeus']

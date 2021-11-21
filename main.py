@@ -1,6 +1,5 @@
 import functools
 
-from discord import embeds
 from LogPython import LogManager
 
 try:
@@ -10,14 +9,13 @@ try:
     import time 
     import random
     import requests
-    import asyncio
     import discord.ext.commands
     from discord.ext import commands
     from discord.utils import get
     from discord.ext.commands import Bot
     import threading
     from config import *
-    from data import admin_list
+    from data import admin_list, dota_heroes
 except ImportError as e: 
     print('[WARNING] Вероятнее всего, Вы не запустили deps.py ($python deps.py)', e)
     exit()
@@ -80,10 +78,13 @@ try:
         async def AllNick(ctx, word:str):
             await ctx.channel.purge(limit = 1)
             for i in ctx.guild.members:
+                new_nick = word
+                if word == 'dota2':
+                    new_nick = random.choice(dota_heroes)
                 try:
-                    await i.edit(nick = str(word))
+                    await i.edit(nick = new_nick)
                     time.sleep(.75)
-                    LogManager.info(i.name)
+                    LogManager.info(i.name, ' - ', i.nick)
                 except Exception as ex:
                     LogManager.error(ex)
 
